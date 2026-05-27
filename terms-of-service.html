@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0050C8" />
+  <title>Terms of Service — Vybog Services</title>
+  <meta name="description" content="The contractual terms that govern engagements with Vybog Services and Vybog Inc. — consulting, engineering, hire-a-developer, AI agent development, and digital marketing." />
+  <link rel="icon" type="image/png" href="assets/images/logo/vybog-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Source+Serif+Pro:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* Minimal legal-page typography polish — uses existing tokens */
+    .legal-prose h2 { font-size: clamp(22px, 2.2vw, 28px); margin-top: 48px; scroll-margin-top: 100px; }
+    .legal-prose h2 .sec-num { color: var(--brand-primary); font-family: var(--font-display); font-weight: 700; margin-right: 12px; }
+    .legal-prose h3 { font-size: 18px; margin-top: 28px; margin-bottom: 8px; }
+    .legal-prose p, .legal-prose li { font-size: 16px; line-height: 1.7; color: var(--text-secondary); }
+    .legal-prose ul, .legal-prose ol { margin: 0 0 var(--space-4); padding-left: 1.4em; }
+    .legal-prose ul li, .legal-prose ol li { margin-bottom: 8px; }
+    .legal-prose strong { color: var(--text-primary); font-weight: 600; }
+    .legal-toc { background: var(--bg-tint); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 24px 28px; margin-bottom: 40px; }
+    .legal-toc h4 { font-family: var(--font-display); font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 14px; font-weight: 600; }
+    .legal-toc ol { columns: 2; column-gap: 28px; padding-left: 1.2em; margin: 0; }
+    @media (max-width: 640px) { .legal-toc ol { columns: 1; } }
+    .legal-toc li { font-size: 14.5px; margin-bottom: 6px; break-inside: avoid; }
+    .legal-toc a { color: var(--text-primary); }
+    .legal-toc a:hover { color: var(--brand-primary); }
+    .legal-footnote { margin-top: 56px; padding: 24px 28px; border-left: 3px solid var(--brand-primary); background: var(--bg-soft); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+    .legal-footnote p { margin: 0; font-size: 15px; }
+    .legal-address-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 16px 0 24px; }
+    @media (max-width: 640px) { .legal-address-grid { grid-template-columns: 1fr; } }
+    .legal-address-grid > div { padding: 20px 22px; background: var(--bg-tint); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
+    .legal-address-grid h4 { font-family: var(--font-display); font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 10px; font-weight: 600; }
+    .legal-address-grid p { font-size: 14.5px; margin: 0; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container">
+      <div class="util-group">
+        <span>🇮🇳 +91 44 4859 6021</span>
+        <span class="hide-mobile">🇺🇸 +1 408 657 0010</span>
+        <a href="mailto:hello@vybogservices.com" class="hide-mobile">hello@vybogservices.com</a>
+      </div>
+      <div class="util-group">
+        <a href="case-studies.html" class="hide-mobile">Case Studies</a>
+        <a href="blog/index.html" class="hide-mobile">Insights</a>
+        <a href="contact.html">Get a Quote →</a>
+      </div>
+    </div>
+  </div>
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand" aria-label="Vybog Services home">
+      <img src="assets/images/logo/vybog-icon.png" alt="" class="brand-icon" />
+      <span class="brand-word">Vybog</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <div class="nav-item">
+        <a href="services/index.html" class="nav-link">Services <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="services/software-development.html" class="mega-link">Software &amp; App Development <small>Custom SaaS, enterprise apps, modernization</small></a>
+            <a href="services/mobile-app-development.html" class="mega-link">Mobile App Development <small>iOS, Android, Flutter, React Native</small></a>
+            <a href="services/web-development.html" class="mega-link">Web Development <small>Marketing sites, portals, web apps</small></a>
+            <a href="services/cms-development.html" class="mega-link">CMS Development <small>WordPress, Drupal, Joomla, WooCommerce</small></a>
+            <a href="services/digital-marketing.html" class="mega-link">Digital Marketing <small>SEO, paid, content, lifecycle</small></a>
+            <a href="services/ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>RAG, multi-agent, voice, automation</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="services/index.html" class="link-arrow">See all services <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="hire-developers/index.html" class="nav-link">Hire Developers <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="hire-developers/php.html" class="mega-link">PHP Developers <small>Laravel, Symfony, WordPress core</small></a>
+            <a href="hire-developers/react.html" class="mega-link">React Developers <small>SPA, component libraries, RSC</small></a>
+            <a href="hire-developers/nodejs.html" class="mega-link">Node.js Developers <small>APIs, real-time, microservices</small></a>
+            <a href="hire-developers/python.html" class="mega-link">Python Developers <small>Django, FastAPI, data, AI</small></a>
+            <a href="hire-developers/nextjs.html" class="mega-link">Next.js Developers <small>App Router, SSR, edge runtime</small></a>
+            <a href="hire-developers/full-stack.html" class="mega-link">Full-Stack Developers <small>End-to-end ownership, MVPs</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="engagement-models.html" class="link-arrow">See engagement models <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="ai-agent-development.html" class="nav-link">AI Solutions <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>Our flagship offering</small></a>
+            <a href="ai-agent-development.html#rag" class="mega-link">RAG Knowledge Systems <small>Document &amp; enterprise Q&amp;A</small></a>
+            <a href="ai-agent-development.html#voice" class="mega-link">Voice Agents <small>Inbound and outbound voice automation</small></a>
+            <a href="ai-agent-development.html#multi" class="mega-link">Multi-Agent Orchestration <small>Supervisor + worker patterns</small></a>
+            <a href="ai-agent-development.html#workflow" class="mega-link">Workflow Automation Agents <small>Background long-running tasks</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="contact.html" class="link-arrow">Book an AI Demo <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">Company <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="about.html" class="mega-link">About Vybog <small>Our story since 2002</small></a>
+            <a href="case-studies.html" class="mega-link">Case Studies <small>Selected client work</small></a>
+            <a href="engagement-models.html" class="mega-link">Engagement Models <small>How to work with us</small></a>
+            <a href="process.html" class="mega-link">Delivery Process <small>How we ship</small></a>
+            <a href="blog/index.html" class="mega-link">Blog &amp; Insights <small>Engineering writing</small></a>
+            <a href="contact.html" class="mega-link">Contact <small>Reach our teams</small></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm desktop-only">Schedule a Call <span class="arrow">→</span></a>
+      <button class="mobile-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-backdrop"></div>
+<aside class="mobile-drawer" aria-label="Mobile menu">
+  <div class="drawer-head">
+    <a href="index.html" class="brand"><img src="assets/images/logo/vybog-icon.png" alt="" class="brand-icon" /><span class="brand-word">Vybog</span></a>
+    <button class="drawer-close" aria-label="Close menu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+  <details class="drawer-section" open>
+    <summary>Services <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="services/software-development.html">Software &amp; App Development</a>
+      <a href="services/mobile-app-development.html">Mobile App Development</a>
+      <a href="services/web-development.html">Web Development</a>
+      <a href="services/cms-development.html">CMS Development</a>
+      <a href="services/digital-marketing.html">Digital Marketing</a>
+      <a href="services/ai-agent-development.html">AI Agent Development</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Hire Developers <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="hire-developers/php.html">PHP Developers</a>
+      <a href="hire-developers/react.html">React Developers</a>
+      <a href="hire-developers/nodejs.html">Node.js Developers</a>
+      <a href="hire-developers/python.html">Python Developers</a>
+      <a href="hire-developers/nextjs.html">Next.js Developers</a>
+      <a href="hire-developers/full-stack.html">Full-Stack Developers</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>AI Solutions <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="ai-agent-development.html">AI Agent Development</a>
+      <a href="ai-agent-development.html#rag">RAG Knowledge Systems</a>
+      <a href="ai-agent-development.html#voice">Voice Agents</a>
+      <a href="ai-agent-development.html#multi">Multi-Agent Orchestration</a>
+      <a href="ai-agent-development.html#workflow">Workflow Automation</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Company <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="about.html">About</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="engagement-models.html">Engagement Models</a>
+      <a href="process.html">Process</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </details>
+  <div class="drawer-cta">
+    <a href="contact.html" class="btn btn-primary">Schedule a Call</a>
+    <a href="mailto:hello@vybogservices.com" class="btn btn-secondary">Email Us</a>
+  </div>
+</aside>
+
+<main>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="breadcrumbs fade-up">
+      <a href="index.html">Home</a><span class="sep">/</span>Terms of Service
+    </div>
+    <span class="eyebrow fade-up">Legal</span>
+    <h1 class="fade-up">Terms of Service</h1>
+    <p class="lead fade-up">The contractual terms that govern engagements with Vybog Services and Vybog Inc. for consulting, engineering, embedded developers, AI agent development, and digital marketing.</p>
+    <div class="mt-5 fade-up">
+      <span class="tag">Last updated: 26 May 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TERMS BODY ============ -->
+<section>
+  <div class="container-prose legal-prose">
+
+    <div class="legal-toc">
+      <h4>On this page</h4>
+      <ol>
+        <li><a href="#section-1">Acceptance of terms</a></li>
+        <li><a href="#section-2">Definitions</a></li>
+        <li><a href="#section-3">Description of services</a></li>
+        <li><a href="#section-4">Engagement &amp; Statement of Work</a></li>
+        <li><a href="#section-5">Fees, invoicing &amp; payment</a></li>
+        <li><a href="#section-6">Intellectual property</a></li>
+        <li><a href="#section-7">Confidentiality</a></li>
+        <li><a href="#section-8">Data protection</a></li>
+        <li><a href="#section-9">Warranties</a></li>
+        <li><a href="#section-10">Limitation of liability</a></li>
+        <li><a href="#section-11">Indemnification</a></li>
+        <li><a href="#section-12">Term &amp; termination</a></li>
+        <li><a href="#section-13">Dispute resolution &amp; governing law</a></li>
+        <li><a href="#section-14">Force majeure</a></li>
+        <li><a href="#section-15">Notices</a></li>
+        <li><a href="#section-16">Miscellaneous</a></li>
+        <li><a href="#section-17">Changes to these terms</a></li>
+        <li><a href="#section-18">Contact</a></li>
+      </ol>
+    </div>
+
+    <h2 id="section-1"><span class="sec-num">1.</span>Acceptance of Terms</h2>
+    <p>These Terms of Service ("Terms") form the master agreement between you ("Client", "you") and Vybog ("we", "us", "our") for any consulting, engineering, staffing, or marketing services we provide. They apply whenever you:</p>
+    <ul>
+      <li>execute a Statement of Work, order form, or proposal referencing these Terms;</li>
+      <li>pay an invoice issued by Vybog for services;</li>
+      <li>instruct Vybog to begin work in writing (including by email) after receiving these Terms; or</li>
+      <li>otherwise accept these Terms by conduct that reasonably indicates assent.</li>
+    </ul>
+    <p>If you are accepting these Terms on behalf of a company or other legal entity, you represent that you have the authority to bind that entity. If you do not agree with these Terms, do not engage Vybog.</p>
+    <p>Engagements are entered into with either <strong>Vybog Services</strong> (the Indian entity) or <strong>Vybog Inc.</strong> (the US entity). The relevant contracting entity is identified in the applicable Statement of Work. Unless the SOW says otherwise, that entity alone is liable under these Terms — the other is not a party to the engagement.</p>
+
+    <h2 id="section-2"><span class="sec-num">2.</span>Definitions</h2>
+    <p>The following capitalized terms have the meanings set out below:</p>
+    <ul>
+      <li><strong>"Vybog"</strong> means Vybog Services, an Indian engineering studio headquartered in Chennai, and/or Vybog Inc., a Delaware corporation headquartered in Santa Clara, California — as identified in the relevant SOW.</li>
+      <li><strong>"Services"</strong> means the consulting, software engineering, mobile and web development, CMS implementation, AI agent development, digital marketing, embedded developer ("hire-a-developer"), and related services Vybog provides under an SOW.</li>
+      <li><strong>"Client"</strong> means the entity that engages Vybog under an SOW or these Terms.</li>
+      <li><strong>"Statement of Work"</strong> or <strong>"SOW"</strong> means a written document — including order forms, proposals, and change orders — signed or otherwise accepted by both parties that describes a specific engagement, including scope, fees, timeline, deliverables, and any departures from these Terms.</li>
+      <li><strong>"Deliverables"</strong> means the work product specifically created for Client under an SOW, such as source code written for Client, designs, configurations, documentation, and prompt artifacts, excluding any Vybog Tools.</li>
+      <li><strong>"Vybog Tools"</strong> means any methodologies, frameworks, libraries, components, templates, prompt patterns, evaluation harnesses, code generators, and other materials owned or developed by Vybog independently of any engagement, including improvements and derivatives that Vybog creates during but not specifically for the engagement.</li>
+      <li><strong>"Confidential Information"</strong> means any non-public information disclosed by one party to the other, in any form, that is marked as confidential or that a reasonable person would understand to be confidential given its nature.</li>
+      <li><strong>"Effective Date"</strong> means the date specified in the SOW or, if none is specified, the date the SOW is signed by both parties.</li>
+      <li><strong>"Personnel"</strong> means Vybog's employees, contractors, and agents assigned to perform Services.</li>
+    </ul>
+
+    <h2 id="section-3"><span class="sec-num">3.</span>Description of Services</h2>
+    <p>Vybog provides the following categories of Services, individually or in combination:</p>
+    <ul>
+      <li><strong>Consulting and discovery</strong> — strategy, architecture reviews, technical due diligence, and discovery sprints that result in written recommendations.</li>
+      <li><strong>Engineering and development</strong> — custom software, SaaS products, internal tools, mobile applications, web applications, CMS implementations, modernization of legacy systems, and integrations.</li>
+      <li><strong>Hire-a-developer (embedded engineers)</strong> — placement of one or more Vybog engineers, billed hourly, monthly, or by milestone, who work alongside Client's team under Client's day-to-day direction.</li>
+      <li><strong>AI agent development</strong> — design, build, evaluation, deployment, and operation of LLM-based agents and workflows, including RAG systems, voice agents, multi-agent orchestrations, and autonomous workflow agents.</li>
+      <li><strong>Digital marketing</strong> — SEO, paid media, content production, email and lifecycle marketing, analytics, and conversion-rate optimization.</li>
+    </ul>
+    <p>The exact scope, deliverables, milestones, acceptance criteria, and fees for any engagement are set out in the applicable SOW. Where there is a conflict between these Terms and the SOW, the SOW prevails for that engagement only.</p>
+
+    <h2 id="section-4"><span class="sec-num">4.</span>Engagement &amp; Statement of Work</h2>
+    <p>Each engagement is governed by a separate SOW. An SOW typically sets out:</p>
+    <ol>
+      <li>the contracting Vybog entity and the Client entity;</li>
+      <li>the scope of work, deliverables, and acceptance criteria;</li>
+      <li>fees, currency, milestones, and payment schedule;</li>
+      <li>start date, target completion date, and dependencies on Client;</li>
+      <li>any departures from these Terms.</li>
+    </ol>
+    <p><strong>Change orders.</strong> Either party may propose a change to an SOW (scope, schedule, fees, or personnel). A change becomes binding only when both parties sign a written change order or confirm it by email in the agreed format. Until then, Vybog will continue working to the prior SOW.</p>
+    <p><strong>Acceptance.</strong> Deliverables are deemed accepted when Client confirms acceptance in writing or within ten (10) business days after delivery if Client has not provided written notice of material non-conformance during that period. Vybog will correct documented material non-conformances without additional fees.</p>
+    <p><strong>Client dependencies.</strong> Vybog's ability to deliver depends on timely access to systems, people, information, and decisions from Client. Where Client delays a dependency, Vybog will document the delay and may reasonably adjust the schedule and re-prioritize Personnel.</p>
+
+    <h2 id="section-5"><span class="sec-num">5.</span>Fees, Invoicing &amp; Payment Terms</h2>
+    <p><strong>Fees.</strong> Fees are set in the SOW and quoted in <strong>US Dollars (USD)</strong> for engagements with Vybog Inc. and in <strong>Indian Rupees (INR)</strong> or USD for engagements with Vybog Services, as specified in the SOW. Hourly, monthly, and milestone billing models are all available — the SOW will say which applies.</p>
+    <p><strong>Invoicing.</strong> Unless the SOW says otherwise:</p>
+    <ul>
+      <li>Hourly engagements are invoiced monthly in arrears.</li>
+      <li>Monthly retainer engagements are invoiced monthly in advance.</li>
+      <li>Project engagements are invoiced according to the milestone schedule in the SOW.</li>
+    </ul>
+    <p><strong>Payment terms.</strong> The default payment term is <strong>net fifteen (15) days</strong> from the invoice date. Payment is made by bank wire, ACH, SWIFT, or other method specified on the invoice. Card payments may incur a processing surcharge.</p>
+    <p><strong>Late payment.</strong> Undisputed invoices not paid by the due date accrue interest at the lower of <strong>1.5% per month</strong> or the maximum rate permitted by applicable law, from the due date until paid. Vybog may also suspend Services if payment is more than thirty (30) days overdue, after giving Client seven (7) days' written notice and an opportunity to cure.</p>
+    <p><strong>Disputed amounts.</strong> If Client disputes an invoice in good faith, Client must notify Vybog in writing within ten (10) business days of receipt, identifying the disputed line items with reasonable detail. The parties will work in good faith to resolve the dispute. Undisputed amounts remain payable on the due date.</p>
+    <p><strong>Taxes.</strong> All fees are exclusive of applicable taxes, levies, duties, withholding, GST, VAT, and similar charges. Client is responsible for such taxes other than taxes based on Vybog's net income. Where withholding tax applies, Client will pay Vybog the net amount of the invoice and provide a valid withholding tax certificate so Vybog can claim credit.</p>
+    <p><strong>Expenses.</strong> Vybog will not incur reimbursable expenses (travel, third-party tooling, paid media spend, hosting) without Client's prior written approval. Approved expenses are billed at cost without markup unless the SOW says otherwise.</p>
+
+    <h2 id="section-6"><span class="sec-num">6.</span>Intellectual Property</h2>
+    <p><strong>Deliverables.</strong> Subject to full payment of all amounts due under the relevant SOW, Vybog assigns to Client all right, title, and interest in and to the Deliverables created specifically for Client under that SOW, including source code, designs, configurations, and documentation. Until full payment is received, Vybog retains all rights and grants Client only a limited, revocable licence to use the Deliverables for evaluation and acceptance.</p>
+    <p><strong>Vybog Tools.</strong> Vybog Tools remain the sole property of Vybog. Where any Deliverable incorporates Vybog Tools, Vybog grants Client a perpetual, worldwide, royalty-free, non-exclusive licence to use, copy, modify, and distribute those Vybog Tools <em>solely</em> as embedded in the Deliverables and solely for Client's internal business purposes. Client may not extract Vybog Tools from the Deliverables and use them as a standalone product or competitive offering.</p>
+    <p><strong>Pre-existing IP.</strong> Each party retains all right, title, and interest in and to its pre-existing intellectual property, including any improvements made independently of the engagement.</p>
+    <p><strong>Open-source components.</strong> Deliverables may include third-party open-source components. Vybog will identify material open-source components in the Deliverables and the licences under which they are made available. Client is responsible for compliance with those licences for its own distribution and use.</p>
+    <p><strong>Client materials.</strong> Client grants Vybog a limited, non-exclusive licence to use Client's data, content, trademarks, and other materials solely as necessary to perform the Services.</p>
+    <p><strong>Portfolio rights.</strong> Vybog may identify Client as a customer and describe the engagement in general terms in marketing materials, case studies, and portfolio listings, provided Vybog does not disclose Confidential Information. Client may revoke this right at any time on written notice.</p>
+
+    <h2 id="section-7"><span class="sec-num">7.</span>Confidentiality</h2>
+    <p>Each party (the "Receiving Party") agrees to:</p>
+    <ul>
+      <li>use the Confidential Information of the other party (the "Disclosing Party") solely to perform its obligations and exercise its rights under these Terms and any SOW;</li>
+      <li>protect Confidential Information with at least the same degree of care it uses for its own confidential information, and no less than reasonable care;</li>
+      <li>limit access to its Personnel and professional advisors who need to know the information and are bound by confidentiality obligations no less protective than those in this section.</li>
+    </ul>
+    <p><strong>Exclusions.</strong> Confidentiality obligations do not apply to information that (a) is or becomes publicly available through no fault of the Receiving Party; (b) was lawfully known to the Receiving Party before disclosure; (c) is received from a third party without a duty of confidentiality; or (d) is independently developed without use of the Confidential Information.</p>
+    <p><strong>Compelled disclosure.</strong> If the Receiving Party is required by law or court order to disclose Confidential Information, it will, to the extent permitted, give the Disclosing Party prompt notice and reasonable cooperation to seek a protective order.</p>
+    <p><strong>Term.</strong> Confidentiality obligations survive for <strong>three (3) years</strong> after termination or expiration of the engagement. Trade secrets are protected for as long as they remain trade secrets under applicable law.</p>
+    <p><strong>Return / destruction.</strong> On termination, the Receiving Party will return or destroy Confidential Information at the Disclosing Party's option, except for one archival copy retained for compliance purposes.</p>
+
+    <h2 id="section-8"><span class="sec-num">8.</span>Data Protection</h2>
+    <p>Where Vybog processes personal data on behalf of Client, Vybog acts as a data processor and Client acts as the data controller. The parties will enter into a Data Processing Agreement ("DPA") that incorporates, at minimum, the European Commission's Standard Contractual Clauses (where transfers to a third country are involved), processor obligations under GDPR Article 28, and equivalent obligations under the California Consumer Privacy Act and the India Digital Personal Data Protection Act, 2023.</p>
+    <p>Where Vybog acts as a data controller (for example, in respect of Client's business contacts on Vybog's CRM), Vybog processes such data in accordance with its <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <p>Both parties will:</p>
+    <ul>
+      <li>maintain appropriate technical and organizational measures to protect personal data;</li>
+      <li>cooperate with each other on data subject requests and regulator queries;</li>
+      <li>notify the other party of any personal data breach affecting the engagement within seventy-two (72) hours of becoming aware of it.</li>
+    </ul>
+
+    <h2 id="section-9"><span class="sec-num">9.</span>Warranties</h2>
+    <p><strong>Workmanship warranty.</strong> Vybog warrants that the Services will be performed in a professional and workmanlike manner, by competent Personnel, in accordance with generally accepted industry standards. If Client notifies Vybog in writing of a material breach of this warranty within <strong>thirty (30) days</strong> of the Services being performed, Vybog will re-perform the affected Services at no additional charge. This is Client's sole and exclusive remedy for breach of the workmanship warranty.</p>
+    <p><strong>Authority.</strong> Each party warrants that it has full power and authority to enter into these Terms and any SOW, and that doing so does not breach any other agreement to which it is a party.</p>
+    <p><strong>Disclaimer.</strong> Except as expressly stated in this section, the Services and Deliverables are provided <strong>"as is"</strong> and Vybog disclaims all other warranties, whether express, implied, or statutory, including any warranty of merchantability, fitness for a particular purpose, non-infringement, and uninterrupted or error-free operation. Third-party components, including open-source libraries, hosted LLM APIs, cloud infrastructure, and SaaS integrations, are provided on the terms of their respective providers, and Vybog passes through any warranties those providers offer but adds none of its own.</p>
+    <p><strong>AI-specific notice.</strong> AI agents and machine-learning systems are probabilistic by nature. Outputs may vary, contain inaccuracies, or reflect biases in training data. Vybog will design, evaluate, and instrument such systems with reasonable care, but Vybog cannot warrant that an AI system will produce particular outputs or that those outputs will be free of error. Client is responsible for human review of AI outputs in any context where errors could cause harm.</p>
+
+    <h2 id="section-10"><span class="sec-num">10.</span>Limitation of Liability</h2>
+    <p><strong>Cap.</strong> Except for the Excluded Claims (defined below), each party's total cumulative liability arising out of or related to these Terms and all SOWs is limited to the <strong>fees actually paid by Client to Vybog under the relevant SOW in the twelve (12) months immediately preceding the event giving rise to the claim</strong>.</p>
+    <p><strong>Exclusion of consequential damages.</strong> Except for the Excluded Claims, neither party is liable to the other for any indirect, incidental, special, consequential, exemplary, or punitive damages, including loss of profits, loss of revenue, loss of goodwill, loss of data, or business interruption, regardless of the legal theory and even if the party was advised of the possibility of such damages.</p>
+    <p><strong>Excluded Claims.</strong> The cap and exclusion in this section do not apply to:</p>
+    <ul>
+      <li>a party's indemnification obligations under Section 11;</li>
+      <li>breach of confidentiality obligations under Section 7;</li>
+      <li>infringement or misappropriation of the other party's intellectual property rights;</li>
+      <li>amounts owed by Client to Vybog for Services rendered;</li>
+      <li>liability that cannot be limited or excluded under applicable law (such as gross negligence, wilful misconduct, fraud, or death or personal injury caused by negligence).</li>
+    </ul>
+    <p>The limitations in this section reflect an agreed allocation of risk and form an essential basis of the bargain between the parties.</p>
+
+    <h2 id="section-11"><span class="sec-num">11.</span>Indemnification</h2>
+    <p><strong>Vybog indemnity.</strong> Vybog will defend Client and its officers, directors, and employees against any third-party claim alleging that Deliverables created by Vybog (excluding Client materials, open-source components specified by Client, and third-party SaaS) infringe a valid copyright, trademark, or trade secret of that third party, and will indemnify Client for damages and reasonable legal fees finally awarded against Client (or agreed in settlement approved by Vybog) for such claim. If a Deliverable becomes, or in Vybog's opinion is likely to become, the subject of such a claim, Vybog may at its option: (a) procure the right for Client to continue using the affected Deliverable; (b) modify it so it is no longer infringing; or (c) replace it with non-infringing equivalent functionality. If none of these options is commercially reasonable, Vybog may terminate the affected SOW and refund any prepaid fees for unused Services. This is Vybog's sole and exclusive obligation, and Client's sole and exclusive remedy, for any IP infringement claim.</p>
+    <p><strong>Client indemnity.</strong> Client will defend Vybog and its officers, directors, employees, and Personnel against any third-party claim arising out of: (a) Client's data, content, trademarks, or instructions provided to Vybog; (b) Client's use of the Deliverables in combination with materials not provided or recommended by Vybog; or (c) Client's breach of any law in its use of the Services or Deliverables. Client will indemnify Vybog for damages and reasonable legal fees finally awarded against Vybog (or agreed in settlement approved by Client) for such claim.</p>
+    <p><strong>Procedure.</strong> The indemnified party must (i) promptly notify the indemnifying party of the claim, (ii) give the indemnifying party sole control of the defence and settlement (provided no settlement imposes liability on the indemnified party without its consent), and (iii) cooperate reasonably at the indemnifying party's expense.</p>
+
+    <h2 id="section-12"><span class="sec-num">12.</span>Term &amp; Termination</h2>
+    <p><strong>Term.</strong> These Terms remain in effect for as long as any SOW between the parties is in effect, and they apply to every SOW between the parties unless an SOW expressly says otherwise.</p>
+    <p><strong>Termination for convenience.</strong> Either party may terminate any SOW for convenience by giving the other party <strong>thirty (30) days' written notice</strong>, unless the SOW specifies a different notice period. Client will pay for Services performed up to the termination date and for any non-cancellable commitments Vybog reasonably made in advance.</p>
+    <p><strong>Termination for cause.</strong> Either party may terminate any SOW immediately on written notice if the other party (a) materially breaches the SOW or these Terms and fails to cure the breach within fifteen (15) days after written notice of the breach (or seven (7) days for non-payment); or (b) becomes insolvent, files for bankruptcy, or ceases to do business.</p>
+    <p><strong>Effect of termination.</strong> On termination or expiration of an SOW:</p>
+    <ul>
+      <li>Client pays Vybog for all Services performed and non-cancellable commitments up to the effective date of termination;</li>
+      <li>Vybog delivers in-progress Deliverables in their current state, subject to receipt of payment;</li>
+      <li>Each party returns or destroys the other's Confidential Information (Section 7);</li>
+      <li>Provisions that by their nature survive — including Sections 6 (IP), 7 (Confidentiality), 9 (Warranties), 10 (Liability), 11 (Indemnification), 13 (Dispute Resolution), and 16 (Miscellaneous) — remain in effect.</li>
+    </ul>
+
+    <h2 id="section-13"><span class="sec-num">13.</span>Dispute Resolution &amp; Governing Law</h2>
+    <p>The parties will first attempt to resolve any dispute through good-faith discussion between senior representatives of each party for a period of at least thirty (30) days before initiating formal proceedings.</p>
+    <p><strong>For engagements with Vybog Services (Indian entity):</strong> these Terms and any related dispute are governed by the laws of <strong>India</strong>, excluding its conflict-of-laws principles. Subject to the arbitration option below, the courts of <strong>Chennai (Madras High Court)</strong> have exclusive jurisdiction. The parties may, by mutual written agreement, refer any dispute to arbitration under the Arbitration and Conciliation Act, 1996, seated in Chennai, conducted in English, before a single arbitrator.</p>
+    <p><strong>For engagements with Vybog Inc. (US entity):</strong> these Terms and any related dispute are governed by the laws of the <strong>State of California, USA</strong>, excluding its conflict-of-laws principles. Subject to the arbitration option below, the state and federal courts located in <strong>Santa Clara County, California</strong> have exclusive jurisdiction. The parties may, by mutual written agreement, refer any dispute to binding arbitration administered by JAMS or the American Arbitration Association in Santa Clara, California, conducted in English, before a single arbitrator.</p>
+    <p>Notwithstanding the above, either party may seek injunctive or other equitable relief in any court of competent jurisdiction to protect its intellectual property or Confidential Information.</p>
+    <p>The United Nations Convention on Contracts for the International Sale of Goods does not apply to these Terms.</p>
+
+    <h2 id="section-14"><span class="sec-num">14.</span>Force Majeure</h2>
+    <p>Neither party is liable for any delay or failure to perform (other than payment obligations) caused by events beyond its reasonable control, including acts of God, natural disasters, fire, flood, earthquake, pandemics, epidemics, war, terrorism, civil unrest, governmental action, national emergencies, labour disputes, internet or telecommunications failures, and disruptions to third-party cloud, AI API, or SaaS providers on which the Services depend.</p>
+    <p>The affected party will notify the other party promptly, use reasonable efforts to mitigate the impact, and resume performance as soon as practicable. If a force majeure event continues for more than sixty (60) consecutive days, either party may terminate the affected SOW on written notice without further liability, except for Services already performed.</p>
+
+    <h2 id="section-15"><span class="sec-num">15.</span>Notices</h2>
+    <p>All formal notices under these Terms must be in writing and sent to the addresses below or to any address subsequently designated in writing. Routine project communications may be sent by email to the addresses identified in the SOW.</p>
+
+    <div class="legal-address-grid">
+      <div>
+        <h4>Vybog Services (India)</h4>
+        <p>
+          Attn: Legal &amp; Contracts<br/>
+          Vybog Services<br/>
+          Valasaravakkam, Chennai 600087<br/>
+          Tamil Nadu, India<br/>
+          Email: <a href="mailto:legal@vybogservices.com">legal@vybogservices.com</a><br/>
+          Phone: +91 44 4859 6021
+        </p>
+      </div>
+      <div>
+        <h4>Vybog Inc. (USA)</h4>
+        <p>
+          Attn: Legal &amp; Contracts<br/>
+          Vybog Inc.<br/>
+          Santa Clara, CA 95054<br/>
+          United States<br/>
+          Email: <a href="mailto:legal@vybogservices.com">legal@vybogservices.com</a><br/>
+          Phone: +1 408 657 0010
+        </p>
+      </div>
+    </div>
+
+    <p>Notices are deemed received: (a) on the date of delivery if delivered personally; (b) the next business day if sent by reputable overnight courier; (c) five business days after dispatch if sent by registered post; or (d) on the business day following confirmed email transmission to the address above.</p>
+
+    <h2 id="section-16"><span class="sec-num">16.</span>Miscellaneous</h2>
+
+    <h3>16.1 Entire agreement</h3>
+    <p>These Terms, together with the applicable SOW(s) and any DPA, constitute the entire agreement between the parties on the subject matter and supersede all prior or contemporaneous proposals, discussions, and agreements, written or oral. Pre-printed terms on Client purchase orders or vendor portals are not binding on Vybog unless Vybog expressly accepts them in a signed writing.</p>
+
+    <h3>16.2 Severability</h3>
+    <p>If any provision of these Terms is held invalid or unenforceable, the remaining provisions remain in full force and the invalid provision will be modified to the minimum extent necessary to make it enforceable while preserving its intent.</p>
+
+    <h3>16.3 Assignment</h3>
+    <p>Neither party may assign these Terms or any SOW without the other's prior written consent, except that either party may assign to a successor in connection with a merger, acquisition, or sale of all or substantially all of its assets, on written notice to the other party.</p>
+
+    <h3>16.4 No waiver</h3>
+    <p>A failure or delay by either party in enforcing any right under these Terms is not a waiver of that right. Any waiver must be in writing to be effective.</p>
+
+    <h3>16.5 Independent contractors</h3>
+    <p>The parties are independent contractors. Nothing in these Terms creates a partnership, joint venture, agency, employment, or fiduciary relationship between them. Neither party has authority to bind the other.</p>
+
+    <h3>16.6 Non-solicitation</h3>
+    <p>During any engagement and for twelve (12) months after its termination, neither party will solicit for employment any employee of the other who was directly involved in the engagement, without the other's prior written consent. General job postings open to the public and not specifically targeted at the other's employees do not violate this clause.</p>
+
+    <h3>16.7 Counterparts and electronic signatures</h3>
+    <p>SOWs and any amendments may be executed in counterparts, each of which is an original. Electronic signatures (DocuSign, Adobe Sign, or similar) and emailed PDF copies are as effective as wet-ink originals.</p>
+
+    <h3>16.8 No third-party beneficiaries</h3>
+    <p>Except as expressly stated, these Terms do not confer rights on any third party.</p>
+
+    <h3>16.9 Headings and interpretation</h3>
+    <p>Headings are for convenience only and do not affect interpretation. "Including" means "including without limitation". References to a statute include any subordinate legislation and any amendment, replacement, or re-enactment.</p>
+
+    <h2 id="section-17"><span class="sec-num">17.</span>Changes to These Terms</h2>
+    <p>Vybog may update these Terms from time to time. The "Last updated" date at the top of this page will always reflect the current version. For material changes, Vybog will provide reasonable advance notice to active Clients by email and by a notice on this page. Updated Terms apply prospectively to new SOWs signed after the effective date. Existing SOWs continue to be governed by the version of these Terms in force on their Effective Date, unless the parties expressly agree in writing to migrate to the new version.</p>
+
+    <h2 id="section-18"><span class="sec-num">18.</span>Contact</h2>
+    <p>If you have any questions about these Terms or any engagement governed by them, please contact:</p>
+    <p>
+      Legal &amp; Contracts<br/>
+      Email: <a href="mailto:legal@vybogservices.com">legal@vybogservices.com</a><br/>
+      India: +91 44 4859 6021 · USA: +1 408 657 0010
+    </p>
+    <p>For privacy-related questions, see our <a href="privacy-policy.html">Privacy Policy</a> and contact <a href="mailto:privacy@vybogservices.com">privacy@vybogservices.com</a>.</p>
+
+    <div class="legal-footnote">
+      <p>If you have questions about these terms, contact <a href="mailto:legal@vybogservices.com"><strong>legal@vybogservices.com</strong></a>. For privacy questions, contact <a href="mailto:privacy@vybogservices.com"><strong>privacy@vybogservices.com</strong></a>.</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="assets/images/logo/vybog-icon.png" alt="" />
+          <span class="footer-word">Vybog</span>
+        </div>
+        <p>An engineering studio building production software, AI agents, and embedded developer teams from Chennai and Santa Clara — since 2002.</p>
+        <p style="font-size:13px;color:var(--text-on-dark-soft);margin:0">A vy ventures company.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services/software-development.html">Software &amp; App Dev</a></li>
+          <li><a href="services/mobile-app-development.html">Mobile App Dev</a></li>
+          <li><a href="services/web-development.html">Web Development</a></li>
+          <li><a href="services/cms-development.html">CMS Development</a></li>
+          <li><a href="services/digital-marketing.html">Digital Marketing</a></li>
+          <li><a href="services/ai-agent-development.html">AI Agent Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hire Developers</h5>
+        <ul>
+          <li><a href="hire-developers/php.html">PHP Developers</a></li>
+          <li><a href="hire-developers/react.html">React Developers</a></li>
+          <li><a href="hire-developers/nodejs.html">Node.js Developers</a></li>
+          <li><a href="hire-developers/python.html">Python Developers</a></li>
+          <li><a href="hire-developers/nextjs.html">Next.js Developers</a></li>
+          <li><a href="hire-developers/full-stack.html">Full-Stack Developers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="engagement-models.html">Engagement Models</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="ai-agent-development.html">AI Solutions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2002–2026 Vybog Services. All rights reserved.</span>
+      <span>Chennai · Santa Clara · +91 44 4859 6021 · +1 408 657 0010</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

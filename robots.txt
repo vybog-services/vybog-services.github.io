@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_TEMPLATE.html
+
+Sitemap: https://vybogservices.com/sitemap.xml

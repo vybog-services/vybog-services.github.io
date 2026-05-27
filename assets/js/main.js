@@ -1,0 +1,130 @@
+/* Vybog Services — main.js (lightweight, no framework) */
+(function () {
+  'use strict';
+
+  // ---- Header scroll state ----
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const onScroll = () => {
+      if (window.scrollY > 8) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  // ---- Mobile drawer ----
+  const toggle = document.querySelector('.mobile-toggle');
+  const drawer = document.querySelector('.mobile-drawer');
+  const backdrop = document.querySelector('.mobile-backdrop');
+  const closeBtn = document.querySelector('.drawer-close');
+  const openDrawer = () => { drawer && drawer.classList.add('open'); backdrop && backdrop.classList.add('open'); document.body.style.overflow = 'hidden'; };
+  const closeDrawer = () => { drawer && drawer.classList.remove('open'); backdrop && backdrop.classList.remove('open'); document.body.style.overflow = ''; };
+  toggle && toggle.addEventListener('click', openDrawer);
+  closeBtn && closeBtn.addEventListener('click', closeDrawer);
+  backdrop && backdrop.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+
+  // ---- Mega-menu click for touch ----
+  document.querySelectorAll('.nav-item').forEach((item) => {
+    const trigger = item.querySelector('.nav-link');
+    if (!trigger) return;
+    trigger.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1080) return;
+      if (!item.querySelector('.mega-menu')) return;
+      e.preventDefault();
+      document.querySelectorAll('.nav-item.open').forEach((n) => { if (n !== item) n.classList.remove('open'); });
+      item.classList.toggle('open');
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item')) {
+      document.querySelectorAll('.nav-item.open').forEach((n) => n.classList.remove('open'));
+    }
+  });
+
+  // ---- Tab panels ----
+  document.querySelectorAll('.tabs').forEach((tabRoot) => {
+    const buttons = tabRoot.querySelectorAll('.tab-btn');
+    const panels = tabRoot.querySelectorAll('.tab-panel');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-tab');
+        buttons.forEach((b) => b.classList.toggle('active', b === btn));
+        panels.forEach((p) => p.classList.toggle('active', p.getAttribute('data-panel') === target));
+      });
+    });
+  });
+
+  // ---- Fade-up on scroll ----
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+  } else {
+    document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in-view'));
+  }
+
+  // ---- Counter animation ----
+  if ('IntersectionObserver' in window) {
+    const counters = document.querySelectorAll('[data-counter]');
+    const co = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const end = parseFloat(el.getAttribute('data-counter')) || 0;
+        const suffix = el.getAttribute('data-suffix') || '';
+        const prefix = el.getAttribute('data-prefix') || '';
+        const dur = 1400;
+        const start = performance.now();
+        const step = (t) => {
+          const p = Math.min(1, (t - start) / dur);
+          const eased = 1 - Math.pow(1 - p, 3);
+          const val = end * eased;
+          el.textContent = prefix + (end % 1 === 0 ? Math.round(val) : val.toFixed(1)) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        co.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    counters.forEach((c) => co.observe(c));
+  }
+
+  // ---- Smooth-scroll anchor offset ----
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (!id || id.length <= 1) return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      const headerH = header ? header.getBoundingClientRect().height : 0;
+      const y = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      closeDrawer();
+    });
+  });
+
+  // ---- Form: client-side guard only (replace endpoint server-side later) ----
+  document.querySelectorAll('form[data-form]').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = form.querySelector('.form-status');
+      const data = new FormData(form);
+      const email = (data.get('email') || '').toString().trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        if (status) { status.textContent = 'Please enter a valid email address.'; status.style.color = '#b00020'; }
+        return;
+      }
+      if (status) { status.textContent = 'Thanks — we will reach out within 1 business day.'; status.style.color = 'var(--success)'; }
+      form.reset();
+    });
+  });
+})();

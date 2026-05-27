@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0050C8" />
+  <title>AI Agent Development — RAG, Voice, Multi-Agent &amp; Workflow Automation — Vybog Services</title>
+  <meta name="description" content="Vybog builds production-grade AI agents — RAG knowledge systems, voice agents, multi-agent orchestration, and autonomous workflow agents. Self-hosted or cloud, with evals, guardrails, and observability shipped from day one." />
+  <link rel="icon" type="image/png" href="assets/images/logo/vybog-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Source+Serif+Pro:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container">
+      <div class="util-group">
+        <span>🇮🇳 +91 44 4859 6021</span>
+        <span class="hide-mobile">🇺🇸 +1 408 657 0010</span>
+        <a href="mailto:hello@vybogservices.com" class="hide-mobile">hello@vybogservices.com</a>
+      </div>
+      <div class="util-group">
+        <a href="case-studies.html" class="hide-mobile">Case Studies</a>
+        <a href="blog/index.html" class="hide-mobile">Insights</a>
+        <a href="contact.html">Get a Quote →</a>
+      </div>
+    </div>
+  </div>
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand" aria-label="Vybog Services home">
+      <img src="assets/images/logo/vybog-icon.png" alt="" class="brand-icon" />
+      <span class="brand-word">Vybog</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <div class="nav-item">
+        <a href="services/index.html" class="nav-link">Services <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="services/software-development.html" class="mega-link">Software &amp; App Development <small>Custom SaaS, enterprise apps, modernization</small></a>
+            <a href="services/mobile-app-development.html" class="mega-link">Mobile App Development <small>iOS, Android, Flutter, React Native</small></a>
+            <a href="services/web-development.html" class="mega-link">Web Development <small>Marketing sites, portals, web apps</small></a>
+            <a href="services/cms-development.html" class="mega-link">CMS Development <small>WordPress, Drupal, Joomla, WooCommerce</small></a>
+            <a href="services/digital-marketing.html" class="mega-link">Digital Marketing <small>SEO, paid, content, lifecycle</small></a>
+            <a href="services/ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>RAG, multi-agent, voice, automation</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="services/index.html" class="link-arrow">See all services <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="hire-developers/index.html" class="nav-link">Hire Developers <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="hire-developers/php.html" class="mega-link">PHP Developers <small>Laravel, Symfony, WordPress core</small></a>
+            <a href="hire-developers/react.html" class="mega-link">React Developers <small>SPA, component libraries, RSC</small></a>
+            <a href="hire-developers/nodejs.html" class="mega-link">Node.js Developers <small>APIs, real-time, microservices</small></a>
+            <a href="hire-developers/python.html" class="mega-link">Python Developers <small>Django, FastAPI, data, AI</small></a>
+            <a href="hire-developers/nextjs.html" class="mega-link">Next.js Developers <small>App Router, SSR, edge runtime</small></a>
+            <a href="hire-developers/full-stack.html" class="mega-link">Full-Stack Developers <small>End-to-end ownership, MVPs</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="engagement-models.html" class="link-arrow">See engagement models <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="ai-agent-development.html" class="nav-link">AI Solutions <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>Our flagship offering</small></a>
+            <a href="ai-agent-development.html#rag" class="mega-link">RAG Knowledge Systems <small>Document &amp; enterprise Q&amp;A</small></a>
+            <a href="ai-agent-development.html#voice" class="mega-link">Voice Agents <small>Inbound and outbound voice automation</small></a>
+            <a href="ai-agent-development.html#multi" class="mega-link">Multi-Agent Orchestration <small>Supervisor + worker patterns</small></a>
+            <a href="ai-agent-development.html#workflow" class="mega-link">Workflow Automation Agents <small>Background long-running tasks</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="contact.html" class="link-arrow">Book an AI Demo <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">Company <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="about.html" class="mega-link">About Vybog <small>Our story since 2002</small></a>
+            <a href="case-studies.html" class="mega-link">Case Studies <small>Selected client work</small></a>
+            <a href="engagement-models.html" class="mega-link">Engagement Models <small>How to work with us</small></a>
+            <a href="process.html" class="mega-link">Delivery Process <small>How we ship</small></a>
+            <a href="blog/index.html" class="mega-link">Blog &amp; Insights <small>Engineering writing</small></a>
+            <a href="contact.html" class="mega-link">Contact <small>Reach our teams</small></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm desktop-only">Schedule a Call <span class="arrow">→</span></a>
+      <button class="mobile-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-backdrop"></div>
+<aside class="mobile-drawer" aria-label="Mobile menu">
+  <div class="drawer-head">
+    <a href="index.html" class="brand"><img src="assets/images/logo/vybog-icon.png" alt="" class="brand-icon" /><span class="brand-word">Vybog</span></a>
+    <button class="drawer-close" aria-label="Close menu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+  <details class="drawer-section" open>
+    <summary>Services <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="services/software-development.html">Software &amp; App Development</a>
+      <a href="services/mobile-app-development.html">Mobile App Development</a>
+      <a href="services/web-development.html">Web Development</a>
+      <a href="services/cms-development.html">CMS Development</a>
+      <a href="services/digital-marketing.html">Digital Marketing</a>
+      <a href="services/ai-agent-development.html">AI Agent Development</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Hire Developers <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="hire-developers/php.html">PHP Developers</a>
+      <a href="hire-developers/react.html">React Developers</a>
+      <a href="hire-developers/nodejs.html">Node.js Developers</a>
+      <a href="hire-developers/python.html">Python Developers</a>
+      <a href="hire-developers/nextjs.html">Next.js Developers</a>
+      <a href="hire-developers/full-stack.html">Full-Stack Developers</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>AI Solutions <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="ai-agent-development.html">AI Agent Development</a>
+      <a href="ai-agent-development.html#rag">RAG Knowledge Systems</a>
+      <a href="ai-agent-development.html#voice">Voice Agents</a>
+      <a href="ai-agent-development.html#multi">Multi-Agent Orchestration</a>
+      <a href="ai-agent-development.html#workflow">Workflow Automation</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Company <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="about.html">About</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="engagement-models.html">Engagement Models</a>
+      <a href="process.html">Process</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </details>
+  <div class="drawer-cta">
+    <a href="contact.html" class="btn btn-primary">Schedule a Call</a>
+    <a href="mailto:hello@vybogservices.com" class="btn btn-secondary">Email Us</a>
+  </div>
+</aside>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow left"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy fade-up">
+        <span class="eyebrow">Flagship · AI Agent Development</span>
+        <h1>Production-grade AI agents. <span class="italic-accent">Not chatbots.</span></h1>
+        <p class="lead">Vybog builds AI agents the way mature engineering teams build backend services — with evaluation suites, guardrails, observability, and a deployment story that survives the second month. The demo is the easy part. We optimize for what happens after.</p>
+        <ul class="check-list mt-5">
+          <li><strong>Build in days, not quarters</strong> — first production agent live within 4 weeks of kickoff.</li>
+          <li><strong>Self-hosted or cloud</strong> — your VPC, your data residency rules, or our managed infra.</li>
+          <li><strong>Multi-modal</strong> — text, voice, image, document, structured data — one agent runtime.</li>
+          <li><strong>Production-grade observability</strong> — traces, evals, cost dashboards, drift alarms on day one.</li>
+        </ul>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-primary btn-lg">Book a Demo <span class="arrow">→</span></a>
+          <a href="#featured" class="btn btn-secondary btn-lg">See an Agent in Action</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-num">42</span>
+            <span class="trust-label">Agents shipped to production</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">11</span>
+            <span class="trust-label">Industries deployed in</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">18M+</span>
+            <span class="trust-label">Agent runs handled in 2025</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">Zero</span>
+            <span class="trust-label">PII incidents to date</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-up">
+        <div class="visual-card">
+          <svg viewBox="0 0 440 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;height:100%">
+            <defs>
+              <linearGradient id="agnGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3C8CF0" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#0050C8" stop-opacity="0.05"/>
+              </linearGradient>
+              <radialGradient id="agnRg" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#3C8CF0" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#3C8CF0" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="220" cy="230" r="190" fill="url(#agnRg)"/>
+            <g opacity="0.18" stroke="#0050C8" stroke-width="0.6" fill="none">
+              <circle cx="220" cy="230" r="70"/>
+              <circle cx="220" cy="230" r="130"/>
+              <circle cx="220" cy="230" r="190"/>
+            </g>
+            <!-- Center reasoning core -->
+            <g transform="translate(220,230)">
+              <circle r="58" fill="#0B1B3D"/>
+              <circle r="46" fill="#0050C8"/>
+              <g fill="#fff" font-family="Inter Tight, sans-serif" font-weight="700">
+                <text x="0" y="-4" text-anchor="middle" font-size="11" opacity="0.85">REASONING</text>
+                <text x="0" y="14" text-anchor="middle" font-size="14">CORE</text>
+              </g>
+            </g>
+            <!-- Loop nodes -->
+            <g font-family="Inter, sans-serif" font-size="11" font-weight="600">
+              <g transform="translate(220,60)">
+                <rect x="-58" y="-20" width="116" height="40" rx="20" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">PERCEPTION</text>
+              </g>
+              <g transform="translate(380,230)">
+                <rect x="-50" y="-20" width="100" height="40" rx="20" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">ACTION</text>
+              </g>
+              <g transform="translate(220,400)">
+                <rect x="-46" y="-20" width="92" height="40" rx="20" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">MEMORY</text>
+              </g>
+              <g transform="translate(60,230)">
+                <rect x="-44" y="-20" width="88" height="40" rx="20" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">TOOLS</text>
+              </g>
+            </g>
+            <!-- Loop arrows -->
+            <g stroke="#3C8CF0" stroke-width="1.6" fill="none" stroke-linecap="round">
+              <path d="M 220,100 Q 320,140 360,210" stroke-dasharray="4 4"/>
+              <path d="M 360,250 Q 330,360 240,390" stroke-dasharray="4 4"/>
+              <path d="M 200,390 Q 100,360 80,250" stroke-dasharray="4 4"/>
+              <path d="M 80,210 Q 110,140 200,100" stroke-dasharray="4 4"/>
+            </g>
+            <!-- Small dots indicating telemetry -->
+            <g fill="#3C8CF0">
+              <circle cx="300" cy="130" r="2.5"/>
+              <circle cx="340" cy="320" r="2.5"/>
+              <circle cx="140" cy="320" r="2.5"/>
+              <circle cx="100" cy="130" r="2.5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. KPI TILE STRIP ============ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="kpi-strip fade-up">
+      <div class="kpi-tile">
+        <div class="kpi-num">85%+</div>
+        <div class="kpi-label">Repeatable tasks automated on first deployment, measured against baseline volume</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="kpi-num">4-week</div>
+        <div class="kpi-label">Median discovery-to-production deployment for our first agent</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="kpi-num">2000+</div>
+        <div class="kpi-label">SaaS and on-prem integration targets in our connector library</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="kpi-num">99.9%</div>
+        <div class="kpi-label">Agent uptime over rolling 90-day window across managed deployments</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. WHAT AN AI AGENT ACTUALLY IS ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">First Principles</span>
+      <h2>What an AI agent <span class="italic-accent">actually</span> is.</h2>
+      <p>The industry has spent two years calling everything an "agent." We owe you a sharper definition before we pitch you one.</p>
+    </div>
+    <div class="container-prose fade-up" style="font-size:17px;line-height:1.7;color:var(--text-secondary);">
+      <p>An agent is software that runs a loop. It perceives the state of the world — a message, a document, a sensor reading, a database row. It reasons about that state against a goal. It picks a tool — an API, a database write, a function call, an email. It acts. Then it stores what happened in memory, and the loop runs again.</p>
+      <p>That is the whole shape. The novelty is that the reasoning step is now performed by a large language model — and that single substitution is why agents can do things that previous automation could not: read unstructured documents, conduct an open-ended conversation, write a SQL query against a schema it has never seen, draft an email a human would actually send.</p>
+      <p>What an agent <em>is not</em>: a chatbot, which is just the reasoning step with no tools and no memory. Not RPA, which is the action step with no reasoning. Not a traditional ML model, which is a classifier with no loop. Agents are the integration of all four — perception, reasoning, action, memory — into a system that can make decisions over time, against changing inputs, with measurable outcomes.</p>
+      <p>This matters in 2026 because the LLMs are finally good enough that the loop closes. A year ago, the reasoning step was unreliable enough that humans had to stay in it. Today, with the right scaffolding, agents can run unattended for hours or days against well-scoped tasks — and the engineering challenge has shifted from "can it think" to "can it operate." That second question is what Vybog answers.</p>
+    </div>
+    <div class="mt-7 fade-up" style="max-width:760px;margin-left:auto;margin-right:auto;">
+      <div class="visual-card" style="background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-md);">
+        <svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;height:auto">
+          <g font-family="Inter Tight, sans-serif" font-weight="600" font-size="14" fill="#0B1B3D">
+            <g transform="translate(80,110)">
+              <circle r="50" fill="#E8F1FE" stroke="#0050C8" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle">Perception</text>
+            </g>
+            <g transform="translate(260,110)">
+              <circle r="50" fill="#E8F1FE" stroke="#0050C8" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle">Reasoning</text>
+            </g>
+            <g transform="translate(440,110)">
+              <circle r="50" fill="#E8F1FE" stroke="#0050C8" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle">Action</text>
+            </g>
+            <g transform="translate(620,110)">
+              <circle r="50" fill="#E8F1FE" stroke="#0050C8" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle">Memory</text>
+            </g>
+          </g>
+          <g stroke="#0050C8" stroke-width="2" fill="none">
+            <path d="M 130,110 L 210,110" marker-end="url(#arr)"/>
+            <path d="M 310,110 L 390,110" marker-end="url(#arr)"/>
+            <path d="M 490,110 L 570,110" marker-end="url(#arr)"/>
+            <path d="M 620,160 Q 350,210 80,160" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+          </g>
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#0050C8"/>
+            </marker>
+          </defs>
+        </svg>
+        <p style="font-size:13px;color:var(--text-muted);margin:14px 0 0;text-align:center;">The agent loop. Memory closes the cycle, which is why agents improve and chatbots do not.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. AI AGENT CAPABILITY CATALOG ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Capability Catalog</span>
+      <h2>Twelve agent patterns we have shipped to production.</h2>
+      <p>These are not slideware. Each is a working pattern from a Vybog deployment, packaged so we can ship yours faster.</p>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="card">
+        <span class="tag">Finance Ops</span>
+        <h3 class="mt-4">Invoice Processing</h3>
+        <p>Reads PDFs and emails, extracts line items, matches against POs, routes exceptions to a human approver.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: 92% of invoices processed without human touch.</p>
+      </div>
+      <div class="card">
+        <span class="tag">People Ops</span>
+        <h3 class="mt-4">HR Onboarding</h3>
+        <p>Walks new hires through paperwork, system access, training schedules, and answers policy questions from the handbook.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: First-week ticket volume cut by 68%.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Sales</span>
+        <h3 class="mt-4">Sales Assistant</h3>
+        <p>Drafts follow-up emails, summarizes calls, updates CRM, surfaces the next-best-action for each open opportunity.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: AEs reclaim 6.2 hours/week.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Support</span>
+        <h3 class="mt-4">Customer Support</h3>
+        <p>Triages, classifies, drafts a reply, and resolves tier-1 tickets autonomously — escalating cleanly when confidence drops.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: 73% first-contact resolution.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Growth</span>
+        <h3 class="mt-4">Content Recommendation</h3>
+        <p>Personalizes onsite and email recommendations using behavioral signals plus semantic understanding of catalog content.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: +18% conversion on recommended items.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Risk</span>
+        <h3 class="mt-4">Compliance Monitoring</h3>
+        <p>Watches transactions, communications, and document flows for policy violations — generating evidence-grade audit trails.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: Flag latency under 90 seconds.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Internal</span>
+        <h3 class="mt-4">Workflow Automation</h3>
+        <p>Long-running background agents that orchestrate cross-system tasks — approvals, hand-offs, reminders, reporting.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: 4 FTEs of work absorbed per agent.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Operations</span>
+        <h3 class="mt-4">Predictive Maintenance</h3>
+        <p>Ingests telemetry, predicts component failure, opens work orders with parts and labour pre-scheduled.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: Unplanned downtime down 31%.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Analytics</span>
+        <h3 class="mt-4">Data Analysis</h3>
+        <p>Natural-language queries against warehouses — writes the SQL, runs it, returns the chart, explains the result.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: BI ticket queue empty by Wednesday.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Talent</span>
+        <h3 class="mt-4">Recruiting Assistant</h3>
+        <p>Screens inbound CVs against role rubric, schedules interviews, drafts feedback notes, surfaces silver-medalists.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: Recruiter throughput up 2.4×.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Voice</span>
+        <h3 class="mt-4">Voice Concierge</h3>
+        <p>Phone-based receptionist that answers, routes, books appointments, and emails a transcript to the right inbox.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: After-hours coverage at 100%.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Knowledge</span>
+        <h3 class="mt-4">Document Q&amp;A</h3>
+        <p>Grounded answers from contracts, runbooks, regulatory filings — with citations that link back to the source paragraph.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin:0">Outcome: Legal review time down 54%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. RAG SYSTEMS ============ -->
+<section id="rag" class="bg-soft">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">RAG · Retrieval Augmented Generation</span>
+      <h2>When agents need to know your stuff.</h2>
+      <p>An LLM is a brilliant generalist with no memory of your company. RAG is how we give it one — without retraining a model, leaking data, or hallucinating its way through a compliance audit.</p>
+    </div>
+
+    <div class="process-grid fade-up">
+      <div class="process-step">
+        <span class="process-num">1</span>
+        <h4>Ingest</h4>
+        <p>PDFs, Confluence, Notion, SharePoint, Slack, Google Drive, S3, databases — connectors normalize them.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">2</span>
+        <h4>Chunk &amp; Embed</h4>
+        <p>Semantic chunking respects document structure. Embeddings via OpenAI, Cohere, or open-source models on your hardware.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">3</span>
+        <h4>Store</h4>
+        <p>Vector store of your choice — Pinecone for managed, Qdrant for self-hosted, pgvector if you already run Postgres.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">4</span>
+        <h4>Retrieve</h4>
+        <p>Hybrid search — dense vectors plus BM25 keyword — with metadata filters for tenant, time, and permission.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">5</span>
+        <h4>Rerank &amp; Cite</h4>
+        <p>Cohere or BGE rerankers narrow to the top-k. Answers carry citations that link to the exact source paragraph.</p>
+      </div>
+    </div>
+
+    <div class="mt-7 fade-up">
+      <h3 style="text-align:center;font-size:20px;margin-bottom:24px">Vector databases we deploy</h3>
+      <div class="tech-grid">
+        <div class="tech-pill">Pinecone</div>
+        <div class="tech-pill">Weaviate</div>
+        <div class="tech-pill">Qdrant</div>
+        <div class="tech-pill">pgvector</div>
+        <div class="tech-pill">Chroma</div>
+        <div class="tech-pill">Milvus</div>
+      </div>
+    </div>
+
+    <div class="grid grid-3 mt-7 fade-up">
+      <div class="feature-card">
+        <span class="tag">Use case</span>
+        <h3 class="mt-5">Contract Q&amp;A</h3>
+        <p>Legal teams ask "what is our liability cap on the Acme MSA?" and get a grounded answer with the clause attached. No more PDF-search-bar archaeology.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Use case</span>
+        <h3 class="mt-5">Support Knowledge Base</h3>
+        <p>Agents answer customer questions from your help-centre articles, internal wiki, and last 18 months of resolved tickets — with the source linked.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Use case</span>
+        <h3 class="mt-5">Policy &amp; Compliance Bot</h3>
+        <p>Employees ask "can I expense business-class flights on a 12-hour journey?" and the bot quotes the policy paragraph back, dated and version-controlled.</p>
+      </div>
+    </div>
+
+    <div class="mt-7 fade-up" style="text-align:center;">
+      <p style="font-size:14.5px;color:var(--text-muted);">Evaluation: every RAG system we ship includes a golden-set eval suite (Ragas, LangSmith). We measure retrieval precision, answer faithfulness, and citation accuracy — and we publish the numbers to your team weekly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. MULTI-AGENT ORCHESTRATION ============ -->
+<section id="multi">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Multi-Agent Orchestration</span>
+      <h2>When one agent isn't enough.</h2>
+      <p>Past a certain complexity, stuffing everything into a single agent's context window is the wrong answer. The right answer is several specialised agents under a supervisor — each with its own tools, scope, and eval target.</p>
+    </div>
+
+    <div class="container-prose fade-up" style="font-size:17px;line-height:1.7;color:var(--text-secondary);">
+      <p>A supervisor agent receives the request, decomposes it into sub-tasks, and dispatches each to a worker agent that owns a narrow domain — search, write, calculate, query, send. The supervisor reads the results, decides whether to iterate, and presents a coherent answer back to the user. Failures are caught at the worker boundary and retried, not propagated up the stack.</p>
+      <p>This pattern is what makes long-running, multi-step work reliable. It is also what makes it observable — because every hand-off is a logged event you can trace.</p>
+    </div>
+
+    <div class="grid grid-4 fade-up mt-7">
+      <div class="feature-card">
+        <h4>Supervisor / Worker</h4>
+        <p style="font-size:14.5px">One brain delegates; specialists execute. Best for tasks with predictable sub-structure.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Hierarchical</h4>
+        <p style="font-size:14.5px">Supervisors of supervisors — for workflows with many levels of decomposition.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Hand-off</h4>
+        <p style="font-size:14.5px">Sequential pipeline; each agent fully owns its step before passing the state along.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Parallel / Reduce</h4>
+        <p style="font-size:14.5px">Fan-out the work, fan-in the result. Used for research, ranking, comparison tasks.</p>
+      </div>
+    </div>
+
+    <div class="mt-7 fade-up">
+      <h3 style="text-align:center;font-size:20px;margin-bottom:24px">Orchestration frameworks we use</h3>
+      <div class="tech-grid">
+        <div class="tech-pill">LangGraph</div>
+        <div class="tech-pill">CrewAI</div>
+        <div class="tech-pill">AutoGen</div>
+        <div class="tech-pill">OpenAI Agents SDK</div>
+        <div class="tech-pill">Temporal</div>
+        <div class="tech-pill">Inngest</div>
+      </div>
+    </div>
+
+    <div class="split mt-7 fade-up">
+      <div>
+        <span class="eyebrow">Walkthrough</span>
+        <h3>A real multi-agent flow we shipped</h3>
+        <p>A US healthcare client needed prior-authorization documents drafted from clinical notes. We built four agents under a supervisor:</p>
+        <ol style="color:var(--text-secondary);line-height:1.7;padding-left:1.2em;">
+          <li><strong>Intake agent</strong> reads the clinical note, extracts diagnosis codes, procedure codes, and patient history.</li>
+          <li><strong>Policy agent</strong> retrieves the payer's coverage criteria for the procedure (RAG over payer policy library).</li>
+          <li><strong>Drafting agent</strong> writes the prior-auth letter, citing each requirement met by the clinical evidence.</li>
+          <li><strong>Reviewer agent</strong> checks the draft against a compliance rubric; failures are sent back to drafting with feedback.</li>
+        </ol>
+        <p>The supervisor decides when the draft is ready for human sign-off. Average human review time dropped from 28 minutes to 4.</p>
+      </div>
+      <div>
+        <div class="visual-card" style="background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-md);">
+          <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-hidden="true">
+            <g font-family="Inter, sans-serif" font-size="12" font-weight="600">
+              <g transform="translate(180,70)">
+                <rect x="-70" y="-22" width="140" height="44" rx="10" fill="#0050C8"/>
+                <text y="5" text-anchor="middle" fill="#fff">SUPERVISOR</text>
+              </g>
+              <g transform="translate(60,220)">
+                <rect x="-50" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">Intake</text>
+              </g>
+              <g transform="translate(180,220)">
+                <rect x="-50" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">Policy</text>
+              </g>
+              <g transform="translate(300,220)">
+                <rect x="-50" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">Drafting</text>
+              </g>
+              <g transform="translate(180,320)">
+                <rect x="-50" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+                <text y="5" text-anchor="middle" fill="#0B1B3D">Reviewer</text>
+              </g>
+            </g>
+            <g stroke="#3C8CF0" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+              <line x1="180" y1="92" x2="60" y2="202"/>
+              <line x1="180" y1="92" x2="180" y2="202"/>
+              <line x1="180" y1="92" x2="300" y2="202"/>
+              <line x1="180" y1="238" x2="180" y2="302"/>
+              <path d="M 180,338 Q 30,330 30,220" stroke-dasharray="5 5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. VOICE AGENTS ============ -->
+<section id="voice" class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Voice Agents</span>
+      <h2>Agents that <span class="italic-accent">talk back.</span></h2>
+      <p>Phone-grade voice agents that handle real calls — booking appointments, qualifying leads, deflecting tier-one support — at latencies humans don't notice.</p>
+    </div>
+
+    <div class="container-prose fade-up" style="font-size:17px;line-height:1.7;color:var(--text-secondary);">
+      <p>The hard part of voice is not the LLM. It is the pipeline around it: streaming speech-to-text, turn detection, interruption handling, latency budget, telephony integration, and a text-to-speech voice that does not sound like a satnav reading a court summons.</p>
+      <p>Our default stack — Deepgram or Whisper for STT, GPT-4o or Claude for reasoning, ElevenLabs or Cartesia for TTS, and Twilio or LiveKit for telephony — gets us sub-800ms first-token latency on a real PSTN call. Below 800ms the conversation feels natural. Above it, people hang up.</p>
+    </div>
+
+    <div class="mt-7 fade-up">
+      <div class="visual-card" style="background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-md);max-width:880px;margin:0 auto;">
+        <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-hidden="true">
+          <g font-family="Inter Tight, sans-serif" font-weight="600" font-size="13" fill="#0B1B3D">
+            <g transform="translate(80,80)">
+              <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#E8F1FE" stroke="#0050C8"/>
+              <text y="-4" text-anchor="middle">STT</text>
+              <text y="14" text-anchor="middle" font-size="10" fill="#5C5C5C">Whisper · Deepgram</text>
+            </g>
+            <g transform="translate(280,80)">
+              <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#E8F1FE" stroke="#0050C8"/>
+              <text y="-4" text-anchor="middle">LLM</text>
+              <text y="14" text-anchor="middle" font-size="10" fill="#5C5C5C">GPT-4o · Claude</text>
+            </g>
+            <g transform="translate(480,80)">
+              <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#E8F1FE" stroke="#0050C8"/>
+              <text y="-4" text-anchor="middle">TTS</text>
+              <text y="14" text-anchor="middle" font-size="10" fill="#5C5C5C">ElevenLabs · Cartesia</text>
+            </g>
+            <g transform="translate(680,80)">
+              <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#E8F1FE" stroke="#0050C8"/>
+              <text y="-4" text-anchor="middle">SIP / PSTN</text>
+              <text y="14" text-anchor="middle" font-size="10" fill="#5C5C5C">Twilio · LiveKit</text>
+            </g>
+          </g>
+          <g stroke="#0050C8" stroke-width="2" fill="none">
+            <line x1="140" y1="80" x2="220" y2="80" marker-end="url(#arr2)"/>
+            <line x1="340" y1="80" x2="420" y2="80" marker-end="url(#arr2)"/>
+            <line x1="540" y1="80" x2="620" y2="80" marker-end="url(#arr2)"/>
+          </g>
+          <defs>
+            <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#0050C8"/>
+            </marker>
+          </defs>
+        </svg>
+        <p style="font-size:13px;color:var(--text-muted);margin:14px 0 0;text-align:center;">Latency budget: 300ms STT + 250ms LLM + 200ms TTS + 50ms transport = under 800ms first audio out.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-4 mt-7 fade-up">
+      <div class="feature-card">
+        <span class="tag">Inbound</span>
+        <h4 class="mt-5">Virtual Receptionist</h4>
+        <p style="font-size:14.5px">Answers, routes, books, and takes messages — with the same voice 24/7 across every channel.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Outbound</span>
+        <h4 class="mt-5">Lead Qualification</h4>
+        <p style="font-size:14.5px">Calls inbound leads within 60 seconds, runs the BANT script, books a fit human on the next slot.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Support</span>
+        <h4 class="mt-5">Tier-One Deflection</h4>
+        <p style="font-size:14.5px">Handles password resets, status updates, billing questions — escalating with full context when needed.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Internal</span>
+        <h4 class="mt-5">IT Help-Desk</h4>
+        <p style="font-size:14.5px">Walks employees through VPN issues, MFA resets, software installs — opens a Jira ticket if it can't resolve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. AUTONOMOUS WORKFLOW AGENTS ============ -->
+<section id="workflow">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Workflow Automation Agents</span>
+      <h2>Background workers that don't sleep.</h2>
+      <p>Not every agent is conversational. Some of the most valuable ones run quietly in the background — triggered by a queue, a schedule, or an event — and do hours of work before a human ever sees the result.</p>
+    </div>
+
+    <div class="container-prose fade-up" style="font-size:17px;line-height:1.7;color:var(--text-secondary);">
+      <p>We architect these on three primitives. <strong>Queue-driven</strong> agents pull tasks off a durable queue (SQS, Redis Streams, Temporal) and process them with retries, backoffs, and dead-letter inspection. <strong>Scheduled</strong> agents fire on cron-like rhythms — nightly enrichment, Monday-morning briefings, end-of-quarter rollups. <strong>Event-triggered</strong> agents react to webhooks, database changes, or Kafka topics — within seconds of the event, the work begins.</p>
+      <p>The discipline that separates a hobby project from a workflow agent worth running is observability. Every step is a logged event with input, output, latency, cost, and outcome. When a workflow fails — and they do — you can replay it from the last known state instead of starting over.</p>
+    </div>
+
+    <div class="mt-7 fade-up">
+      <h3 style="text-align:center;font-size:20px;margin-bottom:24px">Integrations we ship with</h3>
+      <div class="tech-grid">
+        <div class="tech-pill">Slack</div>
+        <div class="tech-pill">MS Teams</div>
+        <div class="tech-pill">Gmail</div>
+        <div class="tech-pill">Outlook</div>
+        <div class="tech-pill">Jira</div>
+        <div class="tech-pill">Linear</div>
+        <div class="tech-pill">Notion</div>
+        <div class="tech-pill">Salesforce</div>
+        <div class="tech-pill">HubSpot</div>
+        <div class="tech-pill">Zendesk</div>
+        <div class="tech-pill">NetSuite</div>
+        <div class="tech-pill">SAP</div>
+      </div>
+    </div>
+
+    <div class="grid grid-4 mt-7 fade-up">
+      <div class="feature-card">
+        <span class="tag">Finance</span>
+        <h4 class="mt-5">Invoice-to-Payment</h4>
+        <p style="font-size:14.5px">Reads invoice, matches PO, posts to ERP, schedules payment. Exceptions route to AP in Slack.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Support</span>
+        <h4 class="mt-5">Ticket Triage</h4>
+        <p style="font-size:14.5px">Classifies, tags, assigns, and drafts a first response — all before the support agent opens the ticket.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Sales</span>
+        <h4 class="mt-5">Lead Enrichment</h4>
+        <p style="font-size:14.5px">Looks up company, role, tech stack, recent news — updates the CRM record with cited sources.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Reporting</span>
+        <h4 class="mt-5">Weekly Roll-ups</h4>
+        <p style="font-size:14.5px">Queries warehouses, writes the narrative, drops a polished memo into the right Slack channel every Monday.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. AGENT OPS / LLMOPS ============ -->
+<section class="bg-soft">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Agent Ops · The Vybog Differentiator</span>
+      <h2>Production AI needs a control plane.</h2>
+      <p>This is where most agent projects fail in month two — and where we spend the most time. An agent without operational tooling is a science fair.</p>
+    </div>
+
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <h3>Prompt Versioning</h3>
+        <p>Every prompt is a deployable artifact. Versioned, code-reviewed, rolled out behind flags, rolled back on regression.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Evaluation Suites</h3>
+        <p>Golden-set evals run on every prompt change. LangSmith, Langfuse, Braintrust — pick one, we wire it in.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Guardrails</h3>
+        <p>PII redaction, jailbreak detection, profanity filtering, scope enforcement. NeMo Guardrails or Guardrails AI in the path.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Tracing</h3>
+        <p>Every agent run produces a trace tree — every tool call, every model call, every retry — searchable by user, time, outcome.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Cost &amp; Token Monitoring</h3>
+        <p>Per-tenant, per-feature, per-prompt cost dashboards. Alarms fire before your monthly invoice does.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Drift Detection</h3>
+        <p>Statistical comparison of inputs, outputs, and quality scores against baseline. Drift alerts surface before users complain.</p>
+      </div>
+    </div>
+
+    <div class="mt-7 fade-up">
+      <div class="visual-card" style="background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-md);max-width:880px;margin:0 auto;">
+        <svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-hidden="true">
+          <g font-family="Inter Tight, sans-serif" font-weight="600" font-size="13" fill="#0B1B3D">
+            <g transform="translate(120,80)">
+              <rect x="-80" y="-30" width="160" height="60" rx="10" fill="#fff" stroke="#3C8CF0" stroke-width="1.5"/>
+              <text y="-4" text-anchor="middle">DEV</text>
+              <text y="14" text-anchor="middle" font-size="10" fill="#5C5C5C">Prompt iteration · evals</text>
+            </g>
+            <g transform="translate(350,80)">
+              <rect x="-80" y="-30" width="160" height="60" rx="10" fill="#fff" stroke="#0050C8" stroke-width="1.5"/>
+              <text y="-4" text-anchor="middle">STAGING</text>
+              <text y="14" text-anchor="middle" font-size="10" fill="#5C5C5C">Shadow traffic · regression</text>
+            </g>
+            <g transform="translate(580,80)">
+              <rect x="-80" y="-30" width="160" height="60" rx="10" fill="#0050C8"/>
+              <text y="-4" text-anchor="middle" fill="#fff">PRODUCTION</text>
+              <text y="14" text-anchor="middle" font-size="10" fill="#BFC8DA">Traces · alarms · cost</text>
+            </g>
+          </g>
+          <g stroke="#0050C8" stroke-width="2" fill="none">
+            <line x1="200" y1="80" x2="270" y2="80" marker-end="url(#arr3)"/>
+            <line x1="430" y1="80" x2="500" y2="80" marker-end="url(#arr3)"/>
+          </g>
+          <defs>
+            <marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#0050C8"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. TECH STACK ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Tech Stack</span>
+      <h2>The stack behind every Vybog agent.</h2>
+      <p>We use what works in production — not what trended on X last week.</p>
+    </div>
+
+    <div class="grid grid-2 fade-up">
+      <div>
+        <h4 style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px">LLMs</h4>
+        <div class="tech-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="tech-pill">OpenAI</div>
+          <div class="tech-pill">Anthropic</div>
+          <div class="tech-pill">Mistral</div>
+          <div class="tech-pill">Llama 3</div>
+          <div class="tech-pill">Gemini</div>
+          <div class="tech-pill">DeepSeek</div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px">Frameworks</h4>
+        <div class="tech-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="tech-pill">LangChain</div>
+          <div class="tech-pill">LangGraph</div>
+          <div class="tech-pill">LlamaIndex</div>
+          <div class="tech-pill">Haystack</div>
+          <div class="tech-pill">DSPy</div>
+          <div class="tech-pill">Agents SDK</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-2 fade-up mt-7">
+      <div>
+        <h4 style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px">Vector &amp; Memory</h4>
+        <div class="tech-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="tech-pill">Pinecone</div>
+          <div class="tech-pill">Weaviate</div>
+          <div class="tech-pill">Qdrant</div>
+          <div class="tech-pill">pgvector</div>
+          <div class="tech-pill">Chroma</div>
+          <div class="tech-pill">Redis Vec</div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px">Orchestration &amp; Workflow</h4>
+        <div class="tech-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="tech-pill">Temporal</div>
+          <div class="tech-pill">Inngest</div>
+          <div class="tech-pill">Celery</div>
+          <div class="tech-pill">CrewAI</div>
+          <div class="tech-pill">AutoGen</div>
+          <div class="tech-pill">Prefect</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-2 fade-up mt-7">
+      <div>
+        <h4 style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px">Observability &amp; Evals</h4>
+        <div class="tech-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="tech-pill">LangSmith</div>
+          <div class="tech-pill">Langfuse</div>
+          <div class="tech-pill">Braintrust</div>
+          <div class="tech-pill">Helicone</div>
+          <div class="tech-pill">Ragas</div>
+          <div class="tech-pill">Phoenix</div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px">Voice</h4>
+        <div class="tech-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="tech-pill">Deepgram</div>
+          <div class="tech-pill">Whisper</div>
+          <div class="tech-pill">ElevenLabs</div>
+          <div class="tech-pill">Cartesia</div>
+          <div class="tech-pill">Twilio</div>
+          <div class="tech-pill">LiveKit</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-7 fade-up">
+      <h4 style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;text-align:center">Hosting &amp; Infra</h4>
+      <div class="tech-grid">
+        <div class="tech-pill">AWS Bedrock</div>
+        <div class="tech-pill">Azure OpenAI</div>
+        <div class="tech-pill">GCP Vertex</div>
+        <div class="tech-pill">Modal</div>
+        <div class="tech-pill">Replicate</div>
+        <div class="tech-pill">RunPod</div>
+        <div class="tech-pill">vLLM</div>
+        <div class="tech-pill">Ollama</div>
+        <div class="tech-pill">SkyPilot</div>
+        <div class="tech-pill">Kubernetes</div>
+        <div class="tech-pill">Docker</div>
+        <div class="tech-pill">Terraform</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. DEPLOYMENT MODES ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Deployment Modes</span>
+      <h2>Three places your agent can live.</h2>
+      <p>Architecture decisions made up front — not bolted on the day legal asks where the data goes.</p>
+    </div>
+
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <span class="tag">SaaS</span>
+        <h3 class="mt-5">Vybog-Managed Cloud</h3>
+        <p>Fastest to launch. We host the agent on our hardened infra, you consume an API. Best for non-regulated, non-sensitive data — and for getting to production in three weeks.</p>
+        <ul class="check-list">
+          <li>Lowest setup cost</li>
+          <li>Vybog handles patching, scaling, model updates</li>
+          <li>SLA-backed, multi-region</li>
+        </ul>
+      </div>
+      <div class="feature-card" style="border-color:var(--brand-primary)">
+        <span class="tag">Most popular</span>
+        <h3 class="mt-5">Private Cloud (VPC)</h3>
+        <p>Agent runs inside your AWS, Azure, or GCP account. Your network, your IAM, your keys. We retain operational access through a deployment role you control.</p>
+        <ul class="check-list">
+          <li>Data never leaves your account</li>
+          <li>Compatible with HIPAA, GDPR, SOC 2 controls</li>
+          <li>Choose your LLM provider — Bedrock, Vertex, Azure OpenAI</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">On-Premise</span>
+        <h3 class="mt-5">Self-Hosted</h3>
+        <p>For air-gapped environments and the most regulated industries. Open-weights models (Llama, Mistral) running on your GPUs, served via vLLM. Zero outbound traffic.</p>
+        <ul class="check-list">
+          <li>No third-party API calls</li>
+          <li>Government, defence, banking compatible</li>
+          <li>Highest engineering effort — longest lifespan</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. INDUSTRY USE-CASE TABS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Industry Use Cases</span>
+      <h2>Six industries, six agent menus.</h2>
+      <p>Where Vybog has shipped — and what we'd recommend you ship first.</p>
+    </div>
+
+    <div class="tabs fade-up">
+      <div class="tab-list" role="tablist">
+        <button class="tab-btn active" data-tab="health">Healthcare</button>
+        <button class="tab-btn" data-tab="finance">Finance</button>
+        <button class="tab-btn" data-tab="ecom">E-commerce</button>
+        <button class="tab-btn" data-tab="saas">SaaS</button>
+        <button class="tab-btn" data-tab="ops">Operations</button>
+        <button class="tab-btn" data-tab="hr">HR</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="health">
+        <ul class="check-list">
+          <li><strong>Prior-authorization drafting</strong> — clinical notes to payer-ready letters with cited coverage criteria.</li>
+          <li><strong>Patient intake voice agent</strong> — multi-lingual phone receptionist that schedules and captures history.</li>
+          <li><strong>Clinical Q&amp;A on guidelines</strong> — RAG over UpToDate, internal protocols, payer policies.</li>
+          <li><strong>Coding &amp; billing assistant</strong> — ICD-10 and CPT suggestion from chart notes, with audit trail.</li>
+          <li><strong>Care coordination workflow agent</strong> — follows up on referrals, labs, and missed appointments.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="finance">
+        <ul class="check-list">
+          <li><strong>Loan document extraction</strong> — pulls structured data from pay stubs, tax returns, bank statements.</li>
+          <li><strong>KYC &amp; AML triage</strong> — first-pass review of identity documents and transaction patterns.</li>
+          <li><strong>Wealth client briefings</strong> — drafts portfolio review notes from holdings and market events.</li>
+          <li><strong>Treasury reconciliation</strong> — matches bank feeds to ledger entries, surfaces exceptions.</li>
+          <li><strong>Regulatory filing Q&amp;A</strong> — RAG over 10-Ks, earnings calls, and SEC correspondence.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="ecom">
+        <ul class="check-list">
+          <li><strong>Shopping concierge</strong> — conversational product discovery with personalised recommendations.</li>
+          <li><strong>Returns &amp; refund deflection</strong> — policy-grounded resolution before a CSAT-killing handoff.</li>
+          <li><strong>Catalog enrichment agent</strong> — drafts copy, alt text, and metadata from supplier feeds.</li>
+          <li><strong>Review summarisation</strong> — per-product distilled pros, cons, and faithful highlights.</li>
+          <li><strong>Inventory replenishment</strong> — demand-aware purchase order suggestions, vendor-ranked.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="saas">
+        <ul class="check-list">
+          <li><strong>In-product copilot</strong> — embedded assistant that knows your schema, your data, and your features.</li>
+          <li><strong>Self-serve onboarding</strong> — guides new tenants through setup with contextual nudges.</li>
+          <li><strong>Churn-risk outreach</strong> — drafts personalised retention emails for at-risk accounts.</li>
+          <li><strong>Release-note generator</strong> — turns shipped PRs into customer-facing updates, with marketing tone.</li>
+          <li><strong>Customer support deflection</strong> — RAG on docs + ticket history with measurable resolution rates.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="ops">
+        <ul class="check-list">
+          <li><strong>Vendor onboarding</strong> — collects, validates, and files supplier docs across procurement systems.</li>
+          <li><strong>Shipment exception handler</strong> — reads carrier feeds, notifies the right customer, files claims.</li>
+          <li><strong>Maintenance work-order agent</strong> — turns equipment alerts into scheduled jobs with parts and labour.</li>
+          <li><strong>Energy-usage anomaly bot</strong> — flags consumption deviations on assets and drafts root-cause hypotheses.</li>
+          <li><strong>Safety incident triage</strong> — classifies, escalates, and drafts the regulator-facing report.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="hr">
+        <ul class="check-list">
+          <li><strong>Recruiting screener</strong> — runs rubric-based CV review and schedules interviews.</li>
+          <li><strong>Policy Q&amp;A bot</strong> — answers handbook questions with cited paragraphs and version history.</li>
+          <li><strong>Onboarding concierge</strong> — walks new hires through paperwork, access, training, intros.</li>
+          <li><strong>Performance review drafter</strong> — synthesises manager notes and peer feedback into a coherent draft.</li>
+          <li><strong>Leave &amp; expense automation</strong> — pre-fills, validates, and routes — only exceptions reach a human.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. SECURITY, PRIVACY & GOVERNANCE ============ -->
+<section class="bg-soft">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Security · Privacy · Governance</span>
+      <h2>The controls your CISO will ask about first.</h2>
+      <p>We assume your security team is going to read this page. Here's what's already built in.</p>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <h4>PII Redaction</h4>
+        <p>Inbound and outbound payloads pass through a redaction layer — names, account numbers, healthcare identifiers — before they hit any third-party model.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Role-Based Access Control</h4>
+        <p>Per-tenant, per-user, per-document permissions enforced at retrieval time. Agents only see what the requesting user is allowed to see.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Audit Logs</h4>
+        <p>Every prompt, every retrieval, every tool call, every output — captured in an append-only log with cryptographic timestamps.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Data Residency</h4>
+        <p>EU-only, US-only, India-only deployments supported. We route to model providers in your chosen region — no transatlantic detours.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Encryption</h4>
+        <p>TLS 1.3 in transit, AES-256 at rest, customer-managed keys via KMS. Secrets are never written to logs.</p>
+      </div>
+      <div class="feature-card">
+        <h4>SOC 2-Ready</h4>
+        <p>Our control matrix maps cleanly to SOC 2 Type II and ISO 27001. We hand your auditor a binder, not a panic.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. PROVEN PROCESS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Roadmap</span>
+      <h2>Five steps from "we should look into AI" to "the agent is running."</h2>
+    </div>
+    <div class="process-grid fade-up">
+      <div class="process-step">
+        <span class="process-num">1</span>
+        <h4>Discovery</h4>
+        <p>1–2 weeks. Map the workflow, the data, the integrations, the regulatory floor. Pick the first use case worth shipping.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">2</span>
+        <h4>POC</h4>
+        <p>3–4 weeks. Working agent against a small slice of real data. Eval harness from day one — no demo-ware allowed.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">3</span>
+        <h4>Production Build</h4>
+        <p>6–10 weeks. Hardened pipelines, integrations, guardrails, observability. Code review by your engineers, not just ours.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">4</span>
+        <h4>Eval &amp; Launch</h4>
+        <p>2 weeks. Golden set evaluation, shadow traffic, then staged rollout. Go-live only after the numbers say go.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">5</span>
+        <h4>Continuous Tuning</h4>
+        <p>Ongoing. Weekly eval reviews, prompt versioning, drift monitoring, cost optimisation. Owned by a named Vybog engineer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. FEATURED AGENT BUILD ============ -->
+<section id="featured" class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Featured Build</span>
+      <h2>Inside one agent we shipped this year.</h2>
+    </div>
+    <div class="split fade-up">
+      <div>
+        <span class="tag">Insurance · Multi-Agent · Voice + RAG</span>
+        <h3 class="mt-5">Claims Intake at a Mid-Market Insurer</h3>
+        <p class="lead">A specialty insurer with 90,000 annual claims wanted to cut the time from first notice of loss to adjuster assignment from 4 hours to under 15 minutes — without firing the call-centre.</p>
+        <p>We built a three-agent system. A voice agent answers the claimant's call, captures the structured facts, and confirms identity. A retrieval agent pulls the policy document, prior claims, and risk profile. A coordination agent classifies the claim, routes to the correct adjuster pool, and drafts the opening file note.</p>
+        <p>Eight weeks from kickoff. Live in production behind a feature flag for four weeks. Full rollout by week 14.</p>
+        <h4 class="mt-6">Outcomes after 90 days live</h4>
+        <ul class="check-list">
+          <li>Mean time-to-assignment dropped from 247 minutes to 11 minutes.</li>
+          <li>Call-centre headcount unchanged — staff redeployed to complex losses.</li>
+          <li>97% of intakes captured on first call. 100% of recordings retained for audit.</li>
+          <li>Estimated annual savings: USD 2.3M against an engagement cost of USD 312K.</li>
+        </ul>
+        <div class="mt-6">
+          <a href="case-studies.html" class="btn btn-secondary">More case studies <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="visual-card" style="background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-md);">
+          <div style="display:flex;flex-direction:column;gap:18px;">
+            <div style="border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:16px;background:var(--bg-tint);">
+              <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Time to Assignment</div>
+              <div style="font-family:var(--font-display);font-size:32px;font-weight:600;color:var(--brand-primary);letter-spacing:-0.02em;">247m → 11m</div>
+              <div style="font-size:13px;color:var(--text-secondary);margin-top:6px;">95.5% reduction, measured weeks 4–12 post-launch.</div>
+            </div>
+            <div style="border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:16px;background:var(--bg-tint);">
+              <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">First-Call Capture</div>
+              <div style="font-family:var(--font-display);font-size:32px;font-weight:600;color:var(--brand-primary);letter-spacing:-0.02em;">97%</div>
+              <div style="font-size:13px;color:var(--text-secondary);margin-top:6px;">No callback required for further information.</div>
+            </div>
+            <div style="border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:16px;background:var(--bg-tint);">
+              <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Annual Savings</div>
+              <div style="font-family:var(--font-display);font-size:32px;font-weight:600;color:var(--brand-primary);letter-spacing:-0.02em;">$2.3M</div>
+              <div style="font-size:13px;color:var(--text-secondary);margin-top:6px;">Against USD 312K engagement spend.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 16. WHY VYBOG FOR AI AGENTS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Why Vybog</span>
+      <h2>Four reasons we win agent work.</h2>
+    </div>
+    <div class="grid grid-4 fade-up">
+      <div class="feature-card">
+        <h3>Engineering company, not a wrapper studio</h3>
+        <p>Two decades of shipping production software before LLMs existed. We can debug the database, harden the API, and build the agent — without subcontracting any of it.</p>
+      </div>
+      <div class="feature-card">
+        <h3>We measure what we ship</h3>
+        <p>Every agent goes live with an eval suite, a baseline, and a target. If the numbers don't hold up post-launch, we are still on the hook to make them.</p>
+      </div>
+      <div class="feature-card">
+        <h3>On-prem capable</h3>
+        <p>We have shipped agents on customer GPUs with zero outbound traffic. If your data legitimately cannot leave the building, we can still deploy.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Time-zone overlap with US</h3>
+        <p>Chennai engineering plus Santa Clara client management means four hours of live US-Pacific overlap — without paying US-only rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 17. AI-SPECIFIC FAQ ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions our clients ask in week one.</h2>
+    </div>
+    <div class="container-narrow fade-up">
+      <details class="faq-item">
+        <summary>What kind of ROI timeline should we expect on an AI agent?</summary>
+        <div class="faq-answer">Most of our deployments pay back the engagement cost within 4–9 months. The fastest ROI comes from agents that automate high-volume, low-variance tasks — invoice processing, ticket triage, lead enrichment. Voice agents and complex multi-agent systems typically hit payback at 6–12 months.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do you handle data security when our prompts pass through third-party models?</summary>
+        <div class="faq-answer">Three layers. We use enterprise endpoints from OpenAI, Anthropic, and the major clouds, which contractually prohibit training on your data. We strip PII before payloads leave your VPC. And for the most sensitive workloads, we offer on-prem deployments with open-weights models on your own GPUs — zero outbound traffic.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What about model lock-in? What if OpenAI doubles its prices?</summary>
+        <div class="faq-answer">We design every agent against a model abstraction layer — typically LiteLLM or a custom router. Swapping from GPT-4o to Claude Sonnet, or to a self-hosted Llama, is a configuration change plus an eval re-run, not a re-build. Most of our production agents already run on two or three models in parallel.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you really deploy on-premise, or is that a marketing line?</summary>
+        <div class="faq-answer">We have shipped fully on-premise agents for two regulated clients — one in defence, one in banking. Open-weights models (Llama 3, Mistral) served via vLLM on customer GPUs, with self-hosted vector stores and observability. It is more engineering effort than SaaS, but it is genuinely supported.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How rigorous is your evaluation methodology?</summary>
+        <div class="faq-answer">Every agent gets a golden set — usually 100 to 1,000 hand-labelled examples — that we run on every prompt change. We measure retrieval precision, answer faithfulness, citation accuracy, and task-specific metrics. Results are published weekly to your team. We do not consider an agent "ready" until it passes target thresholds on the golden set, on a synthetic adversarial set, and on a sample of real production traffic in shadow mode.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How many systems can you actually integrate with?</summary>
+        <div class="faq-answer">Our connector library covers 2,000+ targets through a mix of direct API integrations, MCP servers, and middleware (Zapier, Make, n8n, Workato). Anything with a REST or GraphQL surface we can wire up in days. Legacy on-prem systems with SOAP or flat-file interfaces take a bit longer but are routine.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What happens when the model drifts or degrades after launch?</summary>
+        <div class="faq-answer">Drift monitoring is built in. We track input distributions, output distributions, and quality scores against the baseline established at launch. When statistical alarms fire — usually before users notice — the on-call Vybog engineer investigates. Most drift is upstream (new vendor formats, new product SKUs); some is the model itself (provider-side updates). Either way, we have the trace tree and the eval suite to reproduce and fix.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 18. CTA BANNER ============ -->
+<section>
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <span class="eyebrow" style="color:var(--brand-secondary)">Book a demo</span>
+      <h2>Thirty minutes with an engineer who has shipped 42 agents.</h2>
+      <p>Bring a use case. Leave with a written sketch of how Vybog would design the agent, the integrations, and the eval target — and a number for the first phase.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-on-dark btn-lg">Book a 30-minute AI Agent Demo <span class="arrow">→</span></a>
+        <a href="mailto:hello@vybogservices.com" class="btn btn-ghost" style="color:var(--text-on-dark)">hello@vybogservices.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="assets/images/logo/vybog-icon.png" alt="" />
+          <span class="footer-word">Vybog</span>
+        </div>
+        <p>An engineering studio building production software, AI agents, and embedded developer teams from Chennai and Santa Clara — since 2002.</p>
+        <p style="font-size:13px;color:var(--text-on-dark-soft);margin:0">A vy ventures company.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services/software-development.html">Software &amp; App Dev</a></li>
+          <li><a href="services/mobile-app-development.html">Mobile App Dev</a></li>
+          <li><a href="services/web-development.html">Web Development</a></li>
+          <li><a href="services/cms-development.html">CMS Development</a></li>
+          <li><a href="services/digital-marketing.html">Digital Marketing</a></li>
+          <li><a href="services/ai-agent-development.html">AI Agent Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hire Developers</h5>
+        <ul>
+          <li><a href="hire-developers/php.html">PHP Developers</a></li>
+          <li><a href="hire-developers/react.html">React Developers</a></li>
+          <li><a href="hire-developers/nodejs.html">Node.js Developers</a></li>
+          <li><a href="hire-developers/python.html">Python Developers</a></li>
+          <li><a href="hire-developers/nextjs.html">Next.js Developers</a></li>
+          <li><a href="hire-developers/full-stack.html">Full-Stack Developers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="engagement-models.html">Engagement Models</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="ai-agent-development.html">AI Solutions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2002–2026 Vybog Services. All rights reserved.</span>
+      <span>Chennai · Santa Clara · +91 44 4859 6021 · +1 408 657 0010</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

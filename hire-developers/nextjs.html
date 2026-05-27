@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0050C8" />
+  <title>Hire Next.js Developers — App Router, RSC, Edge · Vybog Services</title>
+  <meta name="description" content="Hire Next.js developers fluent in App Router, React Server Components, ISR, edge runtime, and middleware patterns. Vercel and self-hosted deployment expertise." />
+  <link rel="icon" type="image/png" href="../assets/images/logo/vybog-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Source+Serif+Pro:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container">
+      <div class="util-group">
+        <span>🇮🇳 +91 44 4859 6021</span>
+        <span class="hide-mobile">🇺🇸 +1 408 657 0010</span>
+        <a href="mailto:hello@vybogservices.com" class="hide-mobile">hello@vybogservices.com</a>
+      </div>
+      <div class="util-group">
+        <a href="../case-studies.html" class="hide-mobile">Case Studies</a>
+        <a href="../blog/index.html" class="hide-mobile">Insights</a>
+        <a href="../contact.html">Get a Quote →</a>
+      </div>
+    </div>
+  </div>
+  <div class="container nav-wrap">
+    <a href="../index.html" class="brand" aria-label="Vybog Services home">
+      <img src="../assets/images/logo/vybog-icon.png" alt="" class="brand-icon" />
+      <span class="brand-word">Vybog</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <div class="nav-item">
+        <a href="../services/index.html" class="nav-link">Services <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="../services/software-development.html" class="mega-link">Software &amp; App Development <small>Custom SaaS, enterprise apps, modernization</small></a>
+            <a href="../services/mobile-app-development.html" class="mega-link">Mobile App Development <small>iOS, Android, Flutter, React Native</small></a>
+            <a href="../services/web-development.html" class="mega-link">Web Development <small>Marketing sites, portals, web apps</small></a>
+            <a href="../services/cms-development.html" class="mega-link">CMS Development <small>WordPress, Drupal, Joomla, WooCommerce</small></a>
+            <a href="../services/digital-marketing.html" class="mega-link">Digital Marketing <small>SEO, paid, content, lifecycle</small></a>
+            <a href="../services/ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>RAG, multi-agent, voice, automation</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="../services/index.html" class="link-arrow">See all services <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../hire-developers/index.html" class="nav-link">Hire Developers <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="../hire-developers/php.html" class="mega-link">PHP Developers <small>Laravel, Symfony, WordPress core</small></a>
+            <a href="../hire-developers/react.html" class="mega-link">React Developers <small>SPA, component libraries, RSC</small></a>
+            <a href="../hire-developers/nodejs.html" class="mega-link">Node.js Developers <small>APIs, real-time, microservices</small></a>
+            <a href="../hire-developers/python.html" class="mega-link">Python Developers <small>Django, FastAPI, data, AI</small></a>
+            <a href="../hire-developers/nextjs.html" class="mega-link">Next.js Developers <small>App Router, SSR, edge runtime</small></a>
+            <a href="../hire-developers/full-stack.html" class="mega-link">Full-Stack Developers <small>End-to-end ownership, MVPs</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="../engagement-models.html" class="link-arrow">See engagement models <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../ai-agent-development.html" class="nav-link">AI Solutions <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="../ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>Our flagship offering</small></a>
+            <a href="../ai-agent-development.html#rag" class="mega-link">RAG Knowledge Systems <small>Document &amp; enterprise Q&amp;A</small></a>
+            <a href="../ai-agent-development.html#voice" class="mega-link">Voice Agents <small>Inbound and outbound voice automation</small></a>
+            <a href="../ai-agent-development.html#multi" class="mega-link">Multi-Agent Orchestration <small>Supervisor + worker patterns</small></a>
+            <a href="../ai-agent-development.html#workflow" class="mega-link">Workflow Automation Agents <small>Background long-running tasks</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="../contact.html" class="link-arrow">Book an AI Demo <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../about.html" class="nav-link">Company <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="../about.html" class="mega-link">About Vybog <small>Our story since 2002</small></a>
+            <a href="../case-studies.html" class="mega-link">Case Studies <small>Selected client work</small></a>
+            <a href="../engagement-models.html" class="mega-link">Engagement Models <small>How to work with us</small></a>
+            <a href="../process.html" class="mega-link">Delivery Process <small>How we ship</small></a>
+            <a href="../blog/index.html" class="mega-link">Blog &amp; Insights <small>Engineering writing</small></a>
+            <a href="../contact.html" class="mega-link">Contact <small>Reach our teams</small></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-cta">
+      <a href="../contact.html" class="btn btn-primary btn-sm desktop-only">Schedule a Call <span class="arrow">→</span></a>
+      <button class="mobile-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-backdrop"></div>
+<aside class="mobile-drawer" aria-label="Mobile menu">
+  <div class="drawer-head">
+    <a href="../index.html" class="brand"><img src="../assets/images/logo/vybog-icon.png" alt="" class="brand-icon" /><span class="brand-word">Vybog</span></a>
+    <button class="drawer-close" aria-label="Close menu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+  <details class="drawer-section" open>
+    <summary>Services <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="../services/software-development.html">Software &amp; App Development</a>
+      <a href="../services/mobile-app-development.html">Mobile App Development</a>
+      <a href="../services/web-development.html">Web Development</a>
+      <a href="../services/cms-development.html">CMS Development</a>
+      <a href="../services/digital-marketing.html">Digital Marketing</a>
+      <a href="../services/ai-agent-development.html">AI Agent Development</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Hire Developers <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="../hire-developers/php.html">PHP Developers</a>
+      <a href="../hire-developers/react.html">React Developers</a>
+      <a href="../hire-developers/nodejs.html">Node.js Developers</a>
+      <a href="../hire-developers/python.html">Python Developers</a>
+      <a href="../hire-developers/nextjs.html">Next.js Developers</a>
+      <a href="../hire-developers/full-stack.html">Full-Stack Developers</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>AI Solutions <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="../ai-agent-development.html">AI Agent Development</a>
+      <a href="../ai-agent-development.html#rag">RAG Knowledge Systems</a>
+      <a href="../ai-agent-development.html#voice">Voice Agents</a>
+      <a href="../ai-agent-development.html#multi">Multi-Agent Orchestration</a>
+      <a href="../ai-agent-development.html#workflow">Workflow Automation</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Company <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="../about.html">About</a>
+      <a href="../case-studies.html">Case Studies</a>
+      <a href="../engagement-models.html">Engagement Models</a>
+      <a href="../process.html">Process</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+  </details>
+  <div class="drawer-cta">
+    <a href="../contact.html" class="btn btn-primary">Schedule a Call</a>
+    <a href="mailto:hello@vybogservices.com" class="btn btn-secondary">Email Us</a>
+  </div>
+</aside>
+
+<main>
+
+<!-- ============ PAGE HERO WITH FORM ============ -->
+<section class="page-hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="breadcrumbs"><a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Hire Developers</a><span class="sep">/</span>Next.js</div>
+    <div class="hero-grid" style="grid-template-columns:1.1fr 1fr">
+      <div>
+        <span class="eyebrow">Next.js Developers</span>
+        <h1>Production React, at scale, on the edge.</h1>
+        <p class="lead">When React alone is not enough — when you need server components, ISR-cached pages, edge middleware, and a deployment story that does not depend on your CDN being heroic.</p>
+        <div class="hero-trust">
+          <div class="trust-item"><span class="trust-num">Next 15</span><span class="trust-label">App Router, Turbopack default</span></div>
+          <div class="trust-item"><span class="trust-num">RSC-native</span><span class="trust-label">Built in production, not blog posts</span></div>
+          <div class="trust-item"><span class="trust-num">Vercel + self-host</span><span class="trust-label">Comfortable in either</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="padding:32px">
+          <h3 style="margin-bottom:8px">Describe the product</h3>
+          <p style="font-size:14.5px;margin-bottom:20px">We will return two named Next.js engineers and their availability within one business day.</p>
+          <form class="contact-form" data-form>
+            <div class="field">
+              <label for="nx-name">Your name</label>
+              <input id="nx-name" type="text" name="name" required />
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="nx-email">Work email</label>
+                <input id="nx-email" type="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="nx-company">Company</label>
+                <input id="nx-company" type="text" name="company" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="nx-skills">Next.js skills needed</label>
+              <textarea id="nx-skills" name="skills" placeholder="App Router migration, ISR for product pages, edge middleware for auth..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Request engineer profiles <span class="arrow">→</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. APP ROUTER vs PAGES ROUTER ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">App Router vs. Pages Router</span>
+      <h2>An opinionated comparison — written by people shipping both.</h2>
+      <p>The Next.js community is still divided on this. Here is the version that reflects what we actually recommend to clients on engagement after engagement.</p>
+    </div>
+    <div class="fade-up" style="overflow-x:auto">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>App Router</th>
+            <th>Pages Router</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">Default for new projects</td>
+            <td>Yes, since Next 13.4</td>
+            <td>Only when team familiarity dictates</td>
+          </tr>
+          <tr>
+            <td class="row-label">Data fetching model</td>
+            <td>RSC + server actions — direct DB access in components</td>
+            <td>getServerSideProps / getStaticProps — explicit boundary</td>
+          </tr>
+          <tr>
+            <td class="row-label">Bundle-size pressure</td>
+            <td>Lower — server components ship zero JS</td>
+            <td>Higher — every page hydrates fully</td>
+          </tr>
+          <tr>
+            <td class="row-label">Mental model cost</td>
+            <td>Higher — RSC, Suspense, server/client boundary</td>
+            <td>Lower — familiar React mental model</td>
+          </tr>
+          <tr>
+            <td class="row-label">Ecosystem maturity</td>
+            <td>Most major libs now RSC-aware, some still adapt</td>
+            <td>Stable, everything works, no surprises</td>
+          </tr>
+          <tr>
+            <td class="row-label">Migration approach</td>
+            <td>Incremental — route-by-route, both can coexist</td>
+            <td>Stay on it if migration ROI is unclear</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13.5px;color:var(--text-muted);margin-top:16px;text-align:center">Short version: new project, App Router. Existing Pages Router app that ships, stay — until a feature is genuinely easier in the App Router.</p>
+  </div>
+</section>
+
+<!-- ============ 3. SPECIALIZATIONS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Specializations</span>
+      <h2>Four Next.js disciplines on our bench.</h2>
+      <p>The capabilities our engineers go deep on — and the work clients hire us specifically for.</p>
+    </div>
+    <div class="grid grid-4 fade-up">
+      <div class="feature-card">
+        <h3>RSC architecture</h3>
+        <p>Server-client boundary discipline, data fetching co-located with rendering, streaming responses with Suspense, server actions for mutations without an API layer.</p>
+      </div>
+      <div class="feature-card">
+        <h3>ISR &amp; cache layers</h3>
+        <p>Incremental static regeneration tuned per route, on-demand revalidation, tag-based cache invalidation, Vercel Data Cache plus your own Redis when the product needs it.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Edge runtime</h3>
+        <p>Cloudflare Workers, Vercel Edge — for auth checks, A/B routing, geo personalization, rewriting requests sub-50ms before the origin sees them.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Middleware patterns</h3>
+        <p>Auth-gated route segments, tenant resolution from subdomain, feature flag routing, rate limiting at the edge, custom headers for downstream services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. SEO + NEXT.JS SWEET SPOT ============ -->
+<section class="bg-soft">
+  <div class="container-narrow fade-up">
+    <span class="eyebrow">Editorial</span>
+    <h2>The SEO case for Next.js — without the hype.</h2>
+    <p class="lead">A single-page app feels fast to the developer who built it. It does not feel fast to the search crawler, the social-card scraper, the slow phone on a hotel WiFi, or the user who lost JavaScript a minute ago.</p>
+    <p>Next.js earned its position in the market by collapsing that whole conversation: server-rendered HTML out of the box, with progressive enhancement, with the same React you already write. Pages that look fully rendered to the crawler, that show meaningful content before JavaScript boots, that let Open Graph cards work without a separate static-site generator.</p>
+    <p>For content-driven products — SaaS marketing sites, documentation portals, e-commerce storefronts, customer help centers, B2B landing pages, anything where organic search is a meaningful channel — Next.js is the most defensible technical choice in the React ecosystem in 2026. The performance budget is set up correctly by default and the SEO surface area is not an afterthought added in week ten.</p>
+  </div>
+</section>
+
+<!-- ============ 5. DEPLOYMENT FLAVORS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Deployment</span>
+      <h2>Three places we deploy Next.js — with honest trade-offs.</h2>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <span class="tag">Easiest</span>
+        <h3 class="mt-5">Vercel</h3>
+        <p>The path of least resistance. Edge functions, image optimization, ISR, observability — all wired in. Best for product teams who do not want to think about infrastructure.</p>
+        <p style="font-size:13.5px;color:var(--text-muted);margin:0"><strong>Watch-out:</strong> bandwidth and function-invocation cost at scale.</p>
+      </div>
+      <div class="feature-card" style="border-color:var(--brand-primary)">
+        <span class="tag">Most flexible</span>
+        <h3 class="mt-5">Self-hosted Node</h3>
+        <p>Standalone build mode, Node 20 LTS behind a reverse proxy, your own ISR cache, your own CDN in front. Works on any cloud and on bare metal.</p>
+        <p style="font-size:13.5px;color:var(--text-muted);margin:0"><strong>Watch-out:</strong> you own the edge function story yourself.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Modern</span>
+        <h3 class="mt-5">Containerized</h3>
+        <p>Docker image deployed to Kubernetes, Cloud Run, ECS, or Fly.io. Reproducible builds, multi-region deploys, autoscaling, integrates with your existing platform team.</p>
+        <p style="font-size:13.5px;color:var(--text-muted);margin:0"><strong>Watch-out:</strong> cold starts matter — size and warm-up matter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. WHAT WE BUILD MOST ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Build Patterns</span>
+      <h2>What we build most with Next.js.</h2>
+      <p>Four product shapes that show up on at least half of our Next.js engagements.</p>
+    </div>
+    <div class="grid grid-4 fade-up">
+      <div class="card">
+        <h3>SaaS frontends</h3>
+        <p>The application shell behind your customer login. Auth via NextAuth or Clerk, server actions for mutations, RSC for dashboards that need to load with real data, not skeletons.</p>
+      </div>
+      <div class="card">
+        <h3>Marketing sites</h3>
+        <p>Headless CMS in the back (Sanity, Contentful, Payload, WordPress), ISR-cached pages, MDX for engineering blogs, lighthouse scores green on launch day.</p>
+      </div>
+      <div class="card">
+        <h3>Customer portals</h3>
+        <p>Tenant-aware routing through middleware, RBAC enforced server-side, data fetched via server components with row-level security at the database.</p>
+      </div>
+      <div class="card">
+        <h3>E-commerce storefronts</h3>
+        <p>Shopify Hydrogen alternatives, BigCommerce headless, custom catalog systems. ISR for product pages, edge personalization for pricing and promotions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ENGAGEMENT + RATES ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Engagement &amp; Rates</span>
+      <h2>Next.js rate card.</h2>
+      <p>The premium over plain React reflects the additional ops and infra discipline expected of a Next.js hire.</p>
+    </div>
+    <div class="fade-up" style="overflow-x:auto">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Seniority</th>
+            <th>Hourly</th>
+            <th>Monthly</th>
+            <th>Project (6-week launch)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">Mid Next.js</td>
+            <td>$36–48</td>
+            <td>$4,200–5,400</td>
+            <td>from $20,000</td>
+          </tr>
+          <tr>
+            <td class="row-label">Senior Next.js</td>
+            <td>$48–62</td>
+            <td>$5,600–7,200</td>
+            <td>from $26,000</td>
+          </tr>
+          <tr>
+            <td class="row-label">Lead / Architect</td>
+            <td>$62–80</td>
+            <td>$7,200–9,200</td>
+            <td>from $36,000</td>
+          </tr>
+          <tr>
+            <td class="row-label">Principal / Platform</td>
+            <td>$80–105</td>
+            <td>$9,200–12,500</td>
+            <td>on request</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. NEXT-SPECIFIC FAQ ============ -->
+<section class="bg-soft">
+  <div class="container-narrow fade-up">
+    <span class="eyebrow">Next.js FAQ</span>
+    <h2>Three questions Next.js buyers ask.</h2>
+    <div class="mt-7">
+      <details class="faq-item" open>
+        <summary>We are stuck on Pages Router. Is it worth migrating to App Router?</summary>
+        <div class="faq-answer">Usually not as a single big project. The App Router and Pages Router can coexist in the same Next.js app, route by route, indefinitely. We typically migrate the high-value routes that benefit from RSC (data-heavy dashboards, SEO-critical pages) and leave the rest until they need to change anyway. A "full migration" project usually does not justify itself on a P&amp;L.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Vercel or self-hosted — what do you recommend?</summary>
+        <div class="faq-answer">Vercel until your bandwidth or function-invocation bill starts pinching, or until you have a security or sovereignty requirement that Vercel does not satisfy. After that, self-hosted on Cloud Run, ECS, or Fly.io with a managed Postgres and a Redis cache. We have moved several clients off Vercel and the math is usually clearer than people expect.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do we still need a separate backend, or can server actions replace it?</summary>
+        <div class="faq-answer">Server actions cover a lot — they remove the need for a thin API layer between your client and your database for the common CRUD case. But you will still want a real backend for: any operation that needs to outlive the request, anything that other consumers (mobile apps, partners, internal services) need to call, and anything regulated or audited. We will help you draw that line on the architecture call.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. CTA BANNER ============ -->
+<section>
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <span class="eyebrow" style="color:var(--brand-secondary)">Hire Next.js Developers</span>
+      <h2>RSC, ISR, edge — without the bill at the end of the quarter.</h2>
+      <p>Tell us the product shape. We will tell you which Next.js engineer on our bench fits — and what to deploy onto.</p>
+      <div class="cta-actions">
+        <a href="../contact.html" class="btn btn-on-dark btn-lg">Request profiles <span class="arrow">→</span></a>
+        <a href="index.html" class="btn btn-ghost" style="color:#fff">Back to all stacks</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="../assets/images/logo/vybog-icon.png" alt="" />
+          <span class="footer-word">Vybog</span>
+        </div>
+        <p>An engineering studio building production software, AI agents, and embedded developer teams from Chennai and Santa Clara — since 2002.</p>
+        <p style="font-size:13px;color:var(--text-on-dark-soft);margin:0">A vy ventures company.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="../services/software-development.html">Software &amp; App Dev</a></li>
+          <li><a href="../services/mobile-app-development.html">Mobile App Dev</a></li>
+          <li><a href="../services/web-development.html">Web Development</a></li>
+          <li><a href="../services/cms-development.html">CMS Development</a></li>
+          <li><a href="../services/digital-marketing.html">Digital Marketing</a></li>
+          <li><a href="../services/ai-agent-development.html">AI Agent Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hire Developers</h5>
+        <ul>
+          <li><a href="../hire-developers/php.html">PHP Developers</a></li>
+          <li><a href="../hire-developers/react.html">React Developers</a></li>
+          <li><a href="../hire-developers/nodejs.html">Node.js Developers</a></li>
+          <li><a href="../hire-developers/python.html">Python Developers</a></li>
+          <li><a href="../hire-developers/nextjs.html">Next.js Developers</a></li>
+          <li><a href="../hire-developers/full-stack.html">Full-Stack Developers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../case-studies.html">Case Studies</a></li>
+          <li><a href="../engagement-models.html">Engagement Models</a></li>
+          <li><a href="../process.html">Process</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../ai-agent-development.html">AI Solutions</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2002–2026 Vybog Services. All rights reserved.</span>
+      <span>Chennai · Santa Clara · +91 44 4859 6021 · +1 408 657 0010</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

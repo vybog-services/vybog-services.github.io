@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0050C8" />
+  <title>Vybog Services — Engineering Studio for Software, AI Agents & On-Demand Developers</title>
+  <meta name="description" content="Vybog is an India + USA engineering studio building production software, AI agents, and embedded developer teams since 2002. Software, mobile, CMS, digital marketing and AI agent development for founders and growth-stage companies." />
+  <link rel="icon" type="image/png" href="assets/images/logo/vybog-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Source+Serif+Pro:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container">
+      <div class="util-group">
+        <span>🇮🇳 +91 44 4859 6021</span>
+        <span class="hide-mobile">🇺🇸 +1 408 657 0010</span>
+        <a href="mailto:hello@vybogservices.com" class="hide-mobile">hello@vybogservices.com</a>
+      </div>
+      <div class="util-group">
+        <a href="case-studies.html" class="hide-mobile">Case Studies</a>
+        <a href="blog/index.html" class="hide-mobile">Insights</a>
+        <a href="contact.html">Get a Quote →</a>
+      </div>
+    </div>
+  </div>
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand" aria-label="Vybog Services home">
+      <img src="assets/images/logo/vybog-icon.png" alt="" class="brand-icon" />
+      <span class="brand-word">Vybog</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <div class="nav-item">
+        <a href="services/index.html" class="nav-link">Services <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="services/software-development.html" class="mega-link">Software & App Development <small>Custom SaaS, enterprise apps, modernization</small></a>
+            <a href="services/mobile-app-development.html" class="mega-link">Mobile App Development <small>iOS, Android, Flutter, React Native</small></a>
+            <a href="services/web-development.html" class="mega-link">Web Development <small>Marketing sites, portals, web apps</small></a>
+            <a href="services/cms-development.html" class="mega-link">CMS Development <small>WordPress, Drupal, Joomla, WooCommerce</small></a>
+            <a href="services/digital-marketing.html" class="mega-link">Digital Marketing <small>SEO, paid, content, lifecycle</small></a>
+            <a href="services/ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>RAG, multi-agent, voice, automation</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="services/index.html" class="link-arrow">See all services <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="hire-developers/index.html" class="nav-link">Hire Developers <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2col">
+          <div class="mega-grid">
+            <a href="hire-developers/php.html" class="mega-link">PHP Developers <small>Laravel, Symfony, WordPress core</small></a>
+            <a href="hire-developers/react.html" class="mega-link">React Developers <small>SPA, component libraries, RSC</small></a>
+            <a href="hire-developers/nodejs.html" class="mega-link">Node.js Developers <small>APIs, real-time, microservices</small></a>
+            <a href="hire-developers/python.html" class="mega-link">Python Developers <small>Django, FastAPI, data, AI</small></a>
+            <a href="hire-developers/nextjs.html" class="mega-link">Next.js Developers <small>App Router, SSR, edge runtime</small></a>
+            <a href="hire-developers/full-stack.html" class="mega-link">Full-Stack Developers <small>End-to-end ownership, MVPs</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="engagement-models.html" class="link-arrow">See engagement models <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="ai-agent-development.html" class="nav-link">AI Solutions <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="ai-agent-development.html" class="mega-link flagship">AI Agent Development <small>Our flagship offering</small></a>
+            <a href="ai-agent-development.html#rag" class="mega-link">RAG Knowledge Systems <small>Document & enterprise Q&A</small></a>
+            <a href="ai-agent-development.html#voice" class="mega-link">Voice Agents <small>Inbound and outbound voice automation</small></a>
+            <a href="ai-agent-development.html#multi" class="mega-link">Multi-Agent Orchestration <small>Supervisor + worker patterns</small></a>
+            <a href="ai-agent-development.html#workflow" class="mega-link">Workflow Automation Agents <small>Background long-running tasks</small></a>
+          </div>
+          <div class="mega-footer">
+            <a href="contact.html" class="link-arrow">Book an AI Demo <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">Company <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-grid-1">
+            <a href="about.html" class="mega-link">About Vybog <small>Our story since 2002</small></a>
+            <a href="case-studies.html" class="mega-link">Case Studies <small>Selected client work</small></a>
+            <a href="engagement-models.html" class="mega-link">Engagement Models <small>How to work with us</small></a>
+            <a href="process.html" class="mega-link">Delivery Process <small>How we ship</small></a>
+            <a href="blog/index.html" class="mega-link">Blog & Insights <small>Engineering writing</small></a>
+            <a href="contact.html" class="mega-link">Contact <small>Reach our teams</small></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm desktop-only">Schedule a Call <span class="arrow">→</span></a>
+      <button class="mobile-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="mobile-backdrop"></div>
+<aside class="mobile-drawer" aria-label="Mobile menu">
+  <div class="drawer-head">
+    <a href="index.html" class="brand"><img src="assets/images/logo/vybog-icon.png" alt="" class="brand-icon" /><span class="brand-word">Vybog</span></a>
+    <button class="drawer-close" aria-label="Close menu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+  <details class="drawer-section" open>
+    <summary>Services <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="services/software-development.html">Software & App Development</a>
+      <a href="services/mobile-app-development.html">Mobile App Development</a>
+      <a href="services/web-development.html">Web Development</a>
+      <a href="services/cms-development.html">CMS Development</a>
+      <a href="services/digital-marketing.html">Digital Marketing</a>
+      <a href="services/ai-agent-development.html">AI Agent Development</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Hire Developers <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="hire-developers/php.html">PHP Developers</a>
+      <a href="hire-developers/react.html">React Developers</a>
+      <a href="hire-developers/nodejs.html">Node.js Developers</a>
+      <a href="hire-developers/python.html">Python Developers</a>
+      <a href="hire-developers/nextjs.html">Next.js Developers</a>
+      <a href="hire-developers/full-stack.html">Full-Stack Developers</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>AI Solutions <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="ai-agent-development.html">AI Agent Development</a>
+      <a href="ai-agent-development.html#rag">RAG Knowledge Systems</a>
+      <a href="ai-agent-development.html#voice">Voice Agents</a>
+      <a href="ai-agent-development.html#multi">Multi-Agent Orchestration</a>
+      <a href="ai-agent-development.html#workflow">Workflow Automation</a>
+    </div>
+  </details>
+  <details class="drawer-section">
+    <summary>Company <span>+</span></summary>
+    <div class="drawer-sublinks">
+      <a href="about.html">About</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="engagement-models.html">Engagement Models</a>
+      <a href="process.html">Process</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </details>
+  <div class="drawer-cta">
+    <a href="contact.html" class="btn btn-primary">Schedule a Call</a>
+    <a href="mailto:hello@vybogservices.com" class="btn btn-secondary">Email Us</a>
+  </div>
+</aside>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow left"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy fade-up">
+        <span class="eyebrow">India + USA · Engineering Studio Since 2002</span>
+        <h1>We build the software, the <span class="italic-accent">agents</span>, and the team behind both.</h1>
+        <p class="lead">Vybog is a senior engineering studio that ships production-grade software, designs AI agents that actually run in production, and embeds vetted developers directly into your stack — billed by the hour, the month, or the milestone.</p>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-primary btn-lg">Talk to an Engineer <span class="arrow">→</span></a>
+          <a href="case-studies.html" class="btn btn-secondary btn-lg">See Our Work</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-num" data-counter="22" data-suffix="+">22+</span>
+            <span class="trust-label">Years engineering</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num" data-counter="430" data-suffix="+">430+</span>
+            <span class="trust-label">Products shipped</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num" data-counter="120" data-suffix="+">120+</span>
+            <span class="trust-label">Senior engineers</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">Two</span>
+            <span class="trust-label">Offices · Chennai · Santa Clara</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-up">
+        <div class="visual-card">
+          <!-- Inline SVG illustration: stylized agent orchestration -->
+          <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;height:100%">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3C8CF0" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#0050C8" stop-opacity="0.05"/>
+              </linearGradient>
+              <radialGradient id="rg1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#3C8CF0" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#3C8CF0" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- background dot grid -->
+            <g opacity="0.4">
+              <circle cx="210" cy="210" r="170" fill="url(#rg1)"/>
+            </g>
+            <g opacity="0.15" stroke="#0050C8" stroke-width="0.5">
+              <circle cx="210" cy="210" r="80" fill="none"/>
+              <circle cx="210" cy="210" r="140" fill="none"/>
+              <circle cx="210" cy="210" r="200" fill="none"/>
+            </g>
+            <!-- center hub -->
+            <g transform="translate(210,210)">
+              <circle r="46" fill="#0050C8"/>
+              <circle r="36" fill="#fff"/>
+              <text x="0" y="6" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="700" font-size="14" fill="#0050C8">Vybog AI</text>
+            </g>
+            <!-- agent nodes -->
+            <g font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0B1B3D">
+              <g transform="translate(60,100)">
+                <rect x="-40" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
+                <text x="10" y="4" text-anchor="middle">RAG Agent</text>
+              </g>
+              <g transform="translate(350,140)">
+                <rect x="-44" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
+                <text x="6" y="4" text-anchor="middle">Voice Agent</text>
+              </g>
+              <g transform="translate(80,320)">
+                <rect x="-44" y="-18" width="120" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
+                <text x="16" y="4" text-anchor="middle">Workflow Agent</text>
+              </g>
+              <g transform="translate(340,310)">
+                <rect x="-44" y="-18" width="110" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
+                <text x="11" y="4" text-anchor="middle">Sales Agent</text>
+              </g>
+            </g>
+            <!-- connectors -->
+            <g stroke="#3C8CF0" stroke-width="1.2" fill="none" stroke-dasharray="3 3" opacity="0.7">
+              <line x1="100" y1="100" x2="180" y2="190"/>
+              <line x1="320" y1="140" x2="240" y2="195"/>
+              <line x1="120" y1="320" x2="190" y2="240"/>
+              <line x1="320" y1="310" x2="240" y2="240"/>
+            </g>
+            <!-- small pulses -->
+            <g fill="#3C8CF0">
+              <circle cx="155" cy="155" r="3"/>
+              <circle cx="270" cy="170" r="3"/>
+              <circle cx="160" cy="285" r="3"/>
+              <circle cx="280" cy="275" r="3"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. LOGO MARQUEE ============ -->
+<section class="logo-strip section-tight">
+  <div class="container">
+    <div class="strip-label">Trusted by founders, scaleups, and engineering teams across 18 countries</div>
+    <div class="logo-marquee">
+      <div class="logo-marquee-track">
+        <span class="logo-tile">CANDORCARE</span>
+        <span class="logo-tile">Novena Hall</span>
+        <span class="logo-tile">Apco Worldwide</span>
+        <span class="logo-tile">Buro Studios</span>
+        <span class="logo-tile">Art Stream</span>
+        <span class="logo-tile">Summit Health</span>
+        <span class="logo-tile">Lynn's Wedding</span>
+        <span class="logo-tile">Karina Group</span>
+        <span class="logo-tile">Collyer Logistics</span>
+        <span class="logo-tile">Arana Foods</span>
+        <span class="logo-tile">Jiko Capital</span>
+        <span class="logo-tile">LG Designs</span>
+        <!-- duplicate for loop -->
+        <span class="logo-tile">CANDORCARE</span>
+        <span class="logo-tile">Novena Hall</span>
+        <span class="logo-tile">Apco Worldwide</span>
+        <span class="logo-tile">Buro Studios</span>
+        <span class="logo-tile">Art Stream</span>
+        <span class="logo-tile">Summit Health</span>
+        <span class="logo-tile">Lynn's Wedding</span>
+        <span class="logo-tile">Karina Group</span>
+        <span class="logo-tile">Collyer Logistics</span>
+        <span class="logo-tile">Arana Foods</span>
+        <span class="logo-tile">Jiko Capital</span>
+        <span class="logo-tile">LG Designs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. WHAT WE SOLVE — NARRATIVE ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">What we solve</span>
+      <h2>Two thousand and twenty-six is a strange year to build software.</h2>
+      <p>The cost of writing code has collapsed. The cost of getting something wrong in production has not. Vybog exists in that gap — humans who have spent twenty-two years shipping software, paired with the AI tooling that finally caught up.</p>
+    </div>
+    <div class="grid grid-3 mt-7 fade-up">
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg></div>
+        <h3>Ship software</h3>
+        <p>Custom apps, mobile, web, CMS — built by senior engineers under one delivery lead. No farming out, no hand-offs to junior pools mid-project.</p>
+        <a href="services/index.html" class="link-arrow">Engineering services <span class="arrow">→</span></a>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><path d="M16 3.13a4 4 0 010 7.75"/><path d="M21 21v-2a4 4 0 00-3-3.87"/></svg></div>
+        <h3>Embed engineers</h3>
+        <p>Vetted developers in PHP, React, Node, Python, Next.js, full-stack — joining your stand-ups within a week, billable hourly, monthly, or on milestone.</p>
+        <a href="hire-developers/index.html" class="link-arrow">Hire developers <span class="arrow">→</span></a>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6v6H9z"/><path d="M9 1v6"/><path d="M15 1v6"/><path d="M9 17v6"/><path d="M15 17v6"/><path d="M1 9h6"/><path d="M1 15h6"/><path d="M17 9h6"/><path d="M17 15h6"/></svg></div>
+        <h3>Deploy AI agents</h3>
+        <p>Production-grade AI agents — RAG, voice, multi-agent, autonomous workflows — wired into your CRM, ERP, helpdesk, and Slack with evals and guardrails in place from day one.</p>
+        <a href="ai-agent-development.html" class="link-arrow">AI agent development <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. AI AGENT FLAGSHIP SPOTLIGHT ============ -->
+<section>
+  <div class="container">
+    <div class="split fade-up">
+      <div>
+        <span class="eyebrow">Flagship · AI Agent Development</span>
+        <h2>Agents that <span class="italic-accent">close tickets</span>, qualify leads, and read the long PDF — while you sleep.</h2>
+        <p class="lead">We design AI agents the way we design backend services: with telemetry, eval suites, guardrails, and a deployment story that does not end at the demo. Vybog ships agents that run for weeks without supervision, not chatbots that fall apart in week two.</p>
+        <ul class="check-list mt-5">
+          <li><strong>RAG agents</strong> — chat with your contracts, runbooks, support history, or product documentation with grounded citations.</li>
+          <li><strong>Voice agents</strong> — receptionists, qualifiers, support deflection with sub-800ms turn-taking, in any accent.</li>
+          <li><strong>Multi-agent orchestration</strong> — supervisor + worker agents that hand off tasks across tools and stay in scope.</li>
+          <li><strong>Autonomous workflows</strong> — long-running background agents that triage, enrich, draft, route, and report.</li>
+        </ul>
+        <div class="mt-6">
+          <a href="ai-agent-development.html" class="btn btn-primary">Explore AI Agent Development <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-ghost">Book a 30-minute demo</a>
+        </div>
+      </div>
+      <div>
+        <div class="kpi-strip" style="grid-template-columns:1fr 1fr">
+          <div class="kpi-tile"><div class="kpi-num" data-counter="85" data-suffix="%">85%</div><div class="kpi-label">Repeatable tasks automated on first deployment</div></div>
+          <div class="kpi-tile"><div class="kpi-num" data-counter="4" data-suffix="-wk">4-wk</div><div class="kpi-label">From discovery to first production agent live</div></div>
+          <div class="kpi-tile"><div class="kpi-num" data-counter="2000" data-suffix="+">2000+</div><div class="kpi-label">SaaS &amp; on-prem systems we can integrate</div></div>
+          <div class="kpi-tile"><div class="kpi-num" data-counter="99.9" data-suffix="%">99.9%</div><div class="kpi-label">Agent uptime with our monitoring stack</div></div>
+        </div>
+        <div class="mt-5" style="font-size:13px;color:var(--text-muted);">Self-hosted on your VPC or on Vybog-managed infra — your call.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. SERVICE PILLAR GRID ============ -->
+<section class="bg-soft">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Services</span>
+      <h2>Six pillars. One delivery standard.</h2>
+      <p>Every Vybog engagement runs on the same playbook: senior lead engineer accountable end-to-end, weekly demos, no surprises in the invoice.</p>
+    </div>
+    <div class="grid grid-3 fade-up">
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Software &amp; App Development</h3>
+        <p>Custom SaaS, internal tools, API platforms, and legacy modernization — production-grade systems engineered to outlast their first hype cycle.</p>
+        <a href="services/software-development.html" class="card-link">Learn more <span class="arrow">→</span></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg></div>
+        <h3>Mobile App Development</h3>
+        <p>Native iOS &amp; Android, plus Flutter and React Native. Apps designed for store approval the first time, with crash-free rates above 99.5%.</p>
+        <a href="services/mobile-app-development.html" class="card-link">Learn more <span class="arrow">→</span></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Web Development</h3>
+        <p>Marketing sites, web apps, customer portals. Core Web Vitals greener than your competition, accessibility baked in — not bolted on.</p>
+        <a href="services/web-development.html" class="card-link">Learn more <span class="arrow">→</span></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3>CMS Development</h3>
+        <p>WordPress, Drupal, Joomla, WooCommerce, headless setups. Editor-first CMS implementations that your marketing team will actually publish to.</p>
+        <a href="services/cms-development.html" class="card-link">Learn more <span class="arrow">→</span></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h3>Digital Marketing</h3>
+        <p>SEO, paid, content, email, CRO. Run the way engineers would run it — every channel instrumented, every claim measured, no monthly vanity decks.</p>
+        <a href="services/digital-marketing.html" class="card-link">Learn more <span class="arrow">→</span></a>
+      </div>
+
+      <div class="card flagship">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><line x1="6" y1="6" x2="9" y2="10"/><line x1="18" y1="6" x2="15" y2="10"/><line x1="6" y1="18" x2="9" y2="14"/><line x1="18" y1="18" x2="15" y2="14"/></svg></div>
+        <h3>AI Agent Development</h3>
+        <p>RAG, voice, multi-agent, autonomous workflow agents — production-grade with evals, observability, and on-prem options.</p>
+        <a href="services/ai-agent-development.html" class="card-link">Learn more <span class="arrow">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. HIRE DEVELOPERS MODULE ============ -->
+<section>
+  <div class="container">
+    <div class="split fade-up">
+      <div>
+        <span class="eyebrow">Hire Developers</span>
+        <h2>The bench you needed last quarter. Onboarded within a week.</h2>
+        <p class="lead">Vybog's developer bench is not a marketplace and not a recruitment agency. It is a roster of full-time Vybog engineers across PHP, React, Node, Python, Next.js, and full-stack — each with a Vybog tech lead behind them and a 14-day mutual replacement window if the fit is wrong.</p>
+        <ul class="check-list mt-5">
+          <li>Time-zone overlap: 4 to 6 hours of live overlap with US Pacific or Eastern, full overlap with EMEA.</li>
+          <li>NDA-ready on day one, IP assignment by default, source code in your repos.</li>
+          <li>Hourly, monthly, or milestone billing — no annual lock-in, no exit fees.</li>
+        </ul>
+        <div class="mt-6">
+          <a href="hire-developers/index.html" class="btn btn-primary">Browse developer skills <span class="arrow">→</span></a>
+          <a href="engagement-models.html" class="btn btn-ghost">See engagement models</a>
+        </div>
+      </div>
+      <div>
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:14px">
+          <a href="hire-developers/php.html" class="tech-pill">Hire PHP</a>
+          <a href="hire-developers/react.html" class="tech-pill">Hire React</a>
+          <a href="hire-developers/nodejs.html" class="tech-pill">Hire Node.js</a>
+          <a href="hire-developers/python.html" class="tech-pill">Hire Python</a>
+          <a href="hire-developers/nextjs.html" class="tech-pill">Hire Next.js</a>
+          <a href="hire-developers/full-stack.html" class="tech-pill">Hire Full-Stack</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ENGAGEMENT MODELS ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Engagement Models</span>
+      <h2>Three ways to buy. One way to ship.</h2>
+      <p>How you commission Vybog should match the shape of your project — not the other way around.</p>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <span class="tag">Lightest commitment</span>
+        <h3 class="mt-5">Hire a Developer</h3>
+        <p>A single Vybog engineer joins your standups and ships against your backlog. Best when you have a tech lead in-house and just need capacity.</p>
+        <ul class="check-list">
+          <li>1 senior engineer, your choice of stack</li>
+          <li>Hourly or monthly rate, prorated</li>
+          <li>Daily standup, weekly demo, monthly retro</li>
+        </ul>
+      </div>
+      <div class="feature-card" style="border-color:var(--brand-primary)">
+        <span class="tag">Most popular</span>
+        <h3 class="mt-5">Hire a Dedicated Team</h3>
+        <p>A 3–8 person Vybog pod — engineers, QA, designer, tech lead — focused exclusively on your roadmap. Best for product teams shipping continuously.</p>
+        <ul class="check-list">
+          <li>Dedicated pod, your priorities, your repos</li>
+          <li>Fixed monthly cost, predictable burn</li>
+          <li>Vybog delivery lead accountable end-to-end</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Defined scope</span>
+        <h3 class="mt-5">Project Engagement</h3>
+        <p>Discovery, fixed-bid, milestone-paid delivery of a defined scope. Best when you need a deliverable on a date, with a number on it.</p>
+        <ul class="check-list">
+          <li>Statement of work with clear acceptance criteria</li>
+          <li>Milestone billing, no surprise change orders</li>
+          <li>Includes one quarter of post-launch support</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-7">
+      <a href="engagement-models.html" class="btn btn-secondary">Compare all engagement models <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. SELECTED WORK ============ -->
+<section>
+  <div class="container">
+    <div class="section-head left fade-up flex-between" style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end">
+      <div>
+        <span class="eyebrow">Selected Work</span>
+        <h2 style="margin:0">Some of what we have built lately.</h2>
+      </div>
+      <a href="case-studies.html" class="link-arrow">All case studies <span class="arrow">→</span></a>
+    </div>
+    <div class="grid grid-3 fade-up mt-7">
+      <a href="case-studies.html" class="card" style="text-decoration:none">
+        <div style="height:180px;border-radius:12px;background:linear-gradient(135deg,#0050C8 0%,#3C8CF0 100%);margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:600;font-size:20px">Candorcare</div>
+        <span class="tag">Healthcare · Web App</span>
+        <h3 class="mt-4">Caregiver matching platform serving 14 US states</h3>
+        <p>Built the multi-tenant scheduling, billing, and EVV-compliant care platform end-to-end on Laravel and Vue.</p>
+      </a>
+      <a href="case-studies.html" class="card" style="text-decoration:none">
+        <div style="height:180px;border-radius:12px;background:linear-gradient(135deg,#0B1B3D 0%,#0050C8 100%);margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:600;font-size:20px">Novena Hall</div>
+        <span class="tag">Hospitality · Booking System</span>
+        <h3 class="mt-4">Real-time event hall booking and CRM</h3>
+        <p>Replaced a paper-based reservation workflow with a Next.js portal that cut double-bookings to zero in the first month.</p>
+      </a>
+      <a href="case-studies.html" class="card" style="text-decoration:none">
+        <div style="height:180px;border-radius:12px;background:linear-gradient(135deg,#3C8CF0 0%,#0B1B3D 100%);margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:600;font-size:20px">Art Stream</div>
+        <span class="tag">Media · Mobile</span>
+        <h3 class="mt-4">Subscription video app on iOS and Android</h3>
+        <p>Native iOS plus Flutter for Android, with a Stripe-driven subscriber model and offline playback. Shipped in 11 weeks.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. TECH STACK TABBED ============ -->
+<section class="bg-soft">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Tech Stack</span>
+      <h2>Boring tech where boring wins. New tech where it actually helps.</h2>
+      <p>We bet on stacks with five years of survivability left in them — and the AI tooling worth betting on right now.</p>
+    </div>
+    <div class="tabs fade-up">
+      <div class="tab-list" role="tablist">
+        <button class="tab-btn active" data-tab="frontend">Frontend</button>
+        <button class="tab-btn" data-tab="backend">Backend</button>
+        <button class="tab-btn" data-tab="mobile">Mobile</button>
+        <button class="tab-btn" data-tab="cms">CMS</button>
+        <button class="tab-btn" data-tab="aidata">AI &amp; Data</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="frontend">
+        <div class="tech-grid">
+          <div class="tech-pill">React</div>
+          <div class="tech-pill">Next.js</div>
+          <div class="tech-pill">Vue</div>
+          <div class="tech-pill">Nuxt</div>
+          <div class="tech-pill">Angular</div>
+          <div class="tech-pill">Svelte</div>
+          <div class="tech-pill">TypeScript</div>
+          <div class="tech-pill">Tailwind</div>
+          <div class="tech-pill">Redux</div>
+          <div class="tech-pill">TanStack Query</div>
+          <div class="tech-pill">Vite</div>
+          <div class="tech-pill">Storybook</div>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="backend">
+        <div class="tech-grid">
+          <div class="tech-pill">Node.js</div>
+          <div class="tech-pill">Nest.js</div>
+          <div class="tech-pill">Express</div>
+          <div class="tech-pill">Go (Gin)</div>
+          <div class="tech-pill">Django</div>
+          <div class="tech-pill">FastAPI</div>
+          <div class="tech-pill">Laravel</div>
+          <div class="tech-pill">.NET</div>
+          <div class="tech-pill">PostgreSQL</div>
+          <div class="tech-pill">MySQL</div>
+          <div class="tech-pill">Redis</div>
+          <div class="tech-pill">Kafka</div>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="mobile">
+        <div class="tech-grid">
+          <div class="tech-pill">Swift / iOS</div>
+          <div class="tech-pill">Kotlin / Android</div>
+          <div class="tech-pill">Flutter</div>
+          <div class="tech-pill">React Native</div>
+          <div class="tech-pill">Expo</div>
+          <div class="tech-pill">SwiftUI</div>
+          <div class="tech-pill">Jetpack Compose</div>
+          <div class="tech-pill">Firebase</div>
+          <div class="tech-pill">RevenueCat</div>
+          <div class="tech-pill">OneSignal</div>
+          <div class="tech-pill">Sentry Mobile</div>
+          <div class="tech-pill">App Center</div>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="cms">
+        <div class="tech-grid">
+          <div class="tech-pill">WordPress</div>
+          <div class="tech-pill">WooCommerce</div>
+          <div class="tech-pill">Drupal</div>
+          <div class="tech-pill">Joomla</div>
+          <div class="tech-pill">Wix</div>
+          <div class="tech-pill">Shopify</div>
+          <div class="tech-pill">Strapi</div>
+          <div class="tech-pill">Sanity</div>
+          <div class="tech-pill">Contentful</div>
+          <div class="tech-pill">Payload</div>
+          <div class="tech-pill">Ghost</div>
+          <div class="tech-pill">ACF Pro</div>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="aidata">
+        <div class="tech-grid">
+          <div class="tech-pill">OpenAI</div>
+          <div class="tech-pill">Anthropic</div>
+          <div class="tech-pill">LangChain</div>
+          <div class="tech-pill">LangGraph</div>
+          <div class="tech-pill">LlamaIndex</div>
+          <div class="tech-pill">CrewAI</div>
+          <div class="tech-pill">Pinecone</div>
+          <div class="tech-pill">Weaviate</div>
+          <div class="tech-pill">pgvector</div>
+          <div class="tech-pill">Temporal</div>
+          <div class="tech-pill">LangSmith</div>
+          <div class="tech-pill">Langfuse</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. PROCESS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">How We Deliver</span>
+      <h2>A five-step rhythm that survives reality.</h2>
+      <p>This is the loop every Vybog engagement runs on, whether the deliverable is a mobile app, an AI agent, or one full-stack engineer.</p>
+    </div>
+    <div class="process-grid fade-up">
+      <div class="process-step">
+        <span class="process-num">1</span>
+        <h4>Discover</h4>
+        <p>One to two weeks of conversations, code-base reads, user interviews. We leave with a written hypothesis, not a Gantt chart.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">2</span>
+        <h4>Architect</h4>
+        <p>Decisions worth writing down: data model, API surface, security boundaries, the diagram you will print and tape to the wall.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">3</span>
+        <h4>Build</h4>
+        <p>Two-week sprints with end-of-sprint demos. Code shipped behind feature flags, instrumented from the first commit.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">4</span>
+        <h4>Validate</h4>
+        <p>Test coverage, load tests, security scan, accessibility audit, and a stakeholder sign-off before anything reaches your users.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">5</span>
+        <h4>Launch &amp; Iterate</h4>
+        <p>Staged rollout with watchdog dashboards, paging, and a Vybog engineer on call for the first 30 days post-launch by default.</p>
+      </div>
+    </div>
+    <div class="text-center mt-7"><a href="process.html" class="btn btn-secondary">Read the full delivery process <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- ============ 11. WHY VYBOG ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Why Vybog</span>
+      <h2>Four reasons clients keep us on retainer.</h2>
+      <p>The differentiators we are willing to defend in writing — not the generic "quality, speed, communication" everyone claims.</p>
+    </div>
+    <div class="grid grid-4 fade-up">
+      <div class="feature-card">
+        <h3>Two-decade memory</h3>
+        <p>Engineers who remember why PHP 5 was the way it was, why Internet Explorer 11 broke your modal, and what happens to a Mongo cluster after three years. We have shipped through the cycles.</p>
+      </div>
+      <div class="feature-card">
+        <h3>One lead per client</h3>
+        <p>You get a named Vybog delivery lead who stays on your account from kickoff to launch. No farming out, no Junior-Pool-Tuesday surprises in your release notes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>AI fluency, calmly</h3>
+        <p>We use Cursor, Copilot, and Claude every day. We also know when not to. Our agents ship with eval suites, not vibes — and we say "no" when a problem is not an AI problem.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Geo-overlap that works</h3>
+        <p>Chennai delivery, Santa Clara client management. You get four hours of live US-Pacific overlap and full overlap with EMEA — without paying US-only rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. TESTIMONIALS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Voices</span>
+      <h2>What founders say after the third sprint.</h2>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote">Vybog's delivery lead pushed back on three of our roadmap assumptions before writing a line of code. We saved a quarter. That alone paid for the engagement.</p>
+        <div class="author">
+          <div class="avatar">RS</div>
+          <div class="author-info"><span class="author-name">Rajeev Subramanian</span><span class="author-role">CTO, Healthcare SaaS · Boston</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote">We brought Vybog in for one Node engineer. Six months later they are running our AI ops infrastructure. Quietly competent — which is the rarest thing in this industry.</p>
+        <div class="author">
+          <div class="avatar">EM</div>
+          <div class="author-info"><span class="author-name">Elena Martín</span><span class="author-role">VP Engineering, FinTech · Madrid</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote">The AI agent they built handles 73% of our inbound support tickets without escalation. We measured before we celebrated — and the numbers held up at the 90-day mark.</p>
+        <div class="author">
+          <div class="avatar">DK</div>
+          <div class="author-info"><span class="author-name">Daniel Kowalski</span><span class="author-role">Head of CX, D2C Retail · Warsaw</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. INSIGHTS / BLOG ============ -->
+<section class="bg-soft">
+  <div class="container">
+    <div class="section-head left fade-up" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;align-items:flex-end;text-align:left">
+      <div>
+        <span class="eyebrow">Insights</span>
+        <h2 style="margin:0">Writing from our engineering team.</h2>
+      </div>
+      <a href="blog/index.html" class="link-arrow">Visit the blog <span class="arrow">→</span></a>
+    </div>
+    <div class="grid grid-3 fade-up mt-7">
+      <article class="card">
+        <span class="tag">AI &amp; Agents</span>
+        <h3 class="mt-4">When a chatbot should not be an agent</h3>
+        <p>A practical decision tree for teams deciding whether to wire up an LLM or build a real agent — and how that choice changes the bill.</p>
+        <a href="blog/index.html" class="card-link">Read article <span class="arrow">→</span></a>
+      </article>
+      <article class="card">
+        <span class="tag">Engineering</span>
+        <h3 class="mt-4">The legacy modernization budget nobody quotes</h3>
+        <p>The four costs that always show up in a PHP 5 to PHP 8 migration, and which ones are safe to defer.</p>
+        <a href="blog/index.html" class="card-link">Read article <span class="arrow">→</span></a>
+      </article>
+      <article class="card">
+        <span class="tag">Hiring</span>
+        <h3 class="mt-4">How we vet a senior React engineer in 90 minutes</h3>
+        <p>The rubric our hiring panel runs — including the two questions that filter out 80% of inflated CVs.</p>
+        <a href="blog/index.html" class="card-link">Read article <span class="arrow">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. LOCATIONS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Two Homes</span>
+      <h2>Built across two time zones — by design, not by accident.</h2>
+    </div>
+    <div class="grid grid-2 fade-up">
+      <div class="feature-card">
+        <span class="tag">Global Delivery Centre</span>
+        <h3 class="mt-5">Chennai, India</h3>
+        <p>Our engineering floor. 120+ developers, designers, and QA engineers shipping every day from Valasaravakkam.</p>
+        <p style="font-size:14px;color:var(--text-muted)">Vybog Services · Chennai 600087, Tamil Nadu, India</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Client HQ</span>
+        <h3 class="mt-5">Santa Clara, USA</h3>
+        <p>Account management, solution architecture, and partner success — based in the heart of Silicon Valley.</p>
+        <p style="font-size:14px;color:var(--text-muted)">Vybog Inc. · Santa Clara, CA 95054, United States</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. FINAL CTA ============ -->
+<section>
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <span class="eyebrow" style="color:var(--brand-secondary)">Let's start</span>
+      <h2>Tell us what you are trying to build.</h2>
+      <p>Fifteen minutes with a senior engineer — no sales script, no obligation. You will leave with a written sketch of how Vybog would approach your build.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-on-dark btn-lg">Schedule a Call <span class="arrow">→</span></a>
+        <a href="mailto:hello@vybogservices.com" class="btn btn-ghost" style="color:var(--text-on-dark)">hello@vybogservices.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="assets/images/logo/vybog-icon.png" alt="" />
+          <span class="footer-word">Vybog</span>
+        </div>
+        <p>An engineering studio building production software, AI agents, and embedded developer teams from Chennai and Santa Clara — since 2002.</p>
+        <p style="font-size:13px;color:var(--text-on-dark-soft);margin:0">A vy ventures company.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services/software-development.html">Software &amp; App Dev</a></li>
+          <li><a href="services/mobile-app-development.html">Mobile App Dev</a></li>
+          <li><a href="services/web-development.html">Web Development</a></li>
+          <li><a href="services/cms-development.html">CMS Development</a></li>
+          <li><a href="services/digital-marketing.html">Digital Marketing</a></li>
+          <li><a href="services/ai-agent-development.html">AI Agent Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hire Developers</h5>
+        <ul>
+          <li><a href="hire-developers/php.html">PHP Developers</a></li>
+          <li><a href="hire-developers/react.html">React Developers</a></li>
+          <li><a href="hire-developers/nodejs.html">Node.js Developers</a></li>
+          <li><a href="hire-developers/python.html">Python Developers</a></li>
+          <li><a href="hire-developers/nextjs.html">Next.js Developers</a></li>
+          <li><a href="hire-developers/full-stack.html">Full-Stack Developers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="engagement-models.html">Engagement Models</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="ai-agent-development.html">AI Solutions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2002–2026 Vybog Services. All rights reserved.</span>
+      <span>Chennai · Santa Clara · +91 44 4859 6021 · +1 408 657 0010</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
