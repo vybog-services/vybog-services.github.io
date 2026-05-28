@@ -280,19 +280,6 @@ section.bg-dark .eyebrow { color: var(--brand-secondary); }
 }
 .site-header.scrolled { border-bottom-color: var(--border-subtle); background: rgba(247,244,236,0.96); }
 
-/* Utility bar made subtle — the7-style cream tone instead of dark contrast */
-.utility-bar {
-  background: var(--bg-soft);
-  color: var(--text-secondary);
-  font-size: 12.5px;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--border-subtle);
-}
-.utility-bar .container { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-.utility-bar a { color: var(--text-secondary); }
-.utility-bar a:hover { color: var(--brand-primary); }
-.utility-bar .util-group { display: flex; gap: 18px; align-items: center; }
-
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; gap: 32px; }
 
 .brand {
