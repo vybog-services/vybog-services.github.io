@@ -267,20 +267,38 @@ section.bg-dark .eyebrow { color: var(--brand-secondary); }
 .link-arrow .arrow { transition: transform var(--dur-fast) var(--ease-out); }
 .link-arrow:hover .arrow { transform: translateX(4px); }
 
-/* ---------- 6. Header / Navigation — the7.io clean style ---------- */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(247,244,236,0.82);
-  backdrop-filter: saturate(160%) blur(20px);
-  -webkit-backdrop-filter: saturate(160%) blur(20px);
-  border-bottom: 1px solid transparent;
-  transition: background var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
-}
-.site-header.scrolled { border-bottom-color: var(--border-subtle); background: rgba(247,244,236,0.96); }
+/* ---------- 6. Header / Navigation — floating rounded pill (the7 style) ---------- */
+/* Push content below the floating header so the hero isn't hidden underneath */
+body { padding-top: 104px; }
+@media (max-width: 1080px) { body { padding-top: 88px; } }
 
-.nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; gap: 32px; }
+.site-header {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: calc(100% - 32px);
+  max-width: 1280px;
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: saturate(160%) blur(24px);
+  -webkit-backdrop-filter: saturate(160%) blur(24px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 6px 24px rgba(26,26,26,0.06), 0 2px 8px rgba(26,26,26,0.04);
+  transition: background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.site-header.scrolled {
+  background: rgba(255,255,255,0.94);
+  box-shadow: 0 12px 36px rgba(26,26,26,0.10), 0 4px 12px rgba(26,26,26,0.05);
+  border-color: var(--border-default);
+}
+@media (max-width: 600px) {
+  .site-header { top: 12px; width: calc(100% - 24px); border-radius: var(--radius-lg); }
+}
+
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px 12px 24px; gap: 32px; }
+@media (max-width: 1080px) { .nav-wrap { padding: 10px 12px 10px 18px; } }
 
 .brand {
   display: inline-flex;
@@ -478,7 +496,7 @@ section.bg-dark .eyebrow { color: var(--brand-secondary); }
 
 /* ---------- 7. Hero — the7.io rhythm ---------- */
 .hero {
-  padding: clamp(80px, 11vw, 144px) 0 clamp(64px, 9vw, 112px);
+  padding: clamp(48px, 7vw, 96px) 0 clamp(64px, 9vw, 112px);
   position: relative;
   overflow: hidden;
   background: var(--bg-base);
@@ -851,7 +869,7 @@ section.bg-dark .eyebrow { color: var(--brand-secondary); }
 
 /* ---------- 17. Inner-page hero (sub-pages) ---------- */
 .page-hero {
-  padding: clamp(80px, 10vw, 144px) 0 clamp(56px, 8vw, 104px);
+  padding: clamp(48px, 7vw, 96px) 0 clamp(56px, 8vw, 104px);
   position: relative;
   overflow: hidden;
   background: var(--bg-base);
