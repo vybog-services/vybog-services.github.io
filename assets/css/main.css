@@ -1109,37 +1109,80 @@ body { padding-top: 104px; }
 
 /* ---------- 26b. the7.io home layout patterns ---------- */
 
-/* Hero — text-left / image-right with checkmark promise list + pill stats */
-.t7-hero { padding: clamp(56px, 8vw, 112px) 0 clamp(64px, 9vw, 128px); position: relative; overflow: hidden; }
-.t7-hero .container { position: relative; z-index: 1; }
-.t7-hero-glow { position: absolute; pointer-events: none; width: 900px; height: 900px; background: url('../images/gradient-dot-glow.svg') center/contain no-repeat; top: -260px; right: -320px; opacity: 0.55; z-index: 0; }
-.t7-hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: center; }
-@media (max-width: 980px) { .t7-hero-grid { grid-template-columns: 1fr; gap: 48px; } }
-.t7-hero h1 { margin-bottom: 24px; text-wrap: balance; }
-.t7-hero .lead { max-width: 580px; font-size: 19px; margin-bottom: 28px; }
-.t7-hero .t7-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
-.t7-hero .t7-checks { list-style: none; padding: 0; margin: 0 0 40px; display: flex; flex-direction: column; gap: 14px; }
-.t7-hero .t7-checks li { display: flex; align-items: flex-start; gap: 14px; font-size: 16.5px; font-weight: 500; color: var(--text-primary); line-height: 1.45; }
+/* Hero — neon-streaks dark background, centred content */
+.t7-hero {
+  padding: clamp(80px, 11vw, 160px) 0 clamp(96px, 12vw, 180px);
+  position: relative;
+  overflow: hidden;
+  background: #050010 url('../images/hero/neon-streaks.svg') center bottom/cover no-repeat;
+  margin-top: -104px;  /* pull bg up under floating header */
+  padding-top: clamp(160px, 18vw, 240px);
+}
+@media (max-width: 1080px) { .t7-hero { margin-top: -88px; padding-top: clamp(140px, 20vw, 200px); } }
+.t7-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center 70%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 75%, rgba(0,0,0,0.7) 100%);
+  pointer-events: none; z-index: 0;
+}
+.t7-hero .container { position: relative; z-index: 1; text-align: center; }
+
+/* Single-column centred grid */
+.t7-hero-grid { display: grid; grid-template-columns: minmax(0, 920px); justify-content: center; gap: 0; }
+
+.t7-hero .hero-copy { margin: 0 auto; text-align: center; }
+.t7-hero .eyebrow { color: #C5B4FF; }
+.t7-hero h1 { color: #FFFFFF; margin-bottom: 24px; text-wrap: balance; }
+.t7-hero h1 .italic-accent { color: #FF8FE6; }
+.t7-hero .lead { max-width: 720px; margin: 0 auto 32px; font-size: 19px; color: rgba(255,255,255,0.78); }
+.t7-hero .t7-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 auto 40px; justify-content: center; }
+.t7-hero .t7-ctas .btn-primary { background: #fff; color: #050010; border-color: #fff; }
+.t7-hero .t7-ctas .btn-primary:hover { background: #FF8FE6; border-color: #FF8FE6; color: #050010; }
+.t7-hero .t7-ctas .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.45); }
+.t7-hero .t7-ctas .btn-secondary:hover { background: #fff; color: #050010; border-color: #fff; }
+
+.t7-hero .t7-checks { list-style: none; padding: 0; margin: 0 auto 44px; display: flex; flex-direction: column; gap: 14px; max-width: 720px; align-items: flex-start; text-align: left; }
+.t7-hero .t7-checks li { display: flex; align-items: flex-start; gap: 14px; font-size: 16.5px; font-weight: 500; color: rgba(255,255,255,0.92); line-height: 1.45; }
 .t7-hero .t7-checks li::before {
   content: ''; flex-shrink: 0; width: 26px; height: 26px; margin-top: 1px;
-  background: var(--brand-primary); border-radius: 50%;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
-  background-size: 14px; background-position: center; background-repeat: no-repeat;
+  background: linear-gradient(135deg, #06B6FF 0%, #D946EF 100%); border-radius: 50%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>"), linear-gradient(135deg, #06B6FF 0%, #D946EF 100%);
+  background-size: 14px, cover; background-position: center, center; background-repeat: no-repeat, no-repeat;
+  box-shadow: 0 0 16px rgba(217,70,239,0.4);
 }
-.t7-hero .t7-pills { display: flex; gap: 12px; flex-wrap: wrap; padding-top: 28px; border-top: 1px solid var(--border-subtle); }
+.t7-hero .t7-pills { display: flex; gap: 12px; flex-wrap: wrap; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); justify-content: center; }
 .t7-hero .t7-pills .pill {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 10px 18px; border: 1px solid var(--border-default); border-radius: var(--radius-pill);
-  background: #fff; font-size: 13.5px; font-weight: 600; color: var(--text-primary);
+  padding: 10px 18px; border: 1px solid rgba(255,255,255,0.18); border-radius: var(--radius-pill);
+  background: rgba(255,255,255,0.06); backdrop-filter: blur(8px);
+  font-size: 13.5px; font-weight: 600; color: rgba(255,255,255,0.95);
 }
-.t7-hero .t7-pills .pill::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand-primary); }
-.t7-hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
-.t7-hero-visual img, .t7-hero-visual svg { width: 100%; max-width: 560px; height: auto; }
+.t7-hero .t7-pills .pill::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #D946EF; box-shadow: 0 0 8px #D946EF; }
+.t7-hero-visual { display: none; }  /* image is now the BG */
 
 /* Big-text mid section (the7's "Are You Ready?") */
 .t7-bigtext { padding: clamp(72px, 9vw, 128px) 0; text-align: center; }
 .t7-bigtext h2 { font-size: clamp(36px, 5vw, 64px); max-width: 920px; margin: 0 auto 32px; text-wrap: balance; }
 .t7-bigtext .actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* Dark variant — continues the hero panel */
+.t7-bigtext-dark {
+  background: linear-gradient(180deg, #0A0418 0%, #050010 50%, #0A0418 100%);
+  position: relative;
+}
+.t7-bigtext-dark::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(6,182,255,0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(217,70,239,0.10) 0%, transparent 50%);
+  pointer-events: none;
+}
+.t7-bigtext-dark .container { position: relative; z-index: 1; }
+.t7-bigtext-dark h2 { color: #fff; }
+.t7-bigtext-dark h2 .italic-accent { color: #FF8FE6; }
+.t7-bigtext-dark .actions .btn-primary { background: #fff; color: #050010; border-color: #fff; }
+.t7-bigtext-dark .actions .btn-primary:hover { background: #FF8FE6; border-color: #FF8FE6; color: #050010; }
+.t7-bigtext-dark .actions .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.45); }
+.t7-bigtext-dark .actions .btn-secondary:hover { background: #fff; color: #050010; border-color: #fff; }
 
 /* About block — text-side + image-side with dot-glow */
 .t7-about { position: relative; overflow: hidden; }
