@@ -150,24 +150,21 @@
 
 <main>
 
-<!-- ============ 1. HERO ============ -->
-<section class="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-glow left"></div>
+<!-- ============ 1. HERO — full-bleed creative background ============ -->
+<section class="hero hero-image">
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy fade-up">
-        <span class="eyebrow pill">India + USA · Engineering Studio Since 2002</span>
-        <h1>We build the software, the <span class="italic-accent">agents</span>, and the team behind both.</h1>
-        <p class="lead">Vybog is a senior engineering studio that ships production-grade software, designs AI agents that actually run in production, and embeds vetted developers directly into your stack.</p>
+        <h1>Ship your product, or staff your team — <span class="italic-accent">both</span> by Vybog.</h1>
+        <p class="lead">Hand us the full project and we deliver it end-to-end under one senior lead. Or embed vetted Vybog engineers directly into your stack within a week. Two equal paths in, one engineering standard, billed by the hour, month, or milestone.</p>
         <ul class="hero-promise">
-          <li>Production software shipped under one senior delivery lead</li>
-          <li>AI agents with evals, observability, and on-prem options</li>
-          <li>Vetted engineers onboarded within seven business days</li>
+          <li>Full-project delivery — custom software, mobile, web, CMS, digital marketing</li>
+          <li>Dedicated developers on demand — PHP, React, Node, Python, Next.js, full-stack</li>
+          <li>Production AI agents — RAG, voice, multi-agent, autonomous workflows</li>
         </ul>
         <div class="hero-ctas">
-          <a href="contact.html" class="btn btn-primary btn-lg">Talk to an Engineer <span class="arrow">→</span></a>
-          <a href="case-studies.html" class="btn btn-secondary btn-lg">See Our Work</a>
+          <a href="contact.html" class="btn btn-primary btn-lg">Start a Project <span class="arrow">→</span></a>
+          <a href="hire-developers/index.html" class="btn btn-primary btn-lg">Hire a Developer <span class="arrow">→</span></a>
         </div>
         <div class="hero-stats">
           <span class="stat-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>22+ Years engineering</span>
@@ -175,108 +172,6 @@
           <span class="stat-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>120+ Senior engineers</span>
           <span class="stat-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>Chennai · Santa Clara</span>
         </div>
-      </div>
-
-      <div class="hero-visual fade-up">
-        <div class="visual-card">
-          <!-- Inline SVG illustration: stylized agent orchestration -->
-          <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;height:100%">
-            <defs>
-              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#3C8CF0" stop-opacity="0.2"/>
-                <stop offset="100%" stop-color="#0050C8" stop-opacity="0.05"/>
-              </linearGradient>
-              <radialGradient id="rg1" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#3C8CF0" stop-opacity="0.25"/>
-                <stop offset="100%" stop-color="#3C8CF0" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-            <!-- background dot grid -->
-            <g opacity="0.4">
-              <circle cx="210" cy="210" r="170" fill="url(#rg1)"/>
-            </g>
-            <g opacity="0.15" stroke="#0050C8" stroke-width="0.5">
-              <circle cx="210" cy="210" r="80" fill="none"/>
-              <circle cx="210" cy="210" r="140" fill="none"/>
-              <circle cx="210" cy="210" r="200" fill="none"/>
-            </g>
-            <!-- center hub -->
-            <g transform="translate(210,210)">
-              <circle r="46" fill="#0050C8"/>
-              <circle r="36" fill="#fff"/>
-              <text x="0" y="6" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="700" font-size="14" fill="#0050C8">Vybog AI</text>
-            </g>
-            <!-- agent nodes -->
-            <g font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0B1B3D">
-              <g transform="translate(60,100)">
-                <rect x="-40" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
-                <text x="10" y="4" text-anchor="middle">RAG Agent</text>
-              </g>
-              <g transform="translate(350,140)">
-                <rect x="-44" y="-18" width="100" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
-                <text x="6" y="4" text-anchor="middle">Voice Agent</text>
-              </g>
-              <g transform="translate(80,320)">
-                <rect x="-44" y="-18" width="120" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
-                <text x="16" y="4" text-anchor="middle">Workflow Agent</text>
-              </g>
-              <g transform="translate(340,310)">
-                <rect x="-44" y="-18" width="110" height="36" rx="10" fill="#fff" stroke="#E0E3E8"/>
-                <text x="11" y="4" text-anchor="middle">Sales Agent</text>
-              </g>
-            </g>
-            <!-- connectors -->
-            <g stroke="#3C8CF0" stroke-width="1.2" fill="none" stroke-dasharray="3 3" opacity="0.7">
-              <line x1="100" y1="100" x2="180" y2="190"/>
-              <line x1="320" y1="140" x2="240" y2="195"/>
-              <line x1="120" y1="320" x2="190" y2="240"/>
-              <line x1="320" y1="310" x2="240" y2="240"/>
-            </g>
-            <!-- small pulses -->
-            <g fill="#3C8CF0">
-              <circle cx="155" cy="155" r="3"/>
-              <circle cx="270" cy="170" r="3"/>
-              <circle cx="160" cy="285" r="3"/>
-              <circle cx="280" cy="275" r="3"/>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 2. LOGO MARQUEE ============ -->
-<section class="logo-strip section-tight">
-  <div class="container">
-    <div class="strip-label">Trusted by founders, scaleups, and engineering teams across 18 countries</div>
-    <div class="logo-marquee">
-      <div class="logo-marquee-track">
-        <span class="logo-tile">CANDORCARE</span>
-        <span class="logo-tile">Novena Hall</span>
-        <span class="logo-tile">Apco Worldwide</span>
-        <span class="logo-tile">Buro Studios</span>
-        <span class="logo-tile">Art Stream</span>
-        <span class="logo-tile">Summit Health</span>
-        <span class="logo-tile">Lynn's Wedding</span>
-        <span class="logo-tile">Karina Group</span>
-        <span class="logo-tile">Collyer Logistics</span>
-        <span class="logo-tile">Arana Foods</span>
-        <span class="logo-tile">Jiko Capital</span>
-        <span class="logo-tile">LG Designs</span>
-        <!-- duplicate for loop -->
-        <span class="logo-tile">CANDORCARE</span>
-        <span class="logo-tile">Novena Hall</span>
-        <span class="logo-tile">Apco Worldwide</span>
-        <span class="logo-tile">Buro Studios</span>
-        <span class="logo-tile">Art Stream</span>
-        <span class="logo-tile">Summit Health</span>
-        <span class="logo-tile">Lynn's Wedding</span>
-        <span class="logo-tile">Karina Group</span>
-        <span class="logo-tile">Collyer Logistics</span>
-        <span class="logo-tile">Arana Foods</span>
-        <span class="logo-tile">Jiko Capital</span>
-        <span class="logo-tile">LG Designs</span>
       </div>
     </div>
   </div>

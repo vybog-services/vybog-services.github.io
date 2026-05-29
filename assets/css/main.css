@@ -500,6 +500,23 @@ body { padding-top: 104px; }
   overflow: hidden;
   background: var(--bg-base);
 }
+/* Full-bleed image hero — extends to the very top of the viewport, under the floating header */
+.hero-image {
+  margin-top: -104px;
+  padding-top: clamp(140px, 16vw, 220px);
+  padding-bottom: clamp(80px, 10vw, 140px);
+  background-image: url('../images/hero/hero-bg.svg');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1080px) {
+  .hero-image { margin-top: -88px; padding-top: clamp(120px, 18vw, 180px); }
+}
+.hero-image .hero-grid { grid-template-columns: minmax(0, 720px); }
+.hero-image .hero-copy { max-width: 680px; }
+.hero-image .hero-promise li { background: rgba(255,255,255,0.7); border: 1px solid var(--border-subtle); padding: 10px 16px 10px 12px; border-radius: var(--radius-pill); }
+.hero-image .stat-pill { background: rgba(255,255,255,0.85); border-color: var(--border-default); }
 .hero-glow {
   position: absolute;
   pointer-events: none;
