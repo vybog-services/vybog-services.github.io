@@ -1209,7 +1209,7 @@ body { padding-top: 104px; }
 .t7-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 1; }
 @media (max-width: 980px) { .t7-about-grid { grid-template-columns: 1fr; gap: 48px; } }
 .t7-about h2 { font-size: clamp(32px, 4vw, 52px); margin: 8px 0 24px; text-wrap: balance; }
-.t7-about .quoted { font-style: italic; font-family: var(--font-serif-italic); font-weight: 400; }
+.t7-about .quoted { font-style: normal; font-family: var(--font-display); font-weight: 900; letter-spacing: -0.03em; }
 .t7-about p { font-size: 17px; line-height: 1.65; margin-bottom: 16px; }
 .t7-about-visual { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-2xl); padding: 32px; box-shadow: var(--shadow-lg); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
 
