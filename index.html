@@ -150,99 +150,65 @@
 
 <main>
 
-<!-- ============ 1. HERO — 4-box Mondrian masonry (forms a square) ============ -->
-<section class="hero hero-flush">
+<!-- ============ 1. HERO — 3-box masonry capability grid ============ -->
+<section class="hero">
   <div class="container">
     <div class="hero-masonry fade-up">
 
-      <!-- BOX A · top-left · transparent + black border · Vybog overview -->
-      <a class="hero-box box-a" href="about.html" aria-label="About Vybog Services">
-        <div class="box-body">
-          <div class="box-eyebrow">About · Vybog</div>
-          <h2 class="box-title">An engineering studio that helps you grow multi-fold.</h2>
-          <p class="box-subtitle">Since 2002 · Chennai &amp; Santa Clara · 430+ products shipped</p>
-          <p class="box-desc">We help founders, scaleups, and CTOs ship faster, hire smarter, and adopt AI without the wrapper-shop pitfalls. Two decades of building production systems, distilled into one delivery standard you can defend in a board meeting.</p>
-        </div>
-        <div class="box-foot">
-          <span class="box-cta">About Vybog <span class="arrow">→</span></span>
-        </div>
+      <!-- BOX A — App Development (largest, tall left) -->
+      <a class="hero-box box-a" href="services/index.html" aria-label="App Development services">
+        <svg class="box-accent" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="#fff" stroke-width="1" fill="none">
+            <rect x="40" y="30" width="120" height="80" rx="8"/>
+            <rect x="20" y="80" width="120" height="80" rx="8"/>
+            <line x1="20" y1="100" x2="140" y2="100"/>
+            <line x1="40" y1="50" x2="160" y2="50"/>
+          </g>
+        </svg>
+        <div class="box-eyebrow">01 · Build</div>
+        <h2 class="box-title">App Development</h2>
+        <p class="box-subtitle">Software · Mobile · Web · CMS · Digital Marketing</p>
+        <p class="box-desc">From custom SaaS to native mobile apps to WordPress builds — Vybog ships production software end-to-end under one senior delivery lead. Same engineering bar across every stack we touch, validated with eval gates and 30-day post-launch on-call by default.</p>
+        <span class="box-cta">Explore services <span class="arrow">→</span></span>
       </a>
 
-      <!-- BOX B · top-right · #272757 · Hire Developer + skills -->
+      <!-- BOX B — Hire Developer (top right) -->
       <a class="hero-box box-b" href="hire-developers/index.html" aria-label="Hire a developer">
         <svg class="box-accent" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <g stroke="#fff" stroke-width="1" fill="none">
-            <circle cx="100" cy="80" r="36"/>
-            <path d="M30 170 Q100 130 170 170"/>
-            <circle cx="160" cy="50" r="7"/>
-            <circle cx="40" cy="50" r="7"/>
+            <circle cx="100" cy="80" r="40"/>
+            <path d="M40 170 Q100 130 160 170"/>
+            <circle cx="160" cy="50" r="8"/>
+            <circle cx="40" cy="50" r="8"/>
           </g>
         </svg>
-        <div class="box-body">
-          <div class="box-eyebrow">Hire a Developer</div>
-          <h2 class="box-title">Embed senior engineers in a week.</h2>
-          <p class="box-subtitle">Hourly · Monthly · Milestone · NDA-ready</p>
-          <ul class="box-skills">
-            <li>React</li><li>Node.js</li><li>Next.js</li><li>Python</li><li>TypeScript</li><li>PHP</li><li>Full-Stack</li>
-          </ul>
-        </div>
-        <div class="box-foot">
-          <span class="box-cta">Browse stacks <span class="arrow">→</span></span>
-        </div>
+        <div class="box-eyebrow">02 · Hire</div>
+        <h2 class="box-title">Hire a Developer</h2>
+        <p class="box-subtitle">PHP · React · Node · Python · Next.js · Full-Stack</p>
+        <p class="box-desc">Embed a vetted Vybog engineer in your team within seven business days. Hourly, monthly, or milestone — your choice.</p>
+        <span class="box-cta">Browse stacks <span class="arrow">→</span></span>
       </a>
 
-      <!-- BOX C · bottom-left · #505081 · App/Web Development + skills -->
-      <a class="hero-box box-c" href="services/index.html" aria-label="App and Web Development services">
+      <!-- BOX C — AI Agent Development (bottom right) -->
+      <a class="hero-box box-c" href="ai-agent-development.html" aria-label="AI Agent Development">
         <svg class="box-accent" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <g stroke="#fff" stroke-width="1" fill="none">
-            <rect x="30" y="20" width="120" height="80"/>
-            <rect x="50" y="60" width="120" height="100"/>
-            <line x1="30" y1="40" x2="150" y2="40"/>
-            <line x1="50" y1="80" x2="170" y2="80"/>
-            <circle cx="44" cy="30" r="2.5" fill="#fff"/>
-            <circle cx="54" cy="30" r="2.5" fill="#fff"/>
+            <circle cx="100" cy="100" r="30"/>
+            <circle cx="40" cy="50" r="14"/>
+            <circle cx="160" cy="50" r="14"/>
+            <circle cx="40" cy="150" r="14"/>
+            <circle cx="160" cy="150" r="14"/>
+            <line x1="54" y1="58" x2="86" y2="92"/>
+            <line x1="146" y1="58" x2="114" y2="92"/>
+            <line x1="54" y1="142" x2="86" y2="108"/>
+            <line x1="146" y1="142" x2="114" y2="108"/>
           </g>
         </svg>
-        <div class="box-body">
-          <div class="box-eyebrow">App &amp; Web Development</div>
-          <h2 class="box-title">Production-grade software, end-to-end.</h2>
-          <p class="box-subtitle">Custom SaaS · Mobile · Web · CMS · E-commerce</p>
-          <p class="box-desc">From iOS &amp; Android apps to Next.js web platforms to WordPress builds — one senior delivery lead, weekly demos, performance budgets in CI, 30-day post-launch on-call by default.</p>
-          <ul class="box-skills">
-            <li>iOS · Swift</li><li>Android · Kotlin</li><li>Flutter</li><li>React</li><li>Next.js</li><li>Vue</li><li>Laravel</li><li>Django</li><li>WordPress</li><li>WooCommerce</li>
-          </ul>
-        </div>
-        <div class="box-foot">
-          <span class="box-cta">Explore services <span class="arrow">→</span></span>
-        </div>
-      </a>
-
-      <!-- BOX D · bottom-right · #0f0e47 · AI Agent Development + skills -->
-      <a class="hero-box box-d" href="ai-agent-development.html" aria-label="AI Agent Development">
-        <svg class="box-accent" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#fff" stroke-width="1" fill="none">
-            <circle cx="100" cy="100" r="26"/>
-            <circle cx="40" cy="50" r="12"/>
-            <circle cx="160" cy="50" r="12"/>
-            <circle cx="40" cy="150" r="12"/>
-            <circle cx="160" cy="150" r="12"/>
-            <line x1="52" y1="58" x2="86" y2="90"/>
-            <line x1="148" y1="58" x2="114" y2="90"/>
-            <line x1="52" y1="142" x2="86" y2="110"/>
-            <line x1="148" y1="142" x2="114" y2="110"/>
-          </g>
-        </svg>
-        <div class="box-body">
-          <div class="box-eyebrow">AI Agent Development</div>
-          <h2 class="box-title">Agents that ship to production.</h2>
-          <p class="box-subtitle">RAG · Voice · Multi-agent · Workflow automation</p>
-          <ul class="box-skills">
-            <li>LangChain</li><li>LangGraph</li><li>CrewAI</li><li>OpenAI</li><li>Anthropic</li><li>Pinecone</li><li>Whisper</li><li>ElevenLabs</li>
-          </ul>
-        </div>
-        <div class="box-foot">
-          <span class="box-cta">See AI solutions <span class="arrow">→</span></span>
-        </div>
+        <div class="box-eyebrow">03 · Automate</div>
+        <h2 class="box-title">AI Agent Development</h2>
+        <p class="box-subtitle">RAG · Voice · Multi-agent · Workflow</p>
+        <p class="box-desc">Production-grade AI agents — evals, observability, on-prem options, no chatbot demos.</p>
+        <span class="box-cta">See AI solutions <span class="arrow">→</span></span>
       </a>
 
     </div>
