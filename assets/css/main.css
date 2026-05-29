@@ -1113,7 +1113,7 @@ body { padding-top: 104px; }
 
 /* Hero — radial dark background with bottom fade into the next section */
 .t7-hero {
-  padding: clamp(80px, 11vw, 160px) 0 clamp(96px, 12vw, 180px);
+  padding: clamp(56px, 8vw, 112px) 0 clamp(64px, 8vw, 124px);
   position: relative;
   overflow: hidden;
   background:
@@ -1121,9 +1121,9 @@ body { padding-top: 104px; }
     radial-gradient(ellipse 75% 65% at 75% 35%, rgba(217,70,239,0.18) 0%, transparent 60%),
     radial-gradient(ellipse 100% 90% at 50% 40%, #1A0D40 0%, #0E0626 45%, #060214 100%);
   margin-top: -104px;  /* pull bg up under floating header */
-  padding-top: clamp(160px, 18vw, 240px);
+  padding-top: clamp(112px, 13vw, 168px);
 }
-@media (max-width: 1080px) { .t7-hero { margin-top: -88px; padding-top: clamp(140px, 20vw, 200px); } }
+@media (max-width: 1080px) { .t7-hero { margin-top: -88px; padding-top: clamp(96px, 14vw, 140px); } }
 
 /* Soft radial accents for depth */
 .t7-hero::before {
@@ -1150,16 +1150,16 @@ body { padding-top: 104px; }
 
 .t7-hero .hero-copy { margin: 0 auto; text-align: center; }
 .t7-hero .eyebrow { color: #C5B4FF; }
-.t7-hero h1 { color: #FFFFFF; margin-bottom: 24px; text-wrap: balance; }
+.t7-hero h1 { color: #FFFFFF; margin-bottom: 16px; text-wrap: balance; }
 .t7-hero h1 .italic-accent { color: #FF8FE6; }
-.t7-hero .lead { max-width: 720px; margin: 0 auto 32px; font-size: 19px; color: rgba(255,255,255,0.78); }
-.t7-hero .t7-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 auto 40px; justify-content: center; }
+.t7-hero .lead { max-width: 720px; margin: 0 auto 22px; font-size: 19px; color: rgba(255,255,255,0.78); }
+.t7-hero .t7-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 auto 28px; justify-content: center; }
 .t7-hero .t7-ctas .btn-primary { background: #fff; color: #050010; border-color: #fff; }
 .t7-hero .t7-ctas .btn-primary:hover { background: #FF8FE6; border-color: #FF8FE6; color: #050010; }
 .t7-hero .t7-ctas .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.45); }
 .t7-hero .t7-ctas .btn-secondary:hover { background: #fff; color: #050010; border-color: #fff; }
 
-.t7-hero .t7-checks { list-style: none; padding: 0; margin: 0 auto 44px; display: flex; flex-direction: column; gap: 14px; max-width: 720px; align-items: flex-start; text-align: left; }
+.t7-hero .t7-checks { list-style: none; padding: 0; margin: 0 auto 28px; display: flex; flex-direction: column; gap: 10px; max-width: 720px; align-items: flex-start; text-align: left; }
 .t7-hero .t7-checks li { display: flex; align-items: flex-start; gap: 14px; font-size: 16.5px; font-weight: 500; color: rgba(255,255,255,0.92); line-height: 1.45; }
 .t7-hero .t7-checks li::before {
   content: ''; flex-shrink: 0; width: 26px; height: 26px; margin-top: 1px;
@@ -1168,7 +1168,7 @@ body { padding-top: 104px; }
   background-size: 14px, cover; background-position: center, center; background-repeat: no-repeat, no-repeat;
   box-shadow: 0 0 16px rgba(217,70,239,0.4);
 }
-.t7-hero .t7-pills { display: flex; gap: 12px; flex-wrap: wrap; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); justify-content: center; }
+.t7-hero .t7-pills { display: flex; gap: 12px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.12); justify-content: center; }
 .t7-hero .t7-pills .pill {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 10px 18px; border: 1px solid rgba(255,255,255,0.18); border-radius: var(--radius-pill);
