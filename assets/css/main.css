@@ -14,11 +14,11 @@
   --brand-secondary-100: #E8F1FE;
   --brand-navy: #0B1B3D;
 
-  /* Neutral palette — pure white, no shades */
-  --bg-base: #FFFFFF;
+  /* Neutral palette — clean white shade with pure-white cards for subtle depth */
+  --bg-base: #FAFAFA;
   --bg-card: #FFFFFF;
-  --bg-soft: #FFFFFF;
-  --bg-tint: #FFFFFF;
+  --bg-soft: #FAFAFA;
+  --bg-tint: #FAFAFA;
   --bg-dark: #0B1B3D;
   --bg-dark-soft: #122249;
 
