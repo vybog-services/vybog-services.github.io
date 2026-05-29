@@ -14,11 +14,11 @@
   --brand-secondary-100: #E8F1FE;
   --brand-navy: #0B1B3D;
 
-  /* Neutral palette — the7.io/elementor-ai cream + white rhythm */
-  --bg-base: #F7F4EC;          /* warm cream — the7 hero/base */
-  --bg-card: #FFFFFF;           /* pure white cards */
-  --bg-soft: #EFEAE0;           /* deeper cream for alt sections */
-  --bg-tint: #FBF8F1;           /* very light cream */
+  /* Neutral palette — pure white, no shades */
+  --bg-base: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-soft: #FFFFFF;
+  --bg-tint: #FFFFFF;
   --bg-dark: #0B1B3D;
   --bg-dark-soft: #122249;
 
@@ -28,9 +28,10 @@
   --text-on-dark: #F4F6FA;
   --text-on-dark-soft: #BFC8DA;
 
-  --border-subtle: #E6E0D2;
-  --border-default: #DDD6C5;
-  --border-strong: #C8C0AB;
+  /* Neutral grays — visible on white */
+  --border-subtle: #ECECEC;
+  --border-default: #DDDDDD;
+  --border-strong: #BBBBBB;
 
   /* Accent for highlights */
   --accent-warm: #F4623A;
@@ -280,16 +281,14 @@ body { padding-top: 104px; }
   z-index: 100;
   width: calc(100% - 32px);
   max-width: 1360px;
-  background: rgba(255,255,255,0.78);
-  backdrop-filter: saturate(160%) blur(24px);
-  -webkit-backdrop-filter: saturate(160%) blur(24px);
+  background: #FFFFFF;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-pill);
   box-shadow: 0 6px 24px rgba(26,26,26,0.06), 0 2px 8px rgba(26,26,26,0.04);
   transition: background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
 }
 .site-header.scrolled {
-  background: rgba(255,255,255,0.94);
+  background: #FFFFFF;
   box-shadow: 0 12px 36px rgba(26,26,26,0.10), 0 4px 12px rgba(26,26,26,0.05);
   border-color: var(--border-default);
 }
