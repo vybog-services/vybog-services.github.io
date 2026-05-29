@@ -37,10 +37,10 @@
   --accent-warm: #F4623A;
   --success: #16A34A;
 
-  /* Typography */
+  /* Typography — Inter only, weight-driven hierarchy */
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-display: 'Inter Tight', 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-serif-italic: 'Source Serif Pro', 'Iowan Old Style', Georgia, serif;
+  --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif-italic: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* Spacing scale */
@@ -90,6 +90,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   font-size: 17px;
+  font-weight: 400;
   line-height: 1.65;
   color: var(--text-primary);
   background: var(--bg-base);
@@ -109,25 +110,26 @@ hr { border: 0; border-top: 1px solid var(--border-subtle); margin: var(--space-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--text-primary);
-  font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.08;
   margin: 0 0 var(--space-4);
 }
-h1 { font-size: clamp(40px, 6.4vw, 76px); letter-spacing: -0.032em; line-height: 1.04; }
-h2 { font-size: clamp(32px, 4.4vw, 56px); letter-spacing: -0.028em; line-height: 1.08; }
-h3 { font-size: clamp(22px, 2.4vw, 30px); line-height: 1.18; }
-h4 { font-size: clamp(18px, 1.8vw, 22px); }
-h5 { font-size: 17px; font-weight: 600; }
+h1 { font-size: clamp(40px, 6.4vw, 76px); font-weight: 900; letter-spacing: -0.034em; line-height: 1.02; }
+h2 { font-size: clamp(32px, 4.4vw, 56px); font-weight: 800; letter-spacing: -0.030em; line-height: 1.06; }
+h3 { font-size: clamp(22px, 2.4vw, 30px); font-weight: 700; line-height: 1.18; }
+h4 { font-size: clamp(18px, 1.8vw, 22px); font-weight: 700; }
+h5 { font-size: 17px; font-weight: 700; }
+p { font-weight: 400; }
+p.lead { font-weight: 400; }
 
 p { margin: 0 0 var(--space-4); color: var(--text-secondary); }
 p.lead { font-size: 19px; line-height: 1.6; color: var(--text-secondary); }
 .eyebrow {
   display: inline-block;
-  font-size: 12.5px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
   color: var(--brand-primary);
   margin-bottom: var(--space-4);
 }
@@ -139,11 +141,11 @@ p.lead { font-size: 19px; line-height: 1.6; color: var(--text-secondary); }
   backdrop-filter: blur(8px);
 }
 .italic-accent {
-  font-family: var(--font-serif-italic);
+  font-family: var(--font-display);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 900;
   color: var(--brand-primary);
-  letter-spacing: -0.005em;
+  letter-spacing: -0.025em;
 }
 
 /* ---------- 4. Layout primitives ---------- */
@@ -1109,17 +1111,15 @@ body { padding-top: 104px; }
 
 /* ---------- 26b. the7.io home layout patterns ---------- */
 
-/* Hero — dark gradient with bottom fade into the next section */
+/* Hero — radial dark background with bottom fade into the next section */
 .t7-hero {
   padding: clamp(80px, 11vw, 160px) 0 clamp(96px, 12vw, 180px);
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg,
-    #060214 0%,
-    #0E0626 28%,
-    #160A33 55%,
-    #100728 78%,
-    #0A0418 100%);
+  background:
+    radial-gradient(ellipse 70% 60% at 30% 25%, rgba(6,182,255,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 75% 65% at 75% 35%, rgba(217,70,239,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 90% at 50% 40%, #1A0D40 0%, #0E0626 45%, #060214 100%);
   margin-top: -104px;  /* pull bg up under floating header */
   padding-top: clamp(160px, 18vw, 240px);
 }
@@ -1212,6 +1212,40 @@ body { padding-top: 104px; }
 .t7-about .quoted { font-style: italic; font-family: var(--font-serif-italic); font-weight: 400; }
 .t7-about p { font-size: 17px; line-height: 1.65; margin-bottom: 16px; }
 .t7-about-visual { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-2xl); padding: 32px; box-shadow: var(--shadow-lg); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+
+/* About section: 2x2 metric rectangle grid (replaces side image) */
+.t7-about-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.t7-about-metrics .metric-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  display: flex; flex-direction: column;
+  transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out), border-color var(--dur-med) var(--ease-out);
+}
+.t7-about-metrics .metric-box:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--brand-primary); }
+.t7-about-metrics .metric-num {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4.6vw, 56px);
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  color: var(--brand-primary);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.t7-about-metrics .metric-label {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+.t7-about-metrics .metric-sub {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
 
 /* Highlights / Specifics — image + title + description card */
 .t7-highlight-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 0; overflow: hidden; transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out); display: flex; flex-direction: column; }
