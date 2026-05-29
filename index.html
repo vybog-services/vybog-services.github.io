@@ -150,29 +150,74 @@
 
 <main>
 
-<!-- ============ 1. HERO — full-bleed creative background ============ -->
-<section class="hero hero-image">
+<!-- ============ 1. HERO — headline + 3-box masonry capability grid ============ -->
+<section class="hero">
   <div class="container">
-    <div class="hero-grid">
-      <div class="hero-copy fade-up">
+    <div class="hero-grid single-col">
+      <div class="hero-copy center fade-up">
         <h1>Ship your product, or staff your team — <span class="italic-accent">both</span> by Vybog.</h1>
-        <p class="lead">Hand us the full project and we deliver it end-to-end under one senior lead. Or embed vetted Vybog engineers directly into your stack within a week. Two equal paths in, one engineering standard, billed by the hour, month, or milestone.</p>
-        <ul class="hero-promise">
-          <li>Full-project delivery — custom software, mobile, web, CMS, digital marketing</li>
-          <li>Dedicated developers on demand — PHP, React, Node, Python, Next.js, full-stack</li>
-          <li>Production AI agents — RAG, voice, multi-agent, autonomous workflows</li>
-        </ul>
-        <div class="hero-ctas">
-          <a href="contact.html" class="btn btn-primary btn-lg">Start a Project <span class="arrow">→</span></a>
-          <a href="hire-developers/index.html" class="btn btn-primary btn-lg">Hire a Developer <span class="arrow">→</span></a>
-        </div>
-        <div class="hero-stats">
-          <span class="stat-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>22+ Years engineering</span>
-          <span class="stat-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>430+ Products shipped</span>
-          <span class="stat-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>120+ Senior engineers</span>
-          <span class="stat-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>Chennai · Santa Clara</span>
-        </div>
+        <p class="lead">Hand us the full project and we deliver it end-to-end under one senior lead. Or embed vetted Vybog engineers directly into your stack within a week. Two equal paths in, one engineering standard.</p>
       </div>
+    </div>
+
+    <div class="hero-masonry fade-up">
+
+      <!-- BOX A — App Development (largest, tall left) -->
+      <a class="hero-box box-a" href="services/index.html" aria-label="App Development services">
+        <svg class="box-accent" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="#fff" stroke-width="1" fill="none">
+            <rect x="40" y="30" width="120" height="80" rx="8"/>
+            <rect x="20" y="80" width="120" height="80" rx="8"/>
+            <line x1="20" y1="100" x2="140" y2="100"/>
+            <line x1="40" y1="50" x2="160" y2="50"/>
+          </g>
+        </svg>
+        <div class="box-eyebrow">01 · Build</div>
+        <h2 class="box-title">App Development</h2>
+        <p class="box-subtitle">Software · Mobile · Web · CMS · Digital Marketing</p>
+        <p class="box-desc">From custom SaaS to native mobile apps to WordPress builds — Vybog ships production software end-to-end under one senior delivery lead. Same engineering bar across every stack we touch, validated with eval gates and 30-day post-launch on-call by default.</p>
+        <span class="box-cta">Explore services <span class="arrow">→</span></span>
+      </a>
+
+      <!-- BOX B — Hire Developer (top right) -->
+      <a class="hero-box box-b" href="hire-developers/index.html" aria-label="Hire a developer">
+        <svg class="box-accent" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="#fff" stroke-width="1" fill="none">
+            <circle cx="100" cy="80" r="40"/>
+            <path d="M40 170 Q100 130 160 170"/>
+            <circle cx="160" cy="50" r="8"/>
+            <circle cx="40" cy="50" r="8"/>
+          </g>
+        </svg>
+        <div class="box-eyebrow">02 · Hire</div>
+        <h2 class="box-title">Hire a Developer</h2>
+        <p class="box-subtitle">PHP · React · Node · Python · Next.js · Full-Stack</p>
+        <p class="box-desc">Embed a vetted Vybog engineer in your team within seven business days. Hourly, monthly, or milestone — your choice.</p>
+        <span class="box-cta">Browse stacks <span class="arrow">→</span></span>
+      </a>
+
+      <!-- BOX C — AI Agent Development (bottom right) -->
+      <a class="hero-box box-c" href="ai-agent-development.html" aria-label="AI Agent Development">
+        <svg class="box-accent" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="#fff" stroke-width="1" fill="none">
+            <circle cx="100" cy="100" r="30"/>
+            <circle cx="40" cy="50" r="14"/>
+            <circle cx="160" cy="50" r="14"/>
+            <circle cx="40" cy="150" r="14"/>
+            <circle cx="160" cy="150" r="14"/>
+            <line x1="54" y1="58" x2="86" y2="92"/>
+            <line x1="146" y1="58" x2="114" y2="92"/>
+            <line x1="54" y1="142" x2="86" y2="108"/>
+            <line x1="146" y1="142" x2="114" y2="108"/>
+          </g>
+        </svg>
+        <div class="box-eyebrow">03 · Automate</div>
+        <h2 class="box-title">AI Agent Development</h2>
+        <p class="box-subtitle">RAG · Voice · Multi-agent · Workflow</p>
+        <p class="box-desc">Production-grade AI agents — evals, observability, on-prem options, no chatbot demos.</p>
+        <span class="box-cta">See AI solutions <span class="arrow">→</span></span>
+      </a>
+
     </div>
   </div>
 </section>
