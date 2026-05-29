@@ -1106,6 +1106,148 @@ body { padding-top: 104px; }
 /* ---------- 26. Selection ---------- */
 ::selection { background: rgba(0,80,200,0.18); color: var(--brand-navy); }
 
+/* ---------- 26b. the7.io home layout patterns ---------- */
+
+/* Hero — text-left / image-right with checkmark promise list + pill stats */
+.t7-hero { padding: clamp(56px, 8vw, 112px) 0 clamp(64px, 9vw, 128px); position: relative; overflow: hidden; }
+.t7-hero .container { position: relative; z-index: 1; }
+.t7-hero-glow { position: absolute; pointer-events: none; width: 900px; height: 900px; background: url('../images/gradient-dot-glow.svg') center/contain no-repeat; top: -260px; right: -320px; opacity: 0.55; z-index: 0; }
+.t7-hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: center; }
+@media (max-width: 980px) { .t7-hero-grid { grid-template-columns: 1fr; gap: 48px; } }
+.t7-hero h1 { margin-bottom: 24px; text-wrap: balance; }
+.t7-hero .lead { max-width: 580px; font-size: 19px; margin-bottom: 28px; }
+.t7-hero .t7-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
+.t7-hero .t7-checks { list-style: none; padding: 0; margin: 0 0 40px; display: flex; flex-direction: column; gap: 14px; }
+.t7-hero .t7-checks li { display: flex; align-items: flex-start; gap: 14px; font-size: 16.5px; font-weight: 500; color: var(--text-primary); line-height: 1.45; }
+.t7-hero .t7-checks li::before {
+  content: ''; flex-shrink: 0; width: 26px; height: 26px; margin-top: 1px;
+  background: var(--brand-primary); border-radius: 50%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+  background-size: 14px; background-position: center; background-repeat: no-repeat;
+}
+.t7-hero .t7-pills { display: flex; gap: 12px; flex-wrap: wrap; padding-top: 28px; border-top: 1px solid var(--border-subtle); }
+.t7-hero .t7-pills .pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px; border: 1px solid var(--border-default); border-radius: var(--radius-pill);
+  background: #fff; font-size: 13.5px; font-weight: 600; color: var(--text-primary);
+}
+.t7-hero .t7-pills .pill::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand-primary); }
+.t7-hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
+.t7-hero-visual img, .t7-hero-visual svg { width: 100%; max-width: 560px; height: auto; }
+
+/* Big-text mid section (the7's "Are You Ready?") */
+.t7-bigtext { padding: clamp(72px, 9vw, 128px) 0; text-align: center; }
+.t7-bigtext h2 { font-size: clamp(36px, 5vw, 64px); max-width: 920px; margin: 0 auto 32px; text-wrap: balance; }
+.t7-bigtext .actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* About block — text-side + image-side with dot-glow */
+.t7-about { position: relative; overflow: hidden; }
+.t7-about-glow { position: absolute; pointer-events: none; width: 800px; height: 800px; background: url('../images/gradient-dot-glow.svg') center/contain no-repeat; bottom: -300px; left: -250px; opacity: 0.4; }
+.t7-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 1; }
+@media (max-width: 980px) { .t7-about-grid { grid-template-columns: 1fr; gap: 48px; } }
+.t7-about h2 { font-size: clamp(32px, 4vw, 52px); margin: 8px 0 24px; text-wrap: balance; }
+.t7-about .quoted { font-style: italic; font-family: var(--font-serif-italic); font-weight: 400; }
+.t7-about p { font-size: 17px; line-height: 1.65; margin-bottom: 16px; }
+.t7-about-visual { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-2xl); padding: 32px; box-shadow: var(--shadow-lg); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+
+/* Highlights / Specifics — image + title + description card */
+.t7-highlight-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 0; overflow: hidden; transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out); display: flex; flex-direction: column; }
+.t7-highlight-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.t7-highlight-card .img-wrap { aspect-ratio: 4/3; background: linear-gradient(135deg, #E8F1FE 0%, #C7DBFA 100%); display: flex; align-items: center; justify-content: center; color: var(--brand-primary); }
+.t7-highlight-card .img-wrap svg { width: 72px; height: 72px; }
+.t7-highlight-card .body { padding: 28px; }
+.t7-highlight-card h3 { font-size: 20px; margin: 0 0 10px; }
+.t7-highlight-card p { font-size: 15px; margin: 0; line-height: 1.55; }
+
+/* 4-column skills (no icons, clean text) */
+.t7-skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+@media (max-width: 980px) { .t7-skills-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .t7-skills-grid { grid-template-columns: 1fr; } }
+.t7-skill h3 { font-size: 20px; margin: 0 0 12px; }
+.t7-skill p { font-size: 15.5px; line-height: 1.6; margin: 0; }
+
+/* For-you checklist (2 cols) */
+.t7-foryou-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 40px; max-width: 980px; margin: 0 auto; }
+@media (max-width: 760px) { .t7-foryou-grid { grid-template-columns: 1fr; } }
+.t7-foryou-item { display: flex; align-items: flex-start; gap: 14px; font-size: 16.5px; line-height: 1.5; color: var(--text-primary); }
+.t7-foryou-item::before {
+  content: ''; flex-shrink: 0; width: 26px; height: 26px; margin-top: 1px;
+  background: var(--brand-primary); border-radius: 50%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+  background-size: 14px; background-position: center; background-repeat: no-repeat;
+}
+
+/* Team / Instructor cards */
+.t7-team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+@media (max-width: 980px) { .t7-team-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; } }
+.t7-team-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 28px; transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out); }
+.t7-team-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.t7-team-portrait { aspect-ratio: 1; border-radius: var(--radius-lg); background: linear-gradient(135deg, #0050C8 0%, #3C8CF0 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-family: var(--font-display); font-weight: 600; font-size: 56px; margin-bottom: 20px; }
+.t7-team-card h3 { font-size: 22px; margin: 0 0 4px; }
+.t7-team-card .role { font-size: 14px; color: var(--brand-primary); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 14px; }
+.t7-team-card p { font-size: 14.5px; line-height: 1.55; margin: 0; }
+.t7-team-card .socials { display: flex; gap: 10px; margin-top: 16px; }
+.t7-team-card .socials a { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border-default); display: inline-flex; align-items: center; justify-content: center; color: var(--text-secondary); transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out); }
+.t7-team-card .socials a:hover { background: var(--brand-primary); color: #fff; border-color: var(--brand-primary); }
+.t7-team-card .socials svg { width: 14px; height: 14px; }
+
+/* Specifics — 6-card grid with images */
+.t7-specifics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+@media (max-width: 980px) { .t7-specifics-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .t7-specifics-grid { grid-template-columns: 1fr; } }
+
+/* Numbered curriculum accordion (the7 style) */
+.t7-curriculum { max-width: 920px; margin: 0 auto; }
+.t7-curriculum-item { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); margin-bottom: 14px; overflow: hidden; }
+.t7-curriculum-item summary { list-style: none; cursor: pointer; padding: 24px 28px; display: flex; align-items: center; gap: 20px; font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--text-primary); }
+.t7-curriculum-item summary::-webkit-details-marker { display: none; }
+.t7-curriculum-item .num { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--brand-primary); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 600; font-family: var(--font-display); }
+.t7-curriculum-item summary::after { content: '+'; margin-left: auto; font-size: 26px; color: var(--brand-primary); font-weight: 400; transition: transform var(--dur-fast) var(--ease-out); }
+.t7-curriculum-item[open] summary::after { content: '−'; }
+.t7-curriculum-item .body { padding: 0 28px 24px 92px; color: var(--text-secondary); font-size: 16px; line-height: 1.6; }
+.t7-curriculum-item .body ul { margin: 0; padding-left: 1.2em; }
+.t7-curriculum-item .body ul li { margin-bottom: 4px; }
+
+/* Stats strip (3 pills like the7's "3 Weeks / 6 Lessons / Certificate") */
+.t7-stats-strip { display: flex; justify-content: center; gap: 60px; padding: 40px 0 24px; flex-wrap: wrap; }
+@media (max-width: 760px) { .t7-stats-strip { gap: 32px; } }
+.t7-stat { text-align: center; }
+.t7-stat .num { font-family: var(--font-display); font-size: clamp(40px, 5vw, 60px); font-weight: 600; letter-spacing: -0.03em; color: var(--brand-primary); line-height: 1; }
+.t7-stat .label { font-size: 14px; color: var(--text-secondary); margin-top: 10px; font-weight: 500; }
+
+/* Certificate-style block (image + 4 sub-items) */
+.t7-cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+@media (max-width: 980px) { .t7-cert-grid { grid-template-columns: 1fr; gap: 40px; } }
+.t7-cert-visual { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-2xl); padding: 40px; box-shadow: var(--shadow-md); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; }
+.t7-cert-perks { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+@media (max-width: 560px) { .t7-cert-perks { grid-template-columns: 1fr; } }
+.t7-cert-perks h3 { font-size: 18px; margin: 0 0 8px; }
+.t7-cert-perks p { font-size: 14.5px; margin: 0; line-height: 1.5; }
+
+/* Pricing — 2 cards (the7 style) */
+.t7-pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 860px; margin: 0 auto; }
+@media (max-width: 760px) { .t7-pricing-grid { grid-template-columns: 1fr; } }
+.t7-price-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 40px; text-align: center; transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out), border-color var(--dur-med) var(--ease-out); }
+.t7-price-card.featured { border-color: var(--brand-primary); box-shadow: var(--shadow-md); }
+.t7-price-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.t7-price-card .plan-name { font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+.t7-price-card .price { font-family: var(--font-display); font-size: clamp(52px, 6vw, 72px); font-weight: 600; color: var(--brand-navy); letter-spacing: -0.03em; line-height: 1; margin: 16px 0 4px; }
+.t7-price-card .price-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; }
+.t7-price-card h3 { font-size: 20px; margin: 16px 0 24px; color: var(--brand-primary); }
+.t7-price-card .price-cta { display: inline-flex; padding: 14px 32px; background: var(--brand-navy); color: #fff; font-weight: 600; border-radius: var(--radius-pill); font-size: 15px; text-decoration: none; transition: background var(--dur-fast) var(--ease-out); }
+.t7-price-card .price-cta:hover { background: var(--brand-primary); color: #fff; }
+
+/* Contact CTA — phone + email + button + dot-glow */
+.t7-contact { position: relative; overflow: hidden; text-align: center; }
+.t7-contact-glow { position: absolute; pointer-events: none; width: 900px; height: 900px; background: url('../images/gradient-dot-glow.svg') center/contain no-repeat; bottom: -300px; right: -280px; opacity: 0.45; }
+.t7-contact .container { position: relative; z-index: 1; }
+.t7-contact h2 { max-width: 760px; margin: 0 auto 20px; text-wrap: balance; }
+.t7-contact p { font-size: 18px; max-width: 580px; margin: 0 auto 36px; }
+.t7-contact-details { display: flex; justify-content: center; gap: 48px; margin-bottom: 24px; flex-wrap: wrap; }
+.t7-contact-details .item { display: flex; flex-direction: column; align-items: center; }
+.t7-contact-details .item .label { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; }
+.t7-contact-details .item .value { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--text-primary); }
+
 /* ---------- 27. Scrollbar (subtle) ---------- */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 8px; }
