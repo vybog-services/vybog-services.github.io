@@ -1111,26 +1111,21 @@ body { padding-top: 104px; }
 
 /* ---------- 26b. the7.io home layout patterns ---------- */
 
-/* Hero — radial dark background with bottom fade into the next section */
+/* Hero — full-bleed image background, bottom fade into next section */
 .t7-hero {
   padding: clamp(56px, 8vw, 112px) 0 clamp(64px, 8vw, 124px);
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse 70% 60% at 30% 25%, rgba(6,182,255,0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 75% 65% at 75% 35%, rgba(217,70,239,0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 100% 90% at 50% 40%, #1A0D40 0%, #0E0626 45%, #060214 100%);
+  background: #050010 url('../images/home-bg.jpg') center center / cover no-repeat;
   margin-top: -104px;  /* pull bg up under floating header */
   padding-top: clamp(112px, 13vw, 168px);
 }
 @media (max-width: 1080px) { .t7-hero { margin-top: -88px; padding-top: clamp(96px, 14vw, 140px); } }
 
-/* Soft radial accents for depth */
+/* Subtle dark overlay so the white text stays readable on the image */
 .t7-hero::before {
   content: ''; position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 60% 50% at 30% 30%, rgba(6,182,255,0.10) 0%, transparent 60%),
-    radial-gradient(ellipse 70% 60% at 75% 40%, rgba(217,70,239,0.10) 0%, transparent 60%);
+  background: linear-gradient(180deg, rgba(5,0,16,0.55) 0%, rgba(5,0,16,0.35) 45%, rgba(5,0,16,0.55) 100%);
   pointer-events: none; z-index: 0;
 }
 
