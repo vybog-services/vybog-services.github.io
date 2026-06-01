@@ -2372,3 +2372,74 @@ section.contact-card-section {
 @media (max-width: 560px) {
   .ladder-flow { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ---------- 38. ENGAGEMENT & PRICING — dark BG variant ---------- */
+section.engagement-dark {
+  background: #0B1B3D;
+  color: #fff;
+  padding: clamp(56px, 7vw, 96px) 0;
+  position: relative;
+  overflow: hidden;
+}
+section.engagement-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 800px 400px at 18% 12%, rgba(60, 140, 240, 0.16), transparent 60%),
+    radial-gradient(ellipse 700px 380px at 82% 88%, rgba(0, 80, 200, 0.14), transparent 60%);
+  pointer-events: none;
+}
+section.engagement-dark .container { position: relative; z-index: 1; }
+section.engagement-dark .eyebrow { color: #6BA4FF; }
+section.engagement-dark h2 { color: #fff; }
+section.engagement-dark .section-head p { color: rgba(255, 255, 255, 0.68); }
+
+section.engagement-dark .compare-table {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.88);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+section.engagement-dark .compare-table th,
+section.engagement-dark .compare-table td {
+  border-color: rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.86);
+}
+section.engagement-dark .compare-table thead th {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+section.engagement-dark .compare-table .row-label {
+  color: #6BA4FF;
+  font-weight: 600;
+}
+section.engagement-dark .compare-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ---------- 39. COMPACT CTA BANNER (reduced height) ---------- */
+section.cta-compact { padding: clamp(40px, 5vw, 64px) 0; }
+.cta-banner-compact {
+  padding: clamp(36px, 5vw, 64px) clamp(24px, 4vw, 64px);
+  text-align: center;
+}
+.cta-banner-compact h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  margin: 0 0 10px;
+  text-wrap: balance;
+}
+.cta-banner-compact p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0 auto 22px;
+  max-width: 620px;
+}
+.cta-banner-compact .cta-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cta-banner-compact .btn { padding: 12px 22px; font-size: 14.5px; }
