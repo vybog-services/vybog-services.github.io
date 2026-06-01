@@ -2181,27 +2181,49 @@ section.contact-card-section {
   .contact-btn { width: 100%; }
 }
 
-/* ---------- 35. HERO-CENTERED VARIANT (software dev page) ---------- */
+/* ---------- 35. HERO-CENTERED VARIANT (software dev page) — dark blue radial ---------- */
 .page-hero.hero-centered {
-  background: var(--bg-base);
+  position: relative;
+  background:
+    radial-gradient(ellipse 1100px 620px at 50% 28%, rgba(0, 80, 200, 0.55) 0%, rgba(0, 80, 200, 0.18) 45%, transparent 70%),
+    radial-gradient(ellipse 900px 520px at 50% 85%, rgba(60, 140, 240, 0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 600px 400px at 12% 18%, rgba(60, 140, 240, 0.16) 0%, transparent 65%),
+    radial-gradient(ellipse 600px 400px at 88% 12%, rgba(122, 92, 224, 0.14) 0%, transparent 65%),
+    #07112A;
   text-align: center;
   padding-bottom: 0;
+  color: #fff;
+  isolation: isolate;
 }
 .page-hero.hero-centered::before,
 .page-hero.hero-centered::after { display: none; }
 .page-hero.hero-centered .hero-glow { display: none; }
-.page-hero.hero-centered .breadcrumbs { justify-content: center; }
-.page-hero.hero-centered .eyebrow,
+
+.page-hero.hero-centered .breadcrumbs { justify-content: center; color: rgba(255, 255, 255, 0.55); }
+.page-hero.hero-centered .breadcrumbs a { color: rgba(255, 255, 255, 0.75); }
+.page-hero.hero-centered .breadcrumbs a:hover { color: #fff; }
+.page-hero.hero-centered .breadcrumbs .sep { color: rgba(255, 255, 255, 0.30); }
+
+.page-hero.hero-centered .eyebrow {
+  color: #6BA4FF;
+  letter-spacing: 0.22em;
+}
 .page-hero.hero-centered h1,
 .page-hero.hero-centered .lead { text-align: center; }
 .page-hero.hero-centered h1 {
-  max-width: 880px;
+  color: #fff;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   text-wrap: balance;
 }
+.page-hero.hero-centered h1 .italic-accent {
+  color: #6BA4FF;
+  font-style: italic;
+}
 .page-hero.hero-centered .lead {
-  max-width: 720px;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 820px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2210,6 +2232,25 @@ section.contact-card-section {
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
+}
+.page-hero.hero-centered .mt-6 .btn-primary {
+  background: #fff;
+  color: #07112A;
+  border-color: #fff;
+}
+.page-hero.hero-centered .mt-6 .btn-primary:hover {
+  background: #E8EEFA;
+  color: #07112A;
+  border-color: #E8EEFA;
+}
+.page-hero.hero-centered .mt-6 .btn-ghost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.page-hero.hero-centered .mt-6 .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.65);
+  color: #fff;
 }
 
 /* ---------- 36. HERO APP WIREFRAME ---------- */
