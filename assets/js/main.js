@@ -2,15 +2,44 @@
 (function () {
   'use strict';
 
-  // ---- Header scroll state ----
+  // ---- Header scroll state + body.scrolled (compact header / hide utility bar) ----
   const header = document.querySelector('.site-header');
-  if (header) {
-    const onScroll = () => {
-      if (window.scrollY > 8) header.classList.add('scrolled');
-      else header.classList.remove('scrolled');
+  const SCROLL_COMPACT = 60;
+  const onHeaderScroll = () => {
+    const compact = window.scrollY > SCROLL_COMPACT;
+    document.body.classList.toggle('scrolled', compact);
+    if (header) header.classList.toggle('scrolled', window.scrollY > 8);
+  };
+  onHeaderScroll();
+  window.addEventListener('scroll', onHeaderScroll, { passive: true });
+
+  // ---- Floating CTA visibility ----
+  const fcta = document.querySelector('.floating-cta');
+  if (fcta) {
+    const FCTA_SHOW = 480;
+    const onFctaScroll = () => fcta.classList.toggle('visible', window.scrollY > FCTA_SHOW);
+    onFctaScroll();
+    window.addEventListener('scroll', onFctaScroll, { passive: true });
+  }
+
+  // ---- Page-tabs scroll-spy (sticky sub-nav on service pages) ----
+  const pageTabs = document.querySelectorAll('.page-tabs .tab');
+  if (pageTabs.length) {
+    const tabSections = Array.from(pageTabs).map((t) => {
+      const href = t.getAttribute('href') || '';
+      return href.startsWith('#') ? document.querySelector(href) : null;
+    });
+    const onTabScroll = () => {
+      const offset = 220;
+      let activeIdx = 0;
+      for (let i = 0; i < tabSections.length; i++) {
+        const s = tabSections[i];
+        if (s && s.getBoundingClientRect().top - offset <= 0) activeIdx = i;
+      }
+      pageTabs.forEach((t, i) => t.classList.toggle('active', i === activeIdx));
     };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    onTabScroll();
+    window.addEventListener('scroll', onTabScroll, { passive: true });
   }
 
   // ---- Mobile drawer ----

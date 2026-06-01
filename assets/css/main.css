@@ -2621,3 +2621,332 @@ section.tech-stack-section {
 @media (max-width: 560px) {
   .tech-stack-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ========================================================================
+   MARKETPLACE-PATTERN UPGRADE
+   ======================================================================== */
+
+/* ---------- 44. UTILITY TOP BAR ---------- */
+.utility-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 99;
+  background: #0B1B3D;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12.5px;
+  letter-spacing: -0.005em;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.utility-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 36px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.utility-bar a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.15s ease;
+}
+.utility-bar a:hover { color: #fff; }
+.utility-bar .util-left,
+.utility-bar .util-right {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.utility-bar .util-cta {
+  color: #6BA4FF;
+  font-weight: 600;
+}
+.utility-bar .util-cta:hover { color: #B5D4FF; }
+.utility-bar .util-sep {
+  color: rgba(255, 255, 255, 0.20);
+  user-select: none;
+}
+
+body { padding-top: 140px; }
+.site-header { top: 52px; }
+@media (max-width: 1080px) {
+  body { padding-top: 124px; }
+  .site-header { top: 52px; }
+}
+@media (max-width: 720px) {
+  .utility-bar { display: none; }
+  body { padding-top: 88px; }
+  .site-header { top: 16px; }
+}
+
+/* ---------- 45. STICKY HEADER ON SCROLL (compact mode) ---------- */
+body.scrolled .utility-bar {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.site-header { transition: top 0.3s ease; }
+body.scrolled .site-header { top: 12px; }
+body.scrolled .nav-wrap {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  transition: padding 0.25s ease;
+}
+body.scrolled .brand-icon { width: 28px; height: 28px; transition: width 0.25s, height 0.25s; }
+
+/* ---------- 46. FLOATING "GET A QUOTE" CTA ---------- */
+.floating-cta {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 80;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #0050C8;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14.5px;
+  letter-spacing: -0.005em;
+  box-shadow: 0 10px 30px rgba(0, 80, 200, 0.35), 0 2px 8px rgba(0, 80, 200, 0.18);
+  transform: translateY(120px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s ease, opacity 0.25s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.floating-cta.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.floating-cta:hover {
+  background: #003B96;
+  box-shadow: 0 14px 36px rgba(0, 80, 200, 0.45), 0 2px 8px rgba(0, 80, 200, 0.18);
+  color: #fff;
+}
+.floating-cta .arrow { transition: transform 0.2s ease; }
+.floating-cta:hover .arrow { transform: translateX(4px); }
+.floating-cta .dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #4CFFA6;
+  box-shadow: 0 0 0 3px rgba(76, 255, 166, 0.25);
+  animation: floating-cta-pulse 2.4s ease-in-out infinite;
+}
+@keyframes floating-cta-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(76, 255, 166, 0.25); }
+  50% { box-shadow: 0 0 0 6px rgba(76, 255, 166, 0.08); }
+}
+@media (max-width: 600px) {
+  .floating-cta { padding: 12px 18px; font-size: 13.5px; bottom: 14px; right: 14px; }
+}
+
+/* ---------- 47. PAGE TABS — sticky sub-nav with scroll-spy ---------- */
+.page-tabs {
+  position: sticky;
+  top: 100px;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #E0E3E8;
+  margin-bottom: 0;
+}
+body.scrolled .page-tabs { top: 70px; }
+.page-tabs .container {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.page-tabs .container::-webkit-scrollbar { display: none; }
+.page-tabs .tab {
+  padding: 16px 18px;
+  margin-bottom: -1px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+}
+.page-tabs .tab:hover { color: var(--text-primary); }
+.page-tabs .tab.active {
+  color: #0050C8;
+  border-bottom-color: #0050C8;
+}
+@media (max-width: 600px) {
+  .page-tabs { top: 86px; }
+  .page-tabs .tab { padding: 14px 14px; font-size: 13.5px; }
+}
+
+/* ---------- 48. SECTION DIVIDERS (CSS-only soft wave) ---------- */
+section.bg-soft,
+section.bg-tint,
+section.gain-section,
+section.engagement-dark,
+section.retainer-section,
+section.trust-band,
+section.tech-stack-section,
+section.copilot-section,
+section.approach-section {
+  position: relative;
+}
+/* Soft top wave on bg-soft following a white section */
+section + section.bg-soft::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 40px;
+  background: radial-gradient(ellipse 50% 100% at 50% 0%, rgba(11, 27, 61, 0.04), transparent 70%);
+  pointer-events: none;
+}
+/* Subtle separator between same-color stacked sections */
+section + section.bg-soft,
+section.bg-soft + section.bg-soft {
+  box-shadow: 0 -1px 0 rgba(11, 27, 61, 0.05);
+}
+/* Visual wave between light and dark transitions */
+section + section.gain-section,
+section + section.engagement-dark,
+section + section.retainer-section,
+section + section.approach-section {
+  background-image:
+    linear-gradient(180deg, var(--bg-base) 0, transparent 36px),
+    radial-gradient(ellipse 50% 100% at 50% 0%, rgba(0, 0, 0, 0.18), transparent 60%);
+  background-repeat: no-repeat;
+  background-size: 100% 36px;
+  background-position: top;
+}
+
+/* ---------- 49. IMAGE-LED SERVICE CATEGORY CARDS (home) ---------- */
+section.service-cats-section {
+  padding: clamp(56px, 7vw, 96px) 0;
+  background: var(--bg-base);
+}
+.service-cats-section .section-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto clamp(36px, 5vw, 56px);
+}
+.service-cats-section .section-head .eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--brand-primary);
+  letter-spacing: 0.22em;
+}
+.service-cats-section .section-head h2 {
+  font-size: clamp(30px, 3.8vw, 48px);
+  line-height: 1.12;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+.service-cats-section .section-head p {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+.service-cats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 2.5vw, 28px);
+}
+.service-cat-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E5;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.service-cat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 44px rgba(11, 27, 61, 0.10);
+  border-color: #0050C8;
+}
+.service-cat-card .cat-img {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.service-cat-card .cat-img svg.cat-illu {
+  width: 76px;
+  height: 76px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.18));
+}
+.service-cat-card .cat-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.10) 0, transparent 35%),
+    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.18) 0, transparent 30%);
+  pointer-events: none;
+}
+.service-cat-card .cat-body { padding: 24px 24px 28px; }
+.service-cat-card .cat-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+}
+.service-cat-card .cat-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0 0 16px;
+}
+.service-cat-card .cat-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #0050C8;
+  text-transform: uppercase;
+}
+.service-cat-card .cat-link .arrow { transition: transform 0.2s ease; }
+.service-cat-card:hover .cat-link .arrow { transform: translateX(4px); }
+
+/* Category-card image background variants */
+.cat-img.cat-bg-1 { background: linear-gradient(135deg, #0050C8 0%, #3C8CF0 100%); }
+.cat-img.cat-bg-2 { background: linear-gradient(135deg, #6B5BDD 0%, #8154E0 100%); }
+.cat-img.cat-bg-3 { background: linear-gradient(135deg, #1E4F94 0%, #0B1B3D 100%); }
+.cat-img.cat-bg-4 { background: linear-gradient(135deg, #B5365C 0%, #7C2245 100%); }
+.cat-img.cat-bg-5 { background: linear-gradient(135deg, #2D6A4F 0%, #1B4332 100%); }
+.cat-img.cat-bg-6 { background: linear-gradient(135deg, #8B6D2A 0%, #5C4517 100%); }
+.cat-img.cat-bg-7 { background: linear-gradient(135deg, #0A0A0A 0%, #2A2A3A 100%); }
+
+@media (max-width: 980px) {
+  .service-cats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .service-cats-grid { grid-template-columns: 1fr; }
+  .service-cat-card .cat-img { aspect-ratio: 16 / 7; }
+}

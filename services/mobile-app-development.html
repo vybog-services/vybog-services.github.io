@@ -14,6 +14,24 @@
 </head>
 <body>
 
+<!-- ============ UTILITY TOP BAR ============ -->
+<div class="utility-bar">
+  <div class="container">
+    <div class="util-left">
+      <a href="mailto:hello@vybogservices.com">hello@vybogservices.com</a>
+      <span class="util-sep">|</span>
+      <span>Chennai &middot; Santa Clara</span>
+    </div>
+    <div class="util-right">
+      <a href="../about.html">About</a>
+      <a href="../case-studies.html">Case Studies</a>
+      <a href="../faq.html">FAQ</a>
+      <span class="util-sep">|</span>
+      <a href="../contact.html" class="util-cta">Schedule a Call <span>&rarr;</span></a>
+    </div>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="../index.html" class="brand" aria-label="Vybog Services home">
@@ -226,8 +244,20 @@
   </div>
 </section>
 
+<!-- ============ PAGE TABS (sticky sub-nav, scroll-spy) ============ -->
+<nav class="page-tabs" aria-label="Section navigation">
+  <div class="container">
+    <a href="#capabilities" class="tab">Capabilities</a>
+    <a href="#how-we-work" class="tab">Mobile stack</a>
+    <a href="#standards" class="tab">Standards</a>
+    <a href="#talk-to-us" class="tab">Talk to us</a>
+  </div>
+</nav>
+
+
+
 <!-- ============ TECH STACK ============ -->
-<section class="tech-stack-section">
+<section class="tech-stack-section" id="capabilities">
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">Technology stack</span>
@@ -277,7 +307,7 @@
 </section>
 
 <!-- ============ MOBILE EXPERIENCE STACK ============ -->
-<section>
+<section id="how-we-work">
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">The mobile experience stack</span>
@@ -459,7 +489,7 @@
 </section>
 
 <!-- ============ FRAMEWORKS & STANDARDS — CMM-Level trust band ============ -->
-<section class="trust-band">
+<section class="trust-band" id="standards">
   <div class="container">
     <div class="trust-head fade-up">
       <span class="eyebrow">Trusted Delivery, Audited Quality</span>
@@ -512,7 +542,7 @@
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section class="cta-compact">
+<section class="cta-compact" id="talk-to-us">
   <div class="container">
     <div class="cta-banner cta-banner-compact fade-up">
             <h2>Tell us about your app idea.</h2>
@@ -524,6 +554,13 @@
     </div>
   </div>
 </section>
+
+<!-- ============ FLOATING CTA ============ -->
+<a href="../contact.html" class="floating-cta" aria-label="Get a quote">
+  <span class="dot" aria-hidden="true"></span>
+  Get a Quote
+  <span class="arrow" aria-hidden="true">&rarr;</span>
+</a>
 
 </main>
 
