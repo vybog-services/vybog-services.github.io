@@ -118,70 +118,83 @@
 <main>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="hero-glow"></div>
+<section class="page-hero hero-centered">
   <div class="container">
-    <div class="hero-grid">
-      <div class="fade-up">
-        <div class="breadcrumbs">
-          <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Services</a><span class="sep">/</span>E-commerce Development
-        </div>
-        <span class="eyebrow">E-commerce Development</span>
-        <h1>Storefronts that <span class="italic-accent">convert</span>, replatforms that don&rsquo;t bleed traffic, retainers that don&rsquo;t go silent.</h1>
-        <p class="lead">Vybog Services builds, migrates and maintains commerce on Shopify, Magento (Adobe Commerce), WooCommerce, BigCommerce, Salesforce Commerce Cloud and headless stacks. Twenty-two years of online checkout pages, six replatforms in 2025 alone, and a maintenance bench that doesn&rsquo;t farm tickets out at 2am.</p>
-        <div class="mt-6">
-          <a href="../contact.html" class="btn btn-primary">Plan your store build <span class="arrow">→</span></a>
-          <a href="#migrations" class="btn btn-ghost">See migration approach</a>
-        </div>
-      </div>
-      <div class="fade-up" style="display:flex;justify-content:center;align-items:center">
-        <!-- storefront SVG mockup -->
-        <svg viewBox="0 0 460 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;max-width:460px;height:auto">
-          <rect x="10" y="10" width="440" height="300" rx="14" fill="#fff" stroke="#E0E3E8"/>
-          <!-- top bar -->
-          <rect x="10" y="10" width="440" height="36" rx="14" fill="#0B1B3D"/>
-          <text x="28" y="32" font-family="Inter Tight, sans-serif" font-weight="700" font-size="13" fill="#fff">Acme &middot; Store</text>
-          <g font-family="Inter, sans-serif" font-size="11" fill="#BFC8DA">
-            <text x="240" y="32">Shop</text>
-            <text x="280" y="32">Sale</text>
-            <text x="316" y="32">Account</text>
-          </g>
-          <circle cx="420" cy="28" r="9" fill="#0050C8"/>
-          <text x="420" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#fff" font-weight="700">3</text>
-          <!-- hero block -->
-          <rect x="28" y="60" width="404" height="80" rx="8" fill="#E8F1FE"/>
-          <text x="48" y="96" font-family="Inter Tight, sans-serif" font-weight="700" font-size="16" fill="#0B1B3D">New season, free shipping over $50</text>
-          <rect x="48" y="106" width="76" height="22" rx="11" fill="#0050C8"/>
-          <text x="86" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#fff" font-weight="600">Shop now</text>
-          <!-- product grid 4 cards -->
-          <g font-family="Inter, sans-serif" font-size="9" fill="#5C5C5C">
-            <rect x="28" y="156" width="96" height="80" rx="6" fill="#F7F9FC" stroke="#E0E3E8"/>
-            <rect x="40" y="166" width="72" height="42" rx="4" fill="#DDE6F1"/>
-            <text x="40" y="222">Cotton tee &middot; $28</text>
-            <rect x="132" y="156" width="96" height="80" rx="6" fill="#F7F9FC" stroke="#E0E3E8"/>
-            <rect x="144" y="166" width="72" height="42" rx="4" fill="#DDE6F1"/>
-            <text x="144" y="222">Cap &middot; $18</text>
-            <rect x="236" y="156" width="96" height="80" rx="6" fill="#F7F9FC" stroke="#E0E3E8"/>
-            <rect x="248" y="166" width="72" height="42" rx="4" fill="#DDE6F1"/>
-            <text x="248" y="222">Mug &middot; $14</text>
-            <rect x="340" y="156" width="92" height="80" rx="6" fill="#F7F9FC" stroke="#E0E3E8"/>
-            <rect x="352" y="166" width="68" height="42" rx="4" fill="#DDE6F1"/>
-            <text x="352" y="222">Tote &middot; $24</text>
-          </g>
-          <!-- footer kpi row -->
-          <rect x="28" y="252" width="404" height="48" rx="6" fill="#0B1B3D"/>
-          <g font-family="Inter, sans-serif" font-size="10" fill="#BFC8DA">
-            <text x="48" y="270" font-weight="700" fill="#fff">3.8%</text>
-            <text x="48" y="284">Conversion</text>
-            <text x="142" y="270" font-weight="700" fill="#fff">2.1s</text>
-            <text x="142" y="284">LCP</text>
-            <text x="226" y="270" font-weight="700" fill="#fff">$84</text>
-            <text x="226" y="284">AOV</text>
-            <text x="304" y="270" font-weight="700" fill="#16A34A">-32%</text>
-            <text x="304" y="284">Cart abandon</text>
-          </g>
-        </svg>
-      </div>
+    <div class="breadcrumbs fade-up">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Services</a><span class="sep">/</span>E-commerce Development
+    </div>
+    <span class="eyebrow fade-up">E-commerce Development</span>
+    <h1 class="fade-up">Storefronts That Convert. Replatforms That Don&rsquo;t Bleed <span class="italic-accent">Traffic</span>.</h1>
+    <p class="lead fade-up">Shopify, Magento, WooCommerce, BigCommerce, Salesforce Commerce Cloud, headless &mdash; new builds, migrations with zero SEO loss, and maintenance retainers that answer Slack on Black Friday. Built by senior commerce hands, accelerated by AI copilots.</p>
+    <div class="mt-6 fade-up">
+      <a href="../contact.html" class="btn btn-primary">Plan Your Store Build <span class="arrow">→</span></a>
+      <a href="#migrations" class="btn btn-ghost">See migration approach</a>
+    </div>
+
+    <!-- ============ STOREFRONT WIREFRAME ============ -->
+    <div class="hero-wireframe fade-up" aria-hidden="true">
+      <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="1200" height="700" rx="14" fill="#FFFFFF" stroke="#E0E3E8" stroke-width="1.5"/>
+        <rect x="0" y="0" width="1200" height="50" rx="14" fill="#F4F6FA"/>
+        <rect x="0" y="42" width="1200" height="8" fill="#F4F6FA"/>
+        <circle cx="22" cy="25" r="6" fill="#FF6058"/>
+        <circle cx="42" cy="25" r="6" fill="#FFBD2E"/>
+        <circle cx="62" cy="25" r="6" fill="#27C840"/>
+        <rect x="380" y="14" width="440" height="22" rx="11" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="600" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#9BA5B5">acme-store.shop/collections/new</text>
+        <!-- Store nav -->
+        <rect x="0" y="50" width="1200" height="60" fill="#0B1B3D"/>
+        <text x="60" y="88" font-family="Inter Tight, sans-serif" font-weight="800" font-size="18" fill="#fff">Acme &middot; Store</text>
+        <g font-family="Inter, sans-serif" font-size="14" fill="#BFC8DA">
+          <text x="700" y="88">Shop</text>
+          <text x="770" y="88">New</text>
+          <text x="830" y="88">Sale</text>
+          <text x="900" y="88">Account</text>
+        </g>
+        <circle cx="1100" cy="80" r="14" fill="#0050C8"/>
+        <text x="1100" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#fff" font-weight="700">3</text>
+        <!-- Promo band -->
+        <rect x="60" y="140" width="1080" height="170" rx="12" fill="#E8F1FE"/>
+        <text x="100" y="195" font-family="Inter Tight, sans-serif" font-weight="800" font-size="28" fill="#0B1B3D">New season. Free shipping over $50.</text>
+        <text x="100" y="225" font-family="Inter, sans-serif" font-size="14" fill="#5C5C5C">Cart-recovery flow firing 23 minutes after exit. Stripe + Klarna at checkout.</text>
+        <rect x="100" y="248" width="140" height="42" rx="10" fill="#0050C8"/>
+        <text x="170" y="274" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#fff" font-weight="600">Shop now</text>
+        <!-- Product grid -->
+        <g font-family="Inter, sans-serif" font-size="12" fill="#5C5C5C">
+          <rect x="60" y="340" width="252" height="220" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <rect x="80" y="360" width="212" height="130" rx="6" fill="#DDE6F1"/>
+          <text x="80" y="514" font-family="Inter Tight, sans-serif" font-weight="700" font-size="13" fill="#0B1B3D">Cotton tee</text>
+          <text x="80" y="536" font-size="13">$28 &middot; 4 colors</text>
+
+          <rect x="332" y="340" width="252" height="220" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <rect x="352" y="360" width="212" height="130" rx="6" fill="#DDE6F1"/>
+          <text x="352" y="514" font-family="Inter Tight, sans-serif" font-weight="700" font-size="13" fill="#0B1B3D">Branded cap</text>
+          <text x="352" y="536" font-size="13">$18 &middot; one size</text>
+
+          <rect x="604" y="340" width="252" height="220" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <rect x="624" y="360" width="212" height="130" rx="6" fill="#DDE6F1"/>
+          <text x="624" y="514" font-family="Inter Tight, sans-serif" font-weight="700" font-size="13" fill="#0B1B3D">Ceramic mug</text>
+          <text x="624" y="536" font-size="13">$14 &middot; 12oz / 16oz</text>
+
+          <rect x="876" y="340" width="264" height="220" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <rect x="896" y="360" width="224" height="130" rx="6" fill="#DDE6F1"/>
+          <text x="896" y="514" font-family="Inter Tight, sans-serif" font-weight="700" font-size="13" fill="#0B1B3D">Canvas tote</text>
+          <text x="896" y="536" font-size="13">$24 &middot; 2 sizes</text>
+        </g>
+        <!-- KPI bar -->
+        <rect x="60" y="588" width="1080" height="72" rx="10" fill="#0B1B3D"/>
+        <g font-family="Inter, sans-serif" fill="#BFC8DA">
+          <text x="100" y="622" font-family="Inter Tight, sans-serif" font-weight="800" font-size="24" fill="#fff">3.8&percnt;</text>
+          <text x="100" y="644" font-size="12">Conversion</text>
+          <text x="340" y="622" font-family="Inter Tight, sans-serif" font-weight="800" font-size="24" fill="#fff">2.1s</text>
+          <text x="340" y="644" font-size="12">LCP (p75)</text>
+          <text x="580" y="622" font-family="Inter Tight, sans-serif" font-weight="800" font-size="24" fill="#fff">$84</text>
+          <text x="580" y="644" font-size="12">AOV</text>
+          <text x="820" y="622" font-family="Inter Tight, sans-serif" font-weight="800" font-size="24" fill="#16A34A">&minus;32&percnt;</text>
+          <text x="820" y="644" font-size="12">Cart abandonment</text>
+        </g>
+      </svg>
+      <div class="wireframe-fade" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -407,14 +420,14 @@
   </div>
 </section>
 
-<!-- ============ CTA ============ -->
-<section class="cta-band">
+<!-- ============ CTA — compact ============ -->
+<section class="cta-compact">
   <div class="container">
-    <div class="cta-card fade-up">
+    <div class="cta-banner cta-banner-compact fade-up">
       <h2>Plan the next phase of your store.</h2>
-      <p>Whether you&rsquo;re launching a new commerce brand, migrating off a platform you&rsquo;ve outgrown, or looking for a maintenance partner who answers Slack on Black Friday &mdash; a 30-minute call with a senior commerce lead. No sales script, no junior intake.</p>
+      <p>A 30-minute call with a senior commerce lead &mdash; no sales script, no junior intake.</p>
       <div class="cta-actions">
-        <a href="../contact.html" class="btn btn-on-dark btn-lg">Book an e-commerce review <span class="arrow">→</span></a>
+        <a href="../contact.html" class="btn btn-on-dark">Book an e-commerce review <span class="arrow">→</span></a>
         <a href="mailto:hello@vybogservices.com" class="btn btn-ghost" style="color:var(--text-on-dark)">hello@vybogservices.com</a>
       </div>
     </div>

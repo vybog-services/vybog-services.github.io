@@ -118,64 +118,78 @@
 <main>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="hero-glow"></div>
+<section class="page-hero hero-centered">
   <div class="container">
-    <div class="hero-grid">
-      <div class="fade-up">
-        <div class="breadcrumbs">
-          <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Services</a><span class="sep">/</span>CMS Development
-        </div>
-        <span class="eyebrow">CMS Development</span>
-        <h1>A CMS your <span class="italic-accent">editors</span> will actually publish to.</h1>
-        <p class="lead">Vybog Services builds WordPress, Drupal, Joomla, WooCommerce, Shopify, Wix, Squarespace, Webflow, Ghost and headless CMS implementations the same way we build software — with content modeling discipline, editor-first workflows, and the security hardening that most agencies treat as out-of-scope.</p>
-        <div class="mt-6">
-          <a href="../contact.html" class="btn btn-primary">Plan your CMS build <span class="arrow">→</span></a>
-          <a href="../case-studies.html" class="btn btn-ghost">See CMS work</a>
-        </div>
-      </div>
-      <div class="fade-up" style="display:flex;justify-content:center;align-items:center">
-        <!-- editor dashboard SVG -->
-        <svg viewBox="0 0 460 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;max-width:460px;height:auto">
-          <rect x="10" y="10" width="440" height="300" rx="14" fill="#fff" stroke="#E0E3E8"/>
-          <!-- sidebar -->
-          <rect x="10" y="10" width="120" height="300" rx="14" fill="#0B1B3D"/>
-          <text x="30" y="44" font-family="Inter Tight, sans-serif" font-weight="700" font-size="13" fill="#fff">Editor</text>
-          <g font-family="Inter, sans-serif" font-size="11" fill="#BFC8DA">
-            <rect x="22" y="64" width="96" height="22" rx="6" fill="#0050C8"/>
-            <text x="32" y="79" fill="#fff" font-weight="600">Dashboard</text>
-            <text x="32" y="105">Posts</text>
-            <text x="32" y="125">Pages</text>
-            <text x="32" y="145">Media</text>
-            <text x="32" y="165">Forms</text>
-            <text x="32" y="185">Comments</text>
-            <text x="32" y="205">Plugins</text>
-            <text x="32" y="225">Users</text>
-            <text x="32" y="245">Settings</text>
-          </g>
-          <!-- main -->
-          <text x="150" y="40" font-family="Inter Tight, sans-serif" font-weight="700" font-size="16" fill="#0B1B3D">New Post · Draft</text>
-          <rect x="150" y="60" width="290" height="30" rx="6" fill="#F4F5F7" stroke="#E0E3E8"/>
-          <text x="160" y="79" font-family="Inter, sans-serif" font-size="11" fill="#5C5C5C">How we replatformed without a single broken URL</text>
-          <!-- blocks -->
-          <rect x="150" y="100" width="290" height="40" rx="6" fill="#F7F9FC" stroke="#E8E8E5"/>
-          <text x="162" y="117" font-family="Inter, sans-serif" font-size="9" fill="#0050C8" font-weight="600">¶ Paragraph block</text>
-          <text x="162" y="132" font-family="Inter, sans-serif" font-size="9" fill="#5C5C5C">The redirect map was the first artifact we wrote…</text>
-          <rect x="150" y="148" width="138" height="80" rx="6" fill="#E8F1FE" stroke="#E0E3E8"/>
-          <text x="162" y="167" font-family="Inter, sans-serif" font-size="9" fill="#0050C8" font-weight="600">▶ Image block</text>
-          <rect x="296" y="148" width="144" height="80" rx="6" fill="#F7F9FC" stroke="#E8E8E5"/>
-          <text x="308" y="167" font-family="Inter, sans-serif" font-size="9" fill="#0050C8" font-weight="600">⌗ Heading H2</text>
-          <text x="308" y="185" font-family="Inter, sans-serif" font-size="9" fill="#5C5C5C">Editor Experience</text>
-          <!-- meta -->
-          <rect x="150" y="240" width="80" height="22" rx="11" fill="#fff" stroke="#16A34A"/>
-          <text x="190" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#16A34A" font-weight="600">✓ Scheduled</text>
-          <rect x="240" y="240" width="86" height="22" rx="11" fill="#fff" stroke="#E0E3E8"/>
-          <text x="283" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#5C5C5C">Preview</text>
-          <rect x="350" y="240" width="86" height="22" rx="11" fill="#0050C8"/>
-          <text x="393" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#fff" font-weight="600">Publish</text>
-          <text x="150" y="290" font-family="Inter, sans-serif" font-size="10" fill="#8A8A8A">Auto-saved 12 seconds ago</text>
-        </svg>
-      </div>
+    <div class="breadcrumbs fade-up">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Services</a><span class="sep">/</span>CMS Development
+    </div>
+    <span class="eyebrow fade-up">CMS Development</span>
+    <h1 class="fade-up">Editor-First CMS Your Marketing Team Will Actually <span class="italic-accent">Publish To</span>.</h1>
+    <p class="lead fade-up">WordPress, Drupal, Joomla, WooCommerce, Shopify, Wix, Squarespace, Webflow, Ghost and headless &mdash; built with content-modelling discipline, security hardening, and editor flows your marketing team will use without filing a ticket.</p>
+    <div class="mt-6 fade-up">
+      <a href="../contact.html" class="btn btn-primary">Plan Your CMS Build <span class="arrow">→</span></a>
+      <a href="../case-studies.html" class="btn btn-ghost">See CMS work</a>
+    </div>
+
+    <!-- ============ EDITOR DASHBOARD WIREFRAME ============ -->
+    <div class="hero-wireframe fade-up" aria-hidden="true">
+      <svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="1200" height="680" rx="14" fill="#FFFFFF" stroke="#E0E3E8" stroke-width="1.5"/>
+        <rect x="0" y="0" width="1200" height="50" rx="14" fill="#F4F6FA"/>
+        <rect x="0" y="42" width="1200" height="8" fill="#F4F6FA"/>
+        <circle cx="22" cy="25" r="6" fill="#FF6058"/>
+        <circle cx="42" cy="25" r="6" fill="#FFBD2E"/>
+        <circle cx="62" cy="25" r="6" fill="#27C840"/>
+        <rect x="380" y="14" width="440" height="22" rx="11" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="600" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#9BA5B5">cms.yourbrand.com/wp-admin</text>
+        <!-- Sidebar -->
+        <rect x="0" y="50" width="220" height="630" fill="#0B1B3D"/>
+        <text x="24" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="15" fill="#fff">CMS Editor</text>
+        <text x="24" y="106" font-family="Inter, sans-serif" font-size="9" fill="#6BA4FF" letter-spacing="2">CONTENT</text>
+        <g font-family="Inter, sans-serif" font-size="13" fill="#BFC8DA">
+          <rect x="12" y="138" width="196" height="34" rx="8" fill="#0050C8"/>
+          <text x="32" y="160" fill="#fff" font-weight="600">Dashboard</text>
+          <text x="32" y="200">Posts</text>
+          <text x="32" y="232">Pages</text>
+          <text x="32" y="264">Media</text>
+          <text x="32" y="296">Forms</text>
+          <text x="32" y="328">Comments</text>
+          <text x="32" y="360">Plugins</text>
+          <text x="32" y="392">Users</text>
+          <text x="32" y="424">Settings</text>
+        </g>
+        <!-- Main: editor -->
+        <text x="252" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="22" fill="#0B1B3D">New Post &middot; Draft</text>
+        <text x="252" y="114" font-family="Inter, sans-serif" font-size="13" fill="#6E7686">Last saved 12 seconds ago &middot; auto-save on</text>
+        <rect x="980" y="74" width="180" height="38" rx="8" fill="#0050C8"/>
+        <text x="1070" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#fff" font-weight="600">Publish</text>
+        <!-- Title field -->
+        <rect x="252" y="140" width="908" height="62" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+        <text x="272" y="180" font-family="Inter Tight, sans-serif" font-size="22" fill="#0B1B3D" font-weight="700">How we replatformed without a single broken URL</text>
+        <!-- Paragraph block -->
+        <rect x="252" y="220" width="908" height="86" rx="10" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="272" y="248" font-family="Inter, sans-serif" font-size="11" fill="#0050C8" font-weight="700" letter-spacing="1">&#x00B6; PARAGRAPH BLOCK</text>
+        <text x="272" y="278" font-family="Inter, sans-serif" font-size="14" fill="#5C5C5C">The redirect map was the first artifact we wrote. Before a single line of</text>
+        <text x="272" y="296" font-family="Inter, sans-serif" font-size="14" fill="#5C5C5C">code moved, the canonical strategy was signed off by SEO leadership.</text>
+        <!-- Two blocks side by side -->
+        <rect x="252" y="324" width="440" height="180" rx="10" fill="#E8F1FE" stroke="#E0E3E8"/>
+        <text x="272" y="352" font-family="Inter, sans-serif" font-size="11" fill="#0050C8" font-weight="700" letter-spacing="1">&#x25B6; IMAGE BLOCK</text>
+        <rect x="272" y="370" width="400" height="118" rx="6" fill="#FFFFFF" stroke="#CFE0F0"/>
+        <rect x="712" y="324" width="448" height="180" rx="10" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="732" y="352" font-family="Inter, sans-serif" font-size="11" fill="#0050C8" font-weight="700" letter-spacing="1">&#x2317; HEADING H2</text>
+        <text x="732" y="384" font-family="Inter Tight, sans-serif" font-size="22" fill="#0B1B3D" font-weight="700">Editor Experience</text>
+        <text x="732" y="412" font-family="Inter, sans-serif" font-size="13" fill="#6E7686">Block-based, draft autosave, role-aware,</text>
+        <text x="732" y="432" font-family="Inter, sans-serif" font-size="13" fill="#6E7686">scheduled publishing, preview-on-staging.</text>
+        <!-- Status pills -->
+        <rect x="252" y="528" width="120" height="34" rx="17" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+        <text x="312" y="550" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#16A34A" font-weight="600">&#x2713; Scheduled</text>
+        <rect x="384" y="528" width="120" height="34" rx="17" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="444" y="550" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#5C5C5C">Preview</text>
+        <rect x="516" y="528" width="120" height="34" rx="17" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="576" y="550" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#5C5C5C">Save draft</text>
+        <text x="252" y="610" font-family="Inter, sans-serif" font-size="12" fill="#9BA5B5">Auto-saved 12 seconds ago &middot; 1,284 words &middot; SEO score 92</text>
+      </svg>
+      <div class="wireframe-fade" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -413,11 +427,10 @@
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section>
+<section class="cta-compact">
   <div class="container">
-    <div class="cta-banner fade-up">
-      <span class="eyebrow" style="color:var(--brand-secondary)">Get the CMS right</span>
-      <h2>Whatever your editors publish to today, we can make better.</h2>
+    <div class="cta-banner cta-banner-compact fade-up">
+            <h2>Whatever your editors publish to today, we can make better.</h2>
       <p>A senior CMS expert will spend twenty minutes auditing your current stack and recommend the right next step — even if that step is "leave it alone for now."</p>
       <div class="cta-actions">
         <a href="../contact.html" class="btn btn-on-dark btn-lg">Book a CMS review <span class="arrow">→</span></a>

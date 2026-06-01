@@ -118,54 +118,73 @@
 <main>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="hero-glow"></div>
+<section class="page-hero hero-centered">
   <div class="container">
-    <div class="hero-grid">
-      <div class="fade-up">
-        <div class="breadcrumbs">
-          <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Services</a><span class="sep">/</span>Web Development
-        </div>
-        <span class="eyebrow">Web Development</span>
-        <h1>The web layer between your <span class="italic-accent">brand</span> and your product.</h1>
-        <p class="lead">Vybog Services builds marketing sites that out-rank, web apps that out-load, and customer portals that operations teams will defend in a renewal meeting. Lighthouse-95 by default; Core Web Vitals in the green band at p75; accessibility baked into the first sprint, not bolted on at QA.</p>
-        <div class="mt-6">
-          <a href="../contact.html" class="btn btn-primary">Start a web build <span class="arrow">→</span></a>
-          <a href="../case-studies.html" class="btn btn-ghost">See recent work</a>
-        </div>
-      </div>
-      <div class="fade-up" style="display:flex;justify-content:center;align-items:center">
-        <!-- browser frame SVG -->
-        <svg viewBox="0 0 460 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;max-width:460px;height:auto">
-          <rect x="10" y="10" width="440" height="300" rx="14" fill="#fff" stroke="#E0E3E8"/>
-          <rect x="10" y="10" width="440" height="40" rx="14" fill="#F4F5F7" stroke="#E0E3E8"/>
-          <circle cx="30" cy="30" r="5" fill="#F4623A" opacity="0.6"/>
-          <circle cx="46" cy="30" r="5" fill="#FFB400" opacity="0.6"/>
-          <circle cx="62" cy="30" r="5" fill="#16A34A" opacity="0.6"/>
-          <rect x="100" y="20" width="280" height="20" rx="10" fill="#fff" stroke="#E0E3E8"/>
-          <text x="115" y="34" font-family="Inter, sans-serif" font-size="10" fill="#8A8A8A">https://yourbrand.com</text>
-          <!-- hero -->
-          <text x="40" y="100" font-family="Inter Tight, sans-serif" font-weight="700" font-size="22" fill="#0B1B3D">Built for the third year.</text>
-          <text x="40" y="124" font-family="Inter, sans-serif" font-size="11" fill="#5C5C5C">Lighthouse 98 · LCP 1.7s · CLS 0.02 · INP 142ms</text>
-          <rect x="40" y="140" width="100" height="28" rx="14" fill="#0050C8"/>
-          <text x="90" y="158" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="600" font-size="11" fill="#fff">Get started →</text>
-          <rect x="150" y="140" width="100" height="28" rx="14" fill="none" stroke="#C7CCD4"/>
-          <text x="200" y="158" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="600" font-size="11" fill="#0B1B3D">See pricing</text>
-          <!-- cards row -->
-          <rect x="40" y="200" width="120" height="80" rx="10" fill="#F7F9FC" stroke="#E8E8E5"/>
-          <rect x="170" y="200" width="120" height="80" rx="10" fill="#F7F9FC" stroke="#E8E8E5"/>
-          <rect x="300" y="200" width="120" height="80" rx="10" fill="#F7F9FC" stroke="#E8E8E5"/>
-          <rect x="52" y="212" width="40" height="40" rx="8" fill="#E8F1FE"/>
-          <rect x="182" y="212" width="40" height="40" rx="8" fill="#E8F1FE"/>
-          <rect x="312" y="212" width="40" height="40" rx="8" fill="#E8F1FE"/>
-          <rect x="100" y="220" width="50" height="6" rx="3" fill="#0B1B3D"/>
-          <rect x="230" y="220" width="50" height="6" rx="3" fill="#0B1B3D"/>
-          <rect x="360" y="220" width="50" height="6" rx="3" fill="#0B1B3D"/>
-          <rect x="100" y="232" width="40" height="4" rx="2" fill="#C7CCD4"/>
-          <rect x="230" y="232" width="40" height="4" rx="2" fill="#C7CCD4"/>
-          <rect x="360" y="232" width="40" height="4" rx="2" fill="#C7CCD4"/>
-        </svg>
-      </div>
+    <div class="breadcrumbs fade-up">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Services</a><span class="sep">/</span>Web Development
+    </div>
+    <span class="eyebrow fade-up">Web Development</span>
+    <h1 class="fade-up">Sites That Load Fast, Rank High, Convert <span class="italic-accent">Cold Traffic</span>.</h1>
+    <p class="lead fade-up">Marketing sites, web apps and customer portals &mdash; Lighthouse-95 by default, Core Web Vitals in the green at p75, accessibility baked in from the first sprint. Built by senior front-end teams, accelerated by AI copilots.</p>
+    <div class="mt-6 fade-up">
+      <a href="../contact.html" class="btn btn-primary">Start a Web Build <span class="arrow">→</span></a>
+      <a href="../case-studies.html" class="btn btn-ghost">See recent work</a>
+    </div>
+
+    <!-- ============ BROWSER WIREFRAME ============ -->
+    <div class="hero-wireframe fade-up" aria-hidden="true">
+      <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="1200" height="700" rx="14" fill="#FFFFFF" stroke="#E0E3E8" stroke-width="1.5"/>
+        <rect x="0" y="0" width="1200" height="50" rx="14" fill="#F4F6FA"/>
+        <rect x="0" y="42" width="1200" height="8" fill="#F4F6FA"/>
+        <circle cx="22" cy="25" r="6" fill="#FF6058"/>
+        <circle cx="42" cy="25" r="6" fill="#FFBD2E"/>
+        <circle cx="62" cy="25" r="6" fill="#27C840"/>
+        <rect x="380" y="14" width="440" height="22" rx="11" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="600" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#9BA5B5">https://yourbrand.com</text>
+        <rect x="0" y="50" width="1200" height="68" fill="#FFFFFF"/>
+        <text x="60" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="18" fill="#0B1B3D">YourBrand</text>
+        <g font-family="Inter, sans-serif" font-size="13" fill="#5C5C5C">
+          <text x="700" y="92">Product</text>
+          <text x="780" y="92">Pricing</text>
+          <text x="860" y="92">Customers</text>
+          <text x="960" y="92">Blog</text>
+        </g>
+        <rect x="1040" y="68" width="110" height="36" rx="8" fill="#0050C8"/>
+        <text x="1095" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#fff" font-weight="600">Start free</text>
+        <rect x="0" y="118" width="1200" height="320" fill="#F7F9FC"/>
+        <text x="600" y="210" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="800" font-size="44" fill="#0B1B3D">Built for the third year.</text>
+        <text x="600" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#5C5C5C">Marketing sites &amp; web apps that load fast, rank high, and convert cold traffic.</text>
+        <rect x="510" y="285" width="170" height="50" rx="10" fill="#0050C8"/>
+        <text x="595" y="316" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#fff" font-weight="600">Get started →</text>
+        <rect x="690" y="285" width="170" height="50" rx="10" fill="none" stroke="#0050C8" stroke-width="1.5"/>
+        <text x="775" y="316" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#0050C8" font-weight="600">See pricing</text>
+        <g font-family="Inter, sans-serif" font-size="13" fill="#5C5C5C">
+          <text x="420" y="380" font-family="Inter Tight, sans-serif" font-weight="700" font-size="22" fill="#16A34A">98</text>
+          <text x="420" y="402">Lighthouse</text>
+          <text x="540" y="380" font-family="Inter Tight, sans-serif" font-weight="700" font-size="22" fill="#16A34A">1.7s</text>
+          <text x="540" y="402">LCP (p75)</text>
+          <text x="660" y="380" font-family="Inter Tight, sans-serif" font-weight="700" font-size="22" fill="#16A34A">0.02</text>
+          <text x="660" y="402">CLS</text>
+          <text x="780" y="380" font-family="Inter Tight, sans-serif" font-weight="700" font-size="22" fill="#16A34A">142ms</text>
+          <text x="780" y="402">INP</text>
+        </g>
+        <g font-family="Inter, sans-serif">
+          <rect x="60" y="470" width="350" height="190" rx="12" fill="#FFFFFF" stroke="#E0E3E8"/>
+          <rect x="84" y="494" width="44" height="44" rx="10" fill="#E8F1FE"/>
+          <text x="84" y="568" font-family="Inter Tight, sans-serif" font-weight="700" font-size="16" fill="#0B1B3D">Speed by default</text>
+          <text x="84" y="592" font-size="12" fill="#6E7686">Lighthouse 95+ on first commit.</text>
+          <rect x="425" y="470" width="350" height="190" rx="12" fill="#FFFFFF" stroke="#E0E3E8"/>
+          <rect x="449" y="494" width="44" height="44" rx="10" fill="#E8F1FE"/>
+          <text x="449" y="568" font-family="Inter Tight, sans-serif" font-weight="700" font-size="16" fill="#0B1B3D">Accessible by design</text>
+          <text x="449" y="592" font-size="12" fill="#6E7686">WCAG 2.2 AA from the first sprint.</text>
+          <rect x="790" y="470" width="350" height="190" rx="12" fill="#FFFFFF" stroke="#E0E3E8"/>
+          <rect x="814" y="494" width="44" height="44" rx="10" fill="#E8F1FE"/>
+          <text x="814" y="568" font-family="Inter Tight, sans-serif" font-weight="700" font-size="16" fill="#0B1B3D">SEO-ready</text>
+          <text x="814" y="592" font-size="12" fill="#6E7686">Schema, sitemap, canonicals on day one.</text>
+        </g>
+      </svg>
+      <div class="wireframe-fade" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -374,11 +393,10 @@
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section>
+<section class="cta-compact">
   <div class="container">
-    <div class="cta-banner fade-up">
-      <span class="eyebrow" style="color:var(--brand-secondary)">Ship the web layer</span>
-      <h2>Marketing site, product UI, or portal — we will scope it in week one.</h2>
+    <div class="cta-banner cta-banner-compact fade-up">
+            <h2>Marketing site, product UI, or portal — we will scope it in week one.</h2>
       <p>Twenty minutes with a senior web expert. You will leave with a framework recommendation, a CMS choice, and a Lighthouse target we will commit to in writing.</p>
       <div class="cta-actions">
         <a href="../contact.html" class="btn btn-on-dark btn-lg">Scope your web build <span class="arrow">→</span></a>
