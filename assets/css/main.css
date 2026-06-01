@@ -2443,3 +2443,99 @@ section.cta-compact { padding: clamp(40px, 5vw, 64px) 0; }
   flex-wrap: wrap;
 }
 .cta-banner-compact .btn { padding: 12px 22px; font-size: 14.5px; }
+
+/* ---------- 40. TRUST BAND — frameworks & standards (CMM-Level signal) ---------- */
+section.trust-band {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FC 100%);
+  padding: clamp(64px, 8vw, 112px) 0;
+  border-top: 1px solid #EDEFF3;
+  border-bottom: 1px solid #EDEFF3;
+}
+.trust-head {
+  text-align: center;
+  margin: 0 auto clamp(36px, 5vw, 56px);
+  max-width: 760px;
+}
+.trust-head .eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--brand-primary);
+  letter-spacing: 0.22em;
+}
+.trust-head h2 {
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.15;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+.trust-head p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.trust-badge {
+  background: #FFFFFF;
+  border: 1px solid #E0E3E8;
+  border-radius: 14px;
+  padding: 24px 22px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.trust-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(11, 27, 61, 0.08);
+  border-color: var(--brand-primary);
+}
+.trust-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px; height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #E8F1FE 0%, #DCE9F8 100%);
+  color: var(--brand-primary);
+  margin: 0 auto 14px;
+}
+.trust-icon svg { width: 28px; height: 28px; }
+.trust-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin: 0 0 4px;
+}
+.trust-tag {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+@media (max-width: 980px) {
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .trust-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- 41. CARD HOVER POLISH (CMM-Level interaction signal) ---------- */
+.card,
+.feature-card,
+.t7-skill,
+.t7-highlight-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card:hover,
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(11, 27, 61, 0.08);
+}
+
+/* ---------- 42. SECTION SPACING HARMONIZATION ---------- */
+section.bg-soft + section.bg-soft,
+section.bg-tint + section.bg-tint { padding-top: clamp(24px, 3vw, 40px); }
