@@ -276,44 +276,41 @@
   </div>
 </section>
 
-<!-- ============ DELIVERY DISCIPLINES ============ -->
-<section>
+<!-- ============ DELIVERY DISCIPLINES — gain-section style (dark, numbered rows) ============ -->
+<section class="gain-section">
   <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Experting disciplines</span>
-      <h2>Six practices that show up in every Vybog Services build.</h2>
-      <p>These are not optional extras. They are baked into the rate and the rhythm.</p>
-    </div>
-    <div class="grid grid-3 fade-up">
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
-        <h3>Architecture review</h3>
-        <p>Before a line is written, a Vybog Services principal sketches the data model, API surface, and security boundaries. The diagram becomes the contract.</p>
+    <h2 class="gain-title fade-up">Six practices that show up<br/>in every Vybog Services build.</h2>
+    <div class="gain-divider"></div>
+    <div class="gain-rows fade-up">
+      <div class="gain-row">
+        <span class="gain-num">01</span>
+        <h3 class="gain-row-title">Architecture Review</h3>
+        <p class="gain-row-desc">Before a line is written, a Vybog Services principal sketches the data model, API surface, and security boundaries. The diagram becomes the contract every PR is measured against.</p>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-        <h3>Code review culture</h3>
-        <p>Every PR is reviewed by a second expert with three days of context, not a junior signing off blindly. Trunk-based, small-diff, no two-week feature branches.</p>
+      <div class="gain-row">
+        <span class="gain-num">02</span>
+        <h3 class="gain-row-title">Code Review Culture</h3>
+        <p class="gain-row-desc">Every PR is reviewed by a second expert with three days of context, not a junior signing off blindly. Trunk-based, small-diff, no two-week feature branches that turn merge windows into firefighting.</p>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-        <h3>Observability from day one</h3>
-        <p>Structured logs, traces, metrics, and SLO dashboards live in Grafana or Datadog from the first commit. You see what the experts see.</p>
+      <div class="gain-row">
+        <span class="gain-num">03</span>
+        <h3 class="gain-row-title">Observability From Day One</h3>
+        <p class="gain-row-desc">Structured logs, traces, metrics, and SLO dashboards live in Grafana or Datadog from the first commit. You see what the experts see &mdash; not a redacted screenshot quarterly.</p>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L3 7v6c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/></svg></div>
-        <h3>Security baseline</h3>
-        <p>OWASP Top-10 covered, dependency scanning on every PR, secrets in a vault, threat-model document for any feature that touches money or PHI.</p>
+      <div class="gain-row">
+        <span class="gain-num">04</span>
+        <h3 class="gain-row-title">Security Baseline</h3>
+        <p class="gain-row-desc">OWASP Top-10 covered, dependency scanning on every PR, secrets in a vault, threat-model document for any feature that touches money or PHI &mdash; written before the feature is coded.</p>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <h3>Performance budgets</h3>
-        <p>p95 latency targets, query budgets per endpoint, frontend bundle ceilings. We fail the build before we ship the regression.</p>
+      <div class="gain-row">
+        <span class="gain-num">05</span>
+        <h3 class="gain-row-title">Performance Budgets</h3>
+        <p class="gain-row-desc">p95 latency targets, query budgets per endpoint, frontend bundle ceilings. We fail the build before we ship the regression &mdash; not after the support tickets land.</p>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
-        <h3>Technical debt audits</h3>
-        <p>Quarterly readouts of where debt is accumulating and a recommendation on what is worth refactoring now vs. what to leave alone.</p>
+      <div class="gain-row">
+        <span class="gain-num">06</span>
+        <h3 class="gain-row-title">Technical Debt Audits</h3>
+        <p class="gain-row-desc">Quarterly readouts of where debt is accumulating and a written recommendation on what is worth refactoring now versus what to leave alone for two more years.</p>
       </div>
     </div>
   </div>
