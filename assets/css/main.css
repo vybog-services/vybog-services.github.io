@@ -1703,3 +1703,199 @@ body { padding-top: 104px; }
 @media (max-width: 560px) {
   .hire-cards { grid-template-columns: 1fr; grid-template-rows: auto; gap: 28px; }
 }
+
+/* ---------- 31. RETAINER SECTION — dark hero strip + overlapping card row ---------- */
+section.retainer-section { padding: 0; }
+
+.retainer-dark {
+  position: relative;
+  background: #0B1B3D;
+  color: #fff;
+  padding: clamp(72px, 9vw, 120px) 0 clamp(140px, 16vw, 220px);
+  overflow: hidden;
+}
+.retainer-dark::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 240px at 88% 30%, rgba(0,80,200,0.20), transparent 60%),
+    radial-gradient(ellipse 480px 200px at 12% 70%, rgba(60,140,240,0.15), transparent 60%);
+  pointer-events: none;
+}
+
+.retainer-watermark {
+  position: absolute;
+  top: 28px;
+  left: 56px;
+  font-size: clamp(120px, 18vw, 240px);
+  font-weight: 900;
+  font-family: var(--font-display);
+  color: rgba(255, 255, 255, 0.045);
+  letter-spacing: -0.04em;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  line-height: 0.95;
+}
+
+.retainer-head {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+}
+.retainer-kicker {
+  display: inline-flex; align-items: center; gap: 14px;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6BA4FF;
+  margin-bottom: 18px;
+}
+.retainer-kicker .kicker-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: rgba(60, 140, 240, 0.18);
+  color: #6BA4FF;
+}
+.retainer-kicker .kicker-icon svg { width: 16px; height: 16px; }
+
+.retainer-title {
+  font-size: clamp(32px, 4.4vw, 56px);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 14px;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.retainer-accent { color: #6BA4FF; font-weight: 700; }
+
+.retainer-sub {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  max-width: 560px;
+}
+
+.retainer-cta-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 26px;
+  background: #0050C8;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+.retainer-cta-btn:hover { background: #003B96; transform: translateY(-2px); }
+.retainer-cta-btn .arrow { transition: transform 0.2s; }
+.retainer-cta-btn:hover .arrow { transform: translateX(3px); }
+
+/* White card row, pulled up to overlap the dark section */
+.retainer-cards-wrap {
+  background: var(--bg-base);
+  padding: 0 0 clamp(48px, 7vw, 96px);
+}
+.retainer-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: clamp(-200px, -14vw, -120px);
+  position: relative;
+  z-index: 3;
+}
+.retainer-card {
+  position: relative;
+  background: #fff;
+  border-radius: 14px;
+  padding: 64px 22px 26px;
+  box-shadow: 0 6px 28px rgba(11, 27, 61, 0.08);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.retainer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(11, 27, 61, 0.12);
+}
+
+.retainer-card-icon {
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.icon-circle {
+  position: relative;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 84px; height: 84px;
+  border-radius: 50%;
+  background: rgba(220, 233, 248, 0.85);
+}
+.icon-circle::before {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0050C8 0%, #0B1B3D 100%);
+  box-shadow: 0 4px 14px rgba(0, 80, 200, 0.30);
+}
+.icon-circle svg {
+  position: relative; z-index: 1;
+  width: 24px; height: 24px;
+  color: #fff;
+}
+
+.retainer-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 12px;
+  letter-spacing: -0.015em;
+}
+.retainer-card p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0 0 20px;
+  min-height: 66px;
+}
+.card-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px;
+  background: #0050C8;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.card-cta:hover { background: #003B96; }
+.card-cta .arrow { transition: transform 0.2s; }
+.card-cta:hover .arrow { transform: translateX(3px); }
+
+@media (max-width: 1080px) {
+  .retainer-cards { grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
+  .retainer-card p { min-height: 0; }
+}
+@media (max-width: 720px) {
+  .retainer-head { grid-template-columns: 1fr; gap: 28px; }
+  .retainer-cta-btn { justify-self: start; }
+  .retainer-watermark { font-size: 100px; left: 16px; top: 14px; }
+}
+@media (max-width: 520px) {
+  .retainer-cards { grid-template-columns: 1fr; }
+}
