@@ -1483,14 +1483,14 @@ body { padding-top: 104px; }
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(170px, 1fr) minmax(170px, 1fr);
-  gap: 16px;
+  grid-template-rows: minmax(140px, 1fr) minmax(140px, 1fr);
+  gap: 14px;
 }
 .bento-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 28px;
+  padding: 22px 22px 20px;
   border-radius: 18px;
   text-decoration: none;
   color: inherit;
@@ -1498,36 +1498,36 @@ body { padding-top: 104px; }
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   isolation: isolate;
-  min-height: 240px;
+  min-height: 190px;
 }
 .bento-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 36px rgba(11, 27, 61, 0.10);
 }
 .bento-card h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.18;
   letter-spacing: -0.02em;
-  margin: auto 0 10px;
+  margin: auto 0 6px;
   color: inherit;
 }
 .bento-card p {
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: 13.5px;
+  line-height: 1.5;
   margin: 0;
   opacity: 0.78;
 }
 .bento-icon {
   background: transparent;
   border-radius: 0;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   padding: 0;
   display: inline-flex;
   align-items: flex-start; justify-content: flex-start;
   flex-shrink: 0;
 }
-.bento-icon svg { width: 44px; height: 44px; }
+.bento-icon svg { width: 40px; height: 40px; }
 
 /* ----- Color variants ----- */
 .bento-app { background: #E6F1E8; color: #1C4731; grid-column: 1; grid-row: 1; }
@@ -1558,7 +1558,7 @@ body { padding-top: 104px; }
 .bento-hero {
   grid-column: 2 / 4;
   grid-row: 1;
-  padding: 40px clamp(28px, 4vw, 56px);
+  padding: 28px clamp(24px, 3vw, 48px);
   background: #D7E6F5;
   color: #0B1B3D;
   justify-content: center;
@@ -1570,33 +1570,33 @@ body { padding-top: 104px; }
   box-shadow: none;
   color: #0050C8;
   display: inline-flex; align-items: center; justify-content: center;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
   padding: 0;
   border-radius: 0;
   width: auto; height: auto;
 }
-.bento-hero-icon svg { width: 64px; height: 64px; }
+.bento-hero-icon svg { width: 52px; height: 52px; }
 .bento-hero h3 {
-  font-size: clamp(26px, 2.9vw, 36px);
-  line-height: 1.15;
+  font-size: clamp(24px, 2.7vw, 32px);
+  line-height: 1.14;
   color: #0B1B3D;
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   letter-spacing: -0.02em;
 }
 .bento-hero p {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.5;
   color: #2A4575;
   opacity: 1;
-  max-width: 540px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .bento-hero .bento-cta {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 22px;
-  font-size: 14px;
+  margin-top: 14px;
+  font-size: 13.5px;
   font-weight: 600;
   color: #0050C8;
   letter-spacing: 0.01em;
