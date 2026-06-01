@@ -2539,3 +2539,80 @@ section.trust-band {
 /* ---------- 42. SECTION SPACING HARMONIZATION ---------- */
 section.bg-soft + section.bg-soft,
 section.bg-tint + section.bg-tint { padding-top: clamp(24px, 3vw, 40px); }
+
+/* ---------- 43. TECH STACK BADGES (brand-coloured monogram tiles) ---------- */
+section.tech-stack-section {
+  padding: clamp(56px, 7vw, 96px) 0;
+  background: var(--bg-base);
+}
+.tech-stack-section .section-head {
+  text-align: center;
+  margin: 0 auto clamp(36px, 5vw, 56px);
+  max-width: 760px;
+}
+.tech-stack-section .section-head .eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--brand-primary);
+  letter-spacing: 0.22em;
+}
+.tech-stack-section .section-head h2 {
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.15;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+.tech-stack-section .section-head p {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+.tech-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 14px;
+  background: #FFFFFF;
+  border: 1px solid #E0E3E8;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.tech-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(11, 27, 61, 0.08);
+  border-color: var(--mark-bg, var(--brand-primary));
+}
+.tech-mark {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--mark-bg, #0050C8);
+  color: var(--mark-color, #FFFFFF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.tech-name {
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.005em;
+  text-align: center;
+}
+@media (max-width: 560px) {
+  .tech-stack-grid { grid-template-columns: repeat(2, 1fr); }
+}
