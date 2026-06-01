@@ -2593,17 +2593,22 @@ section.tech-stack-section {
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: var(--mark-bg, #0050C8);
-  color: var(--mark-color, #FFFFFF);
+  background: #F7F9FC;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 19px;
-  letter-spacing: -0.03em;
-  line-height: 1;
   flex-shrink: 0;
+  padding: 10px;
+  transition: background 0.25s ease;
+}
+.tech-tile:hover .tech-mark {
+  background: #FFFFFF;
+}
+.tech-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .tech-name {
   font-family: var(--font-display);
