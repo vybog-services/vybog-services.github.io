@@ -153,8 +153,8 @@ p.lead { font-size: 19px; line-height: 1.6; color: var(--text-secondary); }
 .container-narrow { max-width: var(--container-narrow); margin: 0 auto; padding: 0 var(--container-pad); }
 .container-prose { max-width: var(--container-prose); margin: 0 auto; padding: 0 var(--container-pad); }
 
-section { padding: clamp(80px, 11vw, 160px) 0; position: relative; }
-section.section-tight { padding: clamp(56px, 7vw, 96px) 0; }
+section { padding: clamp(48px, 7vw, 96px) 0; position: relative; }
+section.section-tight { padding: clamp(32px, 5vw, 64px) 0; }
 section.bg-soft { background: var(--bg-soft); }
 section.bg-tint { background: var(--bg-tint); }
 section.bg-white { background: var(--bg-card); }
