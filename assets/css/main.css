@@ -1394,7 +1394,7 @@ body { padding-top: 104px; }
 /* ---------- 28. APPROACH SECTION (dark BG + gradient accent + stat strip) ---------- */
 .approach-section {
   position: relative;
-  padding: clamp(96px, 11vw, 160px) 0;
+  padding: clamp(56px, 7vw, 96px) 0;
   background: #0A1224;
   color: #fff;
   overflow: hidden;
@@ -1414,18 +1414,18 @@ body { padding-top: 104px; }
   font-size: 12px; font-weight: 600; letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #3CB7FF;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 .approach-eyebrow::before {
   content: ''; width: 32px; height: 2px; background: #3CB7FF;
 }
 .approach-headline {
-  font-size: clamp(36px, 5.2vw, 64px);
+  font-size: clamp(34px, 4.6vw, 56px);
   line-height: 1.08;
   font-weight: 700;
   letter-spacing: -0.025em;
   color: #fff;
-  margin: 0 0 28px;
+  margin: 0 0 20px;
   text-wrap: balance;
 }
 .approach-accent {
@@ -1437,11 +1437,11 @@ body { padding-top: 104px; }
   font-weight: 700;
 }
 .approach-lead {
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.65;
   color: rgba(255,255,255,0.68);
   max-width: 640px;
-  margin: 0 0 64px;
+  margin: 0 0 40px;
 }
 .approach-stats {
   display: grid;
@@ -1450,12 +1450,12 @@ body { padding-top: 104px; }
   max-width: 820px;
 }
 .approach-stat .num {
-  font-size: clamp(36px, 4.5vw, 56px);
+  font-size: clamp(32px, 3.8vw, 46px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #3CB7FF;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .approach-stat .label {
   font-size: 14px;
@@ -1464,7 +1464,7 @@ body { padding-top: 104px; }
   color: rgba(255,255,255,0.78);
 }
 @media (max-width: 768px) {
-  .approach-stats { grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
-  .approach-lead { margin-bottom: 48px; }
-  .approach-headline { font-size: clamp(30px, 7vw, 44px); }
+  .approach-stats { grid-template-columns: repeat(2, 1fr); gap: 24px 20px; }
+  .approach-lead { margin-bottom: 32px; }
+  .approach-headline { font-size: clamp(28px, 6.5vw, 40px); }
 }
