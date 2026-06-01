@@ -1145,9 +1145,9 @@ body { padding-top: 104px; }
 
 .t7-hero .hero-copy { margin: 0 auto; text-align: center; }
 .t7-hero .eyebrow { color: #C5B4FF; }
-.t7-hero h1 { color: #FFFFFF; margin-bottom: 16px; text-wrap: balance; }
+.t7-hero h1 { color: #FFFFFF; margin-bottom: 16px; text-wrap: balance; font-size: clamp(38px, 6vw, 72px); }
 .t7-hero h1 .italic-accent { color: #FF8FE6; }
-.t7-hero .lead { max-width: 720px; margin: 0 auto 22px; font-size: 19px; color: rgba(255,255,255,0.78); }
+.t7-hero .lead { max-width: 720px; margin: 0 auto 22px; font-size: 17px; color: rgba(255,255,255,0.78); }
 .t7-hero .t7-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 auto 28px; justify-content: center; }
 .t7-hero .t7-ctas .btn-primary { background: #fff; color: #050010; border-color: #fff; }
 .t7-hero .t7-ctas .btn-primary:hover { background: #FF8FE6; border-color: #FF8FE6; color: #050010; }
@@ -1168,7 +1168,7 @@ body { padding-top: 104px; }
   display: inline-flex; align-items: center; gap: 8px;
   padding: 10px 18px; border: 1px solid rgba(255,255,255,0.18); border-radius: var(--radius-pill);
   background: rgba(255,255,255,0.06); backdrop-filter: blur(8px);
-  font-size: 13.5px; font-weight: 600; color: rgba(255,255,255,0.95);
+  font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.95);
 }
 .t7-hero .t7-pills .pill::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #D946EF; box-shadow: 0 0 8px #D946EF; }
 .t7-hero-visual { display: none; }  /* image is now the BG */
