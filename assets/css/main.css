@@ -1390,3 +1390,81 @@ body { padding-top: 104px; }
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
+
+/* ---------- 28. APPROACH SECTION (dark BG + gradient accent + stat strip) ---------- */
+.approach-section {
+  position: relative;
+  padding: clamp(96px, 11vw, 160px) 0;
+  background: #0A1224;
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+}
+.approach-section .approach-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(120deg, rgba(10,18,36,0.88) 0%, rgba(10,18,36,0.72) 55%, rgba(10,18,36,0.92) 100%),
+    url('../images/home-bg.jpg') center/cover no-repeat;
+  z-index: -1;
+}
+.approach-section .container { position: relative; z-index: 1; }
+.approach-inner { max-width: 920px; }
+.approach-eyebrow {
+  display: inline-flex; align-items: center; gap: 14px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #3CB7FF;
+  margin-bottom: 28px;
+}
+.approach-eyebrow::before {
+  content: ''; width: 32px; height: 2px; background: #3CB7FF;
+}
+.approach-headline {
+  font-size: clamp(36px, 5.2vw, 64px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #fff;
+  margin: 0 0 28px;
+  text-wrap: balance;
+}
+.approach-accent {
+  background: linear-gradient(90deg, #3CB7FF 0%, #2BE0C4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+}
+.approach-lead {
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.68);
+  max-width: 640px;
+  margin: 0 0 64px;
+}
+.approach-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  max-width: 820px;
+}
+.approach-stat .num {
+  font-size: clamp(36px, 4.5vw, 56px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #3CB7FF;
+  margin-bottom: 10px;
+}
+.approach-stat .label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(255,255,255,0.78);
+}
+@media (max-width: 768px) {
+  .approach-stats { grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
+  .approach-lead { margin-bottom: 48px; }
+  .approach-headline { font-size: clamp(30px, 7vw, 44px); }
+}
