@@ -118,66 +118,159 @@
 <main>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="hero-glow"></div>
-  <div class="hero-glow left"></div>
+<section class="page-hero hero-centered">
   <div class="container">
     <div class="breadcrumbs fade-up">
       <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Services</a><span class="sep">/</span>Software &amp; App Development
     </div>
     <span class="eyebrow fade-up">Software &amp; App Development</span>
-    <h1 class="fade-up">Production-grade software, built by experts who have <span class="italic-accent">stayed up</span> with it on call.</h1>
-    <p class="lead fade-up">Vybog Services ships SaaS platforms, internal enterprise apps, API systems, and legacy modernization projects that survive past their first growth spurt. We expert for the third year of operation, not the launch-day screenshot — because most of our clients are still on the same codebase six years later.</p>
+    <h1 class="fade-up">Software That Ships. Scales. Stays Quiet at <span class="italic-accent">3am</span>.</h1>
+    <p class="lead fade-up">SaaS platforms, internal tools, API systems and legacy modernization &mdash; production-grade builds that survive past launch day, scale on the metrics, and run quiet through the post-launch quarter.</p>
     <div class="mt-6 fade-up">
       <a href="../contact.html" class="btn btn-primary">Start a Discovery Sprint <span class="arrow">→</span></a>
-      <a href="../case-studies.html" class="btn btn-ghost">See experting work</a>
+      <a href="../case-studies.html" class="btn btn-ghost">See production builds</a>
     </div>
-    <div class="hero-trust fade-up">
-      <div class="trust-item"><span class="trust-num">240+</span><span class="trust-label">SaaS &amp; enterprise apps shipped</span></div>
-      <div class="trust-item"><span class="trust-num">22 yrs</span><span class="trust-label">Continuous delivery operations</span></div>
-      <div class="trust-item"><span class="trust-num">SOC2</span><span class="trust-label">Build practices, on-prem options</span></div>
+
+    <!-- ============ APP WIREFRAME (75% width, half screen, bottom-fade) ============ -->
+    <div class="hero-wireframe fade-up" aria-hidden="true">
+      <svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg">
+        <!-- Window chrome -->
+        <rect x="0" y="0" width="1200" height="620" rx="14" fill="#FFFFFF" stroke="#E0E3E8" stroke-width="1.5"/>
+        <rect x="0" y="0" width="1200" height="48" rx="14" fill="#F4F6FA"/>
+        <rect x="0" y="42" width="1200" height="8" fill="#F4F6FA"/>
+        <circle cx="22" cy="24" r="6" fill="#FF6058"/>
+        <circle cx="42" cy="24" r="6" fill="#FFBD2E"/>
+        <circle cx="62" cy="24" r="6" fill="#27C840"/>
+        <rect x="420" y="14" width="360" height="20" rx="10" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="600" y="29" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#9BA5B5">app.vybogservices.com/dashboard</text>
+        <!-- Sidebar -->
+        <rect x="0" y="50" width="200" height="570" fill="#0B1B3D"/>
+        <text x="24" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="15" fill="#fff">Vybog Services</text>
+        <text x="24" y="106" font-family="Inter, sans-serif" font-size="9" fill="#6BA4FF" letter-spacing="2">DASHBOARD</text>
+        <g font-family="Inter, sans-serif" font-size="13" fill="#BFC8DA">
+          <rect x="12" y="138" width="176" height="34" rx="8" fill="#0050C8"/>
+          <text x="32" y="160" fill="#fff" font-weight="600">Overview</text>
+          <text x="32" y="200">Projects</text>
+          <text x="32" y="232">Deployments</text>
+          <text x="32" y="264">Observability</text>
+          <text x="32" y="296">Integrations</text>
+          <text x="32" y="328">Team</text>
+          <text x="32" y="360">Billing</text>
+          <text x="32" y="392">Settings</text>
+        </g>
+        <!-- Main area: header bar -->
+        <text x="232" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="22" fill="#0B1B3D">Production Overview</text>
+        <text x="232" y="114" font-family="Inter, sans-serif" font-size="13" fill="#6E7686">Last 30 days &middot; auto-refreshed every 60s</text>
+        <rect x="980" y="74" width="180" height="38" rx="8" fill="#0050C8"/>
+        <text x="1070" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#fff" font-weight="600">+ New Deployment</text>
+        <!-- KPI tiles row -->
+        <g font-family="Inter Tight, sans-serif">
+          <rect x="232" y="140" width="220" height="92" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <text x="252" y="170" font-size="11" fill="#6E7686" font-family="Inter, sans-serif" letter-spacing="1.5">UPTIME (30D)</text>
+          <text x="252" y="206" font-size="28" font-weight="800" fill="#0B1B3D">99.98%</text>
+          <text x="380" y="206" font-size="13" font-family="Inter, sans-serif" font-weight="600" fill="#16A34A">+0.04</text>
+
+          <rect x="464" y="140" width="220" height="92" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <text x="484" y="170" font-size="11" fill="#6E7686" font-family="Inter, sans-serif" letter-spacing="1.5">P95 LATENCY</text>
+          <text x="484" y="206" font-size="28" font-weight="800" fill="#0B1B3D">142ms</text>
+          <text x="606" y="206" font-size="13" font-family="Inter, sans-serif" font-weight="600" fill="#16A34A">-18ms</text>
+
+          <rect x="696" y="140" width="220" height="92" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <text x="716" y="170" font-size="11" fill="#6E7686" font-family="Inter, sans-serif" letter-spacing="1.5">DEPLOYS / WEEK</text>
+          <text x="716" y="206" font-size="28" font-weight="800" fill="#0B1B3D">24</text>
+          <text x="772" y="206" font-size="13" font-family="Inter, sans-serif" font-weight="600" fill="#16A34A">+3</text>
+
+          <rect x="928" y="140" width="232" height="92" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <text x="948" y="170" font-size="11" fill="#6E7686" font-family="Inter, sans-serif" letter-spacing="1.5">ERROR BUDGET</text>
+          <text x="948" y="206" font-size="28" font-weight="800" fill="#0B1B3D">87%</text>
+          <text x="1018" y="206" font-size="13" font-family="Inter, sans-serif" font-weight="600" fill="#16A34A">healthy</text>
+        </g>
+        <!-- Chart area -->
+        <rect x="232" y="252" width="600" height="260" rx="10" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="252" y="282" font-family="Inter Tight, sans-serif" font-weight="700" font-size="15" fill="#0B1B3D">Request volume &middot; 7 days</text>
+        <!-- Grid lines -->
+        <g stroke="#EDEFF3">
+          <line x1="252" y1="320" x2="812" y2="320"/>
+          <line x1="252" y1="370" x2="812" y2="370"/>
+          <line x1="252" y1="420" x2="812" y2="420"/>
+          <line x1="252" y1="470" x2="812" y2="470"/>
+        </g>
+        <!-- Area chart -->
+        <path d="M252,460 L322,440 L392,420 L462,430 L532,400 L602,380 L672,360 L742,340 L812,330 L812,490 L252,490 Z" fill="#0050C8" fill-opacity="0.10"/>
+        <path d="M252,460 L322,440 L392,420 L462,430 L532,400 L602,380 L672,360 L742,340 L812,330" fill="none" stroke="#0050C8" stroke-width="2.5"/>
+        <!-- Data points -->
+        <g fill="#0050C8">
+          <circle cx="252" cy="460" r="4"/><circle cx="322" cy="440" r="4"/>
+          <circle cx="392" cy="420" r="4"/><circle cx="462" cy="430" r="4"/>
+          <circle cx="532" cy="400" r="4"/><circle cx="602" cy="380" r="4"/>
+          <circle cx="672" cy="360" r="4"/><circle cx="742" cy="340" r="4"/>
+          <circle cx="812" cy="330" r="4"/>
+        </g>
+        <!-- Right panel: recent deploys -->
+        <rect x="848" y="252" width="312" height="260" rx="10" fill="#FFFFFF" stroke="#E0E3E8"/>
+        <text x="868" y="282" font-family="Inter Tight, sans-serif" font-weight="700" font-size="15" fill="#0B1B3D">Recent Deploys</text>
+        <g font-family="Inter, sans-serif" font-size="12" fill="#0B1B3D">
+          <circle cx="876" cy="318" r="5" fill="#16A34A"/>
+          <text x="892" y="322" font-weight="600">api-gateway · v2.4.1</text>
+          <text x="892" y="338" font-size="11" fill="#6E7686">12m ago &middot; passed evals</text>
+
+          <circle cx="876" cy="368" r="5" fill="#16A34A"/>
+          <text x="892" y="372" font-weight="600">checkout-service · v1.8.3</text>
+          <text x="892" y="388" font-size="11" fill="#6E7686">2h ago &middot; canary 100%</text>
+
+          <circle cx="876" cy="418" r="5" fill="#F59E0B"/>
+          <text x="892" y="422" font-weight="600">notification-svc · v0.9.7</text>
+          <text x="892" y="438" font-size="11" fill="#6E7686">4h ago &middot; canary 25%</text>
+
+          <circle cx="876" cy="468" r="5" fill="#16A34A"/>
+          <text x="892" y="472" font-weight="600">analytics-ingest · v3.1.0</text>
+          <text x="892" y="488" font-size="11" fill="#6E7686">yesterday &middot; passed evals</text>
+        </g>
+      </svg>
+      <div class="wireframe-fade" aria-hidden="true"></div>
     </div>
   </div>
 </section>
 
-<!-- ============ BUILD MATURITY LADDER ============ -->
+<!-- ============ BUILD MATURITY LADDER — workflow chart ============ -->
 <section class="bg-soft">
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">The build maturity ladder</span>
-      <h2>Where Vybog Services plugs in — and where we tell you not to start.</h2>
-      <p>Software does not move from sketch to scale in one push. We map every engagement to one of six rungs. The honest answer often is "you are on the wrong rung — let's back up one."</p>
+      <h2>Six rungs from notebook to production.</h2>
+      <p>We will tell you which one you&rsquo;re really on &mdash; and where to plug us in.</p>
     </div>
-    <div class="process-grid fade-up" style="grid-template-columns:repeat(6,1fr)">
-      <div class="process-step">
-        <span class="process-num">1</span>
-        <h4>Idea</h4>
-        <p>Notebook stage. We rarely engage here — but we will spend an hour helping you decide if it should become a POC.</p>
+    <div class="ladder-flow fade-up">
+      <div class="ladder-line" aria-hidden="true"></div>
+      <div class="ladder-step">
+        <div class="step-circle">1</div>
+        <div class="step-name">Idea</div>
+        <div class="step-tag">1-hour gut check before scoping</div>
       </div>
-      <div class="process-step">
-        <span class="process-num">2</span>
-        <h4>POC</h4>
-        <p>2–4 week proof-of-concept to validate the riskiest technical assumption. Not production. Throwaway by design.</p>
+      <div class="ladder-step">
+        <div class="step-circle">2</div>
+        <div class="step-name">POC</div>
+        <div class="step-tag">2&ndash;4 weeks &middot; throwaway by design</div>
       </div>
-      <div class="process-step">
-        <span class="process-num">3</span>
-        <h4>MVP</h4>
-        <p>The first version real users touch. 8–14 weeks. Feature-flagged, instrumented, and built on the stack you will keep.</p>
+      <div class="ladder-step">
+        <div class="step-circle">3</div>
+        <div class="step-name">MVP</div>
+        <div class="step-tag">8&ndash;14 weeks &middot; the stack you&rsquo;ll keep</div>
       </div>
-      <div class="process-step">
-        <span class="process-num">4</span>
-        <h4>Production</h4>
-        <p>SLAs, observability, runbooks, on-call rotation. The boring infrastructure most agencies skip and clients pay for in year two.</p>
+      <div class="ladder-step">
+        <div class="step-circle">4</div>
+        <div class="step-name">Production</div>
+        <div class="step-tag">SLAs &middot; observability &middot; on-call rotation</div>
       </div>
-      <div class="process-step">
-        <span class="process-num">5</span>
-        <h4>Scale</h4>
-        <p>Performance budgets, sharding, caching tiers, queue infrastructure. Triggered by metrics, not by hype articles.</p>
+      <div class="ladder-step">
+        <div class="step-circle">5</div>
+        <div class="step-name">Scale</div>
+        <div class="step-tag">Caching, sharding, queues &mdash; triggered by metrics</div>
       </div>
-      <div class="process-step">
-        <span class="process-num">6</span>
-        <h4>Modernize</h4>
-        <p>Strangler-fig replatforming of legacy systems. Where Vybog Services has done more PHP 5 → PHP 8 and monolith → modular work than most teams have done MVPs.</p>
+      <div class="ladder-step">
+        <div class="step-circle">6</div>
+        <div class="step-name">Modernize</div>
+        <div class="step-tag">Strangler-fig replatforms &middot; legacy &rarr; modern</div>
       </div>
     </div>
   </div>

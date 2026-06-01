@@ -2180,3 +2180,146 @@ section.contact-card-section {
   .contact-card-ctas { flex-direction: column; width: 100%; gap: 10px; }
   .contact-btn { width: 100%; }
 }
+
+/* ---------- 35. HERO-CENTERED VARIANT (software dev page) ---------- */
+.page-hero.hero-centered {
+  background: var(--bg-base);
+  text-align: center;
+  padding-bottom: 0;
+}
+.page-hero.hero-centered::before,
+.page-hero.hero-centered::after { display: none; }
+.page-hero.hero-centered .hero-glow { display: none; }
+.page-hero.hero-centered .breadcrumbs { justify-content: center; }
+.page-hero.hero-centered .eyebrow,
+.page-hero.hero-centered h1,
+.page-hero.hero-centered .lead { text-align: center; }
+.page-hero.hero-centered h1 {
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+}
+.page-hero.hero-centered .lead {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-hero.hero-centered .mt-6 {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ---------- 36. HERO APP WIREFRAME ---------- */
+.hero-wireframe {
+  position: relative;
+  width: 75%;
+  max-width: 1100px;
+  margin: 56px auto -120px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(11, 27, 61, 0.18),
+    0 4px 12px rgba(11, 27, 61, 0.08);
+}
+.hero-wireframe svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.wireframe-fade {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 55%;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 250, 252, 0) 0%,
+    rgba(250, 250, 252, 0.45) 45%,
+    rgba(250, 250, 252, 0.92) 80%,
+    var(--bg-base) 100%
+  );
+}
+@media (max-width: 900px) {
+  .hero-wireframe { width: 92%; margin: 40px auto -80px; }
+}
+
+/* ---------- 37. BUILD MATURITY LADDER — connected flow chart ---------- */
+.ladder-flow {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  padding: 24px 0 8px;
+}
+.ladder-line {
+  position: absolute;
+  top: 52px;
+  left: calc(100% / 12);
+  right: calc(100% / 12);
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #C8DAEE 0%,
+    #6BA4FF 22%,
+    #0050C8 50%,
+    #0B1B3D 100%
+  );
+  z-index: 0;
+}
+.ladder-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 4px;
+}
+.ladder-step .step-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0050C8 0%, #3C8CF0 100%);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border: 4px solid var(--bg-soft, #F5F5F8);
+  box-shadow: 0 4px 14px rgba(0, 80, 200, 0.20);
+  position: relative;
+}
+.ladder-step:nth-child(2) .step-circle { background: linear-gradient(135deg, #0050C8, #4C9AF5); }
+.ladder-step:nth-child(3) .step-circle { background: linear-gradient(135deg, #0050C8, #3C8CF0); }
+.ladder-step:nth-child(4) .step-circle { background: linear-gradient(135deg, #0050C8, #2A78D8); }
+.ladder-step:nth-child(5) .step-circle { background: linear-gradient(135deg, #0040A5, #0050C8); }
+.ladder-step:nth-child(6) .step-circle { background: linear-gradient(135deg, #0B1B3D, #0040A5); }
+.ladder-step:nth-child(7) .step-circle { background: linear-gradient(135deg, #050E22, #0B1B3D); }
+.ladder-step .step-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.ladder-step .step-tag {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text-muted);
+  max-width: 160px;
+  margin: 0 auto;
+}
+@media (max-width: 980px) {
+  .ladder-flow {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 36px;
+  }
+  .ladder-line { display: none; }
+}
+@media (max-width: 560px) {
+  .ladder-flow { grid-template-columns: repeat(2, 1fr); }
+}
