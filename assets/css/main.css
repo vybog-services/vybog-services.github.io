@@ -1625,3 +1625,81 @@ body { padding-top: 104px; }
   .bento-grid { grid-template-columns: 1fr; }
   .bento-hero { grid-column: 1; }
 }
+
+/* ---------- 30. HIRE DEVELOPERS — 2-column intro + 2x2 cards ---------- */
+.hire-2col {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(48px, 6vw, 96px);
+  align-items: center;
+}
+.hire-intro { padding-right: 8px; }
+.hire-kicker {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+  margin-bottom: 18px;
+}
+.hire-kicker::before {
+  content: ''; width: 28px; height: 2px; background: var(--brand-primary);
+}
+.hire-title {
+  font-size: clamp(34px, 4.4vw, 56px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin: 0 0 16px;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+.hire-subtitle {
+  font-size: clamp(18px, 1.8vw, 22px);
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+.hire-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0 0 28px;
+}
+.hire-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: clamp(28px, 3vw, 40px) clamp(28px, 3vw, 40px);
+}
+.hire-card { padding: 0; background: transparent; border: none; }
+.hire-card-icon {
+  color: var(--brand-primary);
+  margin-bottom: 14px;
+  display: inline-flex;
+  align-items: flex-start; justify-content: flex-start;
+}
+.hire-card-icon svg { width: 40px; height: 40px; }
+.hire-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  margin: 0 0 8px;
+  color: var(--text-primary);
+}
+.hire-card p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@media (max-width: 980px) {
+  .hire-2col { grid-template-columns: 1fr; gap: 48px; }
+  .hire-intro { padding-right: 0; }
+}
+@media (max-width: 560px) {
+  .hire-cards { grid-template-columns: 1fr; grid-template-rows: auto; gap: 28px; }
+}
