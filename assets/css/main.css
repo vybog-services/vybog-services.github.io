@@ -4143,3 +4143,203 @@ section.platforms-split .platforms-left {
   .fw-name { font-size: 16px; }
   .fw-desc { font-size: 13px; }
 }
+
+/* ========================================================================
+   HIRE TALENT PAGE TEMPLATE — stats, form, steps
+   ======================================================================== */
+
+/* ---------- 67. Hire stats strip ---------- */
+.hire-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, 2.5vw, 36px);
+  text-align: center;
+}
+.hire-stat .hire-stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.4vw, 40px);
+  font-weight: 800;
+  color: var(--brand-primary);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.hire-stat .hire-stat-label {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+@media (max-width: 720px) { .hire-stats { grid-template-columns: repeat(2, 1fr); gap: 24px; } }
+
+/* ---------- 68. Inline lead form section ---------- */
+.hire-form-section {
+  background: linear-gradient(135deg, #0050C8 0%, #0B1B3D 100%);
+  padding: clamp(56px, 7vw, 96px) 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.hire-form-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 600px 300px at 90% 10%, rgba(60, 140, 240, 0.30), transparent 60%),
+    radial-gradient(ellipse 500px 280px at 10% 90%, rgba(122, 92, 224, 0.18), transparent 60%);
+  pointer-events: none;
+}
+.hire-form-section .container { position: relative; z-index: 1; }
+.hire-form-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(40px, 5vw, 72px);
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hire-form-intro .eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #6BA4FF;
+  letter-spacing: 0.22em;
+}
+.hire-form-intro h2 {
+  color: #fff;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.12;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+.hire-form-intro p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15.5px;
+  line-height: 1.65;
+  margin: 0 0 22px;
+}
+.hire-form-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hire-form-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.4;
+}
+.hire-form-points .hf-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: #6BA4FF;
+  color: #0B1B3D;
+  font-weight: 800;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.hire-form {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: clamp(28px, 4vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.25);
+  color: var(--text-primary);
+}
+.hire-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.hire-form input,
+.hire-form select,
+.hire-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #D6DCE4;
+  border-radius: 10px;
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  color: var(--text-primary);
+  background: #FFFFFF;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.hire-form input:focus,
+.hire-form select:focus,
+.hire-form textarea:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(0, 80, 200, 0.12);
+}
+.hire-form textarea { resize: vertical; min-height: 80px; }
+.hire-form button {
+  margin-top: 4px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background: var(--brand-primary);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.hire-form button:hover { background: #003B96; transform: translateY(-2px); }
+.hire-form .form-status { font-size: 13px; min-height: 18px; margin: 4px 0 0; }
+.hire-form .form-fineprint { font-size: 12px; color: var(--text-muted); margin: 0; }
+.hire-form .form-fineprint a { color: var(--brand-primary); }
+@media (max-width: 980px) {
+  .hire-form-wrap { grid-template-columns: 1fr; }
+  .hire-form .form-row { grid-template-columns: 1fr; }
+}
+
+/* ---------- 69. 4-step hiring process ---------- */
+.hire-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  counter-reset: step;
+}
+.hire-step { position: relative; padding: 24px 4px 0; }
+.hire-step .step-no {
+  display: inline-flex;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--brand-primary);
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+.hire-step h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+}
+.hire-step p { font-size: 13.5px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+@media (max-width: 720px) { .hire-steps { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- 70. Skill table number badge ---------- */
+.fw-skill-num {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #E8F1FE 0%, #DCE9F8 100%);
+  color: var(--brand-primary);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 14px;
+}

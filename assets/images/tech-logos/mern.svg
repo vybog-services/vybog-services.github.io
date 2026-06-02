@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#FFFFFF" stroke="#E0E3E8"/>
+  <rect x="4" y="4" width="14" height="14" rx="3" fill="#13AA52"/>
+  <text x="11" y="14" text-anchor="middle" font-family="Arial Black" font-size="9" font-weight="900" fill="#FFFFFF">M</text>
+  <rect x="20" y="4" width="14" height="14" rx="3" fill="#000000"/>
+  <text x="27" y="14" text-anchor="middle" font-family="Arial Black" font-size="9" font-weight="900" fill="#FFFFFF">E</text>
+  <rect x="36" y="4" width="14" height="14" rx="3" fill="#61DAFB"/>
+  <text x="43" y="14" text-anchor="middle" font-family="Arial Black" font-size="9" font-weight="900" fill="#0B1B3D">R</text>
+  <rect x="50" y="4" width="10" height="14" rx="3" fill="#5FA04E"/>
+  <text x="55" y="14" text-anchor="middle" font-family="Arial Black" font-size="9" font-weight="900" fill="#FFFFFF">N</text>
+  <text x="32" y="44" text-anchor="middle" font-family="Arial Black" font-size="18" font-weight="900" fill="#0B1B3D">MERN</text>
+  <text x="32" y="56" text-anchor="middle" font-family="Arial" font-size="8" font-weight="600" fill="#5C5C5C">Stack</text>
+</svg>
