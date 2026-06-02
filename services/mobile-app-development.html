@@ -335,184 +335,299 @@
   </div>
 </section>
 
-<!-- ============ MOBILE EXPERIENCE STACK ============ -->
-<section id="how-we-work">
+<!-- ============ NATIVE VS CROSS-PLATFORM — dark compare table ============ -->
+<section class="compare-dark">
+  <div class="compare-bg-overlay"></div>
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">The mobile experience stack</span>
-      <h2>Six things that separate a Vybog Services app from a Vybog Services-shaped wrapper.</h2>
+      <span class="eyebrow">Native vs. cross-platform</span>
+      <h2>One decision that shapes your next five releases.</h2>
+      <p>The trade-off most determines whether your team can ship a feature in a sprint or a quarter.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="feature-card">
-        <h3>UI motion</h3>
-        <p>Spring-based transitions, gesture-driven dismissals, and 60fps scroll on the cheapest device your audience actually owns — not just on the demo iPhone.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Offline-first data</h3>
-        <p>Local SQLite or Realm cache with conflict-resolution on sync. Your users keep working on a flight, in a basement, or on a flaky cellular link.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Push &amp; background sync</h3>
-        <p>APNs, FCM, OneSignal — wired with payload versioning and silent push for background refresh, without burning the battery the user is paying attention to.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Biometric auth</h3>
-        <p>Face ID, Touch ID, Android BiometricPrompt with a sensible fallback ladder, secure enclave for tokens, and a session policy your security review will pass.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Deep links &amp; universal links</h3>
-        <p>App-link manifests verified at the apex domain, deferred deep links for first-time installs, and analytics attribution that survives the App Store handoff.</p>
-      </div>
-      <div class="feature-card">
-        <h3>In-app purchases &amp; subscriptions</h3>
-        <p>StoreKit 2, Google Play Billing, RevenueCat — receipt validation server-side, restore flows tested in sandbox before the App Review team finds them.</p>
-      </div>
-    </div>
+    <table class="compare-table compare-table-dark fade-up">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Native (Swift / Kotlin)</th>
+          <th>Cross-platform (Flutter / RN)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>Performance ceiling</td><td>Best-in-class &mdash; 60fps complex animations, low latency</td><td>Excellent for 95% of UX, native bridges for the rest</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>Time to market</td><td>Two builds, two timelines &mdash; 16&ndash;24 weeks dual</td><td>Single codebase &mdash; 10&ndash;16 weeks for both stores</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.5 12 2"/></svg></span>OS-level feature access</td><td>Day-zero access to every iOS/Android API</td><td>Wait for plugin support, or write native bridges yourself</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></span>Build &amp; maintenance cost</td><td>Higher &mdash; two stacks, two teams, two bug streams</td><td>Lower &mdash; one team maintains both stores</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>Hireability</td><td>Mature talent pool, well-defined seniority bands</td><td>Smaller pool, but rapidly growing for Flutter</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></span>Best for</td><td>Consumer apps with heavy graphics, regulated industries, gaming</td><td>SaaS, B2B tools, content apps, MVPs, internal apps</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
-<!-- ============ APP CATEGORIES ============ -->
-<section class="bg-tint">
+<!-- ============ THREE MOBILE TRACKS — color-coded ============ -->
+<section class="bg-soft" id="how-we-work">
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">App categories</span>
-      <h2>Six shapes we have shipped more than ten of.</h2>
+      <span class="eyebrow">Three engagement tracks</span>
+      <h2>Native, cross-platform, or maintenance &mdash; three different builds.</h2>
+      <p>"Build us a mobile app" usually means one of these three things. The shape of the engagement &mdash; team, timeline, and exit ramp &mdash; changes accordingly.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="card">
-        <h3>Consumer apps</h3>
-        <p>Subscription media, fitness, social, dating, journaling — design-led products that compete on craft and weekly retention.</p>
-      </div>
-      <div class="card">
-        <h3>SaaS companion apps</h3>
-        <p>The mobile half of a web SaaS — focused on the three tasks users actually do on a phone, not a shrunken-down dashboard.</p>
-      </div>
-      <div class="card">
-        <h3>On-demand &amp; marketplace</h3>
-        <p>Two-sided apps with real-time matching, geo, payments, ratings, in-app messaging, and incident-grade ops dashboards behind them.</p>
-      </div>
-      <div class="card">
-        <h3>Healthcare &amp; telehealth</h3>
-        <p>HIPAA-aligned apps with secure messaging, video visits, e-prescribing integrations, and audit-grade event logging.</p>
-      </div>
-      <div class="card">
-        <h3>E-commerce mobile</h3>
-        <p>Shopify, Magento, or custom commerce backends paired with native checkout, Apple Pay / Google Pay, and post-purchase tracking.</p>
-      </div>
-      <div class="card">
-        <h3>Field-operations apps</h3>
-        <p>Tablets and rugged phones for technicians, delivery teams, and inspectors — offline-first, photo-heavy, signature-capture, geofenced workflows.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LAUNCH PLAYBOOK ============ -->
-<section>
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">App store launch playbook</span>
-      <h2>Five stages between "feature complete" and "live in the store."</h2>
-      <p>Most app delays happen in the last three weeks, not the first three months. We run this rhythm on every release.</p>
-    </div>
-    <div class="process-grid fade-up">
-      <div class="process-step">
-        <span class="process-num">1</span>
-        <h4>Internal &amp; TestFlight</h4>
-        <p>Daily builds to internal testers and TestFlight / Play Internal track. Smoke tests, accessibility passes, and battery-burn checks before external eyes.</p>
-      </div>
-      <div class="process-step">
-        <span class="process-num">2</span>
-        <h4>Closed beta</h4>
-        <p>50 – 200 real users invited under NDA. Crashlytics dashboards reviewed daily; a feedback survey lands in week one and again at the close.</p>
-      </div>
-      <div class="process-step">
-        <span class="process-num">3</span>
-        <h4>Submission prep</h4>
-        <p>Screenshots in five locales, store listing copy, privacy nutrition label, App Privacy Report fields, age rating, export compliance — checklist-driven.</p>
-      </div>
-      <div class="process-step">
-        <span class="process-num">4</span>
-        <h4>Review &amp; approval</h4>
-        <p>We respond to Apple / Google reviewer questions within two business hours. Median time-to-approval on Vybog Services submissions: 2.4 days.</p>
-      </div>
-      <div class="process-step">
-        <span class="process-num">5</span>
-        <h4>Phased rollout</h4>
-        <p>Staged release at 1% → 10% → 50% → 100% with watchdog dashboards on crash rate and ANR. Auto-pause thresholds wired into Slack on day one.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PERFORMANCE BENCHMARKS ============ -->
-<section class="bg-soft">
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Performance benchmarks</span>
-      <h2>The numbers Vybog Services apps hit on launch day.</h2>
-      <p>Not aspirational targets — release-blocking thresholds that have to be green before we submit.</p>
-    </div>
-    <div class="kpi-strip fade-up">
-      <div class="kpi-tile"><div class="kpi-num">&lt;1.4s</div><div class="kpi-label">Cold-start time on mid-range Android (Pixel 6a class)</div></div>
-      <div class="kpi-tile"><div class="kpi-num">&gt;99.5%</div><div class="kpi-label">Crash-free user sessions in first 30 days post-launch</div></div>
-      <div class="kpi-tile"><div class="kpi-num">&lt;40MB</div><div class="kpi-label">Initial download size for consumer apps</div></div>
-      <div class="kpi-tile"><div class="kpi-num">60fps</div><div class="kpi-label">Sustained animation framerate on key user flows</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FEATURED CASE STUDY ============ -->
-<section>
-  <div class="container">
-    <div class="split fade-up">
-      <div>
-        <span class="tag">Media · iOS &amp; Android</span>
-        <h2 class="mt-5">Art Stream — subscription video, shipped in eleven weeks.</h2>
-        <p>Native iOS in Swift, Android in Flutter, a Stripe-driven subscription model, and offline downloads with DRM. From kickoff to dual-store launch in seventy-seven days, with a launch-week 4.8-star average across both stores.</p>
-        <ul class="check-list mt-5">
-          <li>Native iOS for Apple TV cast support; Flutter for Android to halve maintenance</li>
-          <li>FairPlay (iOS) and Widevine (Android) DRM wired to a shared license server</li>
-          <li>RevenueCat for cross-platform subscription state and entitlements</li>
-          <li>Background download manager that survives app suspension and network swaps</li>
+    <div class="track-grid fade-up">
+      <div class="track-card track-mint">
+        <div class="track-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><line x1="10" y1="18" x2="14" y2="18"/></svg></div>
+        <h3>Native builds</h3>
+        <p>Swift for iOS, Kotlin for Android &mdash; when platform fidelity, performance, and store-feature parity matter more than code reuse.</p>
+        <ul class="track-list">
+          <li>Native Swift / Kotlin from day one</li>
+          <li>Platform-specific UX patterns respected</li>
+          <li>Full access to OS-level APIs</li>
         </ul>
-        <div class="mt-6">
-          <a href="../case-studies.html" class="link-arrow">Read the case study <span class="arrow">→</span></a>
+      </div>
+      <div class="track-card track-blue">
+        <span class="track-badge">Most common</span>
+        <div class="track-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2L4 12l4 4 14-14h-8z"/><path d="M14 13l-4 4 4 4h8l-4-4 4-4h-8z"/></svg></div>
+        <h3>Cross-platform builds</h3>
+        <p>Flutter or React Native &mdash; one codebase, two stores, store-approved on first submission. The right call for SaaS, internal tools, and content-led apps.</p>
+        <ul class="track-list">
+          <li>Single codebase across iOS + Android</li>
+          <li>60fps interaction, native bridges where needed</li>
+          <li>Faster time-to-market by 40&ndash;60%</li>
+        </ul>
+      </div>
+      <div class="track-card track-rose">
+        <div class="track-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Maintenance retainers</h3>
+        <p>Post-launch retainers covering SDK upgrades, OS-release readiness, crash triage, and app-store responses. A named senior on every account.</p>
+        <ul class="track-list">
+          <li>iOS / Android SDK upgrades every release</li>
+          <li>Crashlytics triage within 4-hour SLA</li>
+          <li>App-store review responses in 24 hours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATFORMS — 40/60 split with phone-window frame ============ -->
+<section class="bg-soft platforms-split">
+  <div class="container platforms-container">
+    <div class="platforms-left">
+      <div class="phone-frame" aria-hidden="true">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <svg viewBox="0 0 320 640" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid slice">
+            <rect x="0" y="0" width="320" height="640" fill="#FFFFFF"/>
+            <!-- status bar -->
+            <rect x="0" y="0" width="320" height="44" fill="#FFFFFF"/>
+            <text x="20" y="28" font-family="Inter Tight, sans-serif" font-weight="700" font-size="13" fill="#0B1B3D">9:41</text>
+            <g transform="translate(280 18)">
+              <rect x="0" y="0" width="22" height="11" rx="2.5" fill="none" stroke="#0B1B3D" stroke-width="1"/>
+              <rect x="2" y="2" width="14" height="7" rx="1" fill="#0B1B3D"/>
+            </g>
+            <!-- app header -->
+            <rect x="0" y="44" width="320" height="60" fill="#FFFFFF"/>
+            <circle cx="32" cy="74" r="11" fill="#0050C8"/>
+            <text x="52" y="80" font-family="Inter Tight, sans-serif" font-weight="800" font-size="15" fill="#0B1B3D">Vybog App</text>
+            <rect x="270" y="62" width="32" height="24" rx="6" fill="#F4F6FA"/>
+            <line x1="278" y1="71" x2="294" y2="71" stroke="#0B1B3D" stroke-width="1.5"/>
+            <line x1="278" y1="76" x2="294" y2="76" stroke="#0B1B3D" stroke-width="1.5"/>
+            <!-- hero card -->
+            <rect x="20" y="120" width="280" height="160" rx="14" fill="#0050C8"/>
+            <text x="36" y="160" font-family="Inter Tight, sans-serif" font-weight="800" font-size="18" fill="#fff">Daily Summary</text>
+            <text x="36" y="186" font-family="Inter, sans-serif" font-size="12" fill="#BFD4F4">Crash-free this week</text>
+            <text x="36" y="226" font-family="Inter Tight, sans-serif" font-weight="800" font-size="32" fill="#fff">99.62&percnt;</text>
+            <rect x="36" y="244" width="72" height="22" rx="11" fill="rgba(255,255,255,0.18)"/>
+            <text x="72" y="259" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#fff" font-weight="600">healthy</text>
+            <!-- KPI tiles row -->
+            <rect x="20" y="298" width="134" height="100" rx="12" fill="#F7F9FC" stroke="#E0E3E8"/>
+            <text x="36" y="324" font-family="Inter, sans-serif" font-size="9" fill="#6E7686" letter-spacing="1">COLD START</text>
+            <text x="36" y="354" font-family="Inter Tight, sans-serif" font-size="22" font-weight="800" fill="#0B1B3D">1.3s</text>
+            <text x="36" y="376" font-family="Inter, sans-serif" font-size="10" fill="#16A34A" font-weight="600">-0.4s vs base</text>
+            <rect x="166" y="298" width="134" height="100" rx="12" fill="#F7F9FC" stroke="#E0E3E8"/>
+            <text x="182" y="324" font-family="Inter, sans-serif" font-size="9" fill="#6E7686" letter-spacing="1">STORE RATING</text>
+            <text x="182" y="354" font-family="Inter Tight, sans-serif" font-size="22" font-weight="800" fill="#F59E0B">4.8&#9733;</text>
+            <text x="182" y="376" font-family="Inter, sans-serif" font-size="10" fill="#6E7686">1,842 reviews</text>
+            <!-- list items -->
+            <text x="20" y="430" font-family="Inter Tight, sans-serif" font-weight="700" font-size="14" fill="#0B1B3D">Recent releases</text>
+            <circle cx="32" cy="460" r="5" fill="#16A34A"/>
+            <text x="48" y="464" font-family="Inter, sans-serif" font-size="12" fill="#0B1B3D" font-weight="600">v4.2.1 &middot; iOS</text>
+            <text x="48" y="480" font-family="Inter, sans-serif" font-size="10" fill="#6E7686">2h ago &middot; approved</text>
+            <circle cx="32" cy="500" r="5" fill="#16A34A"/>
+            <text x="48" y="504" font-family="Inter, sans-serif" font-size="12" fill="#0B1B3D" font-weight="600">v4.2.1 &middot; Android</text>
+            <text x="48" y="520" font-family="Inter, sans-serif" font-size="10" fill="#6E7686">3h ago &middot; rolling</text>
+            <circle cx="32" cy="540" r="5" fill="#F59E0B"/>
+            <text x="48" y="544" font-family="Inter, sans-serif" font-size="12" fill="#0B1B3D" font-weight="600">v4.3.0-beta</text>
+            <text x="48" y="560" font-family="Inter, sans-serif" font-size="10" fill="#6E7686">TestFlight</text>
+            <!-- tab bar -->
+            <rect x="0" y="594" width="320" height="46" fill="#FFFFFF" stroke="#E0E3E8" stroke-width="1"/>
+            <g transform="translate(40 600)" font-family="Inter, sans-serif" font-size="9" fill="#0050C8">
+              <circle cx="0" cy="14" r="3" fill="#0050C8"/>
+              <text x="-10" y="34">Home</text>
+            </g>
+            <g transform="translate(120 600)" font-family="Inter, sans-serif" font-size="9" fill="#9BA5B5">
+              <circle cx="0" cy="14" r="3" fill="#9BA5B5"/>
+              <text x="-14" y="34">Releases</text>
+            </g>
+            <g transform="translate(200 600)" font-family="Inter, sans-serif" font-size="9" fill="#9BA5B5">
+              <circle cx="0" cy="14" r="3" fill="#9BA5B5"/>
+              <text x="-14" y="34">Insights</text>
+            </g>
+            <g transform="translate(280 600)" font-family="Inter, sans-serif" font-size="9" fill="#9BA5B5">
+              <circle cx="0" cy="14" r="3" fill="#9BA5B5"/>
+              <text x="-14" y="34">Profile</text>
+            </g>
+          </svg>
         </div>
       </div>
-      <div>
-        <div class="kpi-strip" style="grid-template-columns:1fr 1fr">
-          <div class="kpi-tile"><div class="kpi-num">11 wk</div><div class="kpi-label">From kickoff to dual-store launch</div></div>
-          <div class="kpi-tile"><div class="kpi-num">4.8 ★</div><div class="kpi-label">Average launch-week store rating</div></div>
-          <div class="kpi-tile"><div class="kpi-num">0</div><div class="kpi-label">Rejections across iOS &amp; Android first submissions</div></div>
-          <div class="kpi-tile"><div class="kpi-num">38%</div><div class="kpi-label">Day-30 retention on launch cohort</div></div>
+    </div>
+    <div class="platforms-right">
+      <div class="section-head fade-up" style="text-align:left">
+        <span class="eyebrow">Platforms we ship to</span>
+        <h2>Four platforms, each with a sharp opinion on when to pick it.</h2>
+      </div>
+      <div class="cms-rows fade-up">
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/swift.svg" alt="Swift"/></div>
+          <div class="cms-row-body"><h3>iOS &middot; Swift</h3><p>SwiftUI, Combine, async/await, full HealthKit/HomeKit/CarPlay access. The pick when iOS user-base &gt; 60&percnt; or when Apple platform features are core to UX.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/kotlin.svg" alt="Kotlin"/></div>
+          <div class="cms-row-body"><h3>Android &middot; Kotlin</h3><p>Jetpack Compose, Coroutines, Material 3, full Google Play services. The pick for Android-first markets (India, SEA, LATAM) or hardware-integrated apps.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/flutter.svg" alt="Flutter"/></div>
+          <div class="cms-row-body"><h3>Flutter</h3><p>Dart 3, Material You, 60fps custom UI, single codebase. The pick when design fidelity matters across both stores and you need to ship in 10&ndash;14 weeks.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/react.svg" alt="React Native"/></div>
+          <div class="cms-row-body"><h3>React Native</h3><p>Hermes, New Architecture, Expo or bare. The pick when you already have React talent on staff and want cross-platform without re-learning the stack.</p></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ POST-LAUNCH CARE ============ -->
+<!-- ============ PERFORMANCE BENCHMARKS — approach-section style ============ -->
+<section class="approach-section">
+  <div class="approach-overlay"></div>
+  <div class="container">
+    <div class="approach-inner fade-up">
+      <span class="approach-kicker">Performance Benchmarks</span>
+      <h2 class="approach-headline">The numbers Vybog apps hit on launch day.</h2>
+      <p class="approach-subtitle">Crash-free above 99.5&percnt;. <span class="approach-accent">Day-90 metrics that hold.</span></p>
+      <p class="approach-lead">Every Vybog Services mobile build ships with these thresholds wired into release pipelines &mdash; if a regression slips past, the deploy is blocked. Real-user metrics from production over the trailing 30 days, not synthetic lab tests.</p>
+      <div class="approach-stats">
+        <div class="approach-stat">
+          <div class="num">99.5&percnt;</div>
+          <div class="label">Crash-free rate at day 90 (Crashlytics)</div>
+        </div>
+        <div class="approach-stat">
+          <div class="num">&lt;1.5s</div>
+          <div class="label">Cold start at p95 on mid-tier devices</div>
+        </div>
+        <div class="approach-stat">
+          <div class="num">4.6&#9733;+</div>
+          <div class="label">Store rating after first 1,000 reviews</div>
+        </div>
+        <div class="approach-stat">
+          <div class="num">&lt;40MB</div>
+          <div class="label">Bundle size after tree-shake + asset audit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP MODERNIZATION ============ -->
 <section class="bg-tint">
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">Post-launch care</span>
-      <h2>The bit most agencies pretend does not exist.</h2>
-      <p>Mobile apps decay faster than web apps. New OS versions, new device sizes, new store policies. Here is what is included by default — and what we run as a retainer.</p>
+      <span class="eyebrow">App modernization &amp; migrations</span>
+      <h2>From Cordova to Flutter. From Objective-C to Swift. Without breaking the store listing.</h2>
+      <p>Most app modernizations stall because nobody plans the user-migration path. We lead with the cutover plan, not the framework choice.</p>
     </div>
     <div class="grid grid-3 fade-up">
       <div class="feature-card">
-        <h3>Bug-fix SLA</h3>
-        <p>Sev-1 issues (crash on launch, payment failure) acknowledged in 2 business hours, hotfix submitted in 24. Sev-2 in five business days. Written into the SOW.</p>
+        <h3>Cordova / Ionic &rarr; Flutter</h3>
+        <p>WebView-wrapped apps that have outgrown the hybrid stack. Re-architected screen-by-screen, store listing preserved, user data migrated. Typical timeline: 12&ndash;18 weeks.</p>
       </div>
       <div class="feature-card">
-        <h3>OS compatibility passes</h3>
-        <p>iOS and Android beta SDKs tested against your app before public release each year. We pre-empt deprecations, not chase them.</p>
+        <h3>Objective-C &rarr; Modern Swift</h3>
+        <p>Decade-old iOS codebases brought to Swift 5+, SwiftUI where it earns its place, async/await everywhere. Bridge headers managed during the transition.</p>
       </div>
       <div class="feature-card">
-        <h3>Store listing &amp; ASO</h3>
-        <p>Quarterly refresh of screenshots, keywords, and metadata against category trends. Conversion-rate testing on store assets where volume allows.</p>
+        <h3>React Native &rarr; New Architecture</h3>
+        <p>Bridge-based RN apps migrated to Fabric + TurboModules + Hermes. Performance regressions caught with continuous benchmark CI. No big-bang flag flip.</p>
       </div>
+      <div class="feature-card">
+        <h3>Java &rarr; Kotlin (Android)</h3>
+        <p>Java-only Android codebases interop&apos;d with Kotlin file-by-file. New features in Kotlin, legacy Java preserved, Compose adoption where the screen redesign warrants it.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Hybrid &rarr; Native pair</h3>
+        <p>When the hybrid trade-off no longer holds. We architect the native iOS + Android twin from one shared design system, with a single PM and shared release cadence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOBILE INTEGRATIONS — 75x75 logos ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Integrations we wire up</span>
+      <h2>The third-party services every Vybog mobile build ships with.</h2>
+      <p>Payments, CRM, auth, analytics, crash reporting, push, search &mdash; instrumented from day one with retry logic, idempotency, and observability per webhook.</p>
+    </div>
+    <div class="integration-grid fade-up">
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/firebase.svg" alt="Firebase" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Firebase</span><span class="int-cat">Auth / Crashlytics</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/revenuecat.svg" alt="RevenueCat" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">RevenueCat</span><span class="int-cat">In-app subscriptions</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/stripe.svg" alt="Stripe" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Stripe</span><span class="int-cat">In-app purchases</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/paypal.svg" alt="PayPal" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">PayPal</span><span class="int-cat">Alt payments</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/segment.svg" alt="Segment" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Segment</span><span class="int-cat">CDP</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/google-analytics.svg" alt="Google Analytics" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Google Analytics</span><span class="int-cat">Analytics</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/mailchimp.svg" alt="Mailchimp" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Mailchimp</span><span class="int-cat">Transactional email</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/algolia.svg" alt="Algolia" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Algolia</span><span class="int-cat">In-app search</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/cloudinary.svg" alt="Cloudinary" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Cloudinary</span><span class="int-cat">Media CDN</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/hubspot.svg" alt="HubSpot" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">HubSpot</span><span class="int-cat">CRM sync</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/salesforce.svg" alt="Salesforce" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Salesforce</span><span class="int-cat">Enterprise CRM</span></figcaption>
+        </figure>
+        <figure class="integration-tile">
+          <img src="../assets/images/tech-logos/slack.svg" alt="Slack" width="75" height="75" loading="lazy"/>
+          <figcaption><span class="int-name">Slack</span><span class="int-cat">DevOps alerts</span></figcaption>
+        </figure>
     </div>
   </div>
 </section>

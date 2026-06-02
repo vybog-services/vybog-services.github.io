@@ -3974,3 +3974,56 @@ section.platforms-split { padding: 0; }
     border-radius: 16px;
   }
 }
+
+/* ---------- 64. PHONE FRAME — mobile platforms half-view ---------- */
+.phone-frame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  max-width: 360px;
+  margin: 0 auto 0 0;  /* anchor to left (which is the visible left edge of viewport area) */
+  background: #0B1B3D;
+  border: 1px solid #1A2B53;
+  border-radius: 38px 38px 0 0;
+  padding: 14px 14px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(11, 27, 61, 0.22),
+    0 6px 16px rgba(11, 27, 61, 0.08);
+}
+.phone-notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 24px;
+  background: #0B1B3D;
+  border-radius: 0 0 14px 14px;
+  z-index: 2;
+}
+.phone-notch::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #1A2B53;
+}
+.phone-screen {
+  flex: 1;
+  border-radius: 28px 28px 0 0;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.phone-screen svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media (max-width: 1080px) {
+  .phone-frame { margin: 0 auto; }
+}
