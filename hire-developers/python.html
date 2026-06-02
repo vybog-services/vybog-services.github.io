@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0050C8" />
-  <title>Hire Python Developers — Django, FastAPI, AI/ML, Data · Vybog Services</title>
-  <meta name="description" content="Hire senior Python developers for Django, FastAPI, Flask, data pipelines, AI/ML, LLM-Ops, and vector database pipelines. Experts who have shipped Python in production for a decade." />
+  <title>Hire Python Developers — Django, FastAPI, Data · Vybog Services</title>
+  <meta name="description" content="Hire senior Python developers for Django, FastAPI, async services, ETL, and ML-adjacent backends. Two-week discovery sprint before commitment." />
   <link rel="icon" type="image/png" href="../assets/images/logo/vybog-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -226,18 +226,18 @@
     <div class="hero-grid" style="grid-template-columns:1.1fr 1fr">
       <div>
         <span class="eyebrow">Python Developers</span>
-        <h1>Python is where data, AI, and the boring backend all meet.</h1>
-        <p class="lead">Hire Python developers who can ship a Django backend, a FastAPI gateway, an Airflow DAG, and an evaluation pipeline for an LLM — and tell you which one your problem actually needs.</p>
+        <h1>Backends, pipelines, and ML-adjacent services that hold up.</h1>
+        <p class="lead">Python developers who ship production services with the same craft they bring to a notebook. Type hints, async where it earns it, observability from day one.</p>
         <div class="hero-trust">
-          <div class="trust-item"><span class="trust-num">Python 3.12</span><span class="trust-label">Default for new projects</span></div>
-          <div class="trust-item"><span class="trust-num">uv + Ruff</span><span class="trust-label">Modern tooling baseline</span></div>
-          <div class="trust-item"><span class="trust-num">mypy strict</span><span class="trust-label">Type checking on green CI</span></div>
+          <div class="trust-item"><span class="trust-num">Python 3.12</span><span class="trust-label">async, structural pattern matching</span></div>
+          <div class="trust-item"><span class="trust-num">mypy strict</span><span class="trust-label">typed on every PR</span></div>
+          <div class="trust-item"><span class="trust-num">SLOs first</span><span class="trust-label">p99 latency owned</span></div>
         </div>
       </div>
       <div>
         <div class="card" style="padding:32px">
-          <h3 style="margin-bottom:8px">Tell us about the workload</h3>
-          <p style="font-size:14.5px;margin-bottom:20px">We will respond within one business day with two named Python developers and an indicative rate.</p>
+          <h3 style="margin-bottom:8px">Brief us in a paragraph</h3>
+          <p style="font-size:14.5px;margin-bottom:20px">Two named Python developer and an availability window &mdash; back to you within a business day.</p>
           <form class="contact-form" data-form>
             <div class="field">
               <label for="py-name">Your name</label>
@@ -255,9 +255,9 @@
             </div>
             <div class="field">
               <label for="py-skills">Python skills needed</label>
-              <textarea id="py-skills" name="skills" placeholder="FastAPI service with pgvector retrieval, LangChain agents with eval suite, Airflow pipeline..."></textarea>
+              <textarea id="py-skills" name="skills" placeholder="FastAPI auth service, Celery + Redis for async jobs, OpenTelemetry traces…"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%">Request expert profiles <span class="arrow">→</span></button>
+            <button type="submit" class="btn btn-primary" style="width:100%">Request expert profiles <span class="arrow">&rarr;</span></button>
           </form>
         </div>
       </div>
@@ -265,206 +265,254 @@
   </div>
 </section>
 
-<!-- ============ 2. PYTHON 2026 USE-CASE MAP ============ -->
+<!-- ============ 2. PYTHON SPECIALIZATIONS ============ -->
 <section class="bg-tint">
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">2026 Use-Case Map</span>
-      <h2>Where Python earns its rate in 2026.</h2>
-      <p>Six categories where Python is not just acceptable, it is the right tool. Each one has at least four experts on our bench leading work.</p>
+      <span class="eyebrow">Specializations</span>
+      <h2>Four tracks our Python bench is deep in.</h2>
+      <p>Generalist Python is easy to find. These are the practices that separate a senior hire from a mid one.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="card flagship">
-        <h3>AI / ML experting</h3>
-        <p>LLM application layer, evaluation pipelines, fine-tuning workflows, retrieval-augmented generation. Where the language sits closest to the research community.</p>
+    <div class="grid grid-4 fade-up">
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h3>Service architecture</h3>
+        <p>FastAPI for new HTTP APIs, Django when admin/ORM/auth earn the framework. Pydantic v2 contracts from code. Domain-driven module boundaries.</p>
       </div>
-      <div class="card">
-        <h3>Data experting</h3>
-        <p>Airflow DAGs, dbt models, Spark jobs, streaming pipelines with PyFlink. The Python that the data team actually maintains.</p>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Async + queues</h3>
+        <p>asyncio where it earns the complexity, Celery / RQ / Dramatiq for background work, Kafka or SQS for cross-service. Idempotency keys, retry semantics, dead-letter discipline.</p>
       </div>
-      <div class="card">
-        <h3>Automation &amp; scripting</h3>
-        <p>The internal tools that quietly run a company — CSV reconciliation, third-party API wrapping, scheduled enrichment. Boring and indispensable.</p>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Data &amp; ML adjacency</h3>
+        <p>pandas, polars, DuckDB for offline data. SQLAlchemy 2.0 + Alembic for OLTP. dbt + Airflow where pipelines live. ML inference servers with FastAPI or Ray Serve.</p>
       </div>
-      <div class="card">
-        <h3>FastAPI services</h3>
-        <p>High-throughput API backends with type-driven validation via Pydantic, async I/O, OpenAPI generation that does not lie about the shape of your responses.</p>
-      </div>
-      <div class="card">
-        <h3>Django backends</h3>
-        <p>Server-rendered web applications with the admin nobody else gives you for free. DRF for APIs, Celery for background work, Wagtail when CMS-shaped.</p>
-      </div>
-      <div class="card">
-        <h3>Scientific tooling</h3>
-        <p>NumPy, Pandas, Polars, scikit-learn, statsmodels — for the analytical workloads that have to be reproducible, documented, and ship as a notebook with PRs.</p>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Observability + perf</h3>
+        <p>OpenTelemetry traces, Prometheus metrics, structured logs with correlation IDs. cProfile and py-spy read on demand. p99 latency owned and graphed.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 3. FRAMEWORK & LIBRARY COVERAGE ============ -->
+<!-- ============ 3. WHAT SENIOR MEANS ============ -->
 <section>
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">Library Coverage</span>
-      <h2>The Python toolkit our experts carry.</h2>
-      <p>Not an exhaustive list — these are the libraries our experts reach for on most engagements.</p>
+      <span class="eyebrow">The Senior Bar</span>
+      <h2>What 'senior' actually means in our Python bench.</h2>
+      <p>The five things every senior Python developer on our bench can be measured against. Not aspirational &mdash; these are the hiring rubric.</p>
+    </div>
+    <div class="grid grid-5 fade-up" style="grid-template-columns:repeat(5,1fr);gap:16px">
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">01</span>
+        <h4 style="margin-top:12px">System awareness</h4>
+        <p style="font-size:14px">Reads the architecture before writing the import. Knows what each dependency costs in build time and runtime.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">02</span>
+        <h4 style="margin-top:12px">Accessibility instinct</h4>
+        <p style="font-size:14px">Semantic markup, keyboard-first, WCAG checks part of definition-of-done — not a Lighthouse audit at the end.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">03</span>
+        <h4 style="margin-top:12px">Profiling discipline</h4>
+        <p style="font-size:14px">Opens the profiler before reaching for an optimization. Understands when symptoms vs root causes are conflated.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">04</span>
+        <h4 style="margin-top:12px">API design thinking</h4>
+        <p style="font-size:14px">Will not ship a new contract if one already exists. Argues for consistent shapes, error envelopes, and backward compat.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">05</span>
+        <h4 style="margin-top:12px">Type safety, real</h4>
+        <p style="font-size:14px">TypeScript strict, no `any`. Discriminated unions, generic constraints, exhaustive switches. Types are documentation, not decoration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. PAIR WITH (tech-grid visual) ============ -->
+<section class="bg-soft">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Pair Naturally With</span>
+      <h2>The stacks Python fits inside.</h2>
+      <p>Python rarely ships alone. Here is what we usually pair it with on Vybog Services projects.</p>
     </div>
     <div class="tech-grid fade-up">
-      <div class="tech-pill">Django</div>
       <div class="tech-pill">FastAPI</div>
-      <div class="tech-pill">Flask</div>
-      <div class="tech-pill">DRF</div>
+      <div class="tech-pill">Django</div>
       <div class="tech-pill">Celery</div>
       <div class="tech-pill">SQLAlchemy</div>
       <div class="tech-pill">Pydantic</div>
-      <div class="tech-pill">Pandas</div>
-      <div class="tech-pill">Polars</div>
-      <div class="tech-pill">LangChain</div>
-      <div class="tech-pill">LlamaIndex</div>
-      <div class="tech-pill">DSPy</div>
+      <div class="tech-pill">pandas</div>
+      <div class="tech-pill">polars</div>
+      <div class="tech-pill">dbt</div>
+      <div class="tech-pill">Airflow</div>
+      <div class="tech-pill">Ray</div>
+      <div class="tech-pill">PostgreSQL</div>
+      <div class="tech-pill">Redis</div>
     </div>
   </div>
 </section>
 
-<!-- ============ 4. AI/ML EXPERT BENCH (Unique) ============ -->
-<section class="bg-dark">
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">AI / ML Experting</span>
-      <h2>The bench that actually evaluates the model before deploying it.</h2>
-      <p>Most "AI experts" you can hire today wrote their first eval suite last week. Ours have been shipping evaluation discipline since the GPT-3.5 days.</p>
-    </div>
-    <div class="grid grid-4 fade-up">
-      <div class="feature-card" style="background:var(--bg-dark-soft);border-color:rgba(255,255,255,0.08);color:var(--text-on-dark)">
-        <h3 style="color:#fff">LLM-Ops</h3>
-        <p style="color:var(--text-on-dark-soft)">Prompt versioning, model rollout with feature flags, cost monitoring, fallback routing across providers, structured-output validation with retries.</p>
-      </div>
-      <div class="feature-card" style="background:var(--bg-dark-soft);border-color:rgba(255,255,255,0.08);color:var(--text-on-dark)">
-        <h3 style="color:#fff">Vector DB experience</h3>
-        <p style="color:var(--text-on-dark-soft)">pgvector for the default case, Pinecone for managed scale, Weaviate when graph-shaped, Qdrant for cost-sensitive on-prem. We have shipped on all four.</p>
-      </div>
-      <div class="feature-card" style="background:var(--bg-dark-soft);border-color:rgba(255,255,255,0.08);color:var(--text-on-dark)">
-        <h3 style="color:#fff">Fine-tuning</h3>
-        <p style="color:var(--text-on-dark-soft)">LoRA and QLoRA fine-tunes for domain adaptation, when prompting alone is no longer enough. Data prep, hold-out evaluation, deployment alongside base model with A/B routing.</p>
-      </div>
-      <div class="feature-card" style="background:var(--bg-dark-soft);border-color:rgba(255,255,255,0.08);color:var(--text-on-dark)">
-        <h3 style="color:#fff">Evaluation pipelines</h3>
-        <p style="color:var(--text-on-dark-soft)">Golden datasets with version control, automated eval runs in CI, regression detection on prompt changes, human review queues for ambiguous outputs. The discipline behind "shipping LLM apps in production."</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 5. DATA PIPELINE CAPABILITIES ============ -->
+<!-- ============ 5. THE 2-WEEK DISCOVERY SPRINT ============ -->
 <section>
   <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Data Pipelines</span>
-      <h2>Pipelines that survive contact with real data.</h2>
-      <p>The Python work that sits below the ML work — the pipelines, transforms, and warehouse jobs that move terabytes a day.</p>
-    </div>
-    <div class="grid grid-4 fade-up">
-      <div class="feature-card">
-        <h3>Airflow orchestration</h3>
-        <p>DAG design that handles backfills cleanly, sensors that do not block workers, custom operators where the abstractions earn their keep, deferrable operators for I/O-heavy work.</p>
+    <div class="split fade-up">
+      <div>
+        <span class="eyebrow">De-Risk the Hire</span>
+        <h2>The two-week discovery sprint, before commitment.</h2>
+        <p class="lead">If you are bringing in a Python developer for a long engagement, the worst time to find out the fit is wrong is week six. Here is how we shrink that risk.</p>
+        <p>The sprint is a fixed two-week, fixed-fee engagement where one of our senior Python developers reads your codebase, joins your standups, and ships a small but real service or pipeline. At the end of the two weeks, both sides know enough to commit &mdash; or to walk away cleanly.</p>
+        <p>We bill the discovery sprint at a flat rate and credit it against the first month of any continuing engagement. If the fit is wrong, you keep the service or pipeline, the documentation, and the architectural notes the expert wrote up. Nobody loses the quarter.</p>
+        <a href="../contact.html" class="btn btn-primary mt-4">Start a discovery sprint <span class="arrow">&rarr;</span></a>
       </div>
-      <div class="feature-card">
-        <h3>dbt modelling</h3>
-        <p>Warehouse transformations in SQL with Python-driven tests, dbt-core or dbt Cloud, lineage documentation that the analytics team will actually open.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Spark &amp; PySpark</h3>
-        <p>For the workloads that exceeded a single machine three releases ago. Structured Streaming for near-real-time, Delta Lake for transactional history.</p>
-      </div>
-      <div class="feature-card">
-        <h3>ETL design</h3>
-        <p>Idempotent loads, source-of-truth tracking, schema drift detection, dead-letter handling for malformed records. The unglamorous reliability work that pays for itself within a quarter.</p>
+      <div>
+        <div class="card" style="padding:32px">
+          <h3>What the sprint covers</h3>
+          <ul class="check-list">
+            <li><strong>Days 1&ndash;3</strong> &middot; Codebase read, architecture diagram, written observations</li>
+            <li><strong>Days 4&ndash;6</strong> &middot; Ship one small ticket, prove the build and review flow</li>
+            <li><strong>Days 7&ndash;10</strong> &middot; Ship one real feature card end-to-end</li>
+            <li><strong>Days 11&ndash;14</strong> &middot; Write up technical debt notes, recommend next quarter</li>
+            <li><strong>End of sprint</strong> &middot; Fit decision, transparent on both sides</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 6. ENGAGEMENT MODELS + RATE CARD ============ -->
+<!-- ============ 6. SAMPLE SPRINT OUTPUT ============ -->
 <section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Sprint Output</span>
+      <h2>What a Vybog Services Python developer ships, by week.</h2>
+      <p>Realistic week-by-week output for a senior Python developer on a typical backend or data team.</p>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <span class="tag">Week 1</span>
+        <h3 class="mt-5">Foundation</h3>
+        <ul class="check-list">
+          <li>Service running locally, test suite green</li>
+          <li>First small endpoint or job merged</li>
+          <li>One observation memo on architecture</li>
+          <li>Joined standups, demo, retro</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Week 2</span>
+        <h3 class="mt-5">First feature</h3>
+        <ul class="check-list">
+          <li>One real service or pipeline shipped</li>
+          <li>Traces + metrics emitted</li>
+          <li>Load or batch test run, performance documented</li>
+          <li>Code review reciprocity established</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Week 4</span>
+        <h3 class="mt-5">Sustained throughput</h3>
+        <ul class="check-list">
+          <li>Two to three deliveries per week steady-state</li>
+          <li>One async worker hardened (retry, DLQ)</li>
+          <li>SLO docs written</li>
+          <li>Performance regression alerts in place</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ENGAGEMENT MODELS + RATE CARD ============ -->
+<section>
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">Engagement &amp; Rates</span>
       <h2>Python rate card.</h2>
-      <p>Three engagement models, with AI/ML and data-experting specialists at a small premium reflecting demand.</p>
+      <p>Three ways to engage, with seniority-based rates. The two-week discovery sprint is a fourth, cheaper way to start.</p>
     </div>
     <div class="fade-up" style="overflow-x:auto">
       <table class="compare-table">
         <thead>
           <tr>
-            <th>Track</th>
+            <th>Seniority</th>
             <th>Hourly</th>
             <th>Monthly</th>
-            <th>Project (8-week service)</th>
+            <th>Discovery Sprint (2 weeks)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="row-label">Python (Django / FastAPI)</td>
-            <td>$34–55</td>
-            <td>$4,000–6,200</td>
-            <td>from $20,000</td>
+            <td class="row-label">Mid Python</td>
+            <td>$30&ndash;42</td>
+            <td>$3,600&ndash;4,800</td>
+            <td>$4,400 flat</td>
           </tr>
           <tr>
-            <td class="row-label">Data experting</td>
-            <td>$42–62</td>
-            <td>$5,000–7,200</td>
-            <td>from $26,000</td>
+            <td class="row-label">Senior Python</td>
+            <td>$42&ndash;56</td>
+            <td>$5,000&ndash;6,400</td>
+            <td>$5,600 flat</td>
           </tr>
           <tr>
-            <td class="row-label">AI / ML experting</td>
-            <td>$55–85</td>
-            <td>$6,400–9,800</td>
-            <td>from $32,000</td>
+            <td class="row-label">Lead Python</td>
+            <td>$56&ndash;72</td>
+            <td>$6,400&ndash;8,400</td>
+            <td>$6,800 flat</td>
           </tr>
           <tr>
-            <td class="row-label">Principal / Research-adjacent</td>
-            <td>$85–120</td>
-            <td>$9,800–14,000</td>
+            <td class="row-label">Principal Python / ML Eng</td>
+            <td>$72&ndash;100</td>
+            <td>$8,400&ndash;12,000</td>
             <td>on request</td>
           </tr>
         </tbody>
       </table>
     </div>
+    <p style="font-size:13.5px;color:var(--text-muted);margin-top:16px;text-align:center">Discovery sprint fee credited against the first month of a continuing monthly engagement.</p>
   </div>
 </section>
 
-<!-- ============ 7. PYTHON-SPECIFIC FAQ ============ -->
-<section>
+<!-- ============ 8. PYTHON-SPECIFIC FAQ ============ -->
+<section class="bg-soft">
   <div class="container-narrow fade-up">
     <span class="eyebrow">Python FAQ</span>
-    <h2>Three questions Python buyers ask first.</h2>
+    <h2>Three questions we get on every Python engagement.</h2>
     <div class="mt-7">
       <details class="faq-item" open>
-        <summary>Django or FastAPI — which should we start with?</summary>
-        <div class="faq-answer">Django when you need a full server-rendered application with admin, auth, and ORM all in one — the productivity floor is unmatched. FastAPI when you are building API services consumed by other clients (mobile, React, third parties) and you want type-driven validation as the contract. We will recommend based on your specific shape; both have experts on our bench who can lead.</div>
+        <summary>FastAPI or Django for a new HTTP service?</summary>
+        <div class="faq-answer">FastAPI when the API is the product and async + Pydantic earn their keep. Django when admin, ORM, and migrations save weeks of plumbing. We will write a decision memo in week one — both are first-class in our bench.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you offer LLM application work as a separate engagement?</summary>
-        <div class="faq-answer">Our AI Agent Development team is the deeper engagement for that — see the flagship page. A Python hire here is the right shape when you need an expert embedded in your team to ship LLM-adjacent features alongside other work, not a standalone agent build. We will help you choose between the two on the discovery call.</div>
+        <summary>Sync or async?</summary>
+        <div class="faq-answer">Sync everywhere until I/O actually dominates. Async when the service spends most of its time waiting on the network or DB. We will not async-ify code just for the aesthetic.</div>
       </details>
       <details class="faq-item">
-        <summary>Can your Python developers also write production-quality SQL?</summary>
-        <div class="faq-answer">Yes. Every Python developer on our bench is expected to read query plans, write window functions, understand index design, and have an opinion on when an ORM is helping versus when it is hiding the problem. We do not split Python and SQL into separate hires — that line has been blurred for a decade.</div>
+        <summary>Poetry, uv, or pip-tools?</summary>
+        <div class="faq-answer">uv for new projects — it is fast and the resolver is solid. Poetry on existing projects unless there is a reason to migrate. pip-tools when corporate constraints demand it. We will not move you for taste alone.</div>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ============ 8. CTA BANNER ============ -->
+<!-- ============ 9. CTA BANNER ============ -->
 <section>
   <div class="container">
     <div class="cta-banner fade-up">
       <span class="eyebrow" style="color:var(--brand-secondary)">Hire Python Developers</span>
-      <h2>From a FastAPI service to an LLM evaluation suite — one bench.</h2>
-      <p>Tell us the workload. We will tell you which Python developer from our bench is the right one — and whether the work is Python at all.</p>
+      <h2>Two weeks to know if it works. One week to onboard if it does.</h2>
+      <p>Start with a discovery sprint or jump straight to a monthly engagement. Either way, real experts, real PRs, in your repo by next week.</p>
       <div class="cta-actions">
-        <a href="../contact.html" class="btn btn-on-dark btn-lg">Request profiles <span class="arrow">→</span></a>
+        <a href="../contact.html" class="btn btn-on-dark btn-lg">Start a discovery sprint <span class="arrow">&rarr;</span></a>
         <a href="index.html" class="btn btn-ghost" style="color:#fff">Back to all stacks</a>
       </div>
     </div>

@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0050C8" />
-  <title>Hire Vue Developers &mdash; Vybog Services</title>
-  <meta name="description" content="Vue 3, Composition API, Pinia, Vite, Nuxt — senior Vue developers embedded in your repo by Friday. Hired by Vybog Services." />
+  <title>Hire Vue Developers — Composition API, Pinia, Nuxt SSR · Vybog Services</title>
+  <meta name="description" content="Hire senior Vue developers for component library architecture, Pinia state management, Nuxt SSR, and design-system work. Two-week discovery sprint before commitment." />
   <link rel="icon" type="image/png" href="../assets/images/logo/vybog-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,7 +134,7 @@
             <a href="../about.html" class="mega-link"><span class="mega-link-title">About Vybog Services</span><span class="mega-link-desc">Studio, principles, leadership</span></a>
             <a href="../case-studies.html" class="mega-link"><span class="mega-link-title">Case Studies</span><span class="mega-link-desc">Production builds, with the numbers</span></a>
             <a href="../engagement-models.html" class="mega-link"><span class="mega-link-title">Engagement Models</span><span class="mega-link-desc">Project, retainer, dedicated pod</span></a>
-            <a href="../process.html" class="mega-link"><span class="mega-link-title">Delivery Process</span><span class="mega-link-desc">Discovery &rarr; ship &rarr; on-call</span></a>
+            <a href="../process.html" class="mega-link"><span class="mega-link-title">Delivery Process</span><span class="mega-link-desc">Discovery → ship → on-call</span></a>
             <a href="../blog/index.html" class="mega-link"><span class="mega-link-title">Blog &amp; Insights</span><span class="mega-link-desc">Architecture, AI, hiring rubrics</span></a>
             <a href="../contact.html" class="mega-link"><span class="mega-link-title">Contact</span><span class="mega-link-desc">Schedule a 30-minute discovery call</span></a>
           </div>
@@ -143,8 +143,8 @@
       </div>
     </nav>
     <div class="header-cta">
-        <a href="../contact.html" class="header-cta-btn">Talk to an Expert</a>
-        <button class="mobile-toggle" aria-label="Open menu">
+      <a href="../contact.html" class="header-cta-btn">Talk to an Expert</a>
+      <button class="mobile-toggle" aria-label="Open menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
@@ -201,7 +201,7 @@
       <a href="../hire-developers/data-scientists.html">Data Scientists</a>
     </div>
   </details>
-  <a class="drawer-section drawer-link" href="../ai-agent-development.html">AI Solutions</a>
+  <details class="drawer-section"><summary><a href="../ai-agent-development.html" style="color:inherit;text-decoration:none;display:block">AI Solutions</a></summary></details>
   <details class="drawer-section">
     <summary>Who we are <span>+</span></summary>
     <div class="drawer-sublinks">
@@ -218,95 +218,302 @@
 
 <main>
 
-<!-- ============ PAGE HERO ============ -->
-<section class="page-hero hero-centered">
+<!-- ============ PAGE HERO WITH FORM ============ -->
+<section class="page-hero">
+  <div class="hero-glow"></div>
   <div class="container">
-    <div class="breadcrumbs fade-up">
-      <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Hire Talent</a><span class="sep">/</span>Vue Developers
-    </div>
-    <span class="eyebrow fade-up">Hire Vue Developers</span>
-    <h1 class="fade-up">Vue developers who build, not just <span class="italic-accent">scaffold</span>.</h1>
-    <p class="lead fade-up">Vue 3 + TypeScript + Pinia + Vite — Nuxt where SSR matters. Senior engineers embedded in your repo by Friday, shipping production-grade SFCs by Monday.</p>
-    <div class="mt-6 fade-up">
-      <a href="../contact.html" class="btn btn-primary">Schedule a Call <span class="arrow">&rarr;</span></a>
-      <a href="../engagement-models.html" class="btn btn-ghost">See engagement models</a>
+    <div class="breadcrumbs"><a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Hire Developers</a><span class="sep">/</span>Vue</div>
+    <div class="hero-grid" style="grid-template-columns:1.1fr 1fr">
+      <div>
+        <span class="eyebrow">Vue Developers</span>
+        <h1>Reactive frontends that age well in production.</h1>
+        <p class="lead">Vue developers who ship features fast and still know what reactivity costs. Composition API thinking, Pinia for state, type safety as a default — not a debate.</p>
+        <div class="hero-trust">
+          <div class="trust-item"><span class="trust-num">Vue 3.4</span><span class="trust-label">Composition, Suspense, Vapor</span></div>
+          <div class="trust-item"><span class="trust-num">TS strict</span><span class="trust-label">Default in every project</span></div>
+          <div class="trust-item"><span class="trust-num">WCAG 2.2 AA</span><span class="trust-label">Accessibility floor</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="padding:32px">
+          <h3 style="margin-bottom:8px">Brief us in a paragraph</h3>
+          <p style="font-size:14.5px;margin-bottom:20px">Two named Vue developer and an availability window &mdash; back to you within a business day.</p>
+          <form class="contact-form" data-form>
+            <div class="field">
+              <label for="v-name">Your name</label>
+              <input id="v-name" type="text" name="name" required />
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="v-email">Work email</label>
+                <input id="v-email" type="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="v-company">Company</label>
+                <input id="v-company" type="text" name="company" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="v-skills">Vue skills needed</label>
+              <textarea id="v-skills" name="skills" placeholder="Design-system rebuild in Vuetify + Tailwind, Pinia state, Storybook coverage…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Request expert profiles <span class="arrow">&rarr;</span></button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ WHAT WE SHIP ============ -->
-<section class="bg-soft">
+<!-- ============ 2. VUE SPECIALIZATIONS ============ -->
+<section class="bg-tint">
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">What every Vue Developer engagement includes</span>
-      <h2>Six things you can expect on day one.</h2>
+      <span class="eyebrow">Specializations</span>
+      <h2>Four tracks our Vue bench is deep in.</h2>
+      <p>Generalist Vue is easy to find. These are the practices that separate a senior hire from a mid one.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="card"><h3>Vue 3 + Composition API</h3><p>Reactive primitives, computed refs, watch effects — used the way the Vue core team intended.</p></div>
-      <div class="card"><h3>Pinia state management</h3><p>Type-safe stores, modular slices, devtools-friendly.</p></div>
-      <div class="card"><h3>Vite tooling</h3><p>HMR sub-50ms, ESM-first builds, plugin ecosystem fluency.</p></div>
-      <div class="card"><h3>Nuxt SSR / ISR</h3><p>Server components, hybrid rendering, edge deployments.</p></div>
-      <div class="card"><h3>TypeScript across the SFC</h3><p>Strict mode, generic components, prop-type inference.</p></div>
-      <div class="card"><h3>Testing discipline</h3><p>Vitest, Vue Test Utils, Playwright — coverage that earns its place.</p></div>
+    <div class="grid grid-4 fade-up">
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h3>Component library architecture</h3>
+        <p>Headless primitives with Radix-Vue or Reka, styled with Tailwind or UnoCSS, documented in Histoire or Storybook, published as an internal npm package with semver. Compound components, scoped slots, provide/inject patterns.</p>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>State management at scale</h3>
+        <p>The right tool for the shape of the data. Pinia for entity-heavy apps, ref/computed for ergonomic local state, TanStack Query Vue for server state, VueUse for composables. Vuex only on legacy code.</p>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>SSR &amp; Nuxt 3</h3>
+        <p>Server-driven rendering with Nuxt 3 App. Server components, hybrid rendering, ISR + edge functions, hydration-mismatch debugging. We have shipped Nuxt 3 apps in production for over two years.</p>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Animation &amp; micro-interactions</h3>
+        <p>Motion-One for declarative animation, view transitions for cross-page motion, CSS-driven scroll animations where they belong. We will tell you when the animation budget is overrun before your designer does.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ USE CASES ============ -->
+<!-- ============ 3. WHAT SENIOR MEANS ============ -->
 <section>
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">Common scenarios</span>
-      <h2>Where Vybog Services vue developers plug in.</h2>
+      <span class="eyebrow">The Senior Bar</span>
+      <h2>What 'senior' actually means in our Vue bench.</h2>
+      <p>The five things every senior Vue developer on our bench can be measured against. Not aspirational &mdash; these are the hiring rubric.</p>
     </div>
-    <div class="grid grid-2 fade-up">
-      <div class="card"><h3>Nuxt 2 → Nuxt 3 migrations</h3><p>Composables, async data, server routes — migrated component-by-component, not big-bang.</p></div>
-      <div class="card"><h3>SaaS dashboards on Vue 3</h3><p>Multi-tenant, role-aware, audit-logged from sprint one.</p></div>
-      <div class="card"><h3>Design-system component libraries</h3><p>Headless primitives + token-driven theming.</p></div>
-      <div class="card"><h3>B2B web apps with strict perf budgets</h3><p>Hydration cost capped, route-level code splitting.</p></div>
+    <div class="grid grid-5 fade-up" style="grid-template-columns:repeat(5,1fr);gap:16px">
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">01</span>
+        <h4 style="margin-top:12px">System awareness</h4>
+        <p style="font-size:14px">Reads the architecture before writing the import. Knows what each dependency costs in build time and runtime.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">02</span>
+        <h4 style="margin-top:12px">Accessibility instinct</h4>
+        <p style="font-size:14px">Semantic markup, keyboard-first, WCAG checks part of definition-of-done — not a Lighthouse audit at the end.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">03</span>
+        <h4 style="margin-top:12px">Profiling discipline</h4>
+        <p style="font-size:14px">Opens the profiler before reaching for an optimization. Understands when symptoms vs root causes are conflated.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">04</span>
+        <h4 style="margin-top:12px">API design thinking</h4>
+        <p style="font-size:14px">Will not ship a new contract if one already exists. Argues for consistent shapes, error envelopes, and backward compat.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">05</span>
+        <h4 style="margin-top:12px">Type safety, real</h4>
+        <p style="font-size:14px">TypeScript strict, no `any`. Discriminated unions, generic constraints, exhaustive switches. Types are documentation, not decoration.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
+<!-- ============ 4. PAIR WITH (tech-grid visual) ============ -->
 <section class="bg-soft">
-  <div class="container container-narrow">
+  <div class="container">
     <div class="section-head fade-up">
-      <h2>Questions teams bring to the first call.</h2>
+      <span class="eyebrow">Pair Naturally With</span>
+      <h2>The stacks Vue fits inside.</h2>
+      <p>Vue rarely ships alone. Here is what we usually pair it with on Vybog Services projects.</p>
     </div>
-    <div class="fade-up">
-      <details class="faq-item" open><summary>Do your Vue developers also work in React or Angular?</summary><div class="faq-answer">Most are framework-fluent — they will not pretend Vue is the only answer when the problem better fits React or Angular. Our Vue specialists go deep on Vue 3 ecosystem (Vite, Pinia, Nuxt 3) but contribute to TypeScript, GraphQL and the broader frontend pipeline.</div></details>
-      <details class="faq-item"><summary>What is your fit for Nuxt vs plain Vue?</summary><div class="faq-answer">Nuxt when you need SSR, hybrid rendering, file-based routing, or are on Vercel/Cloudflare edge. Plain Vue 3 + Vite when you need a SPA with custom shell, embedded widget, or admin tool where SSR adds cost without payoff.</div></details>
-      <details class="faq-item"><summary>How do you handle Vue 2 legacy code?</summary><div class="faq-answer">We have shipped seven Vue 2 → Vue 3 migrations using the official compat build as a transition layer, then collapsing it once the test suite stays green for two sprints. We do not throw away your codebase.</div></details>
-    </div>
-  </div>
-</section>
-
-<section class="trust-band" id="standards">
-  <div class="container">
-    <div class="trust-head fade-up">
-      <span class="eyebrow">Trusted Delivery, Audited Quality</span>
-      <h2>Frameworks &amp; standards we deliver against.</h2>
-      <p>Every Vybog Services engagement runs on the same delivery standard &mdash; independently verifiable, externally auditable, written into the SOW.</p>
-    </div>
-    <div class="trust-grid fade-up">
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 22 2 22 12 2"/><line x1="12" y1="10" x2="12" y2="16"/><line x1="6" y1="18" x2="18" y2="18"/></svg></div><div class="trust-name">CMMI Level 5</div><div class="trust-tag">Optimizing process maturity</div></div>
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><polyline points="9 9 11 11 15 7"/><path d="M9 14l-2 7 5-2 5 2-2-7"/></svg></div><div class="trust-name">ISO 9001:2015</div><div class="trust-tag">Quality management system</div></div>
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4 5v7c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5l-8-3z"/><rect x="9" y="11" width="6" height="6" rx="1"/><path d="M10 11V9a2 2 0 014 0v2"/></svg></div><div class="trust-name">ISO 27001:2022</div><div class="trust-tag">Information security controls</div></div>
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 14 11 16 15 12"/></svg></div><div class="trust-name">SOC 2 Type II</div><div class="trust-tag">Trust services readiness</div></div>
+    <div class="tech-grid fade-up">
+      <div class="tech-pill">Nuxt</div>
+      <div class="tech-pill">Vite</div>
+      <div class="tech-pill">Pinia</div>
+      <div class="tech-pill">GraphQL</div>
+      <div class="tech-pill">REST</div>
+      <div class="tech-pill">Histoire</div>
+      <div class="tech-pill">TanStack Query</div>
+      <div class="tech-pill">Tailwind</div>
+      <div class="tech-pill">Radix-Vue</div>
+      <div class="tech-pill">Motion-One</div>
+      <div class="tech-pill">Vitest</div>
+      <div class="tech-pill">Playwright</div>
     </div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA — compact ============ -->
-<section class="cta-compact" id="talk-to-us">
+<!-- ============ 5. THE 2-WEEK DISCOVERY SPRINT ============ -->
+<section>
   <div class="container">
-    <div class="cta-banner cta-banner-compact fade-up">
-      <h2>Schedule a 30-minute call with a senior delivery lead.</h2>
-      <p>No sales script, no junior intake &mdash; a written follow-up within one business day.</p>
+    <div class="split fade-up">
+      <div>
+        <span class="eyebrow">De-Risk the Hire</span>
+        <h2>The two-week discovery sprint, before commitment.</h2>
+        <p class="lead">If you are bringing in a Vue developer for a long engagement, the worst time to find out the fit is wrong is week six. Here is how we shrink that risk.</p>
+        <p>The sprint is a fixed two-week, fixed-fee engagement where one of our senior Vue developers reads your codebase, joins your standups, and ships a small but real feature. At the end of the two weeks, both sides know enough to commit &mdash; or to walk away cleanly.</p>
+        <p>We bill the discovery sprint at a flat rate and credit it against the first month of any continuing engagement. If the fit is wrong, you keep the feature, the documentation, and the architectural notes the expert wrote up. Nobody loses the quarter.</p>
+        <a href="../contact.html" class="btn btn-primary mt-4">Start a discovery sprint <span class="arrow">&rarr;</span></a>
+      </div>
+      <div>
+        <div class="card" style="padding:32px">
+          <h3>What the sprint covers</h3>
+          <ul class="check-list">
+            <li><strong>Days 1&ndash;3</strong> &middot; Codebase read, architecture diagram, written observations</li>
+            <li><strong>Days 4&ndash;6</strong> &middot; Ship one small ticket, prove the build and review flow</li>
+            <li><strong>Days 7&ndash;10</strong> &middot; Ship one real feature card end-to-end</li>
+            <li><strong>Days 11&ndash;14</strong> &middot; Write up technical debt notes, recommend next quarter</li>
+            <li><strong>End of sprint</strong> &middot; Fit decision, transparent on both sides</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. SAMPLE SPRINT OUTPUT ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Sprint Output</span>
+      <h2>What a Vybog Services Vue developer ships, by week.</h2>
+      <p>Realistic week-by-week output for a senior Vue developer on a typical SaaS product team.</p>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <span class="tag">Week 1</span>
+        <h3 class="mt-5">Foundation</h3>
+        <ul class="check-list">
+          <li>Local environment running, build green</li>
+          <li>First small ticket merged</li>
+          <li>One observation memo on the codebase</li>
+          <li>Joined standups, demo, retro</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Week 2</span>
+        <h3 class="mt-5">First feature</h3>
+        <ul class="check-list">
+          <li>One real feature card shipped end-to-end</li>
+          <li>Tests added, Histoire stories written</li>
+          <li>A11y pass with axe and manual screen reader</li>
+          <li>Code review reciprocity established</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Week 4</span>
+        <h3 class="mt-5">Sustained throughput</h3>
+        <ul class="check-list">
+          <li>Two to three feature cards per week steady-state</li>
+          <li>Mentoring junior experts on the team</li>
+          <li>One technical debt item nominated and shipped</li>
+          <li>Bundle size watch added to CI</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ENGAGEMENT MODELS + RATE CARD ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Engagement &amp; Rates</span>
+      <h2>Vue rate card.</h2>
+      <p>Three ways to engage, with seniority-based rates. The two-week discovery sprint is a fourth, cheaper way to start.</p>
+    </div>
+    <div class="fade-up" style="overflow-x:auto">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Seniority</th>
+            <th>Hourly</th>
+            <th>Monthly</th>
+            <th>Discovery Sprint (2 weeks)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">Mid Vue</td>
+            <td>$30&ndash;42</td>
+            <td>$3,600&ndash;4,800</td>
+            <td>$4,400 flat</td>
+          </tr>
+          <tr>
+            <td class="row-label">Senior Vue</td>
+            <td>$42&ndash;55</td>
+            <td>$5,000&ndash;6,400</td>
+            <td>$5,600 flat</td>
+          </tr>
+          <tr>
+            <td class="row-label">Lead Vue</td>
+            <td>$55&ndash;70</td>
+            <td>$6,400&ndash;8,000</td>
+            <td>$6,800 flat</td>
+          </tr>
+          <tr>
+            <td class="row-label">Principal Vue / Design Systems</td>
+            <td>$70&ndash;90</td>
+            <td>$8,000&ndash;10,400</td>
+            <td>on request</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13.5px;color:var(--text-muted);margin-top:16px;text-align:center">Discovery sprint fee credited against the first month of a continuing monthly engagement.</p>
+  </div>
+</section>
+
+<!-- ============ 8. VUE-SPECIFIC FAQ ============ -->
+<section class="bg-soft">
+  <div class="container-narrow fade-up">
+    <span class="eyebrow">Vue FAQ</span>
+    <h2>Three questions we get on every Vue engagement.</h2>
+    <div class="mt-7">
+      <details class="faq-item" open>
+        <summary>Options API or Composition API — do your experts have a preference?</summary>
+        <div class="faq-answer">For new projects we default to the Composition API with <code>&lt;script setup&gt;</code> — better TypeScript ergonomics, smaller bundle, easier code reuse. For existing Options API applications we will not push a migration unless there is a clear payoff. We will give you a written recommendation either way.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can your experts work in a JavaScript-only Vue codebase, not TypeScript?</summary>
+        <div class="faq-answer">Yes, but we will gently raise it during onboarding. Most of our Vue developers have a strong type-safety habit and the productivity loss in plain JavaScript is real. We can write up a low-risk incremental adoption plan in the first month, scoped to whichever modules are changing anyway.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Vue or Nuxt — and when does each make sense?</summary>
+        <div class="faq-answer">Plain Vue for SPAs inside an existing backend, dashboards, or apps that ship behind auth. Nuxt for content-heavy public sites, SSR/SEO-sensitive routes, or anywhere ISR + edge functions earn their keep. We will tell you honestly when Nuxt is overkill.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. CTA BANNER ============ -->
+<section>
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <span class="eyebrow" style="color:var(--brand-secondary)">Hire Vue Developers</span>
+      <h2>Two weeks to know if it works. One week to onboard if it does.</h2>
+      <p>Start with a discovery sprint or jump straight to a monthly engagement. Either way, real experts, real PRs, in your repo by next week.</p>
       <div class="cta-actions">
-        <a href="../contact.html" class="btn btn-on-dark">Schedule a Call <span class="arrow">&rarr;</span></a>
-        <a href="mailto:hello@vybogservices.com" class="btn btn-ghost" style="color:var(--text-on-dark)">hello@vybogservices.com</a>
+        <a href="../contact.html" class="btn btn-on-dark btn-lg">Start a discovery sprint <span class="arrow">&rarr;</span></a>
+        <a href="index.html" class="btn btn-ghost" style="color:#fff">Back to all stacks</a>
       </div>
     </div>
   </div>
@@ -322,7 +529,7 @@
           <img src="../assets/images/logo/vybog-icon.png" alt="" />
           <span class="footer-word">Vybog Services</span>
         </div>
-        <p>An delivery studio building production software, AI agents, and embedded talent teams from Chennai and Santa Clara &mdash; since 2002.</p>
+        <p>An delivery studio building production software, AI agents, and embedded developer teams from Chennai and Santa Clara — since 2002.</p>
         <p style="font-size:13px;color:var(--text-on-dark-soft);margin:0">A vy ventures company.</p>
       </div>
       <div class="footer-col">
@@ -340,12 +547,12 @@
       <div class="footer-col">
         <h5>Hire Talent</h5>
         <ul>
+          <li><a href="../hire-developers/php.html">PHP Developers</a></li>
           <li><a href="../hire-developers/react.html">React Developers</a></li>
+          <li><a href="../hire-developers/nodejs.html">Node.js Developers</a></li>
           <li><a href="../hire-developers/python.html">Python Developers</a></li>
+          <li><a href="../hire-developers/nextjs.html">Next.js Developers</a></li>
           <li><a href="../hire-developers/full-stack.html">Full-Stack Developers</a></li>
-          <li><a href="../hire-developers/ui-ux-designers.html">UI/UX Designers</a></li>
-          <li><a href="../hire-developers/product-managers.html">Product Managers</a></li>
-          <li><a href="../hire-developers/data-engineers.html">Data Engineers</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -370,8 +577,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2002&ndash;2026 Vybog Services. All rights reserved.</span>
-      <span>Chennai &middot; Santa Clara</span>
+      <span>© 2002–2026 Vybog Services. All rights reserved.</span>
+      <span>Chennai · Santa Clara · +91 44 4859 6021 · +1 408 657 0010</span>
     </div>
   </div>
 </footer>

@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0050C8" />
-  <title>Hire Product Managers &mdash; Vybog Services</title>
-  <meta name="description" content="Senior Product Managers and TPMs with engineering literacy, OKR discipline, and the conviction to say no. Embedded into your product team. Vybog Services." />
+  <title>Hire Product Managers — Roadmap, Backlog, Discovery · Vybog Services</title>
+  <meta name="description" content="Hire senior PMs with eng literacy, roadmap discipline, and discovery skills. Two-week discovery sprint before commitment." />
   <link rel="icon" type="image/png" href="../assets/images/logo/vybog-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,7 +134,7 @@
             <a href="../about.html" class="mega-link"><span class="mega-link-title">About Vybog Services</span><span class="mega-link-desc">Studio, principles, leadership</span></a>
             <a href="../case-studies.html" class="mega-link"><span class="mega-link-title">Case Studies</span><span class="mega-link-desc">Production builds, with the numbers</span></a>
             <a href="../engagement-models.html" class="mega-link"><span class="mega-link-title">Engagement Models</span><span class="mega-link-desc">Project, retainer, dedicated pod</span></a>
-            <a href="../process.html" class="mega-link"><span class="mega-link-title">Delivery Process</span><span class="mega-link-desc">Discovery &rarr; ship &rarr; on-call</span></a>
+            <a href="../process.html" class="mega-link"><span class="mega-link-title">Delivery Process</span><span class="mega-link-desc">Discovery → ship → on-call</span></a>
             <a href="../blog/index.html" class="mega-link"><span class="mega-link-title">Blog &amp; Insights</span><span class="mega-link-desc">Architecture, AI, hiring rubrics</span></a>
             <a href="../contact.html" class="mega-link"><span class="mega-link-title">Contact</span><span class="mega-link-desc">Schedule a 30-minute discovery call</span></a>
           </div>
@@ -143,8 +143,8 @@
       </div>
     </nav>
     <div class="header-cta">
-        <a href="../contact.html" class="header-cta-btn">Talk to an Expert</a>
-        <button class="mobile-toggle" aria-label="Open menu">
+      <a href="../contact.html" class="header-cta-btn">Talk to an Expert</a>
+      <button class="mobile-toggle" aria-label="Open menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
@@ -201,7 +201,7 @@
       <a href="../hire-developers/data-scientists.html">Data Scientists</a>
     </div>
   </details>
-  <a class="drawer-section drawer-link" href="../ai-agent-development.html">AI Solutions</a>
+  <details class="drawer-section"><summary><a href="../ai-agent-development.html" style="color:inherit;text-decoration:none;display:block">AI Solutions</a></summary></details>
   <details class="drawer-section">
     <summary>Who we are <span>+</span></summary>
     <div class="drawer-sublinks">
@@ -218,95 +218,302 @@
 
 <main>
 
-<!-- ============ PAGE HERO ============ -->
-<section class="page-hero hero-centered">
+<!-- ============ PAGE HERO WITH FORM ============ -->
+<section class="page-hero">
+  <div class="hero-glow"></div>
   <div class="container">
-    <div class="breadcrumbs fade-up">
-      <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Hire Talent</a><span class="sep">/</span>Product Managers
-    </div>
-    <span class="eyebrow fade-up">Hire Product Managers</span>
-    <h1 class="fade-up">Product managers who <span class="italic-accent">ship</span>, not just spec.</h1>
-    <p class="lead fade-up">Senior PMs and TPMs with engineering literacy, OKR-driven prioritisation, and the conviction to say no in writing.</p>
-    <div class="mt-6 fade-up">
-      <a href="../contact.html" class="btn btn-primary">Schedule a Call <span class="arrow">&rarr;</span></a>
-      <a href="../engagement-models.html" class="btn btn-ghost">See engagement models</a>
+    <div class="breadcrumbs"><a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Hire Developers</a><span class="sep">/</span>Product Management</div>
+    <div class="hero-grid" style="grid-template-columns:1.1fr 1fr">
+      <div>
+        <span class="eyebrow">Product Managers</span>
+        <h1>PMs who write the JD, the brief, and the post-mortem.</h1>
+        <p class="lead">Product managers with engineering literacy, roadmap discipline, and the discovery skills to kill a feature when the data says to. The kind of PM who writes the JD, the brief, and the post-mortem.</p>
+        <div class="hero-trust">
+          <div class="trust-item"><span class="trust-num">Discovery</span><span class="trust-label">Hypotheses + experiments</span></div>
+          <div class="trust-item"><span class="trust-num">Eng literacy</span><span class="trust-label">Reads SQL + code reviews</span></div>
+          <div class="trust-item"><span class="trust-num">Outcomes</span><span class="trust-label">Activation, retention, completion</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="padding:32px">
+          <h3 style="margin-bottom:8px">Brief us in a paragraph</h3>
+          <p style="font-size:14.5px;margin-bottom:20px">Two named Product Management product manager and an availability window &mdash; back to you within a business day.</p>
+          <form class="contact-form" data-form>
+            <div class="field">
+              <label for="pm-name">Your name</label>
+              <input id="pm-name" type="text" name="name" required />
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="pm-email">Work email</label>
+                <input id="pm-email" type="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="pm-company">Company</label>
+                <input id="pm-company" type="text" name="company" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="pm-skills">Product Management skills needed</label>
+              <textarea id="pm-skills" name="skills" placeholder="Roadmap rebuild, backlog grooming, OKR cycle, discovery sprint, post-launch review…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Request expert profiles <span class="arrow">&rarr;</span></button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ WHAT WE SHIP ============ -->
-<section class="bg-soft">
+<!-- ============ 2. PRODUCT MANAGEMENT SPECIALIZATIONS ============ -->
+<section class="bg-tint">
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">What every Product Manager engagement includes</span>
-      <h2>Six things you can expect on day one.</h2>
+      <span class="eyebrow">Specializations</span>
+      <h2>Four tracks our Product Management bench is deep in.</h2>
+      <p>Generalist Product Management is easy to find. These are the practices that separate a senior hire from a mid one.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="card"><h3>Roadmap + OKR discipline</h3><p>Outcome-based roadmaps, not feature lists; OKRs the team actually uses.</p></div>
-      <div class="card"><h3>Backlog grooming</h3><p>ICE / RICE scoring, refinement rituals, written-down rationale.</p></div>
-      <div class="card"><h3>Stakeholder management</h3><p>Aligning sales, support, eng, and executive without burning trust.</p></div>
-      <div class="card"><h3>Engineering literacy</h3><p>Reads the codebase, understands trade-offs, does not over-spec.</p></div>
-      <div class="card"><h3>Quant + qual data fluency</h3><p>SQL, Amplitude/Mixpanel, customer interviews, NPS analysis.</p></div>
-      <div class="card"><h3>Written communication</h3><p>PRDs that engineers want to read, not just sign off.</p></div>
+    <div class="grid grid-4 fade-up">
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h3>Roadmap discipline</h3>
+        <p>Now-Next-Later, not Gantt-as-fantasy. Roadmaps that survive a quarter, with kill criteria written in. Outcomes over outputs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Discovery, sprint-shaped</h3>
+        <p>Hypotheses logged, killed, or validated in two-week cycles. Quant + qual together. Comfortable saying "do not build" when the data says to.</p>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg></div>
+        <h3>Metrics fluency</h3>
+        <p>Reads activation funnels, retention curves, cohort tables. Reads SQL, runs Mixpanel / Amplitude queries themselves. Numerate decisions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg></div>
+        <h3>Engineering partnership</h3>
+        <p>Reads code reviews. Understands tradeoffs. Says "we will not ship that this sprint" when the architecture cost is real.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ USE CASES ============ -->
+<!-- ============ 3. WHAT SENIOR MEANS ============ -->
 <section>
   <div class="container">
     <div class="section-head fade-up">
-      <span class="eyebrow">Common scenarios</span>
-      <h2>Where Vybog Services product managers plug in.</h2>
+      <span class="eyebrow">The Senior Bar</span>
+      <h2>What 'senior' actually means in our Product Management bench.</h2>
+      <p>The five things every senior Product Management product manager on our bench can be measured against. Not aspirational &mdash; these are the hiring rubric.</p>
     </div>
-    <div class="grid grid-2 fade-up">
-      <div class="card"><h3>Interim VP Product</h3><p>Stepping in while you hire — keeps the roadmap moving for 3-9 months.</p></div>
-      <div class="card"><h3>Single-product B2B SaaS PM</h3><p>Owning one product line end-to-end inside a multi-product team.</p></div>
-      <div class="card"><h3>AI / agent product management</h3><p>PRDs for non-deterministic features, eval-driven product decisions.</p></div>
-      <div class="card"><h3>Technical PM for platform teams</h3><p>API design, internal tools, developer-experience ownership.</p></div>
+    <div class="grid grid-5 fade-up" style="grid-template-columns:repeat(5,1fr);gap:16px">
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">01</span>
+        <h4 style="margin-top:12px">Outcome over output</h4>
+        <p style="font-size:14px">Frames work against the metric that matters. Will not ship a feature just to clear the backlog.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">02</span>
+        <h4 style="margin-top:12px">Discovery discipline</h4>
+        <p style="font-size:14px">Hypotheses written. Experiments scoped. Killing a feature is a valid outcome.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">03</span>
+        <h4 style="margin-top:12px">Eng literacy</h4>
+        <p style="font-size:14px">Reads SQL. Reads code reviews. Understands the architecture tradeoffs of a roadmap decision.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">04</span>
+        <h4 style="margin-top:12px">Stakeholder navigation</h4>
+        <p style="font-size:14px">Tells executives no when the data says no. Brings sales / CS / support into discovery without losing focus.</p>
+      </div>
+      <div class="feature-card" style="padding:24px">
+        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">05</span>
+        <h4 style="margin-top:12px">Writing</h4>
+        <p style="font-size:14px">PRDs that engineers love to read. Strategy memos in fewer words. The brief is the artifact.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
+<!-- ============ 4. PAIR WITH (tech-grid visual) ============ -->
 <section class="bg-soft">
-  <div class="container container-narrow">
+  <div class="container">
     <div class="section-head fade-up">
-      <h2>Questions teams bring to the first call.</h2>
+      <span class="eyebrow">Pair Naturally With</span>
+      <h2>The stacks Product Management fits inside.</h2>
+      <p>Product Management rarely ships alone. Here is what we usually pair it with on Vybog Services projects.</p>
     </div>
-    <div class="fade-up">
-      <details class="faq-item" open><summary>What is the difference between a Vybog PM and an interim VP Product?</summary><div class="faq-answer">Mostly seniority and scope. Our PMs run a single product line; the interim VP role coordinates across multiple PMs, handles hiring, runs roadmap review with the exec team.</div></details>
-      <details class="faq-item"><summary>Do your PMs run discovery and write PRDs themselves?</summary><div class="faq-answer">Yes — they own the artifacts they produce. PRDs are drafted in writing, reviewed by engineering, signed off in Confluence or Linear. No PowerPoint hand-waving.</div></details>
-      <details class="faq-item"><summary>Can our engineering team challenge the roadmap?</summary><div class="faq-answer">They should. Our PMs treat engineering as a partner, not a delivery shop. If eng pushes back on a scope decision, we have a written rationale to defend it or we update it.</div></details>
-    </div>
-  </div>
-</section>
-
-<section class="trust-band" id="standards">
-  <div class="container">
-    <div class="trust-head fade-up">
-      <span class="eyebrow">Trusted Delivery, Audited Quality</span>
-      <h2>Frameworks &amp; standards we deliver against.</h2>
-      <p>Every Vybog Services engagement runs on the same delivery standard &mdash; independently verifiable, externally auditable, written into the SOW.</p>
-    </div>
-    <div class="trust-grid fade-up">
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 22 2 22 12 2"/><line x1="12" y1="10" x2="12" y2="16"/><line x1="6" y1="18" x2="18" y2="18"/></svg></div><div class="trust-name">CMMI Level 5</div><div class="trust-tag">Optimizing process maturity</div></div>
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><polyline points="9 9 11 11 15 7"/><path d="M9 14l-2 7 5-2 5 2-2-7"/></svg></div><div class="trust-name">ISO 9001:2015</div><div class="trust-tag">Quality management system</div></div>
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4 5v7c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5l-8-3z"/><rect x="9" y="11" width="6" height="6" rx="1"/><path d="M10 11V9a2 2 0 014 0v2"/></svg></div><div class="trust-name">ISO 27001:2022</div><div class="trust-tag">Information security controls</div></div>
-      <div class="trust-badge"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 14 11 16 15 12"/></svg></div><div class="trust-name">SOC 2 Type II</div><div class="trust-tag">Trust services readiness</div></div>
+    <div class="tech-grid fade-up">
+      <div class="tech-pill">Linear</div>
+      <div class="tech-pill">Jira</div>
+      <div class="tech-pill">Notion</div>
+      <div class="tech-pill">Confluence</div>
+      <div class="tech-pill">Amplitude</div>
+      <div class="tech-pill">Mixpanel</div>
+      <div class="tech-pill">Looker</div>
+      <div class="tech-pill">dbt</div>
+      <div class="tech-pill">Figma</div>
+      <div class="tech-pill">Maze</div>
+      <div class="tech-pill">Dovetail</div>
+      <div class="tech-pill">Loom</div>
     </div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA — compact ============ -->
-<section class="cta-compact" id="talk-to-us">
+<!-- ============ 5. THE 2-WEEK DISCOVERY SPRINT ============ -->
+<section>
   <div class="container">
-    <div class="cta-banner cta-banner-compact fade-up">
-      <h2>Schedule a 30-minute call with a senior delivery lead.</h2>
-      <p>No sales script, no junior intake &mdash; a written follow-up within one business day.</p>
+    <div class="split fade-up">
+      <div>
+        <span class="eyebrow">De-Risk the Hire</span>
+        <h2>The two-week discovery sprint, before commitment.</h2>
+        <p class="lead">If you are bringing in a Product Management product manager for a long engagement, the worst time to find out the fit is wrong is week six. Here is how we shrink that risk.</p>
+        <p>The sprint is a fixed two-week, fixed-fee engagement where one of our senior Product Management product managers reads your codebase, joins your standups, and ships a small but real PRD or experiment. At the end of the two weeks, both sides know enough to commit &mdash; or to walk away cleanly.</p>
+        <p>We bill the discovery sprint at a flat rate and credit it against the first month of any continuing engagement. If the fit is wrong, you keep the PRD or experiment, the documentation, and the architectural notes the expert wrote up. Nobody loses the quarter.</p>
+        <a href="../contact.html" class="btn btn-primary mt-4">Start a discovery sprint <span class="arrow">&rarr;</span></a>
+      </div>
+      <div>
+        <div class="card" style="padding:32px">
+          <h3>What the sprint covers</h3>
+          <ul class="check-list">
+            <li><strong>Days 1&ndash;3</strong> &middot; Audit roadmap, backlog, metrics; stakeholder interviews</li>
+            <li><strong>Days 4&ndash;6</strong> &middot; First PRD written, one experiment scoped</li>
+            <li><strong>Days 7&ndash;10</strong> &middot; First experiment launched or feature shipped</li>
+            <li><strong>Days 11&ndash;14</strong> &middot; Roadmap revision, next-quarter recommendations</li>
+            <li><strong>End of sprint</strong> &middot; Fit decision, transparent on both sides</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. SAMPLE SPRINT OUTPUT ============ -->
+<section class="bg-tint">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Sprint Output</span>
+      <h2>What a Vybog Services Product Management product manager ships, by week.</h2>
+      <p>Realistic week-by-week output for a senior Product Management product manager on a typical product team.</p>
+    </div>
+    <div class="grid grid-3 fade-up">
+      <div class="feature-card">
+        <span class="tag">Week 1</span>
+        <h3 class="mt-5">Foundation</h3>
+        <ul class="check-list">
+          <li>Roadmap + backlog audit complete</li>
+          <li>First PRD written</li>
+          <li>One observation memo on metrics + funnels</li>
+          <li>Joined product team rituals</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Week 2</span>
+        <h3 class="mt-5">First brief</h3>
+        <ul class="check-list">
+          <li>One real PRD shipped to engineering</li>
+          <li>One experiment scoped + spec written</li>
+          <li>Stakeholder interviews synthesized</li>
+          <li>Decision log started</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Week 4</span>
+        <h3 class="mt-5">Sustained throughput</h3>
+        <ul class="check-list">
+          <li>Two PRDs per week steady-state</li>
+          <li>Two experiments active, results read</li>
+          <li>Roadmap revised with kill criteria</li>
+          <li>Discovery → ship → measure loop running</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ENGAGEMENT MODELS + RATE CARD ============ -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Engagement &amp; Rates</span>
+      <h2>Product Management rate card.</h2>
+      <p>Three ways to engage, with seniority-based rates. The two-week discovery sprint is a fourth, cheaper way to start.</p>
+    </div>
+    <div class="fade-up" style="overflow-x:auto">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Seniority</th>
+            <th>Hourly</th>
+            <th>Monthly</th>
+            <th>Discovery Sprint (2 weeks)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">Mid PM</td>
+            <td>$32&ndash;46</td>
+            <td>$3,800&ndash;5,400</td>
+            <td>$4,400 flat</td>
+          </tr>
+          <tr>
+            <td class="row-label">Senior PM</td>
+            <td>$46&ndash;62</td>
+            <td>$5,400&ndash;7,200</td>
+            <td>$5,800 flat</td>
+          </tr>
+          <tr>
+            <td class="row-label">Lead PM</td>
+            <td>$62&ndash;82</td>
+            <td>$7,200&ndash;9,600</td>
+            <td>$7,000 flat</td>
+          </tr>
+          <tr>
+            <td class="row-label">Principal PM / Head of Product</td>
+            <td>$82&ndash;115</td>
+            <td>$9,600&ndash;13,500</td>
+            <td>on request</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13.5px;color:var(--text-muted);margin-top:16px;text-align:center">Discovery sprint fee credited against the first month of a continuing monthly engagement.</p>
+  </div>
+</section>
+
+<!-- ============ 8. PRODUCT MANAGEMENT-SPECIFIC FAQ ============ -->
+<section class="bg-soft">
+  <div class="container-narrow fade-up">
+    <span class="eyebrow">Product Management FAQ</span>
+    <h2>Three questions we get on every Product Management engagement.</h2>
+    <div class="mt-7">
+      <details class="faq-item" open>
+        <summary>Will your PMs run user research themselves?</summary>
+        <div class="faq-answer">Yes. Every senior PM on the bench has run discovery interviews, synthesized findings, and turned them into PRDs. If a project warrants a dedicated researcher, we will tell you.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do your PMs write SQL?</summary>
+        <div class="faq-answer">Yes. Comfortable in Amplitude / Mixpanel and in BigQuery / Postgres for ad-hoc analysis. Not a substitute for an analytics engineer, but enough to not block on one.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Roadmap, sprint planning, both?</summary>
+        <div class="faq-answer">Both. Roadmap as the strategic artifact, sprint planning as the operational rhythm. We will write the format that fits your team, not impose ours.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. CTA BANNER ============ -->
+<section>
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <span class="eyebrow" style="color:var(--brand-secondary)">Hire Product Management Product Managers</span>
+      <h2>Two weeks to know if it works. One week to onboard if it does.</h2>
+      <p>Start with a discovery sprint or jump straight to a monthly engagement. Either way, real experts, real PRs, in your repo by next week.</p>
       <div class="cta-actions">
-        <a href="../contact.html" class="btn btn-on-dark">Schedule a Call <span class="arrow">&rarr;</span></a>
-        <a href="mailto:hello@vybogservices.com" class="btn btn-ghost" style="color:var(--text-on-dark)">hello@vybogservices.com</a>
+        <a href="../contact.html" class="btn btn-on-dark btn-lg">Start a discovery sprint <span class="arrow">&rarr;</span></a>
+        <a href="index.html" class="btn btn-ghost" style="color:#fff">Back to all stacks</a>
       </div>
     </div>
   </div>
@@ -322,7 +529,7 @@
           <img src="../assets/images/logo/vybog-icon.png" alt="" />
           <span class="footer-word">Vybog Services</span>
         </div>
-        <p>An delivery studio building production software, AI agents, and embedded talent teams from Chennai and Santa Clara &mdash; since 2002.</p>
+        <p>An delivery studio building production software, AI agents, and embedded developer teams from Chennai and Santa Clara — since 2002.</p>
         <p style="font-size:13px;color:var(--text-on-dark-soft);margin:0">A vy ventures company.</p>
       </div>
       <div class="footer-col">
@@ -340,12 +547,12 @@
       <div class="footer-col">
         <h5>Hire Talent</h5>
         <ul>
+          <li><a href="../hire-developers/php.html">PHP Developers</a></li>
           <li><a href="../hire-developers/react.html">React Developers</a></li>
+          <li><a href="../hire-developers/nodejs.html">Node.js Developers</a></li>
           <li><a href="../hire-developers/python.html">Python Developers</a></li>
+          <li><a href="../hire-developers/nextjs.html">Next.js Developers</a></li>
           <li><a href="../hire-developers/full-stack.html">Full-Stack Developers</a></li>
-          <li><a href="../hire-developers/ui-ux-designers.html">UI/UX Designers</a></li>
-          <li><a href="../hire-developers/product-managers.html">Product Managers</a></li>
-          <li><a href="../hire-developers/data-engineers.html">Data Engineers</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -370,8 +577,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2002&ndash;2026 Vybog Services. All rights reserved.</span>
-      <span>Chennai &middot; Santa Clara</span>
+      <span>© 2002–2026 Vybog Services. All rights reserved.</span>
+      <span>Chennai · Santa Clara · +91 44 4859 6021 · +1 408 657 0010</span>
     </div>
   </div>
 </footer>
