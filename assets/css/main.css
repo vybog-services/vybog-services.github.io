@@ -2950,3 +2950,188 @@ section.service-cats-section {
   .service-cats-grid { grid-template-columns: 1fr; }
   .service-cat-card .cat-img { aspect-ratio: 16 / 7; }
 }
+
+/* ========================================================================
+   MARKETPLACE V2 — full-width header bar + richer mega menu
+   (Overrides earlier pill-header and dropdown-mega-menu styles)
+   ======================================================================== */
+
+/* ---------- 50. UTILITY BAR — fully removed ---------- */
+.utility-bar { display: none !important; }
+
+/* ---------- 51. FULL-WIDTH HEADER BAR ---------- */
+body { padding-top: 76px; }
+@media (max-width: 1080px) { body { padding-top: 68px; } }
+@media (max-width: 720px)  { body { padding-top: 64px; } }
+
+.site-header {
+  position: fixed;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  background: #FFFFFF !important;
+  border: none !important;
+  border-bottom: 1px solid #E0E3E8 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 0 rgba(11, 27, 61, 0.04) !important;
+  z-index: 100;
+  transition: box-shadow 0.25s ease;
+}
+.site-header.scrolled,
+body.scrolled .site-header {
+  background: #FFFFFF !important;
+  border-bottom-color: #E0E3E8 !important;
+  box-shadow: 0 4px 12px rgba(11, 27, 61, 0.06) !important;
+  top: 0 !important;
+}
+.site-header .nav-wrap {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 28px !important;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+@media (max-width: 1080px) {
+  .site-header .nav-wrap { padding: 0 20px !important; height: 68px; }
+}
+@media (max-width: 720px) {
+  .site-header .nav-wrap { padding: 0 16px !important; height: 64px; }
+}
+body.scrolled .nav-wrap { padding-top: 0 !important; padding-bottom: 0 !important; }
+.brand-icon { width: 32px; height: 32px; }
+body.scrolled .brand-icon { width: 30px; height: 30px; }
+
+/* Tighter primary-nav typography */
+.main-nav .nav-link {
+  font-family: var(--font-display);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 28px 14px;
+  letter-spacing: -0.005em;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s ease;
+}
+.main-nav .nav-link:hover,
+.nav-item.open .nav-link,
+.nav-item:hover .nav-link { color: #0050C8; }
+.main-nav .nav-link .caret { width: 14px; height: 14px; transition: transform 0.2s ease; }
+.nav-item:hover .nav-link .caret,
+.nav-item.open .nav-link .caret { transform: rotate(180deg); }
+
+/* ---------- 52. RICH MEGA MENU — full-bleed panel ---------- */
+.mega-menu {
+  position: fixed !important;
+  top: 76px !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  background: #FFFFFF !important;
+  border: none !important;
+  border-top: 1px solid #E0E3E8 !important;
+  border-bottom: 1px solid #E0E3E8 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 16px 36px rgba(11, 27, 61, 0.10) !important;
+  padding: 32px 0 !important;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.18s ease, visibility 0s linear 0.18s;
+}
+body.scrolled .mega-menu { top: 76px !important; }
+@media (max-width: 1080px) { .mega-menu { top: 68px !important; } }
+
+.nav-item:hover .mega-menu,
+.nav-item.open .mega-menu {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transition: opacity 0.18s ease;
+}
+
+.mega-menu .mega-grid,
+.mega-menu .mega-grid-1 {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 14px;
+  row-gap: 4px;
+}
+.mega-menu .mega-grid-1 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mega-link {
+  display: flex !important;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px !important;
+  border-radius: 10px !important;
+  text-decoration: none;
+  background: transparent;
+  white-space: normal !important;
+  transition: background 0.15s ease, transform 0.15s ease;
+  position: relative;
+}
+.mega-link:hover {
+  background: #F4F7FC !important;
+  color: inherit !important;
+}
+.mega-link .mega-link-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+.mega-link:hover .mega-link-title { color: #0050C8; }
+.mega-link .mega-link-desc {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.45;
+  letter-spacing: -0.003em;
+}
+.mega-link.flagship {
+  background: linear-gradient(135deg, #E8F1FE 0%, #F4F7FC 100%) !important;
+}
+.mega-link.flagship .mega-link-title { color: #0050C8; }
+.mega-link.flagship::after {
+  content: 'Flagship';
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0050C8;
+  background: rgba(0, 80, 200, 0.08);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1080px) {
+  .mega-menu .mega-grid { grid-template-columns: repeat(2, 1fr); }
+  .mega-menu .mega-grid-1 { grid-template-columns: 1fr; }
+}
+
+/* ---------- 53. PAGE-TABS sit flush against new header (re-anchor) ---------- */
+.page-tabs { top: 76px !important; }
+body.scrolled .page-tabs { top: 76px !important; }
+@media (max-width: 1080px) { .page-tabs { top: 68px !important; } }
+@media (max-width: 720px)  { .page-tabs { top: 64px !important; } }
