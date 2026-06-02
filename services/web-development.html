@@ -351,35 +351,36 @@
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">Three build tracks</span>
-      <h2>Marketing site, web app, or portal — three different problems.</h2>
+      <h2>Marketing site, web app, or portal &mdash; three different problems.</h2>
       <p>"Build us a website" usually means one of these three things. The shape of the engagement changes accordingly.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="feature-card">
-        <span class="tag">Track A</span>
-        <h3 class="mt-5">Marketing sites</h3>
+    <div class="track-grid fade-up">
+      <div class="track-card track-mint">
+        <div class="track-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Marketing sites</h3>
         <p>Built to rank, built to convert, built to be edited weekly by a marketer who has never opened your codebase.</p>
-        <ul class="check-list mt-4">
+        <ul class="track-list">
           <li>Static or hybrid rendering, CDN-first</li>
           <li>CMS-backed with versioned content</li>
           <li>Conversion instrumentation from day one</li>
         </ul>
       </div>
-      <div class="feature-card" style="border-color:var(--brand-primary)">
-        <span class="tag">Track B · Most common</span>
-        <h3 class="mt-5">Web applications</h3>
+      <div class="track-card track-blue">
+        <span class="track-badge">Most common</span>
+        <div class="track-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="9" y1="20" x2="9" y2="10"/></svg></div>
+        <h3>Web applications</h3>
         <p>Authenticated product experiences with state, real-time data, and dashboards. The thing you charge a subscription for.</p>
-        <ul class="check-list mt-4">
+        <ul class="track-list">
           <li>Component design system from sprint one</li>
           <li>State management that survives feature growth</li>
           <li>Telemetry baked into every user journey</li>
         </ul>
       </div>
-      <div class="feature-card">
-        <span class="tag">Track C</span>
-        <h3 class="mt-5">Customer portals</h3>
+      <div class="track-card track-rose">
+        <div class="track-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div>
+        <h3>Customer portals</h3>
         <p>The post-sale interface where customers self-serve. Lower-traffic, higher-stakes, integrated with billing, CRM, and helpdesk.</p>
-        <ul class="check-list mt-4">
+        <ul class="track-list">
           <li>SSO and role-based access</li>
           <li>Deep CRM and billing integration</li>
           <li>Audit logging and entitlement enforcement</li>
@@ -389,19 +390,33 @@
   </div>
 </section>
 
-<!-- ============ CORE WEB VITALS PROMISE ============ -->
-<section>
+<!-- ============ CORE WEB VITALS — approach-section style ============ -->
+<section class="approach-section">
+  <div class="approach-overlay"></div>
   <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Core Web Vitals &amp; Lighthouse</span>
-      <h2>The numbers we promise in writing.</h2>
-      <p>Not "fast." Not "modern." Specific p75 thresholds, validated on real user data with Web Vitals JS in the build.</p>
-    </div>
-    <div class="kpi-strip fade-up">
-      <div class="kpi-tile"><div class="kpi-num">&lt;2.0s</div><div class="kpi-label">LCP — Largest Contentful Paint at p75</div></div>
-      <div class="kpi-tile"><div class="kpi-num">&lt;0.05</div><div class="kpi-label">CLS — Cumulative Layout Shift at p75</div></div>
-      <div class="kpi-tile"><div class="kpi-num">&lt;200ms</div><div class="kpi-label">INP — Interaction to Next Paint at p75</div></div>
-      <div class="kpi-tile"><div class="kpi-num">&gt;95</div><div class="kpi-label">Lighthouse performance score on mobile</div></div>
+    <div class="approach-inner fade-up">
+      <span class="approach-kicker">Core Web Vitals &amp; Lighthouse</span>
+      <h2 class="approach-headline">The numbers we promise in writing.</h2>
+      <p class="approach-subtitle">Specific p75 thresholds. <span class="approach-accent">Validated on real user data.</span></p>
+      <p class="approach-lead">Not "fast." Not "modern." Specific p75 thresholds, validated on real user data with Web Vitals JS in the build &mdash; every page, every release, every regression caught before it ships.</p>
+      <div class="approach-stats">
+        <div class="approach-stat">
+          <div class="num">&lt;2.0s</div>
+          <div class="label">LCP at p75 (Largest Contentful Paint)</div>
+        </div>
+        <div class="approach-stat">
+          <div class="num">&lt;0.05</div>
+          <div class="label">CLS at p75 (Cumulative Layout Shift)</div>
+        </div>
+        <div class="approach-stat">
+          <div class="num">&lt;200ms</div>
+          <div class="label">INP at p75 (Interaction to Next Paint)</div>
+        </div>
+        <div class="approach-stat">
+          <div class="num">&gt;95</div>
+          <div class="label">Lighthouse mobile performance score</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -431,44 +446,52 @@
   </div>
 </section>
 
-<!-- ============ FRONTEND FRAMEWORKS ============ -->
+<!-- ============ FRONTEND FRAMEWORKS — 2-col layout ============ -->
 <section>
   <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Frontend frameworks</span>
-      <h2>Four frameworks we have built more than fifty production apps on.</h2>
-      <p>Pick by team fit and runtime needs, not by what is trending on Hacker News this week.</p>
-    </div>
-    <div class="grid grid-4 fade-up">
-      <div class="card">
-        <h3>React</h3>
-        <p style="font-size:14px"><strong>Best fit for:</strong> design-system-driven product UIs, complex client-side state, teams that want maximum hireability.</p>
+    <div class="framework-2col fade-up">
+      <div class="framework-intro">
+        <span class="eyebrow">Frontend frameworks</span>
+        <h2>Picked by team fit, not by what is trending.</h2>
+        <p>Four production-grade frameworks behind 50+ shipped apps. Each one is the right answer somewhere &mdash; never everywhere. We pick on stack longevity, hireability, and the size of your engineering bench, not on what got featured this week.</p>
+        <a href="../contact.html" class="link-arrow">Get a stack recommendation <span class="arrow">&rarr;</span></a>
       </div>
-      <div class="card">
-        <h3>Next.js</h3>
-        <p style="font-size:14px"><strong>Best fit for:</strong> SEO-critical marketing sites, hybrid product/marketing surfaces, edge rendering, App Router with RSC.</p>
-      </div>
-      <div class="card">
-        <h3>Vue</h3>
-        <p style="font-size:14px"><strong>Best fit for:</strong> Laravel-backed apps, internal tooling, teams that want a less opinionated reactivity model than React.</p>
-      </div>
-      <div class="card">
-        <h3>Angular</h3>
-        <p style="font-size:14px"><strong>Best fit for:</strong> enterprise apps with long lifespans, large teams that benefit from opinionated structure, regulated industries.</p>
+      <div class="framework-grid">
+        <div class="framework-tile">
+          <img src="../assets/images/tech-logos/react.svg" alt="React" class="framework-logo"/>
+          <h3>React</h3>
+          <p>Design-system-driven product UIs, complex state, maximum hireability.</p>
+        </div>
+        <div class="framework-tile">
+          <img src="../assets/images/tech-logos/nextjs.svg" alt="Next.js" class="framework-logo"/>
+          <h3>Next.js</h3>
+          <p>SEO-critical marketing sites, App Router with RSC, edge rendering.</p>
+        </div>
+        <div class="framework-tile">
+          <img src="../assets/images/tech-logos/vue.svg" alt="Vue" class="framework-logo"/>
+          <h3>Vue</h3>
+          <p>Laravel-backed apps, internal tooling, less opinionated reactivity.</p>
+        </div>
+        <div class="framework-tile">
+          <img src="../assets/images/tech-logos/angular.svg" alt="Angular" class="framework-logo"/>
+          <h3>Angular</h3>
+          <p>Enterprise apps, large teams, regulated industries, long lifespans.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CMS-DRIVEN VS CUSTOM ============ -->
-<section class="bg-soft">
+<section class="compare-dark">
+  <div class="compare-bg-overlay"></div>
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">CMS-driven vs. custom-coded</span>
       <h2>One decision that shapes the next five years.</h2>
       <p>The choice that most determines whether your marketing team will publish weekly or file a ticket every time.</p>
     </div>
-    <table class="compare-table fade-up">
+    <table class="compare-table compare-table-dark fade-up">
       <thead>
         <tr>
           <th></th>
@@ -477,159 +500,113 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td class="row-label">Editor experience</td><td>WYSIWYG, no developer needed for content edits</td><td>Requires content modeling discipline; usually still uses a headless CMS</td></tr>
-        <tr><td class="row-label">Time to first launch</td><td>4 – 8 weeks for a 12-page site</td><td>8 – 14 weeks for the equivalent</td></tr>
-        <tr><td class="row-label">Performance ceiling</td><td>Good with caching; Lighthouse 90s possible</td><td>Excellent; Lighthouse 95+ standard</td></tr>
-        <tr><td class="row-label">Design flexibility</td><td>Constrained by theme system, plugins, page builders</td><td>Pixel-level control; can match any brand system</td></tr>
-        <tr><td class="row-label">Ongoing cost</td><td>Higher (plugins, hosting, maintenance)</td><td>Lower runtime cost; higher developer involvement for changes</td></tr>
-        <tr><td class="row-label">Best for</td><td>Content-heavy sites, multi-author teams, weekly publishing cadence</td><td>Brand-led marketing sites, product UIs, conversion-critical pages</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></span>Editor experience</td><td>WYSIWYG, no developer needed for content edits</td><td>Requires content modeling discipline; usually still uses a headless CMS</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>Time to first launch</td><td>4&ndash;8 weeks for a 12-page site</td><td>8&ndash;14 weeks for the equivalent</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>Performance ceiling</td><td>Good with caching; Lighthouse 90s possible</td><td>Excellent; Lighthouse 95+ standard</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>Design flexibility</td><td>Constrained by themes, plugins, page builders</td><td>Pixel-level control; can match any brand system</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></span>Ongoing cost</td><td>Higher (plugins, hosting, maintenance)</td><td>Lower runtime cost; higher developer involvement for changes</td></tr>
+        <tr><td class="row-label"><span class="cmp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></span>Best for</td><td>Content-heavy sites, multi-author teams, weekly publishing</td><td>Brand-led marketing sites, product UIs, conversion-critical pages</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<!-- ============ INTEGRATIONS ============ -->
-<section>
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Integrations we wire up</span>
-      <h2>The tools your marketing and ops stack already pays for.</h2>
-      <p>Every Vybog Services web build leaves with these connections live and tested — no "we'll do that in phase two."</p>
-    </div>
-    <div class="tech-grid fade-up">
-      <div class="tech-pill">HubSpot</div>
-      <div class="tech-pill">Salesforce</div>
-      <div class="tech-pill">GA4</div>
-      <div class="tech-pill">Search Console</div>
-      <div class="tech-pill">Stripe</div>
-      <div class="tech-pill">Mailchimp</div>
-      <div class="tech-pill">Klaviyo</div>
-      <div class="tech-pill">Calendly</div>
-      <div class="tech-pill">Intercom</div>
-      <div class="tech-pill">Segment</div>
-      <div class="tech-pill">Mixpanel</div>
-      <div class="tech-pill">Amplitude</div>
-      <div class="tech-pill">Algolia</div>
-      <div class="tech-pill">Auth0</div>
-      <div class="tech-pill">Clerk</div>
-      <div class="tech-pill">Sanity</div>
-      <div class="tech-pill">Contentful</div>
-      <div class="tech-pill">Plausible</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ RECENT WEB BUILDS ============ -->
-<section class="bg-tint">
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Recent web builds</span>
-      <h2>Three from the last twelve months.</h2>
-    </div>
-    <div class="grid grid-3 fade-up">
-      <a href="../case-studies.html" class="card" style="text-decoration:none">
-        <div style="height:160px;border-radius:12px;background:linear-gradient(135deg,#0050C8 0%,#3C8CF0 100%);margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:600;font-size:20px">Apco Worldwide</div>
-        <span class="tag">Marketing site · Next.js</span>
-        <h3 class="mt-4">Global advisory firm, 14-locale launch</h3>
-        <p>Replatformed a sprawling WordPress estate to a single Next.js + Sanity build. Lighthouse moved from 54 to 96 on mobile.</p>
-      </a>
-      <a href="../case-studies.html" class="card" style="text-decoration:none">
-        <div style="height:160px;border-radius:12px;background:linear-gradient(135deg,#0B1B3D 0%,#0050C8 100%);margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:600;font-size:20px">Jiko Capital</div>
-        <span class="tag">Web app · React</span>
-        <h3 class="mt-4">Investor portal with real-time portfolio data</h3>
-        <p>React + TanStack Query frontend wired to a custom Node API. SSO via Okta, role-based document access, audit trails.</p>
-      </a>
-      <a href="../case-studies.html" class="card" style="text-decoration:none">
-        <div style="height:160px;border-radius:12px;background:linear-gradient(135deg,#3C8CF0 0%,#0B1B3D 100%);margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:600;font-size:20px">Arana Foods</div>
-        <span class="tag">Commerce · Headless</span>
-        <h3 class="mt-4">DTC e-commerce on Shopify Hydrogen + Sanity</h3>
-        <p>Headless Shopify storefront with a Sanity-driven editorial layer. 41% faster LCP than the previous Liquid theme.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ PLATFORMS WE BUILD ON ============ -->
-<section class="bg-soft">
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Platforms we build on</span>
-      <h2>Nine CMS platforms, each with a sharp opinion on when to pick it.</h2>
-    </div>
-    <div class="grid grid-3 fade-up">
-      <div class="card">
-        <h3>WordPress</h3>
-        <p><strong>Ideal for:</strong> content-heavy marketing sites, publishers, founder-led brands. Where the editor workflow matters more than the rendering pipeline.</p>
-      </div>
-      <div class="card">
-        <h3>Drupal</h3>
-        <p><strong>Ideal for:</strong> government, universities, healthcare. Complex content modeling, multi-site setups, granular role permissions, regulated industries.</p>
-      </div>
-      <div class="card">
-        <h3>Joomla</h3>
-        <p><strong>Ideal for:</strong> association sites, member portals, community platforms. Where built-in user management and access control are the core requirements.</p>
-      </div>
-      <div class="card">
-        <h3>WooCommerce</h3>
-        <p><strong>Ideal for:</strong> WordPress-native commerce, brands under five thousand orders a month, content-and-commerce mixed stores. Flexible, opinionated, plugin-rich.</p>
-      </div>
-      <div class="card">
-        <h3>Shopify</h3>
-        <p><strong>Ideal for:</strong> DTC brands at scale, hands-off operations, headless Hydrogen storefronts. Where you want the platform handling tax, fraud, and PCI.</p>
-      </div>
-      <div class="card">
-        <h3>Wix</h3>
-        <p><strong>Ideal for:</strong> brand sites under 30 pages, founder-led businesses, marketing teams that need a single drag-and-drop surface. We extend with Velo where the no-code edge runs out and harden the SEO basics most agencies skip.</p>
-      </div>
-      <div class="card">
-        <h3>Squarespace</h3>
-        <p><strong>Ideal for:</strong> creator and lifestyle brands, portfolio sites, restaurants, boutique commerce under a thousand SKUs. We customise themes, integrate Squarespace Commerce with your CRM, and lift Core Web Vitals back into the green.</p>
-      </div>
-      <div class="card">
-        <h3>Webflow</h3>
-        <p><strong>Ideal for:</strong> designer-led marketing sites, B2B SaaS landing-page estates, brands that ship campaigns weekly. We build the structured CMS schema, the Logic flows, and the Webflow-to-CRM plumbing your sales team will actually use.</p>
-      </div>
-      <div class="card">
-        <h3>Ghost</h3>
-        <p><strong>Ideal for:</strong> independent publishers, newsletter-first creators, paid-membership content businesses. We customise themes, wire up Ghost&rsquo;s native Stripe layer, and ship the integrations that turn a blog into a subscription business.</p>
+<!-- ============ PLATFORMS WE BUILD ON — 40/60 split ============ -->
+<section class="bg-soft platforms-split">
+  <div class="container platforms-container">
+    <div class="platforms-left">
+      <div class="cms-dashboard-img" aria-hidden="true">
+        <svg viewBox="0 0 600 720" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid slice">
+          <!-- Dashboard mockup that bleeds off-screen on the left edge -->
+          <rect x="0" y="0" width="600" height="720" fill="#0B1B3D"/>
+          <!-- Sidebar -->
+          <rect x="0" y="0" width="160" height="720" fill="#091632"/>
+          <text x="24" y="50" font-family="Inter Tight, sans-serif" font-weight="800" font-size="14" fill="#fff">CMS Editor</text>
+          <text x="24" y="68" font-family="Inter, sans-serif" font-size="9" fill="#6BA4FF" letter-spacing="1.5">CONTENT</text>
+          <g font-family="Inter, sans-serif" font-size="12" fill="#BFC8DA">
+            <rect x="10" y="86" width="140" height="30" rx="6" fill="#0050C8"/>
+            <text x="24" y="106" fill="#fff" font-weight="600">Dashboard</text>
+            <text x="24" y="146">Posts</text>
+            <text x="24" y="172">Pages</text>
+            <text x="24" y="198">Media</text>
+            <text x="24" y="224">Forms</text>
+            <text x="24" y="250">Plugins</text>
+            <text x="24" y="276">Users</text>
+            <text x="24" y="302">Settings</text>
+          </g>
+          <!-- Main area -->
+          <rect x="160" y="0" width="440" height="720" fill="#FFFFFF"/>
+          <text x="186" y="50" font-family="Inter Tight, sans-serif" font-weight="800" font-size="20" fill="#0B1B3D">New Post &middot; Draft</text>
+          <text x="186" y="70" font-family="Inter, sans-serif" font-size="11" fill="#6E7686">Auto-saved 12s ago &middot; 1,284 words &middot; SEO 92</text>
+          <rect x="186" y="92" width="392" height="46" rx="8" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <text x="200" y="120" font-family="Inter Tight, sans-serif" font-size="14" fill="#0B1B3D" font-weight="600">Replatforming without a single broken URL</text>
+          <rect x="186" y="156" width="392" height="68" rx="8" fill="#FFFFFF" stroke="#E0E3E8"/>
+          <text x="200" y="178" font-family="Inter, sans-serif" font-size="9" fill="#0050C8" font-weight="700" letter-spacing="1">PARAGRAPH</text>
+          <text x="200" y="200" font-family="Inter, sans-serif" font-size="11" fill="#5C5C5C">The redirect map was the first artifact we wrote.</text>
+          <text x="200" y="216" font-family="Inter, sans-serif" font-size="11" fill="#5C5C5C">Before any code, canonicals were signed off.</text>
+          <rect x="186" y="240" width="190" height="120" rx="8" fill="#E8F1FE"/>
+          <text x="200" y="262" font-family="Inter, sans-serif" font-size="9" fill="#0050C8" font-weight="700" letter-spacing="1">IMAGE BLOCK</text>
+          <rect x="386" y="240" width="192" height="120" rx="8" fill="#FFFFFF" stroke="#E0E3E8"/>
+          <text x="400" y="262" font-family="Inter, sans-serif" font-size="9" fill="#0050C8" font-weight="700" letter-spacing="1">HEADING H2</text>
+          <text x="400" y="288" font-family="Inter Tight, sans-serif" font-size="16" font-weight="700" fill="#0B1B3D">Editor</text>
+          <text x="400" y="306" font-family="Inter Tight, sans-serif" font-size="16" font-weight="700" fill="#0B1B3D">Experience</text>
+          <!-- Pills -->
+          <rect x="186" y="380" width="100" height="32" rx="16" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+          <text x="236" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#16A34A" font-weight="600">&#x2713; Scheduled</text>
+          <rect x="294" y="380" width="100" height="32" rx="16" fill="#FFFFFF" stroke="#E0E3E8"/>
+          <text x="344" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#5C5C5C">Preview</text>
+          <rect x="402" y="380" width="100" height="32" rx="16" fill="#0050C8"/>
+          <text x="452" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#fff" font-weight="600">Publish</text>
+          <!-- Metric tiles -->
+          <rect x="186" y="438" width="186" height="86" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <text x="200" y="460" font-family="Inter, sans-serif" font-size="10" fill="#6E7686" letter-spacing="1">VIEWS / 7 DAYS</text>
+          <text x="200" y="492" font-family="Inter Tight, sans-serif" font-size="22" font-weight="800" fill="#0B1B3D">128,402</text>
+          <text x="200" y="512" font-family="Inter, sans-serif" font-size="10" fill="#16A34A" font-weight="600">&plus;18&percnt; w/w</text>
+          <rect x="382" y="438" width="196" height="86" rx="10" fill="#F7F9FC" stroke="#E0E3E8"/>
+          <text x="396" y="460" font-family="Inter, sans-serif" font-size="10" fill="#6E7686" letter-spacing="1">PUBLISH RATE</text>
+          <text x="396" y="492" font-family="Inter Tight, sans-serif" font-size="22" font-weight="800" fill="#0B1B3D">4.2 / wk</text>
+          <text x="396" y="512" font-family="Inter, sans-serif" font-size="10" fill="#16A34A" font-weight="600">healthy</text>
+        </svg>
       </div>
     </div>
-  </div>
-</section>
-<!-- ============ EDITOR EXPERIENCE CHARTER ============ -->
-<section id="how-we-work">
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Editor experience charter</span>
-      <h2>Five rules every Vybog Services CMS build follows.</h2>
-      <p>The principles we will not skip — even when the timeline is tight, even when the budget shrinks.</p>
-    </div>
-    <div class="grid grid-5 fade-up" style="grid-template-columns:repeat(5,1fr);gap:0">
-      <div class="process-step">
-        <span class="process-num">1</span>
-        <h4>Block-based composition</h4>
-        <p>Editors assemble pages from a fixed set of well-tested blocks. No page-builder soup, no "everyone has admin access" anarchy.</p>
+    <div class="platforms-right">
+      <div class="section-head fade-up" style="text-align:left">
+        <span class="eyebrow">Platforms we build on</span>
+        <h2>Eight CMS platforms, each with a sharp opinion on when to pick it.</h2>
       </div>
-      <div class="process-step">
-        <span class="process-num">2</span>
-        <h4>Preview parity</h4>
-        <p>Draft preview matches the live render exactly. No "looks fine in the editor, breaks live" surprises.</p>
-      </div>
-      <div class="process-step">
-        <span class="process-num">3</span>
-        <h4>Content modeling</h4>
-        <p>Custom post types, taxonomies, and relationships modeled before a theme is touched. Schema-first, theme-second.</p>
-      </div>
-      <div class="process-step">
-        <span class="process-num">4</span>
-        <h4>Role-based publishing</h4>
-        <p>Writers draft, editors approve, marketers schedule. A workflow that mirrors how the team actually operates.</p>
-      </div>
-      <div class="process-step">
-        <span class="process-num">5</span>
-        <h4>Scheduled releases</h4>
-        <p>Coordinated content drops, future-dated publishing, embargo handling. Press releases go live at 9 AM ET, not whenever the editor remembers.</p>
+      <div class="cms-rows fade-up">
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/wordpress.svg" alt="WordPress"/></div>
+          <div class="cms-row-body"><h3>WordPress</h3><p>Content-heavy marketing sites, publishers, founder-led brands. Where the editor workflow matters more than the rendering pipeline.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/drupal.svg" alt="Drupal"/></div>
+          <div class="cms-row-body"><h3>Drupal</h3><p>Government, universities, healthcare. Complex content modeling, multi-site setups, granular role permissions, regulated industries.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/joomla.svg" alt="Joomla"/></div>
+          <div class="cms-row-body"><h3>Joomla</h3><p>Association sites, member portals, community platforms. Built-in user management and access control are the core requirements.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/woocommerce.svg" alt="WooCommerce"/></div>
+          <div class="cms-row-body"><h3>WooCommerce</h3><p>WordPress-native commerce, brands under five thousand orders a month, content-and-commerce mixed stores. Flexible and plugin-rich.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/shopify.svg" alt="Shopify"/></div>
+          <div class="cms-row-body"><h3>Shopify</h3><p>DTC brands at scale, hands-off operations, headless Hydrogen storefronts. Where the platform handles tax, fraud, and PCI.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/wix.svg" alt="Wix"/></div>
+          <div class="cms-row-body"><h3>Wix</h3><p>Brand sites under 30 pages, founder-led businesses, marketing teams that need a single drag-and-drop surface. We extend with Velo and harden SEO.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/squarespace.svg" alt="Squarespace"/></div>
+          <div class="cms-row-body"><h3>Squarespace</h3><p>Creator and lifestyle brands, portfolios, restaurants, boutique commerce under a thousand SKUs. Theme customisation + CRM integration.</p></div>
+        </div>
+        <div class="cms-row">
+          <div class="cms-row-logo"><img src="../assets/images/tech-logos/webflow.svg" alt="Webflow"/></div>
+          <div class="cms-row-body"><h3>Webflow</h3><p>Designer-led marketing sites, B2B SaaS landing-page estates, brands that ship campaigns weekly. CMS Collections + Logic flows + CRM plumbing.</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -677,51 +654,51 @@
     </div>
     <div class="integration-grid fade-up">
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/stripe.svg" alt="Stripe" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/stripe.svg" alt="Stripe" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Stripe</span><span class="int-cat">Payments</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/paypal.svg" alt="PayPal" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/paypal.svg" alt="PayPal" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">PayPal</span><span class="int-cat">Payments</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/hubspot.svg" alt="HubSpot" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/hubspot.svg" alt="HubSpot" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">HubSpot</span><span class="int-cat">CRM</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/salesforce.svg" alt="Salesforce" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/salesforce.svg" alt="Salesforce" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Salesforce</span><span class="int-cat">CRM</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/mailchimp.svg" alt="Mailchimp" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/mailchimp.svg" alt="Mailchimp" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Mailchimp</span><span class="int-cat">Email</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/klaviyo.svg" alt="Klaviyo" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/klaviyo.svg" alt="Klaviyo" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Klaviyo</span><span class="int-cat">Email</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/google-analytics.svg" alt="Google Analytics" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/google-analytics.svg" alt="Google Analytics" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Google Analytics</span><span class="int-cat">Analytics</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/segment.svg" alt="Segment" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/segment.svg" alt="Segment" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Segment</span><span class="int-cat">CDP</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/algolia.svg" alt="Algolia" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/algolia.svg" alt="Algolia" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Algolia</span><span class="int-cat">Search</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/cloudinary.svg" alt="Cloudinary" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/cloudinary.svg" alt="Cloudinary" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Cloudinary</span><span class="int-cat">Media</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/zapier.svg" alt="Zapier" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/zapier.svg" alt="Zapier" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Zapier</span><span class="int-cat">Automation</span></figcaption>
         </figure>
         <figure class="integration-tile">
-          <img src="../assets/images/tech-logos/slack.svg" alt="Slack" width="100" height="100" loading="lazy"/>
+          <img src="../assets/images/tech-logos/slack.svg" alt="Slack" width="75" height="75" loading="lazy"/>
           <figcaption><span class="int-name">Slack</span><span class="int-cat">Notifications</span></figcaption>
         </figure>
     </div>
