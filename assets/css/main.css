@@ -4027,3 +4027,119 @@ section.platforms-split { padding: 0; }
 @media (max-width: 1080px) {
   .phone-frame { margin: 0 auto; }
 }
+
+/* ========================================================================
+   MOBILE APP — phone-frame center alignment + frameworks 2-col table
+   ======================================================================== */
+
+/* ---------- 65. PHONE-FRAME centered (mobile-app platforms-left) ---------- */
+.phone-frame {
+  margin: 0 auto !important;  /* center horizontally, no edge-bleed */
+}
+section.platforms-split .platforms-left {
+  padding: clamp(48px, 5vw, 80px) clamp(24px, 3vw, 48px) !important;
+}
+
+/* ---------- 66. PLATFORMS & FRAMEWORKS — 2-col head + single-col table ---------- */
+.fw-head {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: clamp(40px, 5vw, 80px);
+  margin: 0 auto clamp(36px, 4vw, 56px);
+  align-items: start;
+}
+.fw-head-left .eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--brand-primary);
+  letter-spacing: 0.22em;
+}
+.fw-head-left h2 {
+  font-size: clamp(30px, 3.6vw, 44px);
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.fw-head-right p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 18px;
+}
+.fw-head-right .link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brand-primary);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.fw-head-right .link-arrow:hover { color: #003B96; }
+
+.fw-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid var(--brand-primary, #0050C8);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(11, 27, 61, 0.08);
+}
+.fw-table thead th {
+  background: var(--brand-primary, #0050C8);
+  color: #FFFFFF;
+  text-align: left;
+  padding: 16px 24px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.fw-table tbody tr {
+  border-top: 1px solid #E0E3E8;
+}
+.fw-table tbody tr:nth-child(odd)  { background: #FFFFFF; }
+.fw-table tbody tr:nth-child(even) { background: #F4F6FA; }
+.fw-table tbody tr:hover { background: #E8F1FE; }
+.fw-table tbody td {
+  padding: 22px 24px;
+  vertical-align: middle;
+}
+.fw-logo-cell {
+  width: 110px;
+  text-align: center;
+}
+.fw-logo-cell img {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  border-radius: 14px;
+  filter: drop-shadow(0 4px 12px rgba(11, 27, 61, 0.08));
+}
+.fw-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+}
+.fw-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .fw-head { grid-template-columns: 1fr; gap: 24px; }
+  .fw-logo-cell { width: 84px; }
+  .fw-logo-cell img { width: 52px; height: 52px; }
+  .fw-table tbody td { padding: 18px 16px; }
+  .fw-name { font-size: 16px; }
+  .fw-desc { font-size: 13px; }
+}
