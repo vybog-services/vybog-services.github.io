@@ -23,17 +23,8 @@
     <nav class="main-nav" aria-label="Primary">
       <div class="nav-item">
         <a href="services/index.html" class="nav-link">Services <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
-        <div class="mega-menu mega-2pane">
+        <div class="mega-menu mega-grid-only">
   <div class="mega-container">
-    <aside class="mega-rail">
-      <span class="mega-rail-head">Categories</span>
-      <a class="mega-cat active" href="services/index.html"><span class="mega-cat-label">All Services</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="services/software-development.html"><span class="mega-cat-label">Build &amp; Modernize</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="services/web-development.html"><span class="mega-cat-label">Web &amp; Commerce</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="services/digital-marketing.html"><span class="mega-cat-label">Marketing &amp; Growth</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="services/ai-agent-development.html"><span class="mega-cat-label">AI &amp; Agents</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-rail-footer" href="services/index.html">See all services &rarr;</a>
-    </aside>
     <div class="mega-grid">
             <a href="services/software-development.html" class="mega-link"><span class="mega-link-title">Software &amp; App Development</span><span class="mega-link-desc">SaaS platforms, APIs, internal tools</span></a>
             <a href="services/mobile-app-development.html" class="mega-link"><span class="mega-link-title">Mobile App Development</span><span class="mega-link-desc">Native iOS, Android, Flutter, RN</span></a>
@@ -47,26 +38,53 @@
 </div>
       </div>
       <div class="nav-item">
-        <a href="hire-developers/index.html" class="nav-link">Hire Developers <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
-        <div class="mega-menu mega-2pane">
+        <a href="hire-developers/index.html" class="nav-link">Hire Talent <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="mega-menu mega-2pane mega-tabbed">
   <div class="mega-container">
     <aside class="mega-rail">
-      <span class="mega-rail-head">Categories</span>
-      <a class="mega-cat active" href="hire-developers/index.html"><span class="mega-cat-label">All Developers</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="hire-developers/react.html"><span class="mega-cat-label">Frontend</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="hire-developers/nodejs.html"><span class="mega-cat-label">Backend</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="hire-developers/full-stack.html"><span class="mega-cat-label">Full-Stack</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-cat" href="services/ai-agent-development.html"><span class="mega-cat-label">AI-fluent</span><span class="chev">&rsaquo;</span></a>
-      <a class="mega-rail-footer" href="hire-developers/index.html">See all developers &rarr;</a>
+      <span class="mega-rail-head">Talent Categories</span>
+      <a class="mega-cat active" data-target="engineers" href="hire-developers/index.html"><span class="mega-cat-label">Engineers</span><span class="chev">&rsaquo;</span></a>
+      <a class="mega-cat" data-target="designers" href="hire-developers/ui-ux-designers.html"><span class="mega-cat-label">Designers</span><span class="chev">&rsaquo;</span></a>
+      <a class="mega-cat" data-target="pm" href="hire-developers/product-managers.html"><span class="mega-cat-label">Product Managers</span><span class="chev">&rsaquo;</span></a>
+      <a class="mega-cat" data-target="data" href="hire-developers/data-engineers.html"><span class="mega-cat-label">Data Specialists</span><span class="chev">&rsaquo;</span></a>
+      <a class="mega-rail-footer" href="hire-developers/index.html">See all talent &rarr;</a>
     </aside>
-    <div class="mega-grid">
-            <a href="hire-developers/php.html" class="mega-link"><span class="mega-link-title">PHP Developers</span><span class="mega-link-desc">Laravel, Symfony, WordPress core</span></a>
-            <a href="hire-developers/react.html" class="mega-link"><span class="mega-link-title">React Developers</span><span class="mega-link-desc">Next.js, Hooks, SSR & RSC</span></a>
-            <a href="hire-developers/nodejs.html" class="mega-link"><span class="mega-link-title">Node.js Developers</span><span class="mega-link-desc">Nest, Fastify, real-time, queues</span></a>
-            <a href="hire-developers/python.html" class="mega-link"><span class="mega-link-title">Python Developers</span><span class="mega-link-desc">Django, FastAPI, data, ML</span></a>
-            <a href="hire-developers/nextjs.html" class="mega-link"><span class="mega-link-title">Next.js Developers</span><span class="mega-link-desc">App Router, ISR, edge functions</span></a>
-            <a href="hire-developers/full-stack.html" class="mega-link"><span class="mega-link-title">Full-Stack Developers</span><span class="mega-link-desc">TS + Postgres + cloud, end-to-end</span></a>
-          </div>
+    <div class="mega-panes">
+      <div class="mega-pane active" data-pane="engineers">
+        <div class="mega-pane-head">Engineers &middot; <span>vetted senior, embedded by Friday</span></div>
+        <div class="mega-grid">
+          <a href="hire-developers/react.html" class="mega-link"><span class="mega-link-title">React Developers</span><span class="mega-link-desc">Next.js, Hooks, SSR &amp; RSC</span></a>
+          <a href="hire-developers/vue.html" class="mega-link"><span class="mega-link-title">Vue Developers</span><span class="mega-link-desc">Vue 3, Pinia, Nuxt SSR</span></a>
+          <a href="hire-developers/angular.html" class="mega-link"><span class="mega-link-title">Angular Developers</span><span class="mega-link-desc">Angular 17+, Signals, NgRx</span></a>
+          <a href="hire-developers/nextjs.html" class="mega-link"><span class="mega-link-title">Next.js Developers</span><span class="mega-link-desc">App Router, ISR, edge functions</span></a>
+          <a href="hire-developers/nodejs.html" class="mega-link"><span class="mega-link-title">Node.js Developers</span><span class="mega-link-desc">Nest, Fastify, real-time, queues</span></a>
+          <a href="hire-developers/python.html" class="mega-link"><span class="mega-link-title">Python Developers</span><span class="mega-link-desc">Django, FastAPI, data, ML</span></a>
+          <a href="hire-developers/php.html" class="mega-link"><span class="mega-link-title">PHP Developers</span><span class="mega-link-desc">Laravel, Symfony, WordPress core</span></a>
+          <a href="hire-developers/full-stack.html" class="mega-link"><span class="mega-link-title">Full-Stack Developers</span><span class="mega-link-desc">TS + Postgres + cloud, end-to-end</span></a>
+        </div>
+      </div>
+      <div class="mega-pane" data-pane="designers">
+        <div class="mega-pane-head">Designers &middot; <span>senior product &amp; brand designers</span></div>
+        <div class="mega-grid">
+          <a href="hire-developers/ui-ux-designers.html" class="mega-link"><span class="mega-link-title">UI/UX Designers</span><span class="mega-link-desc">Figma, design systems, research</span></a>
+          <a href="hire-developers/product-designers.html" class="mega-link"><span class="mega-link-title">Product Designers</span><span class="mega-link-desc">Discovery, IA, prototyping, handoff</span></a>
+          <a href="hire-developers/brand-designers.html" class="mega-link"><span class="mega-link-title">Brand Designers</span><span class="mega-link-desc">Identity, logo systems, brand books</span></a>
+        </div>
+      </div>
+      <div class="mega-pane" data-pane="pm">
+        <div class="mega-pane-head">Product Managers &middot; <span>roadmap, OKRs, eng literacy</span></div>
+        <div class="mega-grid">
+          <a href="hire-developers/product-managers.html" class="mega-link"><span class="mega-link-title">Product Managers</span><span class="mega-link-desc">Roadmap, backlog, OKRs, stakeholders</span></a>
+        </div>
+      </div>
+      <div class="mega-pane" data-pane="data">
+        <div class="mega-pane-head">Data Specialists &middot; <span>pipelines, models, attribution</span></div>
+        <div class="mega-grid">
+          <a href="hire-developers/data-engineers.html" class="mega-link"><span class="mega-link-title">Data Engineers</span><span class="mega-link-desc">dbt, Airflow, Snowflake, BigQuery</span></a>
+          <a href="hire-developers/data-scientists.html" class="mega-link"><span class="mega-link-title">Data Scientists</span><span class="mega-link-desc">Python, sklearn, PyTorch, MLflow</span></a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
       </div>
@@ -123,14 +141,22 @@
     </div>
   </details>
   <details class="drawer-section">
-    <summary>Hire Developers <span>+</span></summary>
+    <summary>Hire Talent <span>+</span></summary>
     <div class="drawer-sublinks">
-      <a href="hire-developers/php.html">PHP Developers</a>
       <a href="hire-developers/react.html">React Developers</a>
+      <a href="hire-developers/vue.html">Vue Developers</a>
+      <a href="hire-developers/angular.html">Angular Developers</a>
+      <a href="hire-developers/nextjs.html">Next.js Developers</a>
       <a href="hire-developers/nodejs.html">Node.js Developers</a>
       <a href="hire-developers/python.html">Python Developers</a>
-      <a href="hire-developers/nextjs.html">Next.js Developers</a>
+      <a href="hire-developers/php.html">PHP Developers</a>
       <a href="hire-developers/full-stack.html">Full-Stack Developers</a>
+      <a href="hire-developers/ui-ux-designers.html">UI/UX Designers</a>
+      <a href="hire-developers/product-designers.html">Product Designers</a>
+      <a href="hire-developers/brand-designers.html">Brand Designers</a>
+      <a href="hire-developers/product-managers.html">Product Managers</a>
+      <a href="hire-developers/data-engineers.html">Data Engineers</a>
+      <a href="hire-developers/data-scientists.html">Data Scientists</a>
     </div>
   </details>
   <details class="drawer-section"><summary><a href="ai-agent-development.html" style="color:inherit;text-decoration:none;display:block">AI Solutions</a></summary></details>
@@ -365,7 +391,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Hire Developers</h5>
+        <h5>Hire Talent</h5>
         <ul>
           <li><a href="hire-developers/php.html">PHP Developers</a></li>
           <li><a href="hire-developers/react.html">React Developers</a></li>

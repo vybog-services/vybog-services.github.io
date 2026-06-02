@@ -157,3 +157,20 @@
     });
   });
 })();
+
+// ---- Hire Talent mega menu: category pane switcher ----
+(function () {
+  document.querySelectorAll('.mega-menu.mega-tabbed').forEach((menu) => {
+    const cats = menu.querySelectorAll('.mega-cat[data-target]');
+    const panes = menu.querySelectorAll('.mega-pane[data-pane]');
+    if (!cats.length || !panes.length) return;
+    const setActive = (target) => {
+      cats.forEach((c) => c.classList.toggle('active', c.getAttribute('data-target') === target));
+      panes.forEach((p) => p.classList.toggle('active', p.getAttribute('data-pane') === target));
+    };
+    cats.forEach((c) => {
+      c.addEventListener('mouseenter', () => setActive(c.getAttribute('data-target')));
+      c.addEventListener('focus', () => setActive(c.getAttribute('data-target')));
+    });
+  });
+})();

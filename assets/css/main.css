@@ -3380,3 +3380,74 @@ body.scrolled .page-tabs { top: 76px !important; }
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ========================================================================
+   MENU V4 — Services no-rail + Hire Talent multi-pane tabbed
+   ======================================================================== */
+
+/* ---------- 56. SERVICES MEGA — no rail, just grid ---------- */
+.site-header .mega-menu.mega-grid-only {
+  width: 720px !important;
+  min-width: 720px !important;
+}
+.site-header .mega-menu.mega-grid-only .mega-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  display: block !important;
+}
+.site-header .mega-menu.mega-grid-only .mega-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4px 8px !important;
+  padding: 18px 18px !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+/* ---------- 57. HIRE TALENT MEGA — multi-pane with JS-switched panes ---------- */
+.site-header .mega-menu.mega-tabbed .mega-container {
+  display: grid !important;
+  grid-template-columns: 220px 1fr !important;
+  min-height: 380px;
+}
+.site-header .mega-panes { position: relative; }
+.site-header .mega-pane {
+  display: none;
+  padding: 0;
+}
+.site-header .mega-pane.active { display: block; }
+.site-header .mega-pane-head {
+  padding: 14px 18px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  border-bottom: 1px solid #F0F1F4;
+}
+.site-header .mega-pane-head span {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -0.005em;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.site-header .mega-menu.mega-tabbed .mega-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4px 8px !important;
+  padding: 14px 18px 18px !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+/* Mobile fallback for mega-tabbed */
+@media (max-width: 980px) {
+  .site-header .mega-menu.mega-tabbed .mega-container {
+    grid-template-columns: 1fr !important;
+  }
+  .site-header .mega-pane { display: block; }
+  .site-header .mega-pane.active { display: block; }
+  .site-header .mega-pane:not(.active) { display: block; }
+}
