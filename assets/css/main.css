@@ -4541,3 +4541,66 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   .industry-icon { width: 44px; height: 44px; border-radius: 12px; }
   .industry-icon svg { width: 22px; height: 22px; }
 }
+
+/* ========================================================================
+   AI-NATIVE DELIVERY — 4 colored boxes (launch-and-grow.html)
+   ======================================================================== */
+.ai-box-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.ai-box {
+  border-radius: 18px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.ai-box:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(11, 27, 61, 0.08); }
+.ai-box .ai-box-tag {
+  display: inline-block;
+  font-size: 11.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 14px;
+  opacity: 0.85;
+  align-self: flex-start;
+}
+.ai-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.018em;
+  margin: 0 0 12px;
+  color: inherit;
+}
+.ai-box p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+  color: inherit;
+  opacity: 0.82;
+}
+
+.ai-box-blue     { background: #E5F0FD; color: #0F3266; }
+.ai-box-blue .ai-box-tag { color: #1E4F94; }
+
+.ai-box-mint     { background: #E6F1E8; color: #1C4731; }
+.ai-box-mint .ai-box-tag { color: #2D6A4F; }
+
+.ai-box-lavender { background: #ECEAF5; color: #3D2A6B; }
+.ai-box-lavender .ai-box-tag { color: #5B3E96; }
+
+.ai-box-rose     { background: #FFE6EC; color: #7C2245; }
+.ai-box-rose .ai-box-tag { color: #B5365C; }
+
+@media (max-width: 720px) {
+  .ai-box-grid { grid-template-columns: 1fr; }
+  .ai-box { padding: 24px; }
+  .ai-box h3 { font-size: 20px; }
+  .ai-box p { font-size: 14.5px; }
+}
