@@ -2819,17 +2819,7 @@ section.bg-soft + section.bg-soft {
   box-shadow: 0 -1px 0 rgba(11, 27, 61, 0.05);
 }
 /* Visual wave between light and dark transitions */
-section + section.gain-section,
-section + section.engagement-dark,
-section + section.retainer-section,
-section + section.approach-section {
-  background-image:
-    linear-gradient(180deg, var(--bg-base) 0, transparent 36px),
-    radial-gradient(ellipse 50% 100% at 50% 0%, rgba(0, 0, 0, 0.18), transparent 60%);
-  background-repeat: no-repeat;
-  background-size: 100% 36px;
-  background-position: top;
-}
+/* Section-transition gradient removed per design — sections butt directly */
 
 /* ---------- 49. IMAGE-LED SERVICE CATEGORY CARDS (home) ---------- */
 section.service-cats-section {
