@@ -3135,3 +3135,248 @@ body.scrolled .mega-menu { top: 76px !important; }
 body.scrolled .page-tabs { top: 76px !important; }
 @media (max-width: 1080px) { .page-tabs { top: 68px !important; } }
 @media (max-width: 720px)  { .page-tabs { top: 64px !important; } }
+
+/* ========================================================================
+   MENU V3 — Constrained 2-pane dropdown + header CTA + brand-left/nav-right
+   (Overrides v2 full-bleed mega menu)
+   ======================================================================== */
+
+/* ---------- 54. HEADER LAYOUT — brand left, nav+CTA right ---------- */
+.site-header .nav-wrap {
+  gap: 0 !important;
+  align-items: stretch !important;
+}
+.site-header .brand {
+  margin-right: auto !important;
+  align-self: center;
+}
+
+/* Main nav fills header height so dropdowns anchor properly */
+.site-header .main-nav {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  gap: 0;
+}
+.site-header .main-nav .nav-item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+.site-header .main-nav .nav-link {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 14px !important;
+  font-family: var(--font-display);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+.site-header .main-nav .nav-link:hover,
+.site-header .main-nav .nav-item:hover .nav-link,
+.site-header .main-nav .nav-item.open .nav-link { color: #0050C8; }
+
+/* Header CTA button */
+.header-cta {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  align-self: center;
+  margin-left: 16px;
+}
+.header-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 22px;
+  background: #0050C8;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  transition: background 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+.header-cta-btn:hover {
+  background: #003B96;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+@media (max-width: 980px) { .header-cta-btn { display: none; } }
+
+/* ---------- 55. MEGA MENU V3 — anchored dropdown, 2-pane ---------- */
+.site-header .mega-menu {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: auto !important;
+  transform: none !important;
+  width: 720px !important;
+  min-width: 720px !important;
+  max-width: calc(100vw - 32px) !important;
+  background: #FFFFFF !important;
+  border: 1px solid #E0E3E8 !important;
+  border-top: none !important;
+  border-radius: 0 0 12px 12px !important;
+  box-shadow: 0 16px 40px rgba(11, 27, 61, 0.15) !important;
+  padding: 0 !important;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0s linear 0.15s;
+}
+.site-header .nav-item:hover .mega-menu,
+.site-header .nav-item.open .mega-menu {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transition: opacity 0.15s ease;
+}
+
+/* Right-aligned Company menu */
+.site-header .main-nav .nav-item-right .mega-menu {
+  left: auto !important;
+  right: 0 !important;
+}
+
+/* 2-pane container */
+.site-header .mega-menu.mega-2pane .mega-container {
+  display: grid !important;
+  grid-template-columns: 220px 1fr !important;
+  min-height: 360px;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+/* Left rail (categories) */
+.site-header .mega-rail {
+  background: #FAFBFD;
+  border-right: 1px solid #EAECEF;
+  padding: 14px 0;
+  display: flex;
+  flex-direction: column;
+}
+.site-header .mega-rail-head {
+  padding: 6px 20px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6E7686;
+}
+.site-header .mega-cat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 20px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.site-header .mega-cat:hover,
+.site-header .mega-cat.active {
+  background: #ECF2FF;
+  color: #0050C8;
+}
+.site-header .mega-cat .chev {
+  color: #9BA5B5;
+  font-size: 20px;
+  line-height: 1;
+}
+.site-header .mega-cat:hover .chev,
+.site-header .mega-cat.active .chev { color: #0050C8; }
+.site-header .mega-rail-footer {
+  margin-top: auto;
+  padding: 16px 20px;
+  border-top: 1px solid #EAECEF;
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0050C8;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+}
+.site-header .mega-rail-footer:hover { color: #003B96; }
+
+/* Right pane — 2-col grid of items */
+.site-header .mega-menu.mega-2pane .mega-grid,
+.site-header .mega-menu.mega-2pane .mega-grid-1 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4px 8px !important;
+  padding: 18px 18px !important;
+  max-width: none !important;
+  margin: 0 !important;
+  align-content: start;
+}
+.site-header .mega-menu.mega-2pane .mega-link {
+  padding: 12px 14px !important;
+  border-radius: 8px !important;
+}
+.site-header .mega-menu.mega-2pane .mega-link .mega-link-title {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+.site-header .mega-menu.mega-2pane .mega-link .mega-link-desc {
+  font-size: 12.5px !important;
+  line-height: 1.4;
+}
+.site-header .mega-menu.mega-2pane .mega-link.flagship {
+  background: linear-gradient(135deg, #E8F1FE 0%, #F4F7FC 100%) !important;
+}
+.site-header .mega-menu.mega-2pane .mega-link.flagship::after {
+  top: 10px !important;
+  right: 12px !important;
+}
+
+/* Mobile collapse — stack rail above grid */
+@media (max-width: 980px) {
+  .site-header .mega-menu {
+    width: calc(100vw - 32px) !important;
+    min-width: 0 !important;
+  }
+  .site-header .mega-menu.mega-2pane .mega-container {
+    grid-template-columns: 1fr !important;
+  }
+  .site-header .mega-rail {
+    border-right: none;
+    border-bottom: 1px solid #EAECEF;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 8px 14px;
+    scrollbar-width: none;
+  }
+  .site-header .mega-rail::-webkit-scrollbar { display: none; }
+  .site-header .mega-rail-head { display: none; }
+  .site-header .mega-cat {
+    padding: 8px 14px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .site-header .mega-cat .chev { display: none; }
+  .site-header .mega-rail-footer { display: none; }
+  .site-header .mega-menu.mega-2pane .mega-grid,
+  .site-header .mega-menu.mega-2pane .mega-grid-1 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 640px) {
+  .site-header .mega-menu.mega-2pane .mega-grid,
+  .site-header .mega-menu.mega-2pane .mega-grid-1 {
+    grid-template-columns: 1fr !important;
+  }
+}
