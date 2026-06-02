@@ -4343,3 +4343,90 @@ section.platforms-split .platforms-left {
   font-weight: 800;
   font-size: 14px;
 }
+
+/* ========================================================================
+   QA FIXES (2026-06-02)
+   ======================================================================== */
+
+/* ---------- 71. fw-body-cell — missing td styling for hire-page skill rows ---------- */
+.fw-body-cell {
+  padding: 18px 22px;
+  vertical-align: middle;
+}
+.fw-body-cell .fw-name {
+  font-family: var(--font-display);
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.012em;
+  margin-bottom: 4px;
+}
+.fw-body-cell .fw-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .fw-body-cell { padding: 14px 14px; }
+  .fw-body-cell .fw-name { font-size: 15px; }
+  .fw-body-cell .fw-desc { font-size: 13px; }
+}
+
+/* ---------- 72. compare-table-dark — mobile responsive wrapper ---------- */
+section.compare-dark .container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.compare-table-dark { min-width: 640px; }
+@media (max-width: 720px) {
+  .compare-table-dark { font-size: 13px; }
+  .compare-table-dark thead th { padding: 12px 14px; font-size: 13px; }
+  .compare-table-dark tbody td { padding: 12px 14px; font-size: 13px; line-height: 1.45; }
+  .compare-table-dark .row-label { gap: 8px; }
+}
+
+/* ---------- 73. fw-skill-num inside .fw-logo-cell for hire pages ---------- */
+.fw-logo-cell .fw-skill-num {
+  margin: 0 auto;
+}
+
+/* ---------- 74. hire-form-section: better mobile padding + word breaks ---------- */
+@media (max-width: 720px) {
+  .hire-form { padding: 24px 20px; }
+  .hire-form-intro h2 { font-size: 26px; line-height: 1.15; }
+  .hire-form-intro p { font-size: 14.5px; }
+}
+
+/* ---------- 75. Hide hire-developers/index "see all talent" rail link gracefully ---------- */
+.mega-rail-footer:hover { color: var(--brand-primary); }
+
+/* ---------- 76. Mega menu mobile fallback — hide on tablet/mobile widths ---------- */
+@media (max-width: 1080px) {
+  .mega-menu { display: none !important; }
+  .nav-item .nav-link .caret { display: none; }
+}
+
+/* ---------- 77. Prevent any horizontal scroll on root ---------- */
+html, body { overflow-x: hidden; max-width: 100vw; }
+
+/* ---------- 78. Hire-stat number on very small screens ---------- */
+@media (max-width: 420px) {
+  .hire-stat .hire-stat-num { font-size: 24px; }
+  .hire-stat .hire-stat-label { font-size: 12px; }
+}
+
+/* ---------- 79. Improve form focus visibility for keyboard users ---------- */
+.hire-form input:focus-visible,
+.hire-form select:focus-visible,
+.hire-form textarea:focus-visible,
+.hire-form button:focus-visible {
+  outline: 3px solid #6BA4FF;
+  outline-offset: 2px;
+}
+
+/* ---------- 80. Ensure long URLs/words break instead of overflowing ---------- */
+.hire-form input,
+.hire-form select,
+.hire-form textarea,
+.fw-desc, .track-card p, .faq-item p, .gain-row-desc {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

@@ -223,19 +223,19 @@
       </div>
       <form class="hire-form" data-form="hire-mean-stack">
         <div class="form-row">
-          <input name="name" type="text" placeholder="Full name *" required>
-          <input name="email" type="email" placeholder="Work email *" required>
+          <input name="name" type="text" placeholder="Full name *" required aria-label="Full name">
+          <input name="email" type="email" placeholder="Work email *" required aria-label="Work email">
         </div>
-        <input name="company" type="text" placeholder="Company">
+        <input name="company" type="text" placeholder="Company" aria-label="Company">
         <div class="form-row">
-          <select name="team_size">
+          <select name="team_size" aria-label="Team size">
             <option value="">Team size needed</option>
             <option>1 developer</option>
             <option>2&ndash;3 developers</option>
             <option>4&ndash;6 developers</option>
             <option>7+ developers</option>
           </select>
-          <select name="timeline">
+          <select name="timeline" aria-label="Project timeline">
             <option value="">Start timeline</option>
             <option>Immediately</option>
             <option>Within 2 weeks</option>
@@ -243,7 +243,7 @@
             <option>Exploring</option>
           </select>
         </div>
-        <textarea name="message" rows="3" placeholder="Project context (optional)"></textarea>
+        <textarea name="message" rows="3" placeholder="Project context (optional)" aria-label="Project details"></textarea>
         <button type="submit" class="btn btn-primary">Get a Shortlist <span class="arrow">&rarr;</span></button>
         <p class="form-status"></p>
         <p class="form-fineprint">We reply within 1 business day. By submitting you agree to our <a href="../privacy-policy.html">privacy policy</a>.</p>
