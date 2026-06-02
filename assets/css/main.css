@@ -3141,14 +3141,18 @@ body.scrolled .page-tabs { top: 76px !important; }
    (Overrides v2 full-bleed mega menu)
    ======================================================================== */
 
-/* ---------- 54. HEADER LAYOUT — brand left, nav+CTA right ---------- */
+/* ---------- 54. HEADER LAYOUT — brand left, nav next to brand, CTA right ---------- */
 .site-header .nav-wrap {
-  gap: 0 !important;
+  gap: 24px !important;
   align-items: stretch !important;
 }
 .site-header .brand {
-  margin-right: auto !important;
+  margin-right: 0 !important;
   align-self: center;
+  flex-shrink: 0;
+}
+.site-header .main-nav {
+  margin-right: auto;
 }
 
 /* Main nav fills header height so dropdowns anchor properly */
