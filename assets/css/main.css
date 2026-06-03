@@ -5199,3 +5199,47 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   background: #FFFFFF;
   color: var(--brand-navy);
 }
+
+/* ========================================================================
+   SELECTION OVERRIDE — only on dark-background sections (white text)
+   White highlight + brand-navy text so selection stays readable.
+   (Sitewide light-bg ::selection rule from earlier remains unchanged.)
+   ======================================================================== */
+.page-hero ::selection,
+.hero-centered ::selection,
+.approach-section ::selection,
+.gain-section ::selection,
+.compare-dark ::selection,
+section.compare-dark ::selection,
+.engagement-dark ::selection,
+.retainer-dark ::selection,
+.retainer-section ::selection,
+.bg-dark ::selection,
+.site-footer ::selection,
+.cta-banner ::selection,
+.cta-banner-compact ::selection,
+.hire-form-section ::selection,
+.bento-ai ::selection,
+.contact-card ::selection {
+  background: #FFFFFF;
+  color: var(--brand-navy);
+}
+.page-hero ::-moz-selection,
+.hero-centered ::-moz-selection,
+.approach-section ::-moz-selection,
+.gain-section ::-moz-selection,
+.compare-dark ::-moz-selection,
+section.compare-dark ::-moz-selection,
+.engagement-dark ::-moz-selection,
+.retainer-dark ::-moz-selection,
+.retainer-section ::-moz-selection,
+.bg-dark ::-moz-selection,
+.site-footer ::-moz-selection,
+.cta-banner ::-moz-selection,
+.cta-banner-compact ::-moz-selection,
+.hire-form-section ::-moz-selection,
+.bento-ai ::-moz-selection,
+.contact-card ::-moz-selection {
+  background: #FFFFFF;
+  color: var(--brand-navy);
+}
