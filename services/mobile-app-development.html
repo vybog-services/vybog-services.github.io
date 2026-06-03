@@ -371,32 +371,38 @@
   </div>
 </section>
 
-<!-- ============ PLATFORMS & FRAMEWORKS ============ -->
+<!-- ============ PLATFORMS & FRAMEWORKS — 30/70 head + professional table ============ -->
 <section class="bg-soft">
   <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Platforms &amp; frameworks</span>
-      <h2>Four paths to a mobile app. Pick by trade-off, not by trend.</h2>
-      <p>We have built apps on every major platform since the original iPhone SDK. This table is what we actually tell clients in scoping calls.</p>
+    <div class="fw-head fade-up">
+      <div class="fw-head-left">
+        <span class="eyebrow">Platforms &amp; frameworks</span>
+        <h2>Four paths to a mobile app.</h2>
+      </div>
+      <div class="fw-head-right">
+        <p>Pick by trade-off, not by trend. We have shipped on every major mobile platform since the original iPhone SDK &mdash; here is the honest scoping-call comparison we share with clients.</p>
+      </div>
     </div>
-    <table class="compare-table fade-up">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Native iOS (Swift)</th>
-          <th>Native Android (Kotlin)</th>
-          <th>Flutter</th>
-          <th>React Native</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="row-label">Best for</td><td>Apple-first consumer apps, ARKit, watch, CarPlay</td><td>Android-first markets, hardware integrations, Wear OS</td><td>Brand-led design, animations, both platforms with one team</td><td>Teams with React expertise, fast iteration over absolute polish</td></tr>
-        <tr><td class="row-label">Build time</td><td>14 – 20 weeks</td><td>14 – 20 weeks</td><td>10 – 16 weeks (both platforms)</td><td>10 – 14 weeks (both platforms)</td></tr>
-        <tr><td class="row-label">Maintenance cost</td><td>Higher (two codebases)</td><td>Higher (two codebases)</td><td>Lower (one codebase)</td><td>Lower (one codebase, but native modules can drift)</td></tr>
-        <tr><td class="row-label">Animation ceiling</td><td>Excellent</td><td>Excellent</td><td>Excellent</td><td>Good, with caveats</td></tr>
-        <tr><td class="row-label">App size on disk</td><td>Smallest</td><td>Smallest</td><td>Medium</td><td>Medium</td></tr>
-      </tbody>
-    </table>
+    <div class="platforms-table-wrap fade-up">
+      <table class="platforms-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Native iOS <span class="th-sub">(Swift)</span></th>
+            <th>Native Android <span class="th-sub">(Kotlin)</span></th>
+            <th>Flutter</th>
+            <th>React Native</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="pt-label">Best for</td><td>Apple-first apps, ARKit, watch, CarPlay</td><td>Android-first markets, hardware, Wear OS</td><td>Brand-led design with one shared team</td><td>React teams iterating fast on both stores</td></tr>
+          <tr><td class="pt-label">Build time</td><td>14&ndash;20 weeks</td><td>14&ndash;20 weeks</td><td>10&ndash;16 weeks (both)</td><td>10&ndash;14 weeks (both)</td></tr>
+          <tr><td class="pt-label">Maintenance</td><td>Two codebases</td><td>Two codebases</td><td>One codebase</td><td>One codebase, native modules drift</td></tr>
+          <tr><td class="pt-label">Animation ceiling</td><td>Excellent</td><td>Excellent</td><td>Excellent</td><td>Good, with caveats</td></tr>
+          <tr><td class="pt-label">App size on disk</td><td>Smallest</td><td>Smallest</td><td>Medium</td><td>Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -603,34 +609,39 @@
   </div>
 </section>
 
-<!-- ============ APP MODERNIZATION ============ -->
+<!-- ============ APP MODERNIZATION — colored boxes with 50x50 icons ============ -->
 <section class="bg-tint">
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">App modernization &amp; migrations</span>
-      <h2>From Cordova to Flutter. From Objective-C to Swift. Without breaking the store listing.</h2>
-      <p>Most app modernizations stall because nobody plans the user-migration path. We lead with the cutover plan, not the framework choice.</p>
+      <h2>Move forward without breaking the store listing.</h2>
+      <p>Five migration paths we ship most often &mdash; planned around the user cutover first, the framework choice second.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="feature-card">
+    <div class="modern-grid fade-up">
+      <div class="modern-card modern-blue">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
         <h3>Cordova / Ionic &rarr; Flutter</h3>
-        <p>WebView-wrapped apps that have outgrown the hybrid stack. Re-architected screen-by-screen, store listing preserved, user data migrated. Typical timeline: 12&ndash;18 weeks.</p>
+        <p>Hybrid apps that have outgrown the WebView. Re-built screen-by-screen with the store listing preserved.</p>
       </div>
-      <div class="feature-card">
+      <div class="modern-card modern-mint">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
         <h3>Objective-C &rarr; Modern Swift</h3>
-        <p>Decade-old iOS codebases brought to Swift 5+, SwiftUI where it earns its place, async/await everywhere. Bridge headers managed during the transition.</p>
+        <p>Legacy iOS codebases brought to Swift 5+, SwiftUI where it fits, async/await across the surface.</p>
       </div>
-      <div class="feature-card">
-        <h3>React Native &rarr; New Architecture</h3>
-        <p>Bridge-based RN apps migrated to Fabric + TurboModules + Hermes. Performance regressions caught with continuous benchmark CI. No big-bang flag flip.</p>
+      <div class="modern-card modern-lavender">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <h3>React Native &rarr; New Arch</h3>
+        <p>Bridge-based RN apps migrated to Fabric, TurboModules, and Hermes. No big-bang flag flip.</p>
       </div>
-      <div class="feature-card">
+      <div class="modern-card modern-rose">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
         <h3>Java &rarr; Kotlin (Android)</h3>
-        <p>Java-only Android codebases interop&apos;d with Kotlin file-by-file. New features in Kotlin, legacy Java preserved, Compose adoption where the screen redesign warrants it.</p>
+        <p>Java codebases interop'd with Kotlin file-by-file. Compose adoption where redesigns warrant it.</p>
       </div>
-      <div class="feature-card">
+      <div class="modern-card modern-sand">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="9" height="9" rx="1.5"/><rect x="13" y="2" width="9" height="9" rx="1.5"/><rect x="7.5" y="13" width="9" height="9" rx="1.5"/></svg>
         <h3>Hybrid &rarr; Native pair</h3>
-        <p>When the hybrid trade-off no longer holds. We architect the native iOS + Android twin from one shared design system, with a single PM and shared release cadence.</p>
+        <p>When the hybrid trade-off no longer holds. Native iOS + Android twin built from one shared design system.</p>
       </div>
     </div>
   </div>

@@ -4969,3 +4969,106 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   .path-card { padding: 28px; }
   .path-card h3 { font-size: 18px; }
 }
+
+/* ========================================================================
+   MOBILE APP — Platforms & Frameworks comparison table (mild bg, pro look)
+   ======================================================================== */
+.platforms-table-wrap {
+  border: 1px solid #DCE6F5;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #F6F9FE;
+  box-shadow: 0 8px 24px rgba(11,27,61,0.04);
+}
+.platforms-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.platforms-table thead th {
+  background: linear-gradient(180deg, #E8F1FE 0%, #DCE6F5 100%);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 16px 18px;
+  border-bottom: 1px solid #C6D5EC;
+}
+.platforms-table thead th .th-sub {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: none;
+  margin-top: 2px;
+}
+.platforms-table tbody td {
+  padding: 14px 18px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border-top: 1px solid #E5EBF6;
+  vertical-align: middle;
+}
+.platforms-table tbody tr:nth-child(even) td { background: #FBFCFE; }
+.platforms-table tbody tr:nth-child(odd) td  { background: #F6F9FE; }
+.platforms-table tbody tr:hover td { background: #E8F1FE; }
+.platforms-table .pt-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--brand-primary);
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .platforms-table-wrap { overflow-x: auto; }
+  .platforms-table { min-width: 720px; }
+}
+
+/* ========================================================================
+   MOBILE APP — App Modernization grid (5 colored cards + 50x50 icon)
+   ======================================================================== */
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.modern-card {
+  padding: 28px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.modern-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(11,27,61,0.08); }
+.modern-card .modern-icon {
+  width: 50px;
+  height: 50px;
+  stroke-width: 1.6;
+  margin-bottom: 16px;
+  color: inherit;
+}
+.modern-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: 0;
+  margin: 0 0 8px;
+  color: inherit;
+}
+.modern-card p {
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin: 0;
+  color: inherit;
+  opacity: 0.85;
+}
+.modern-card.modern-blue     { background: #E5F0FD; color: #0F3266; }
+.modern-card.modern-mint     { background: #E6F1E8; color: #1C4731; }
+.modern-card.modern-lavender { background: #ECEAF5; color: #3D2A6B; }
+.modern-card.modern-rose     { background: #FFE6EC; color: #7C2245; }
+.modern-card.modern-sand     { background: #FBF3E1; color: #5C4517; }
+@media (max-width: 980px) { .modern-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .modern-grid { grid-template-columns: 1fr; } }
