@@ -5072,3 +5072,6 @@ html, body { overflow-x: hidden; max-width: 100vw; }
 .modern-card.modern-sand     { background: #FBF3E1; color: #5C4517; }
 @media (max-width: 980px) { .modern-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .modern-grid { grid-template-columns: 1fr; } }
+
+/* Sixth color variant for .modern-card */
+.modern-card.modern-teal     { background: #D5EEEE; color: #1A4F5A; }
