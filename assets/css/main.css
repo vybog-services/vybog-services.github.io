@@ -5178,3 +5178,24 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   z-index: 2;
 }
 .footer-social .social-sublabel { display: none; } /* hidden visual label, kept for SR */
+
+/* ========================================================================
+   HOME HERO — scoped ::selection so highlighted text stays readable
+   on the dark gradient background. (Normal/non-selected state unchanged.)
+   ======================================================================== */
+.t7-hero ::selection,
+.t7-hero h1::selection,
+.t7-hero p::selection,
+.t7-hero span::selection,
+.t7-hero .italic-accent::selection {
+  background: #FFFFFF;
+  color: var(--brand-navy);
+}
+.t7-hero ::-moz-selection,
+.t7-hero h1::-moz-selection,
+.t7-hero p::-moz-selection,
+.t7-hero span::-moz-selection,
+.t7-hero .italic-accent::-moz-selection {
+  background: #FFFFFF;
+  color: var(--brand-navy);
+}
