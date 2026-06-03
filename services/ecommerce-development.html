@@ -406,48 +406,50 @@
 <!-- ============ MIGRATIONS DEEP DIVE ============ -->
 <section id="migrations" class="bg-soft">
   <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Platform migrations done quietly</span>
-      <h2>The replatform you don&rsquo;t feel in next quarter&rsquo;s revenue.</h2>
-      <p>Migrations are the highest-stakes work in commerce. Done badly they lose SEO traffic, break checkout for a week, scramble customer records and erase loyalty balances. Done with discipline they ship over a weekend and the only metric that moves is page-load.</p>
-    </div>
-    <div class="fade-up">
-      <details class="faq-item" open>
+    <div class="faq-split fade-up">
+      <div class="faq-head">
+        <span class="eyebrow">Platform migrations done quietly</span>
+        <h2>The replatform you don&rsquo;t feel in next quarter&rsquo;s revenue.</h2>
+        <p>Migrations are the highest-stakes work in commerce. Done badly they lose SEO traffic, break checkout for a week, scramble customer records and erase loyalty balances. Done with discipline they ship over a weekend and the only metric that moves is page-load.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
         <summary>1 &middot; Discovery &amp; audit</summary>
         <div class="faq-answer">
           <p>We crawl the existing storefront, map every URL with traffic, every active checkout funnel, every payment gateway, every customer-facing email template. The output is a written replatform memo that names the rough-edges before contract signature, not after the kick-off call.</p>
         </div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>2 &middot; Data &amp; SKU mapping</summary>
         <div class="faq-answer">
           <p>Every product, variant, tax class, customer record, order history, subscription, gift-card balance and loyalty point gets mapped to the target schema. Edge cases (composite SKUs, configurable bundles, B2B price lists, multi-warehouse stock) are scoped explicitly &mdash; not handed to the import script and hoped for.</p>
         </div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>3 &middot; SEO preservation plan</summary>
         <div class="faq-answer">
           <p>Before any code moves, we write the 301 redirect map (covering category slugs, faceted-search URLs, AMP variants, legacy session-id formats), the canonical strategy, the schema.org rebuild, the sitemap regeneration cadence, and the Search Console handoff. Organic traffic typically recovers within two Googlebot crawl cycles of go-live.</p>
         </div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>4 &middot; Staging, parity testing &amp; UAT</summary>
         <div class="faq-answer">
           <p>The new storefront runs in a production-shaped staging environment with real anonymised data, synthetic checkout transactions, payment-gateway sandboxes and tax calculations cross-checked against the old system. We run a parity dashboard until the two stores agree on every line item.</p>
         </div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>5 &middot; Cutover weekend</summary>
         <div class="faq-answer">
           <p>Maintenance window, final data sync, DNS flip, 301 verification, payment gateway re-binding, customer notification email, ops war-room on Slack. Two senior Vybog Services leads on-call from Friday night through Tuesday morning. Rollback path documented and rehearsed before the window opens, not invented at 3am if something breaks.</p>
         </div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>6 &middot; Post-launch stabilisation</summary>
         <div class="faq-answer">
           <p>30 days of post-cutover on-call included. We watch crawl coverage, conversion rate, checkout completion, refund volume, and payment-gateway error rate against the pre-migration baseline. Anything moving more than a defined threshold gets a written root-cause memo within 48 hours.</p>
         </div>
       </details>
+      </div>
     </div>
   </div>
 </section>
@@ -532,17 +534,20 @@
 <!-- ============ FAQ ============ -->
 <section class="bg-soft">
   <div class="container">
-    <div class="section-head fade-up">
-      <h2>E-commerce engagement questions, answered before the call.</h2>
-    </div>
-    <div class="container-prose fade-up" style="padding:0">
-      <details class="faq-item" open><summary>Can you migrate us from Magento 1 / Magento 2 / Shopify to a different platform?</summary><div class="faq-answer">Yes &mdash; this is the largest part of our 2025 e-commerce book. We&rsquo;ve done Magento 1 &rarr; Shopify Plus, Magento 2 &rarr; commercetools (headless), Shopify Plus &rarr; BigCommerce B2B Edition, and bespoke PHP carts to WooCommerce. Each one starts with a written replatform memo so you know what you&rsquo;re signing up for.</div></details>
-      <details class="faq-item"><summary>How long does a typical replatform take?</summary><div class="faq-answer">Discovery: 2&ndash;3 weeks. Build &amp; data mapping: 8&ndash;14 weeks depending on catalogue complexity and B2B feature scope. Parity testing: 2&ndash;3 weeks. Cutover &amp; stabilisation: a single weekend plus 30 days of on-call. Total: 12&ndash;20 weeks for most merchants.</div></details>
-      <details class="faq-item"><summary>Will we lose SEO traffic during the migration?</summary><div class="faq-answer">If the redirect map and canonical strategy are written before code starts, no &mdash; you&rsquo;ll see a 5&ndash;15% organic dip in the first 14 days as Googlebot re-crawls, then recovery to baseline within four weeks. Our six 2025 replatforms averaged 11 days to recovery.</div></details>
-      <details class="faq-item"><summary>Do you handle PCI compliance and payment-gateway integration?</summary><div class="faq-answer">Yes. We work with Stripe, Adyen, Braintree, Razorpay, PayU, Klarna, Affirm, Afterpay, and the major regional gateways. PCI scope stays as tight as the platform allows &mdash; tokenised, hosted-fields or fully redirected checkout depending on your risk posture and which platform we&rsquo;re on.</div></details>
-      <details class="faq-item"><summary>What does a maintenance retainer cost and cover?</summary><div class="faq-answer">Retainers start at 40 senior hours / month and scale to dedicated pods. Coverage includes platform patching, dependency updates, theme &amp; content tweaks, A/B test implementation, observability, and peak-event readiness. A named senior on every account. Hours roll over inside the quarter, never lost.</div></details>
-      <details class="faq-item"><summary>Can you take over an existing store from a previous agency?</summary><div class="faq-answer">Routinely. We start with a 5-day audit &mdash; code quality, dependency posture, observability state, SEO health, integration plane. The audit produces a written triage memo and a stabilisation plan with hours estimated. Whether or not you continue with us after that is your call.</div></details>
-      <details class="faq-item"><summary>Do you build B2B and wholesale storefronts?</summary><div class="faq-answer">Yes. Per-customer price lists, net-payment terms, multi-buyer accounts, quote-to-cart flows, sales-rep impersonation, customer-specific catalogues, EDI integration where relevant. BigCommerce B2B Edition and Adobe Commerce B2B are our most common picks; Shopify Plus B2B is fine for simpler structures.</div></details>
+    <div class="faq-split fade-up">
+      <div class="faq-head">
+        <h2>E-commerce engagement questions, answered before the call.</h2>
+        <p>Quick answers to what most clients ask. Reach out if you do not see your question.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open><summary>Can you migrate us from Magento 1 / Magento 2 / Shopify to a different platform?</summary><div class="faq-answer">Yes &mdash; this is the largest part of our 2025 e-commerce book. We&rsquo;ve done Magento 1 &rarr; Shopify Plus, Magento 2 &rarr; commercetools (headless), Shopify Plus &rarr; BigCommerce B2B Edition, and bespoke PHP carts to WooCommerce. Each one starts with a written replatform memo so you know what you&rsquo;re signing up for.</div></details>
+        <details class="faq-item"><summary>How long does a typical replatform take?</summary><div class="faq-answer">Discovery: 2&ndash;3 weeks. Build &amp; data mapping: 8&ndash;14 weeks depending on catalogue complexity and B2B feature scope. Parity testing: 2&ndash;3 weeks. Cutover &amp; stabilisation: a single weekend plus 30 days of on-call. Total: 12&ndash;20 weeks for most merchants.</div></details>
+        <details class="faq-item"><summary>Will we lose SEO traffic during the migration?</summary><div class="faq-answer">If the redirect map and canonical strategy are written before code starts, no &mdash; you&rsquo;ll see a 5&ndash;15% organic dip in the first 14 days as Googlebot re-crawls, then recovery to baseline within four weeks. Our six 2025 replatforms averaged 11 days to recovery.</div></details>
+        <details class="faq-item"><summary>Do you handle PCI compliance and payment-gateway integration?</summary><div class="faq-answer">Yes. We work with Stripe, Adyen, Braintree, Razorpay, PayU, Klarna, Affirm, Afterpay, and the major regional gateways. PCI scope stays as tight as the platform allows &mdash; tokenised, hosted-fields or fully redirected checkout depending on your risk posture and which platform we&rsquo;re on.</div></details>
+        <details class="faq-item"><summary>What does a maintenance retainer cost and cover?</summary><div class="faq-answer">Retainers start at 40 senior hours / month and scale to dedicated pods. Coverage includes platform patching, dependency updates, theme &amp; content tweaks, A/B test implementation, observability, and peak-event readiness. A named senior on every account. Hours roll over inside the quarter, never lost.</div></details>
+        <details class="faq-item"><summary>Can you take over an existing store from a previous agency?</summary><div class="faq-answer">Routinely. We start with a 5-day audit &mdash; code quality, dependency posture, observability state, SEO health, integration plane. The audit produces a written triage memo and a stabilisation plan with hours estimated. Whether or not you continue with us after that is your call.</div></details>
+        <details class="faq-item"><summary>Do you build B2B and wholesale storefronts?</summary><div class="faq-answer">Yes. Per-customer price lists, net-payment terms, multi-buyer accounts, quote-to-cart flows, sales-rep impersonation, customer-specific catalogues, EDI integration where relevant. BigCommerce B2B Edition and Adobe Commerce B2B are our most common picks; Shopify Plus B2B is fine for simpler structures.</div></details>
+      </div>
     </div>
   </div>
 </section>

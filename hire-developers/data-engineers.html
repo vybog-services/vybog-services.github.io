@@ -271,26 +271,26 @@
       <h2>Four tracks our Data Engineering bench is deep in.</h2>
       <p>Generalist Data Engineering is easy to find. These are the practices that separate a senior hire from a mid one.</p>
     </div>
-    <div class="grid grid-4 fade-up">
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/></svg></div>
+    <div class="spec-grid fade-up">
+      <div class="spec-card spec-blue">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/></svg></div>
         <h3>Modeling, dbt-first</h3>
-        <p>Staging / intermediate / marts. Sources documented. Tests on every model, freshness checks on every source. Exposures wired to BI.</p>
+        <p>Staging / intermediate / marts.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
+      <div class="spec-card spec-mint">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
         <h3>Orchestration</h3>
-        <p>Airflow when familiarity matters, Dagster when types and observability matter, Prefect when ergonomics win. We will write the decision memo in week one.</p>
+        <p>Airflow when familiarity matters, Dagster when types and observability matter, Prefect when ergonomics win.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      <div class="spec-card spec-lavender">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
         <h3>Data quality + observability</h3>
-        <p>Great Expectations, dbt tests, Soda. Lineage in dbt or Atlan. Alerts that wake people up for the right reasons.</p>
+        <p>Great Expectations, dbt tests, Soda.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg></div>
+      <div class="spec-card spec-rose">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg></div>
         <h3>Warehouse + cost</h3>
-        <p>Snowflake cost audits, BigQuery slot scheduling, Redshift sort/dist keys. We have cut warehouse spend by 40–60% on most engagements.</p>
+        <p>Snowflake cost audits, BigQuery slot scheduling, Redshift sort/dist keys.</p>
       </div>
     </div>
   </div>
@@ -304,31 +304,31 @@
       <h2>What 'senior' actually means in our Data Engineering bench.</h2>
       <p>The five things every senior Data Engineering data engineer on our bench can be measured against. Not aspirational &mdash; these are the hiring rubric.</p>
     </div>
-    <div class="grid grid-5 fade-up" style="grid-template-columns:repeat(5,1fr);gap:16px">
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">01</span>
-        <h4 style="margin-top:12px">Modeling discipline</h4>
-        <p style="font-size:14px">Dimensional vs Data Vault, slowly-changing dimensions, surrogate keys — picked deliberately. dbt as the contract.</p>
+    <div class="senior-flow fade-up">
+      <div class="senior-step">
+        <span class="step-badge">01</span>
+        <h4>Modeling discipline</h4>
+        <p>Dimensional vs Data Vault, slowly-changing dimensions, surrogate keys — picked deliberately.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">02</span>
-        <h4 style="margin-top:12px">Cost awareness</h4>
-        <p style="font-size:14px">Reads the query plan. Knows what each scan costs. Writes incremental models that earn their complexity.</p>
+      <div class="senior-step">
+        <span class="step-badge">02</span>
+        <h4>Cost awareness</h4>
+        <p>Reads the query plan.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">03</span>
-        <h4 style="margin-top:12px">Quality bias</h4>
-        <p style="font-size:14px">Tests on every model, freshness on every source. Alerts that mean something. Will not ship a model that fails its own contract.</p>
+      <div class="senior-step">
+        <span class="step-badge">03</span>
+        <h4>Quality bias</h4>
+        <p>Tests on every model, freshness on every source.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">04</span>
-        <h4 style="margin-top:12px">Lineage thinking</h4>
-        <p style="font-size:14px">Knows what depends on what. Communicates breaking changes upstream and downstream. Treats the catalog as a public API.</p>
+      <div class="senior-step">
+        <span class="step-badge">04</span>
+        <h4>Lineage thinking</h4>
+        <p>Knows what depends on what.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">05</span>
-        <h4 style="margin-top:12px">BI partnership</h4>
-        <p style="font-size:14px">Pairs with analysts on metrics definitions, with PMs on funnel models. Owns the warehouse, partners on the dashboards.</p>
+      <div class="senior-step">
+        <span class="step-badge">05</span>
+        <h4>BI partnership</h4>
+        <p>Pairs with analysts on metrics definitions, with PMs on funnel models.</p>
       </div>
     </div>
   </div>
@@ -342,19 +342,55 @@
       <h2>The stacks Data Engineering fits inside.</h2>
       <p>Data Engineering rarely ships alone. Here is what we usually pair it with on Vybog Services projects.</p>
     </div>
-    <div class="tech-grid fade-up">
-      <div class="tech-pill">dbt</div>
-      <div class="tech-pill">Airflow</div>
-      <div class="tech-pill">Dagster</div>
-      <div class="tech-pill">Prefect</div>
-      <div class="tech-pill">Snowflake</div>
-      <div class="tech-pill">BigQuery</div>
-      <div class="tech-pill">Redshift</div>
-      <div class="tech-pill">Databricks</div>
-      <div class="tech-pill">Fivetran</div>
-      <div class="tech-pill">Airbyte</div>
-      <div class="tech-pill">Great Expectations</div>
-      <div class="tech-pill">Soda</div>
+    <div class="pair-grid fade-up">
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">DB</span></div>
+        <span class="pair-name">dbt</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">AI</span></div>
+        <span class="pair-name">Airflow</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">DA</span></div>
+        <span class="pair-name">Dagster</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">PR</span></div>
+        <span class="pair-name">Prefect</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">SN</span></div>
+        <span class="pair-name">Snowflake</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">BI</span></div>
+        <span class="pair-name">BigQuery</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">RE</span></div>
+        <span class="pair-name">Redshift</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">DA</span></div>
+        <span class="pair-name">Databricks</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">FI</span></div>
+        <span class="pair-name">Fivetran</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">AI</span></div>
+        <span class="pair-name">Airbyte</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">GE</span></div>
+        <span class="pair-name">Great Expectations</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">SO</span></div>
+        <span class="pair-name">Soda</span>
+      </div>
     </div>
   </div>
 </section>
@@ -372,15 +408,17 @@
         <a href="../contact.html" class="btn btn-primary mt-4">Start a discovery sprint <span class="arrow">&rarr;</span></a>
       </div>
       <div>
-        <div class="card" style="padding:32px">
-          <h3>What the sprint covers</h3>
-          <ul class="check-list">
-            <li><strong>Days 1&ndash;3</strong> &middot; Audit pipelines, models, costs; stakeholder interviews</li>
-            <li><strong>Days 4&ndash;6</strong> &middot; First model or DAG hardened, observability added</li>
-            <li><strong>Days 7&ndash;10</strong> &middot; One real domain modeled end-to-end (sources → marts)</li>
-            <li><strong>Days 11&ndash;14</strong> &middot; Cost audit, quality plan, next-quarter recommendations</li>
-            <li><strong>End of sprint</strong> &middot; Fit decision, transparent on both sides</li>
-          </ul>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="sprint-covers-table">
+            <thead><tr><th>Window</th><th>What we ship</th></tr></thead>
+            <tbody>
+        <tr><td class="sc-day">Days 1&ndash;3</td><td>middot; Audit pipelines, models, costs; stakeholder interviews</td></tr>
+        <tr><td class="sc-day">Days 4&ndash;6</td><td>middot; First model or DAG hardened, observability added</td></tr>
+        <tr><td class="sc-day">Days 7&ndash;10</td><td>middot; One real domain modeled end-to-end (sources → marts)</td></tr>
+        <tr><td class="sc-day">Days 11&ndash;14</td><td>middot; Cost audit, quality plan, next-quarter recommendations</td></tr>
+        <tr><td class="sc-day">End of sprint</td><td>middot; Fit decision, transparent on both sides</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -395,10 +433,13 @@
       <h2>What a Vybog Services Data Engineering data engineer ships, by week.</h2>
       <p>Realistic week-by-week output for a senior Data Engineering data engineer on a typical data team.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="feature-card">
-        <span class="tag">Week 1</span>
-        <h3 class="mt-5">Foundation</h3>
+    <div class="sprint-stages fade-up">
+      <div class="sprint-stage stage-blue">
+        <span class="stage-tag">Week 1</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <h3>Foundation</h3>
+        </div>
         <ul class="check-list">
           <li>Pipeline + model audit complete</li>
           <li>First model or DAG hardened</li>
@@ -406,9 +447,12 @@
           <li>Joined data team rituals</li>
         </ul>
       </div>
-      <div class="feature-card">
-        <span class="tag">Week 2</span>
-        <h3 class="mt-5">First domain</h3>
+      <div class="sprint-stage stage-mint">
+        <span class="stage-tag">Week 2</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/></svg>
+          <h3>First domain</h3>
+        </div>
         <ul class="check-list">
           <li>One real domain modeled end-to-end</li>
           <li>Tests + freshness checks added</li>
@@ -416,9 +460,12 @@
           <li>BI exposures wired</li>
         </ul>
       </div>
-      <div class="feature-card">
-        <span class="tag">Week 4</span>
-        <h3 class="mt-5">Sustained throughput</h3>
+      <div class="sprint-stage stage-lavender">
+        <span class="stage-tag">Week 4</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          <h3>Sustained throughput</h3>
+        </div>
         <ul class="check-list">
           <li>Two domains per week steady-state</li>
           <li>Warehouse cost reduced (with evidence)</li>
@@ -432,11 +479,15 @@
 
 <!-- ============ 8. DATA ENGINEERING-SPECIFIC FAQ ============ -->
 <section class="bg-soft">
-  <div class="container-narrow fade-up">
-    <span class="eyebrow">Data Engineering FAQ</span>
-    <h2>Three questions we get on every Data Engineering engagement.</h2>
-    <div class="mt-7">
-      <details class="faq-item" open>
+  <div class="container">
+    <div class="faq-split fade-up">
+      <div class="faq-head">
+        <span class="eyebrow">Data Engineering FAQ</span>
+        <h2>Three questions we get on every Data Engineering engagement.</h2>
+        <p>Quick answers to what most clients ask. Reach out if you do not see your question.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
         <summary>Snowflake, BigQuery, Redshift, Databricks — what do you default to?</summary>
         <div class="faq-answer">Snowflake for most SaaS workloads. BigQuery for Google-shop teams or where serverless cost matters. Redshift on existing AWS-heavy stacks. Databricks when ML / lakehouse demands it. Decision memo in week one.</div>
       </details>
@@ -448,6 +499,7 @@
         <summary>Do your data engineers write ML pipelines too?</summary>
         <div class="faq-answer">Some do, but we will scope a Data Engineer to the warehouse / orchestration / quality layer and bring a Data Scientist for modeling. We will tell you when the lines blur and how to split.</div>
       </details>
+      </div>
     </div>
   </div>
 </section>

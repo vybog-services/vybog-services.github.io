@@ -271,26 +271,26 @@
       <h2>Four tracks our React bench is deep in.</h2>
       <p>Generalist React is easy to find. These are the practices that separate a senior hire from a mid one.</p>
     </div>
-    <div class="grid grid-4 fade-up">
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+    <div class="spec-grid fade-up">
+      <div class="spec-card spec-blue">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
         <h3>Component library architecture</h3>
-        <p>Headless primitives with Radix or Ark, styled with Tailwind or vanilla-extract, documented in Storybook, published as an internal npm package with semver. Compound components, polymorphic refs, slot patterns.</p>
+        <p>Headless primitives with Radix or Ark, styled with Tailwind or vanilla-extract, documented in Storybook, published as.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
+      <div class="spec-card spec-mint">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
         <h3>State management at scale</h3>
-        <p>The right tool for the shape of the data. Redux Toolkit for entity-heavy apps, Zustand for ergonomic local state, TanStack Query for server state, Jotai for atomic primitives, Context only when it earns its keep.</p>
+        <p>The right tool for the shape of the data.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <div class="spec-card spec-lavender">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3>SSR &amp; React Server Components</h3>
-        <p>Server-driven rendering with Next.js App Router and Remix. RSC boundary discipline, streaming responses, Suspense for data fetching, hydration-mismatch debugging. We have shipped RSC apps in production for over a year.</p>
+        <p>Server-driven rendering with Next.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <div class="spec-card spec-rose">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
         <h3>Animation &amp; micro-interactions</h3>
-        <p>Framer Motion for declarative animation, view transitions for cross-page motion, CSS-driven scroll animations where they belong. We will tell you when the animation budget is overrun before your designer does.</p>
+        <p>Framer Motion for declarative animation, view transitions for cross-page motion, CSS-driven scroll animations where they belong.</p>
       </div>
     </div>
   </div>
@@ -304,31 +304,31 @@
       <h2>What 'senior' actually means in our React bench.</h2>
       <p>The five things every senior React developer on our bench can be measured against. Not aspirational — these are the hiring rubric.</p>
     </div>
-    <div class="grid grid-5 fade-up" style="grid-template-columns:repeat(5,1fr);gap:16px">
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">01</span>
-        <h4 style="margin-top:12px">Bundle awareness</h4>
-        <p style="font-size:14px">Reads the bundle analyzer before writing the import. Knows the cost of lodash, moment, and the date-picker before it lands in main.</p>
+    <div class="senior-flow fade-up">
+      <div class="senior-step">
+        <span class="step-badge">01</span>
+        <h4>Bundle awareness</h4>
+        <p>Reads the bundle analyzer before writing the import.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">02</span>
-        <h4 style="margin-top:12px">Accessibility instinct</h4>
-        <p style="font-size:14px">Tab-order, focus-trap, ARIA landmarks, semantic HTML — not a Lighthouse audit at the end. Tests with a screen reader.</p>
+      <div class="senior-step">
+        <span class="step-badge">02</span>
+        <h4>Accessibility instinct</h4>
+        <p>Tab-order, focus-trap, ARIA landmarks, semantic HTML — not a Lighthouse audit at the end.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">03</span>
-        <h4 style="margin-top:12px">Render profiling</h4>
-        <p style="font-size:14px">Opens the Profiler before reaching for useMemo. Understands when re-renders are the symptom and when they are the cause.</p>
+      <div class="senior-step">
+        <span class="step-badge">03</span>
+        <h4>Render profiling</h4>
+        <p>Opens the Profiler before reaching for useMemo.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">04</span>
-        <h4 style="margin-top:12px">Design-system thinking</h4>
-        <p style="font-size:14px">Will not ship a new button if there is one already. Argues for tokens, design API, and the maintainable boundary between page and primitive.</p>
+      <div class="senior-step">
+        <span class="step-badge">04</span>
+        <h4>Design-system thinking</h4>
+        <p>Will not ship a new button if there is one already.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">05</span>
-        <h4 style="margin-top:12px">Type safety, real</h4>
-        <p style="font-size:14px">TypeScript strict, no `any`. Discriminated unions, generic constraints, exhaustive switches. Types are documentation, not decoration.</p>
+      <div class="senior-step">
+        <span class="step-badge">05</span>
+        <h4>Type safety, real</h4>
+        <p>TypeScript strict, no `any`.</p>
       </div>
     </div>
   </div>
@@ -342,19 +342,55 @@
       <h2>The stacks React fits inside.</h2>
       <p>React rarely ships alone. Here is what we usually pair it with on Vybog Services projects.</p>
     </div>
-    <div class="tech-grid fade-up">
-      <div class="tech-pill">Next.js</div>
-      <div class="tech-pill">Remix</div>
-      <div class="tech-pill">Node.js</div>
-      <div class="tech-pill">GraphQL</div>
-      <div class="tech-pill">REST</div>
-      <div class="tech-pill">Storybook</div>
-      <div class="tech-pill">TanStack Query</div>
-      <div class="tech-pill">Tailwind</div>
-      <div class="tech-pill">Radix UI</div>
-      <div class="tech-pill">Framer Motion</div>
-      <div class="tech-pill">Vitest</div>
-      <div class="tech-pill">Playwright</div>
+    <div class="pair-grid fade-up">
+      <div class="pair-tile">
+        <div class="pair-logo"><img src="../assets/images/tech-logos/nextjs.svg" alt="Next.js" loading="lazy"/></div>
+        <span class="pair-name">Next.js</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">RE</span></div>
+        <span class="pair-name">Remix</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><img src="../assets/images/tech-logos/nodejs.svg" alt="Node.js" loading="lazy"/></div>
+        <span class="pair-name">Node.js</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><img src="../assets/images/tech-logos/graphql.svg" alt="GraphQL" loading="lazy"/></div>
+        <span class="pair-name">GraphQL</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">RE</span></div>
+        <span class="pair-name">REST</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">ST</span></div>
+        <span class="pair-name">Storybook</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">TQ</span></div>
+        <span class="pair-name">TanStack Query</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><img src="../assets/images/tech-logos/tailwind.svg" alt="Tailwind" loading="lazy"/></div>
+        <span class="pair-name">Tailwind</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">RU</span></div>
+        <span class="pair-name">Radix UI</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">FM</span></div>
+        <span class="pair-name">Framer Motion</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">VI</span></div>
+        <span class="pair-name">Vitest</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">PL</span></div>
+        <span class="pair-name">Playwright</span>
+      </div>
     </div>
   </div>
 </section>
@@ -372,15 +408,17 @@
         <a href="../contact.html" class="btn btn-primary mt-4">Start a discovery sprint <span class="arrow">→</span></a>
       </div>
       <div>
-        <div class="card" style="padding:32px">
-          <h3>What the sprint covers</h3>
-          <ul class="check-list">
-            <li><strong>Days 1–3</strong> · Codebase read, architecture diagram, written observations</li>
-            <li><strong>Days 4–6</strong> · Ship one small ticket, prove the build and review flow</li>
-            <li><strong>Days 7–10</strong> · Ship one real feature card end-to-end</li>
-            <li><strong>Days 11–14</strong> · Write up technical debt notes, recommend next quarter</li>
-            <li><strong>End of sprint</strong> · Fit decision, transparent on both sides</li>
-          </ul>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="sprint-covers-table">
+            <thead><tr><th>Window</th><th>What we ship</th></tr></thead>
+            <tbody>
+        <tr><td class="sc-day">Days 1–3</td><td>Codebase read, architecture diagram, written observations</td></tr>
+        <tr><td class="sc-day">Days 4–6</td><td>Ship one small ticket, prove the build and review flow</td></tr>
+        <tr><td class="sc-day">Days 7–10</td><td>Ship one real feature card end-to-end</td></tr>
+        <tr><td class="sc-day">Days 11–14</td><td>Write up technical debt notes, recommend next quarter</td></tr>
+        <tr><td class="sc-day">End of sprint</td><td>Fit decision, transparent on both sides</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -395,10 +433,13 @@
       <h2>What a Vybog Services React developer ships, by week.</h2>
       <p>Realistic week-by-week output for a senior React developer on a typical SaaS product team.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="feature-card">
-        <span class="tag">Week 1</span>
-        <h3 class="mt-5">Foundation</h3>
+    <div class="sprint-stages fade-up">
+      <div class="sprint-stage stage-blue">
+        <span class="stage-tag">Week 1</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <h3>Foundation</h3>
+        </div>
         <ul class="check-list">
           <li>Local environment running, build green</li>
           <li>First small ticket merged</li>
@@ -406,9 +447,12 @@
           <li>Joined standups, demo, retro</li>
         </ul>
       </div>
-      <div class="feature-card">
-        <span class="tag">Week 2</span>
-        <h3 class="mt-5">First feature</h3>
+      <div class="sprint-stage stage-mint">
+        <span class="stage-tag">Week 2</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/></svg>
+          <h3>First feature</h3>
+        </div>
         <ul class="check-list">
           <li>One real feature card shipped end-to-end</li>
           <li>Tests added, Storybook stories written</li>
@@ -416,9 +460,12 @@
           <li>Code review reciprocity established</li>
         </ul>
       </div>
-      <div class="feature-card">
-        <span class="tag">Week 4</span>
-        <h3 class="mt-5">Sustained throughput</h3>
+      <div class="sprint-stage stage-lavender">
+        <span class="stage-tag">Week 4</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          <h3>Sustained throughput</h3>
+        </div>
         <ul class="check-list">
           <li>Two to three feature cards per week steady-state</li>
           <li>Mentoring junior experts on the team</li>
@@ -432,11 +479,15 @@
 
 <!-- ============ 8. REACT-SPECIFIC FAQ ============ -->
 <section class="bg-soft">
-  <div class="container-narrow fade-up">
-    <span class="eyebrow">React FAQ</span>
-    <h2>Three questions we get on every React engagement.</h2>
-    <div class="mt-7">
-      <details class="faq-item" open>
+  <div class="container">
+    <div class="faq-split fade-up">
+      <div class="faq-head">
+        <span class="eyebrow">React FAQ</span>
+        <h2>Three questions we get on every React engagement.</h2>
+        <p>Quick answers to what most clients ask. Reach out if you do not see your question.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
         <summary>App Router or Pages Router — do your experts have a preference?</summary>
         <div class="faq-answer">For new projects we default to the App Router, with React Server Components for data-heavy routes. For existing Pages Router applications we will not push a migration unless there is a clear payoff — the Pages Router still ships, still works, and a forced migration is rarely the highest-value work on your roadmap. We will give you a written recommendation either way.</div>
       </details>
@@ -448,6 +499,7 @@
         <summary>Do you do React Native too, or just React for web?</summary>
         <div class="faq-answer">Both, but with a different bench. Our React Native experts sit on the mobile team and have a different rate card, since they ship to App Store and Play Store and need a slightly different muscle group. If your project needs web and mobile, we will field a small pod combining both — and we will tell you honestly when web-React and React-Native should be one codebase versus two.</div>
       </details>
+      </div>
     </div>
   </div>
 </section>

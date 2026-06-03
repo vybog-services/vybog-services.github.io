@@ -4649,3 +4649,262 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   .lg-stats { grid-template-columns: 1fr; gap: 16px; }
   .lg-stat { padding: 18px; }
 }
+
+/* ========================================================================
+   HIRE PAGES — Specializations (colored 4-box grid, 50% smaller icon)
+   ======================================================================== */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.spec-card {
+  padding: 28px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.spec-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(11,27,61,0.08); }
+.spec-card .spec-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 16px;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-bottom: 18px;
+  background: rgba(255,255,255,0.55);
+  color: inherit;
+}
+.spec-card .spec-icon svg { width: 40px; height: 40px; stroke-width: 1.7; }
+.spec-card h3 {
+  font-size: 18px; font-weight: 700; line-height: 1.22;
+  letter-spacing: -0.015em; margin: 0 0 10px; color: inherit;
+}
+.spec-card p {
+  font-size: 14px; line-height: 1.55; margin: 0; color: inherit; opacity: 0.82;
+}
+.spec-card.spec-blue     { background: #E5F0FD; color: #0F3266; }
+.spec-card.spec-mint     { background: #E6F1E8; color: #1C4731; }
+.spec-card.spec-lavender { background: #ECEAF5; color: #3D2A6B; }
+.spec-card.spec-rose     { background: #FFE6EC; color: #7C2245; }
+@media (max-width: 980px) { .spec-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .spec-grid { grid-template-columns: 1fr; } }
+
+/* ========================================================================
+   HIRE PAGES — Senior Bar (workflow progress card style, 5-step)
+   ======================================================================== */
+.senior-flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  position: relative;
+}
+.senior-flow::before {
+  content: '';
+  position: absolute;
+  top: 28px; left: 14%; right: 14%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, #C7D5EA 0 8px, transparent 8px 14px);
+  z-index: 0;
+}
+.senior-step {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 20px 16px;
+  z-index: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.senior-step:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(11,27,61,0.08); }
+.senior-step .step-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  box-shadow: 0 0 0 4px #fff, 0 4px 12px rgba(0,80,200,0.18);
+}
+.senior-step h4 {
+  font-size: 15px; font-weight: 700; line-height: 1.22;
+  margin: 0 0 6px;
+  letter-spacing: -0.012em;
+}
+.senior-step p {
+  font-size: 13px; line-height: 1.5; margin: 0; color: var(--text-muted);
+}
+@media (max-width: 980px) {
+  .senior-flow { grid-template-columns: repeat(2, 1fr); }
+  .senior-flow::before { display: none; }
+}
+@media (max-width: 560px) { .senior-flow { grid-template-columns: 1fr; } }
+
+/* ========================================================================
+   HIRE PAGES — Pair-with logo grid (75x75 logos)
+   ======================================================================== */
+.pair-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 18px;
+}
+.pair-tile {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 18px 12px;
+  display: flex; flex-direction: column; align-items: center;
+  gap: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.pair-tile:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(11,27,61,0.08); }
+.pair-logo {
+  width: 75px; height: 75px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.pair-logo img { width: 75px; height: 75px; object-fit: contain; display: block; }
+.pair-logo .pair-mark-text {
+  width: 75px; height: 75px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #E8F1FE 0%, #DCE9F8 100%);
+  color: var(--brand-primary);
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 800; letter-spacing: -0.02em;
+}
+.pair-tile .pair-name {
+  font-family: var(--font-display);
+  font-size: 13.5px; font-weight: 600;
+  color: var(--text-primary);
+  text-align: center; letter-spacing: -0.005em;
+}
+
+/* ========================================================================
+   HIRE PAGES — Sprint Covers as table (mild BG)
+   ======================================================================== */
+.sprint-covers-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #F6F9FE;
+  border: 1px solid #DCE6F5;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.sprint-covers-table thead th {
+  background: #E8F1FE;
+  color: var(--text-primary);
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 14px 18px;
+}
+.sprint-covers-table tbody td {
+  padding: 14px 18px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border-top: 1px solid #DCE6F5;
+  vertical-align: middle;
+}
+.sprint-covers-table tbody td.sc-day {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--brand-primary);
+  white-space: nowrap;
+  width: 150px;
+}
+@media (max-width: 560px) {
+  .sprint-covers-table thead { display: none; }
+  .sprint-covers-table tbody tr { display: block; padding: 12px 14px; border-top: 1px solid #DCE6F5; }
+  .sprint-covers-table tbody td { display: block; padding: 4px 0; border: none; }
+  .sprint-covers-table tbody td.sc-day { color: var(--brand-primary); width: auto; }
+}
+
+/* ========================================================================
+   HIRE PAGES — Sprint Output (stage cards with icons, no bg on icon)
+   ======================================================================== */
+.sprint-stages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.sprint-stage {
+  padding: 28px 26px;
+  border-radius: 16px;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.sprint-stage:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(11,27,61,0.08); }
+.sprint-stage .stage-tag {
+  display: inline-block;
+  font-size: 11.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+.sprint-stage .stage-title {
+  display: flex; align-items: center; gap: 14px;
+  margin: 0 0 14px;
+}
+.sprint-stage .stage-title svg {
+  width: 50px; height: 50px;
+  stroke-width: 1.6;
+  flex-shrink: 0;
+  background: transparent;
+  color: inherit;
+}
+.sprint-stage .stage-title h3 {
+  font-size: 22px; font-weight: 700; line-height: 1.15;
+  letter-spacing: -0.018em; margin: 0; color: inherit;
+}
+.sprint-stage ul.check-list { margin: 0; color: inherit; }
+.sprint-stage ul.check-list li {
+  color: inherit; opacity: 0.82;
+  font-size: 14px; line-height: 1.5;
+}
+.sprint-stage.stage-blue     { background: #E5F0FD; color: #0F3266; }
+.sprint-stage.stage-mint     { background: #E6F1E8; color: #1C4731; }
+.sprint-stage.stage-lavender { background: #ECEAF5; color: #3D2A6B; }
+@media (max-width: 900px) {
+  .sprint-stages { grid-template-columns: 1fr; }
+}
+
+/* ========================================================================
+   SITEWIDE FAQ — 30/70 two-column layout
+   ======================================================================== */
+.faq-split {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: clamp(28px, 4vw, 64px);
+  align-items: start;
+}
+.faq-split .faq-head { position: sticky; top: 96px; }
+.faq-split .faq-head .eyebrow { display: inline-block; margin-bottom: 10px; }
+.faq-split .faq-head h2 {
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.15;
+  margin: 0 0 12px;
+  text-wrap: balance;
+}
+.faq-split .faq-head p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+.faq-split .faq-list { display: flex; flex-direction: column; gap: 0; }
+@media (max-width: 900px) {
+  .faq-split { grid-template-columns: 1fr; gap: 24px; }
+  .faq-split .faq-head { position: static; }
+}

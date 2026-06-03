@@ -271,26 +271,26 @@
       <h2>Four tracks our Ruby on Rails bench is deep in.</h2>
       <p>Generalist Ruby on Rails is easy to find. These are the practices that separate a senior hire from a mid one.</p>
     </div>
-    <div class="grid grid-4 fade-up">
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+    <div class="spec-grid fade-up">
+      <div class="spec-card spec-blue">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
         <h3>Hotwire-first frontends</h3>
-        <p>Turbo Drive, Turbo Frames, Stimulus controllers. View Components for reusable UI. Server-rendered HTML where it earns the simplicity. We will tell you when an SPA actually pays off.</p>
+        <p>Turbo Drive, Turbo Frames, Stimulus controllers.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
+      <div class="spec-card spec-mint">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg></div>
         <h3>Background jobs</h3>
-        <p>Sidekiq with idempotency keys, retry windows, dead-letter visibility. Sidekiq Pro features when ops budget allows. GoodJob when SQL-only queues fit.</p>
+        <p>Sidekiq with idempotency keys, retry windows, dead-letter visibility.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <div class="spec-card spec-lavender">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3>Postgres + ActiveRecord</h3>
-        <p>Strong migrations, scoped queries, includes/preload audited. Postgres-first features (jsonb, full text, generated columns) used where they fit. No N+1 in production.</p>
+        <p>Strong migrations, scoped queries, includes/preload audited.</p>
       </div>
-      <div class="feature-card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <div class="spec-card spec-rose">
+        <div class="spec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
         <h3>Observability + perf</h3>
-        <p>OpenTelemetry traces, Skylight or Honeybadger Insights, structured logs. rack-mini-profiler in dev, flamegraphs read on demand. p99 owned.</p>
+        <p>OpenTelemetry traces, Skylight or Honeybadger Insights, structured logs.</p>
       </div>
     </div>
   </div>
@@ -304,31 +304,31 @@
       <h2>What 'senior' actually means in our Ruby on Rails bench.</h2>
       <p>The five things every senior Ruby on Rails developer on our bench can be measured against. Not aspirational &mdash; these are the hiring rubric.</p>
     </div>
-    <div class="grid grid-5 fade-up" style="grid-template-columns:repeat(5,1fr);gap:16px">
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">01</span>
-        <h4 style="margin-top:12px">System awareness</h4>
-        <p style="font-size:14px">Reads the architecture before writing the import. Knows what each dependency costs in build time and runtime.</p>
+    <div class="senior-flow fade-up">
+      <div class="senior-step">
+        <span class="step-badge">01</span>
+        <h4>System awareness</h4>
+        <p>Reads the architecture before writing the import.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">02</span>
-        <h4 style="margin-top:12px">Accessibility instinct</h4>
-        <p style="font-size:14px">Semantic markup, keyboard-first, WCAG checks part of definition-of-done — not a Lighthouse audit at the end.</p>
+      <div class="senior-step">
+        <span class="step-badge">02</span>
+        <h4>Accessibility instinct</h4>
+        <p>Semantic markup, keyboard-first, WCAG checks part of definition-of-done — not a Lighthouse audit at.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">03</span>
-        <h4 style="margin-top:12px">Profiling discipline</h4>
-        <p style="font-size:14px">Opens the profiler before reaching for an optimization. Understands when symptoms vs root causes are conflated.</p>
+      <div class="senior-step">
+        <span class="step-badge">03</span>
+        <h4>Profiling discipline</h4>
+        <p>Opens the profiler before reaching for an optimization.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">04</span>
-        <h4 style="margin-top:12px">API design thinking</h4>
-        <p style="font-size:14px">Will not ship a new contract if one already exists. Argues for consistent shapes, error envelopes, and backward compat.</p>
+      <div class="senior-step">
+        <span class="step-badge">04</span>
+        <h4>API design thinking</h4>
+        <p>Will not ship a new contract if one already exists.</p>
       </div>
-      <div class="feature-card" style="padding:24px">
-        <span class="kpi-num" style="color:var(--brand-primary);font-family:var(--font-display);font-size:32px;font-weight:600">05</span>
-        <h4 style="margin-top:12px">Type safety, real</h4>
-        <p style="font-size:14px">TypeScript strict, no `any`. Discriminated unions, generic constraints, exhaustive switches. Types are documentation, not decoration.</p>
+      <div class="senior-step">
+        <span class="step-badge">05</span>
+        <h4>Type safety, real</h4>
+        <p>TypeScript strict, no `any`.</p>
       </div>
     </div>
   </div>
@@ -342,19 +342,55 @@
       <h2>The stacks Ruby on Rails fits inside.</h2>
       <p>Ruby on Rails rarely ships alone. Here is what we usually pair it with on Vybog Services projects.</p>
     </div>
-    <div class="tech-grid fade-up">
-      <div class="tech-pill">Hotwire</div>
-      <div class="tech-pill">Turbo</div>
-      <div class="tech-pill">Stimulus</div>
-      <div class="tech-pill">View Components</div>
-      <div class="tech-pill">Sidekiq</div>
-      <div class="tech-pill">RSpec</div>
-      <div class="tech-pill">Capybara</div>
-      <div class="tech-pill">Postgres</div>
-      <div class="tech-pill">Redis</div>
-      <div class="tech-pill">Stripe</div>
-      <div class="tech-pill">Devise</div>
-      <div class="tech-pill">Pundit</div>
+    <div class="pair-grid fade-up">
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">HO</span></div>
+        <span class="pair-name">Hotwire</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">TU</span></div>
+        <span class="pair-name">Turbo</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">ST</span></div>
+        <span class="pair-name">Stimulus</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">VC</span></div>
+        <span class="pair-name">View Components</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">SI</span></div>
+        <span class="pair-name">Sidekiq</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">RS</span></div>
+        <span class="pair-name">RSpec</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">CA</span></div>
+        <span class="pair-name">Capybara</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><img src="../assets/images/tech-logos/postgresql.svg" alt="Postgres" loading="lazy"/></div>
+        <span class="pair-name">Postgres</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><img src="../assets/images/tech-logos/redis.svg" alt="Redis" loading="lazy"/></div>
+        <span class="pair-name">Redis</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><img src="../assets/images/tech-logos/stripe.svg" alt="Stripe" loading="lazy"/></div>
+        <span class="pair-name">Stripe</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">DE</span></div>
+        <span class="pair-name">Devise</span>
+      </div>
+      <div class="pair-tile">
+        <div class="pair-logo"><span class="pair-mark-text">PU</span></div>
+        <span class="pair-name">Pundit</span>
+      </div>
     </div>
   </div>
 </section>
@@ -372,15 +408,17 @@
         <a href="../contact.html" class="btn btn-primary mt-4">Start a discovery sprint <span class="arrow">&rarr;</span></a>
       </div>
       <div>
-        <div class="card" style="padding:32px">
-          <h3>What the sprint covers</h3>
-          <ul class="check-list">
-            <li><strong>Days 1&ndash;3</strong> &middot; Codebase read, architecture diagram, written observations</li>
-            <li><strong>Days 4&ndash;6</strong> &middot; Ship one small ticket, prove the build and review flow</li>
-            <li><strong>Days 7&ndash;10</strong> &middot; Ship one real feature card end-to-end</li>
-            <li><strong>Days 11&ndash;14</strong> &middot; Write up technical debt notes, recommend next quarter</li>
-            <li><strong>End of sprint</strong> &middot; Fit decision, transparent on both sides</li>
-          </ul>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="sprint-covers-table">
+            <thead><tr><th>Window</th><th>What we ship</th></tr></thead>
+            <tbody>
+        <tr><td class="sc-day">Days 1&ndash;3</td><td>middot; Codebase read, architecture diagram, written observations</td></tr>
+        <tr><td class="sc-day">Days 4&ndash;6</td><td>middot; Ship one small ticket, prove the build and review flow</td></tr>
+        <tr><td class="sc-day">Days 7&ndash;10</td><td>middot; Ship one real feature card end-to-end</td></tr>
+        <tr><td class="sc-day">Days 11&ndash;14</td><td>middot; Write up technical debt notes, recommend next quarter</td></tr>
+        <tr><td class="sc-day">End of sprint</td><td>middot; Fit decision, transparent on both sides</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -395,10 +433,13 @@
       <h2>What a Vybog Services Ruby on Rails developer ships, by week.</h2>
       <p>Realistic week-by-week output for a senior Ruby on Rails developer on a typical SaaS product team.</p>
     </div>
-    <div class="grid grid-3 fade-up">
-      <div class="feature-card">
-        <span class="tag">Week 1</span>
-        <h3 class="mt-5">Foundation</h3>
+    <div class="sprint-stages fade-up">
+      <div class="sprint-stage stage-blue">
+        <span class="stage-tag">Week 1</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <h3>Foundation</h3>
+        </div>
         <ul class="check-list">
           <li>App running locally, RSpec green</li>
           <li>First small feature card merged</li>
@@ -406,9 +447,12 @@
           <li>Joined standups, demo, retro</li>
         </ul>
       </div>
-      <div class="feature-card">
-        <span class="tag">Week 2</span>
-        <h3 class="mt-5">First feature</h3>
+      <div class="sprint-stage stage-mint">
+        <span class="stage-tag">Week 2</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/></svg>
+          <h3>First feature</h3>
+        </div>
         <ul class="check-list">
           <li>One real feature shipped end-to-end</li>
           <li>N+1 sweep on the touched controller</li>
@@ -416,9 +460,12 @@
           <li>Code review reciprocity established</li>
         </ul>
       </div>
-      <div class="feature-card">
-        <span class="tag">Week 4</span>
-        <h3 class="mt-5">Sustained throughput</h3>
+      <div class="sprint-stage stage-lavender">
+        <span class="stage-tag">Week 4</span>
+        <div class="stage-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          <h3>Sustained throughput</h3>
+        </div>
         <ul class="check-list">
           <li>Two to three feature cards per week steady-state</li>
           <li>One Sidekiq job hardened (retry, idempotency)</li>
@@ -432,11 +479,15 @@
 
 <!-- ============ 8. RUBY ON RAILS-SPECIFIC FAQ ============ -->
 <section class="bg-soft">
-  <div class="container-narrow fade-up">
-    <span class="eyebrow">Ruby on Rails FAQ</span>
-    <h2>Three questions we get on every Ruby on Rails engagement.</h2>
-    <div class="mt-7">
-      <details class="faq-item" open>
+  <div class="container">
+    <div class="faq-split fade-up">
+      <div class="faq-head">
+        <span class="eyebrow">Ruby on Rails FAQ</span>
+        <h2>Three questions we get on every Ruby on Rails engagement.</h2>
+        <p>Quick answers to what most clients ask. Reach out if you do not see your question.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
         <summary>Hotwire or a JS SPA in front of Rails?</summary>
         <div class="faq-answer">Hotwire by default for admin, dashboards, and SaaS internals — it ships in a day. A separate SPA (React/Next) when the frontend is a distinct product or the design demands client-heavy interaction. We will write the decision memo in week one.</div>
       </details>
@@ -448,6 +499,7 @@
         <summary>Will your experts work on Rails 5 / 6 codebases?</summary>
         <div class="faq-answer">Yes. About a third of our Rails work is "modernize without rewrite." We will not push to Rails 7 in a single release, but we will plan the path and start raising the floor.</div>
       </details>
+      </div>
     </div>
   </div>
 </section>

@@ -1243,39 +1243,42 @@
 <!-- ============ 17. AI-SPECIFIC FAQ ============ -->
 <section class="bg-tint">
   <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">FAQ</span>
-      <h2>Questions our clients ask in week one.</h2>
-    </div>
-    <div class="container-narrow fade-up">
-      <details class="faq-item">
+    <div class="faq-split fade-up">
+      <div class="faq-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions our clients ask in week one.</h2>
+        <p>Quick answers to what most clients ask. Reach out if you do not see your question.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
         <summary>What kind of ROI timeline should we expect on an AI agent?</summary>
         <div class="faq-answer">Most of our deployments pay back the engagement cost within 4–9 months. The fastest ROI comes from agents that automate high-volume, low-variance tasks — invoice processing, ticket triage, lead enrichment. Voice agents and complex multi-agent systems typically hit payback at 6–12 months.</div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>How do you handle data security when our prompts pass through third-party models?</summary>
         <div class="faq-answer">Three layers. We use enterprise endpoints from OpenAI, Anthropic, and the major clouds, which contractually prohibit training on your data. We strip PII before payloads leave your VPC. And for the most sensitive workloads, we offer on-prem deployments with open-weights models on your own GPUs — zero outbound traffic.</div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>What about model lock-in? What if OpenAI doubles its prices?</summary>
         <div class="faq-answer">We design every agent against a model abstraction layer — typically LiteLLM or a custom router. Swapping from GPT-4o to Claude Sonnet, or to a self-hosted Llama, is a configuration change plus an eval re-run, not a re-build. Most of our production agents already run on two or three models in parallel.</div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>Can you really deploy on-premise, or is that a marketing line?</summary>
         <div class="faq-answer">We have shipped fully on-premise agents for two regulated clients — one in defence, one in banking. Open-weights models (Llama 3, Mistral) served via vLLM on customer GPUs, with self-hosted vector stores and observability. It is more experting effort than SaaS, but it is genuinely supported.</div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>How rigorous is your evaluation methodology?</summary>
         <div class="faq-answer">Every agent gets a golden set — usually 100 to 1,000 hand-labelled examples — that we run on every prompt change. We measure retrieval precision, answer faithfulness, citation accuracy, and task-specific metrics. Results are published weekly to your team. We do not consider an agent "ready" until it passes target thresholds on the golden set, on a synthetic adversarial set, and on a sample of real production traffic in shadow mode.</div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>How many systems can you actually integrate with?</summary>
         <div class="faq-answer">Our connector library covers 2,000+ targets through a mix of direct API integrations, MCP servers, and middleware (Zapier, Make, n8n, Workato). Anything with a REST or GraphQL surface we can wire up in days. Legacy on-prem systems with SOAP or flat-file interfaces take a bit longer but are routine.</div>
       </details>
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>What happens when the model drifts or degrades after launch?</summary>
         <div class="faq-answer">Drift monitoring is built in. We track input distributions, output distributions, and quality scores against the baseline established at launch. When statistical alarms fire — usually before users notice — the on-call Vybog Services expert investigates. Most drift is upstream (new vendor formats, new product SKUs); some is the model itself (provider-side updates). Either way, we have the trace tree and the eval suite to reproduce and fix.</div>
       </details>
+      </div>
     </div>
   </div>
 </section>
