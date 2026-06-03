@@ -469,70 +469,86 @@
   </div>
 </section>
 
-<!-- ============ BUILD TYPES ============ -->
+<!-- ============ BUILD TYPES — 4 colored boxes with 50x50 icons ============ -->
 <section class="bg-tint">
   <div class="container">
     <div class="section-head fade-up">
       <span class="eyebrow">Build types we ship</span>
-      <h2>Four shapes that cover ninety percent of what we build.</h2>
+      <h2>Four shapes that cover most of what we build.</h2>
+      <p>Pick the closest match &mdash; we shape the engagement around the type, not the other way around.</p>
     </div>
-    <div class="grid grid-2 fade-up">
-      <div class="feature-card">
-        <span class="tag">Most common</span>
-        <h3 class="mt-5">Custom SaaS platforms</h3>
-        <p>Multi-tenant products with billing, RBAC, audit trails, integrations, and a customer-facing dashboard. Usually shipped on Postgres + Node or Django + React. Typical timeline: 14–22 weeks to first paying tenant.</p>
-        <ul class="check-list mt-4">
-          <li>Stripe or Chargebee billing wired to entitlements</li>
-          <li>SSO via SAML or OIDC for enterprise customers</li>
-          <li>Per-tenant data isolation and audit logging</li>
-        </ul>
+    <div class="modern-grid fade-up">
+      <div class="modern-card modern-blue">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        <h3>Custom SaaS platforms</h3>
+        <p>Multi-tenant products with billing, RBAC, audit, integrations, and a customer dashboard. 14&ndash;22 weeks to first paying tenant.</p>
       </div>
-      <div class="feature-card">
-        <h3 class="mt-5">Internal enterprise apps</h3>
-        <p>Operations dashboards, billing platforms, scheduling systems, claims processors — the unglamorous software that runs the business. Built to be loved by the operators who use it for forty hours a week.</p>
-        <ul class="check-list mt-4">
-          <li>Active Directory or Okta integration</li>
-          <li>Bulk operations, CSV import/export, audit-grade history</li>
-          <li>Designed for keyboard-driven workflows, not just clicks</li>
-        </ul>
+      <div class="modern-card modern-mint">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        <h3>Internal enterprise apps</h3>
+        <p>Operations dashboards, billing, scheduling, claims. Built for the people who use them forty hours a week.</p>
       </div>
-      <div class="feature-card">
-        <h3 class="mt-5">API &amp; backend systems</h3>
-        <p>The headless engines that power mobile apps, marketplaces, and partner integrations. REST or GraphQL, event-driven where it earns its complexity, never microservices for fashion.</p>
-        <ul class="check-list mt-4">
-          <li>OpenAPI-first or schema-first design</li>
-          <li>Idempotency keys, retry semantics, dead-letter queues</li>
-          <li>Versioning strategy that protects existing consumers</li>
-        </ul>
+      <div class="modern-card modern-lavender">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <h3>API &amp; backend systems</h3>
+        <p>Headless engines for mobile, marketplaces, and partner integrations. REST or GraphQL, never microservices for fashion.</p>
       </div>
-      <div class="feature-card">
-        <h3 class="mt-5">Legacy modernization</h3>
-        <p>PHP 5 → PHP 8, jQuery → React, monolith → modular, on-prem → cloud. Done as a strangler-fig migration over months, not a big-bang rewrite that breaks production for a quarter.</p>
-        <ul class="check-list mt-4">
-          <li>Branch-by-abstraction so both versions ship side by side</li>
-          <li>Behavior parity tests written before the refactor lands</li>
-          <li>Cut-over plan with a tested rollback path</li>
-        </ul>
+      <div class="modern-card modern-rose">
+        <svg class="modern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+        <h3>Legacy modernization</h3>
+        <p>Strangler-fig migrations over months, not big-bang rewrites. Parity tests first, cut-over plan with rollback path.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ ARCHITECTURE PRINCIPLES (full-width) ============ -->
+<!-- ============ ARCHITECTURE PRINCIPLES — table with icons ============ -->
 <section>
   <div class="container">
-    <div class="fade-up">
+    <div class="section-head fade-up">
       <span class="eyebrow">Architecture principles</span>
       <h2>The opinions we will defend in a kickoff meeting.</h2>
-      <p class="lead">Most architecture debates do not have one right answer. These five, in our experience, do. We have changed our minds on plenty of things in twenty-two years &mdash; these are the ones that have held.</p>
-      <ul class="check-list mt-5" style="columns:2;column-gap:48px">
-        <li><strong>API-first, always.</strong> Even if the only consumer today is your own web app, the API contract is the document the rest of the system is built around.</li>
-        <li><strong>Event-driven where it earns its complexity.</strong> Webhooks, queues, and outbox patterns where they remove coupling &mdash; never because a blog post said so.</li>
-        <li><strong>No premature microservices.</strong> A modular monolith handles ninety percent of what people call microservice problems. You earn the right to split, you do not start there.</li>
-        <li><strong>Observability is non-negotiable.</strong> If you cannot trace a request from edge to database in production, you cannot debug it at 2 AM. It is not a feature &mdash; it is a baseline.</li>
-        <li><strong>Boring databases beat clever ones.</strong> Postgres until you can name three queries it cannot handle. We have spent twenty years finding very few of them.</li>
-      </ul>
+      <p>Five positions we have held across two decades of senior delivery work.</p>
     </div>
+    <table class="principles-table fade-up">
+      <tbody>
+        <tr>
+          <td class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </td>
+          <td class="pp-name">API-first, always</td>
+          <td class="pp-desc">Even if today&rsquo;s only consumer is your own web app, the API contract is the document the rest of the system is built around.</td>
+        </tr>
+        <tr>
+          <td class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </td>
+          <td class="pp-name">Event-driven, when it earns it</td>
+          <td class="pp-desc">Webhooks, queues, and outbox patterns where they remove coupling &mdash; never because a blog post said so.</td>
+        </tr>
+        <tr>
+          <td class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </td>
+          <td class="pp-name">No premature microservices</td>
+          <td class="pp-desc">A modular monolith handles most problems people call microservice problems. You earn the right to split.</td>
+        </tr>
+        <tr>
+          <td class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          </td>
+          <td class="pp-name">Observability, non-negotiable</td>
+          <td class="pp-desc">If you cannot trace a request from edge to database in production, you cannot debug it at 2 AM. It is a baseline, not a feature.</td>
+        </tr>
+        <tr>
+          <td class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/></svg>
+          </td>
+          <td class="pp-name">Boring databases beat clever ones</td>
+          <td class="pp-desc">Postgres until you can name three queries it cannot handle. We have spent two decades finding very few of them.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
